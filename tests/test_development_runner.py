@@ -103,6 +103,12 @@ def test_startup_recovery_requeues_only_tasks_owned_by_worker(tmp_path: Path) ->
             "UPDATE tasks SET status='running', attempts=1, lease_owner='worker' " "WHERE id=?",
             (retryable,),
         )
+    retryable_session, retryable_attempt = db.start_attempt(
+        retryable, "worker", 1, tmp_path / "retryable.log"
+    )
+    exhausted_session, exhausted_attempt = db.start_attempt(
+        exhausted, "worker", 1, tmp_path / "exhausted.log"
+    )
 
     assert db.recover_worker_tasks("worker") == 2
     tasks = {task["id"]: task for task in db.list_tasks()}
@@ -113,5 +119,19 @@ def test_startup_recovery_requeues_only_tasks_owned_by_worker(tmp_path: Path) ->
         event = connection.execute(
             "SELECT event,details FROM runner_events ORDER BY id DESC LIMIT 1"
         ).fetchone()
+        recovered_sessions = connection.execute(
+            "SELECT id,outcome,exit_code FROM agent_sessions ORDER BY id"
+        ).fetchall()
+        recovered_attempts = connection.execute(
+            "SELECT id,exit_code,error FROM execution_attempts ORDER BY id"
+        ).fetchall()
     assert event is not None
     assert tuple(event) == ("startup_recovery", "worker=worker tasks=2")
+    assert [tuple(row) for row in recovered_sessions] == [
+        (retryable_session, "interrupted", -1),
+        (exhausted_session, "interrupted", -1),
+    ]
+    assert [tuple(row) for row in recovered_attempts] == [
+        (retryable_attempt, -1, "worker restarted during execution"),
+        (exhausted_attempt, -1, "worker restarted during execution"),
+    ]

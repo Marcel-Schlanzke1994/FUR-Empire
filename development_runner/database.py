@@ -185,6 +185,18 @@ class RunnerDatabase:
             for row in rows:
                 exhausted = row["attempts"] >= row["max_attempts"]
                 connection.execute(
+                    """UPDATE agent_sessions SET finished_at=?, outcome='interrupted',
+                    exit_code=-1, duration_seconds=?-started_at
+                    WHERE task_id=? AND worker_id=? AND finished_at IS NULL""",
+                    (now, now, row["id"], worker_id),
+                )
+                connection.execute(
+                    """UPDATE execution_attempts SET finished_at=?, exit_code=-1,
+                    error='worker restarted during execution'
+                    WHERE task_id=? AND finished_at IS NULL""",
+                    (now, row["id"]),
+                )
+                connection.execute(
                     """UPDATE tasks SET status=?, lease_owner=NULL, lease_until=NULL,
                     updated_at=?, last_error=? WHERE id=?""",
                     (
@@ -206,6 +218,54 @@ class RunnerDatabase:
                 )
             connection.commit()
             return len(rows)
+
+    def start_attempt(
+        self, task_id: int, worker_id: str, attempt: int, log_path: Path
+    ) -> tuple[int, int]:
+        now = int(time.time())
+        with self.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            session = connection.execute(
+                """INSERT INTO agent_sessions
+                (task_id,worker_id,started_at,log_path) VALUES (?,?,?,?)""",
+                (task_id, worker_id, now, str(log_path)),
+            )
+            if session.lastrowid is None:
+                raise RuntimeError("session insert did not return an id")
+            attempt_row = connection.execute(
+                """INSERT INTO execution_attempts
+                (task_id,session_id,attempt_number,started_at) VALUES (?,?,?,?)""",
+                (task_id, session.lastrowid, attempt, now),
+            )
+            if attempt_row.lastrowid is None:
+                raise RuntimeError("attempt insert did not return an id")
+            connection.commit()
+            return int(session.lastrowid), int(attempt_row.lastrowid)
+
+    def finish_attempt(
+        self,
+        session_id: int,
+        attempt_id: int,
+        exit_code: int,
+        error: str,
+        duration: float,
+        token_count: int | None,
+        estimated_cost: float | None,
+    ) -> None:
+        now = int(time.time())
+        outcome = "succeeded" if exit_code == 0 else "failed"
+        with self.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            connection.execute(
+                """UPDATE agent_sessions SET finished_at=?,outcome=?,exit_code=?,
+                duration_seconds=?,token_count=?,estimated_cost_usd=? WHERE id=?""",
+                (now, outcome, exit_code, duration, token_count, estimated_cost, session_id),
+            )
+            connection.execute(
+                """UPDATE execution_attempts SET finished_at=?,exit_code=?,error=? WHERE id=?""",
+                (now, exit_code, error or None, attempt_id),
+            )
+            connection.commit()
 
     def finish(self, task_id: int, succeeded: bool, error: str = "") -> None:
         now = int(time.time())

@@ -92,15 +92,20 @@ class Worker:
         log_path = log_dir / f"task-{task_id}-attempt-{attempt}.log"
         prompt_path = self.state_dir / f"task-{task_id}.md"
         prompt_path.write_text(str(task["prompt"]), encoding="utf-8")
+        session_id, attempt_id = self.db.start_attempt(task_id, self.worker_id, attempt, log_path)
+        started = time.monotonic()
         env = {"PATH": os.environ.get("PATH", ""), "HOME": os.environ.get("HOME", "")}
         env.update({str(k): str(v) for k, v in self.config.get("environment", {}).items()})
         try:
             worktree, branch = self.prepare_worktree(task_id, env)
         except (OSError, subprocess.CalledProcessError) as exc:
-            self.db.finish(task_id, False, f"worktree preparation failed: {exc}")
+            error = f"worktree preparation failed: {exc}"
+            self.db.finish_attempt(
+                session_id, attempt_id, -1, error, time.monotonic() - started, None, None
+            )
+            self.db.finish(task_id, False, error)
             return
         command = [str(part).format(prompt_file=prompt_path) for part in self.config["command"]]
-        started = time.monotonic()
         error = ""
         exit_code = -1
         with log_path.open("wb") as log:
@@ -135,32 +140,15 @@ class Worker:
                 input_tokens * float(self.config["input_cost_per_million"])
                 + output_tokens * float(self.config["output_cost_per_million"])
             ) / 1_000_000
-        with self.db.connect() as connection:
-            now = int(time.time())
-            session = connection.execute(
-                """INSERT INTO agent_sessions
-                (task_id,worker_id,started_at,finished_at,outcome,exit_code,duration_seconds,
-                 token_count,estimated_cost_usd,log_path)
-                VALUES (?,?,?,?,?,?,?,?,?,?)""",
-                (
-                    task_id,
-                    self.worker_id,
-                    now - int(duration),
-                    now,
-                    "succeeded" if exit_code == 0 else "failed",
-                    exit_code,
-                    duration,
-                    token_count,
-                    estimated_cost,
-                    str(log_path),
-                ),
-            )
-            connection.execute(
-                """INSERT INTO execution_attempts
-                (task_id,session_id,attempt_number,started_at,finished_at,exit_code,error)
-                VALUES (?,?,?,?,?,?,?)""",
-                (task_id, session.lastrowid, attempt, now - int(duration), now, exit_code, error),
-            )
+        self.db.finish_attempt(
+            session_id,
+            attempt_id,
+            exit_code,
+            error,
+            duration,
+            token_count,
+            estimated_cost,
+        )
         self.db.finish(task_id, exit_code == 0, error)
 
     def prepare_worktree(self, task_id: int, env: dict[str, str]) -> tuple[Path, str]:
