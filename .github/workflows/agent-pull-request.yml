@@ -1,0 +1,28 @@
+name: Open agent pull request
+
+on:
+  push:
+    branches: ["agent/**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with: {fetch-depth: 0}
+      - name: Open pull request when absent
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          if ! gh pr list --head "$BRANCH" --state open --json number --jq 'length > 0' | grep -qx true; then
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "Automated development task: $BRANCH" \
+              --body "Created by the isolated FUR Empire development runner. Review and required CI remain mandatory."
+          fi

@@ -67,9 +67,14 @@ class Worker:
         log_path = log_dir / f"task-{task_id}-attempt-{attempt}.log"
         prompt_path = self.state_dir / f"task-{task_id}.md"
         prompt_path.write_text(str(task["prompt"]), encoding="utf-8")
-        command = [str(part).format(prompt_file=prompt_path) for part in self.config["command"]]
         env = {"PATH": os.environ.get("PATH", ""), "HOME": os.environ.get("HOME", "")}
         env.update({str(k): str(v) for k, v in self.config.get("environment", {}).items()})
+        try:
+            worktree, branch = self.prepare_worktree(task_id, env)
+        except (OSError, subprocess.CalledProcessError) as exc:
+            self.db.finish(task_id, False, f"worktree preparation failed: {exc}")
+            return
+        command = [str(part).format(prompt_file=prompt_path) for part in self.config["command"]]
         started = time.monotonic()
         error = ""
         exit_code = -1
@@ -77,7 +82,7 @@ class Worker:
             try:
                 result = subprocess.run(
                     command,
-                    cwd=self.repo,
+                    cwd=worktree,
                     env=env,
                     input=str(task["prompt"]).encode("utf-8"),
                     stdout=log,
@@ -93,6 +98,11 @@ class Worker:
             except OSError as exc:
                 error = f"agent could not start: {exc}"
         duration = time.monotonic() - started
+        if exit_code == 0:
+            try:
+                exit_code, error = self.validate_and_publish(task_id, worktree, branch, env)
+            except (OSError, subprocess.SubprocessError) as exc:
+                exit_code, error = -1, f"validation or publication failed: {exc}"
         with self.db.connect() as connection:
             now = int(time.time())
             session = connection.execute(
@@ -117,6 +127,96 @@ class Worker:
                 (task_id, session.lastrowid, attempt, now - int(duration), now, exit_code, error),
             )
         self.db.finish(task_id, exit_code == 0, error)
+
+    def prepare_worktree(self, task_id: int, env: dict[str, str]) -> tuple[Path, str]:
+        branch = f"agent/task-{task_id}"
+        worktree = self.state_dir / "worktrees" / f"task-{task_id}"
+        if (worktree / ".git").exists():
+            return worktree, branch
+        worktree.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["git", "fetch", "origin", "main"],
+            cwd=self.repo,
+            env=env,
+            check=True,
+            stdin=subprocess.DEVNULL,
+        )
+        subprocess.run(
+            ["git", "worktree", "add", "-b", branch, str(worktree), "origin/main"],
+            cwd=self.repo,
+            env=env,
+            check=True,
+            stdin=subprocess.DEVNULL,
+        )
+        return worktree, branch
+
+    def validate_and_publish(
+        self, task_id: int, worktree: Path, branch: str, env: dict[str, str]
+    ) -> tuple[int, str]:
+        for raw_command in self.config.get("validation_commands", []):
+            command = [str(part) for part in raw_command]
+            result = subprocess.run(
+                command,
+                cwd=worktree,
+                env=env,
+                stdin=subprocess.DEVNULL,
+                capture_output=True,
+                text=True,
+                timeout=int(self.config.get("validation_timeout_seconds", 3600)),
+                check=False,
+            )
+            summary = (result.stdout + result.stderr)[-4000:]
+            with self.db.connect() as connection:
+                connection.execute(
+                    """INSERT INTO test_results(task_id,command,passed,summary,created_at)
+                    VALUES (?,?,?,?,?)""",
+                    (
+                        task_id,
+                        json.dumps(command),
+                        int(result.returncode == 0),
+                        summary,
+                        int(time.time()),
+                    ),
+                )
+            if result.returncode != 0:
+                return result.returncode, f"validation failed: {' '.join(command)}"
+        status = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=worktree,
+            env=env,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout
+        if status:
+            subprocess.run(["git", "add", "-A"], cwd=worktree, env=env, check=True)
+            subprocess.run(
+                ["git", "commit", "-m", f"Complete agent task {task_id}"],
+                cwd=worktree,
+                env=env,
+                check=True,
+            )
+        commit_sha = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=worktree,
+            env=env,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+        subprocess.run(
+            ["git", "push", "-u", "origin", branch],
+            cwd=worktree,
+            env=env,
+            check=True,
+            stdin=subprocess.DEVNULL,
+        )
+        with self.db.connect() as connection:
+            connection.execute(
+                "INSERT OR IGNORE INTO commits(task_id,commit_sha,branch,created_at) VALUES (?,?,?,?)",
+                (task_id, commit_sha, branch, int(time.time())),
+            )
+        return 0, ""
 
 
 def load_config(path: Path) -> dict[str, Any]:
