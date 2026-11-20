@@ -55,6 +55,7 @@ class Worker:
 
     def run(self, once: bool = False) -> int:
         self.db.initialize()
+        self.db.recover_worker_tasks(self.worker_id)
         signal.signal(signal.SIGTERM, self.request_stop)
         signal.signal(signal.SIGINT, self.request_stop)
         idle_seconds = int(self.config.get("idle_seconds", 60))

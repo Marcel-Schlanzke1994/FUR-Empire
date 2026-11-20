@@ -80,3 +80,38 @@ def test_parse_usage_reads_latest_codex_json_event(tmp_path: Path) -> None:
         encoding="utf-8",
     )
     assert parse_usage(log) == (150, 125, 25)
+
+
+def test_startup_recovery_requeues_only_tasks_owned_by_worker(tmp_path: Path) -> None:
+    db = RunnerDatabase(tmp_path / "runner.sqlite3")
+    db.initialize()
+    retryable = db.add_task("retryable", "resume", max_attempts=2)
+    exhausted = db.add_task("exhausted", "stop", max_attempts=1)
+    other = db.add_task("other", "leave alone")
+    assert db.claim("worker", 15_000)["id"] == retryable
+    with db.connect() as connection:
+        connection.execute("UPDATE tasks SET priority=1 WHERE id=?", (exhausted,))
+        connection.execute("UPDATE tasks SET status='queued' WHERE id=?", (retryable,))
+    assert db.claim("worker", 15_000)["id"] == exhausted
+    with db.connect() as connection:
+        connection.execute(
+            "UPDATE tasks SET status='running', attempts=1, lease_owner='other-worker' "
+            "WHERE id=?",
+            (other,),
+        )
+        connection.execute(
+            "UPDATE tasks SET status='running', attempts=1, lease_owner='worker' " "WHERE id=?",
+            (retryable,),
+        )
+
+    assert db.recover_worker_tasks("worker") == 2
+    tasks = {task["id"]: task for task in db.list_tasks()}
+    assert tasks[retryable]["status"] == "queued"
+    assert tasks[exhausted]["status"] == "failed"
+    assert tasks[other]["status"] == "running"
+    with db.connect() as connection:
+        event = connection.execute(
+            "SELECT event,details FROM runner_events ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+    assert event is not None
+    assert tuple(event) == ("startup_recovery", "worker=worker tasks=2")

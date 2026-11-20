@@ -172,6 +172,41 @@ class RunnerDatabase:
                 raise RuntimeError("claimed task disappeared")
             return cast(sqlite3.Row, claimed)
 
+    def recover_worker_tasks(self, worker_id: str) -> int:
+        """Release tasks left running by a previous instance of this single worker."""
+        now = int(time.time())
+        with self.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            rows = connection.execute(
+                "SELECT id,attempts,max_attempts FROM tasks "
+                "WHERE status='running' AND lease_owner=?",
+                (worker_id,),
+            ).fetchall()
+            for row in rows:
+                exhausted = row["attempts"] >= row["max_attempts"]
+                connection.execute(
+                    """UPDATE tasks SET status=?, lease_owner=NULL, lease_until=NULL,
+                    updated_at=?, last_error=? WHERE id=?""",
+                    (
+                        "failed" if exhausted else "queued",
+                        now,
+                        "worker restarted during execution",
+                        row["id"],
+                    ),
+                )
+            if rows:
+                connection.execute(
+                    "INSERT INTO runner_events(level,event,details,created_at) VALUES (?,?,?,?)",
+                    (
+                        "warning",
+                        "startup_recovery",
+                        f"worker={worker_id} tasks={len(rows)}",
+                        now,
+                    ),
+                )
+            connection.commit()
+            return len(rows)
+
     def finish(self, task_id: int, succeeded: bool, error: str = "") -> None:
         now = int(time.time())
         with self.connect() as connection:
