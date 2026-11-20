@@ -196,6 +196,20 @@ class RunnerDatabase:
         with self.connect() as connection:
             return [dict(row) for row in connection.execute("SELECT * FROM tasks ORDER BY id")]
 
+    def add_dependency(self, task_id: int, depends_on_id: int) -> None:
+        with self.connect() as connection:
+            connection.execute(
+                "INSERT INTO task_dependencies(task_id,depends_on_id) VALUES (?,?)",
+                (task_id, depends_on_id),
+            )
+
+    def approve(self, task_id: int, actor: str, note: str = "") -> None:
+        with self.connect() as connection:
+            connection.execute(
+                "INSERT INTO approvals(task_id,decision,actor,note,created_at) VALUES (?,?,?,?,?)",
+                (task_id, "approved", actor, note, int(time.time())),
+            )
+
     def usage_since(self, timestamp: int) -> dict[str, float]:
         with self.connect() as connection:
             row = connection.execute(

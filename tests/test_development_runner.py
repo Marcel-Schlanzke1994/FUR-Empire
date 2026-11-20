@@ -50,3 +50,21 @@ def test_usage_is_persisted_for_budget_checks(tmp_path: Path) -> None:
             (task_id, "worker"),
         )
     assert db.usage_since(99) == {"calls": 1.0, "duration": 10.0, "cost": 1.25}
+
+
+def test_database_helpers_persist_dependencies_and_approvals(tmp_path: Path) -> None:
+    db = RunnerDatabase(tmp_path / "runner.sqlite3")
+    db.initialize()
+    parent = db.add_task("parent", "first")
+    child = db.add_task("child", "second", risk="approval_required")
+    db.add_dependency(child, parent)
+    db.approve(child, "owner", "reviewed")
+    with db.connect() as connection:
+        dependency = connection.execute(
+            "SELECT depends_on_id FROM task_dependencies WHERE task_id=?", (child,)
+        ).fetchone()
+        approval = connection.execute(
+            "SELECT actor,note FROM approvals WHERE task_id=?", (child,)
+        ).fetchone()
+    assert dependency is not None and dependency["depends_on_id"] == parent
+    assert approval is not None and tuple(approval) == ("owner", "reviewed")
