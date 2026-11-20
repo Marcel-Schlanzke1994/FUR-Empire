@@ -4,6 +4,9 @@
   "worker_id": "fur-coding-1",
   "idle_seconds": 60,
   "lease_seconds": 15000,
+  "max_calls_per_day": 8,
+  "max_runtime_seconds_per_day": 21600,
+  "max_estimated_cost_usd_per_day": 20,
   "command": [
     "/usr/local/bin/codex",
     "exec",
@@ -13,6 +16,7 @@
     "-"
   ],
   "environment": {
-    "CODEX_HOME": "/var/lib/fur-development-runner/codex"
+    "CODEX_HOME": "/var/lib/fur-development-runner/codex",
+    "GIT_SSH_COMMAND": "ssh -i /var/lib/furdev/.ssh/github_fur_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/var/lib/furdev/.ssh/known_hosts"
   }
 }

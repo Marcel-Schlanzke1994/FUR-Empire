@@ -6,6 +6,7 @@ import signal
 import socket
 import subprocess
 import time
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, cast
 
@@ -31,6 +32,19 @@ class Worker:
         signal.signal(signal.SIGINT, self.request_stop)
         idle_seconds = int(self.config.get("idle_seconds", 60))
         while not self._stop and not self.stop_file.exists():
+            midnight = int(
+                datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0).timestamp()
+            )
+            usage = self.db.usage_since(midnight)
+            if (
+                usage["calls"] >= float(self.config.get("max_calls_per_day", 8))
+                or usage["duration"] >= float(self.config.get("max_runtime_seconds_per_day", 21600))
+                or usage["cost"] >= float(self.config.get("max_estimated_cost_usd_per_day", 20))
+            ):
+                if once:
+                    return 2
+                time.sleep(idle_seconds)
+                continue
             task = self.db.claim(self.worker_id, int(self.config.get("lease_seconds", 15000)))
             if task is None:
                 if once:

@@ -195,3 +195,19 @@ class RunnerDatabase:
     def list_tasks(self) -> list[dict[str, Any]]:
         with self.connect() as connection:
             return [dict(row) for row in connection.execute("SELECT * FROM tasks ORDER BY id")]
+
+    def usage_since(self, timestamp: int) -> dict[str, float]:
+        with self.connect() as connection:
+            row = connection.execute(
+                """SELECT COUNT(*) AS calls, COALESCE(SUM(duration_seconds),0) AS duration,
+                COALESCE(SUM(estimated_cost_usd),0) AS cost
+                FROM agent_sessions WHERE started_at >= ?""",
+                (timestamp,),
+            ).fetchone()
+            if row is None:
+                return {"calls": 0.0, "duration": 0.0, "cost": 0.0}
+            return {
+                "calls": float(row["calls"]),
+                "duration": float(row["duration"]),
+                "cost": float(row["cost"]),
+            }

@@ -35,3 +35,18 @@ def test_approval_required_task_is_not_claimed_without_approval(tmp_path: Path) 
         )
     claimed = db.claim("worker", 120)
     assert claimed is not None and claimed["id"] == task_id
+
+
+def test_usage_is_persisted_for_budget_checks(tmp_path: Path) -> None:
+    db = RunnerDatabase(tmp_path / "runner.sqlite3")
+    db.initialize()
+    task_id = db.add_task("budget", "measure")
+    with db.connect() as connection:
+        connection.execute(
+            """INSERT INTO agent_sessions
+            (task_id,worker_id,started_at,finished_at,outcome,exit_code,duration_seconds,
+             estimated_cost_usd,log_path)
+            VALUES (?,?,100,110,'succeeded',0,10,1.25,'run.log')""",
+            (task_id, "worker"),
+        )
+    assert db.usage_since(99) == {"calls": 1.0, "duration": 10.0, "cost": 1.25}
