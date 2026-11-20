@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from development_runner.database import RunnerDatabase
+from development_runner.runner import parse_usage
 
 
 def test_claim_respects_dependencies_and_retries(tmp_path: Path) -> None:
@@ -68,3 +69,14 @@ def test_database_helpers_persist_dependencies_and_approvals(tmp_path: Path) -> 
         ).fetchone()
     assert dependency is not None and dependency["depends_on_id"] == parent
     assert approval is not None and tuple(approval) == ("owner", "reviewed")
+
+
+def test_parse_usage_reads_latest_codex_json_event(tmp_path: Path) -> None:
+    log = tmp_path / "agent.jsonl"
+    log.write_text(
+        '{"type":"turn.completed","usage":{"input_tokens":100,"output_tokens":20}}\n'
+        "not-json\n"
+        '{"event":{"usage":{"input_tokens":125,"output_tokens":25}}}\n',
+        encoding="utf-8",
+    )
+    assert parse_usage(log) == (150, 125, 25)

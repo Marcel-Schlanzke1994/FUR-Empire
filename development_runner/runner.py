@@ -14,6 +14,30 @@ from typing import Any, cast
 from development_runner.database import RunnerDatabase
 
 
+def parse_usage(log_path: Path) -> tuple[int | None, int, int]:
+    latest: tuple[int, int] | None = None
+    for line in log_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        pending = [event]
+        while pending:
+            value = pending.pop()
+            if isinstance(value, dict):
+                if isinstance(value.get("input_tokens"), int) and isinstance(
+                    value.get("output_tokens"), int
+                ):
+                    latest = (value["input_tokens"], value["output_tokens"])
+                pending.extend(value.values())
+            elif isinstance(value, list):
+                pending.extend(value)
+    if latest is None:
+        return None, 0, 0
+    input_tokens, output_tokens = latest
+    return input_tokens + output_tokens, input_tokens, output_tokens
+
+
 class Worker:
     def __init__(self, config: dict[str, Any]) -> None:
         self.config = config
@@ -103,12 +127,20 @@ class Worker:
                 exit_code, error = self.validate_and_publish(task_id, worktree, branch, env)
             except (OSError, subprocess.SubprocessError) as exc:
                 exit_code, error = -1, f"validation or publication failed: {exc}"
+        token_count, input_tokens, output_tokens = parse_usage(log_path)
+        estimated_cost = None
+        if token_count is not None and "input_cost_per_million" in self.config:
+            estimated_cost = (
+                input_tokens * float(self.config["input_cost_per_million"])
+                + output_tokens * float(self.config["output_cost_per_million"])
+            ) / 1_000_000
         with self.db.connect() as connection:
             now = int(time.time())
             session = connection.execute(
                 """INSERT INTO agent_sessions
-                (task_id,worker_id,started_at,finished_at,outcome,exit_code,duration_seconds,log_path)
-                VALUES (?,?,?,?,?,?,?,?)""",
+                (task_id,worker_id,started_at,finished_at,outcome,exit_code,duration_seconds,
+                 token_count,estimated_cost_usd,log_path)
+                VALUES (?,?,?,?,?,?,?,?,?,?)""",
                 (
                     task_id,
                     self.worker_id,
@@ -117,6 +149,8 @@ class Worker:
                     "succeeded" if exit_code == 0 else "failed",
                     exit_code,
                     duration,
+                    token_count,
+                    estimated_cost,
                     str(log_path),
                 ),
             )
