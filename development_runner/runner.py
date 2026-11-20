@@ -5,6 +5,7 @@ import os
 import signal
 import socket
 import subprocess
+import threading
 import time
 from datetime import UTC, datetime
 from pathlib import Path
@@ -22,9 +23,11 @@ class Worker:
         self.worker_id = str(config.get("worker_id", socket.gethostname()))
         self.stop_file = self.state_dir / "STOP"
         self._stop = False
+        self._stop_event = threading.Event()
 
     def request_stop(self, *_args: object) -> None:
         self._stop = True
+        self._stop_event.set()
 
     def run(self, once: bool = False) -> int:
         self.db.initialize()
@@ -43,13 +46,13 @@ class Worker:
             ):
                 if once:
                     return 2
-                time.sleep(idle_seconds)
+                self._stop_event.wait(idle_seconds)
                 continue
             task = self.db.claim(self.worker_id, int(self.config.get("lease_seconds", 15000)))
             if task is None:
                 if once:
                     return 0
-                time.sleep(idle_seconds)
+                self._stop_event.wait(idle_seconds)
                 continue
             self.execute(task)
             if once:
