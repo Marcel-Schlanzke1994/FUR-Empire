@@ -1,0 +1,13 @@
+{
+  "version": "FUR-ITEM-RECYCLING-1",
+  "max_units_per_command": 100,
+  "recipes": [
+    {
+      "item_id": "repair_kit",
+      "name": "Feldreparaturkit zerlegen",
+      "description": "Ein versiegeltes Kit liefert zwei wiederverwendbare Fertigungskomponenten und drei Textilien zurück.",
+      "output_items": {"crafting_component": 2},
+      "output_goods": {"textiles": 3}
+    }
+  ]
+}

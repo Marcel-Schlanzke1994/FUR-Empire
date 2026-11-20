@@ -1,0 +1,29 @@
+{
+  "version": "FUR-3-TERRA-ALLIED-GARRISON-1",
+  "game": "terra",
+  "kind": "allied_defensive_garrison",
+  "host_consent": "explicit_per_home_colony_and_current_alliance",
+  "capacity_units_per_home_colony": 300,
+  "deployment": {
+    "source": "any_owned_colony_in_same_world",
+    "destination": "allied_member_home_colony",
+    "minimum_membership": "same_alliance_at_dispatch_and_arrival",
+    "arrival": "terrain_weighted_route_seconds",
+    "unavailable_destination": "return_to_source_without_loss"
+  },
+  "lifecycle": {
+    "recall": "host_or_contributor_may_recall_active_garrison; intact_units_return_to_source",
+    "alliance_departure": "both_host_and_contributor_membership_are_rechecked; invalid_garrison_returns_intact",
+    "host_ownership_change": "invalid_garrison_returns_intact",
+    "colony_removal": "blocked_while_garrison_or_garrison_return_is_pending",
+    "world_removal": "blocked_while_garrison_or_garrison_return_is_pending"
+  },
+  "combat": {
+    "defense": "garrison_contributes_unit_power_and_contributor_tactics_to_host_colony_defense",
+    "losses": "apply_the_same_deterministic_defender_loss_fraction_to_each_member_army_independently",
+    "ownership": "survivors_and_losses_remain_attributed_to_contributing_account",
+    "reports": "host_and_each_contributor_receive_private_loss_and_return_reports"
+  },
+  "idempotency": "arrival_recall_and_return_are_transactional_and_single_application",
+  "notes": "New FUR-3 contract. This does not alter FUR-2 combat coefficients; it composes their deterministic defender losses across separately owned armies."
+}

@@ -1,0 +1,19 @@
+{
+  "version": "FUR-NEUTRAL-MARKET-1",
+  "minimum_amount": 10,
+  "maximum_amount": 100000,
+  "payout_percent": 50,
+  "syndicate_payout_percent": 60,
+  "goods": [
+    {"id":"wood","name":"Holz","value":1,"description":"Baustoff aus dem bestehenden Koloniedepot."},
+    {"id":"stone","name":"Stein","value":1,"description":"Befestigungsmaterial aus dem bestehenden Koloniedepot."},
+    {"id":"ore","name":"Erz","value":1,"description":"Technischer Rohstoff aus dem bestehenden Koloniedepot."},
+    {"id":"alloy","name":"Verbundlegierung","value":12,"description":"Veredeltes Handelsmaterial; bleibt im Warenlager dieser Kolonie und kann zurückgetauscht werden."},
+    {"id":"circuits","name":"Schaltmodule","value":16,"description":"Versiegelte Steuerbausteine im lokalen Warenlager."},
+    {"id":"textiles","name":"Fasergewebe","value":4,"description":"Robustes technisches Gewebe im lokalen Warenlager."},
+    {"id":"rations","name":"Feldrationen","value":3,"description":"Konservierte Versorgungspakete im lokalen Warenlager."},
+    {"id":"medicine","name":"Medizinsätze","value":10,"description":"Sterile Versorgungssätze im lokalen Warenlager."},
+    {"id":"lubricant","name":"Schmiermittel","value":6,"description":"Industrielles Wartungsmaterial im lokalen Warenlager."},
+    {"id":"ceramics","name":"Schutzkeramik","value":8,"description":"Technische Keramikplatten im lokalen Warenlager."}
+  ]
+}

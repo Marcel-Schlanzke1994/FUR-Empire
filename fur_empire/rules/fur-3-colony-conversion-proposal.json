@@ -1,0 +1,11 @@
+{
+  "version": "FUR-3-proposal",
+  "status": "owner_review_pending",
+  "cost": [6000, 4500, 3000],
+  "headquarters_level": 3,
+  "minimum_colony_distance": 6,
+  "excluded_outpost_tier": 8,
+  "retain_stock": true,
+  "retain_garrison": true,
+  "require_exact_name_confirmation": true
+}

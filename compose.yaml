@@ -1,0 +1,169 @@
+name: fur-empire
+x-runtime: &runtime
+  build: .
+  restart: unless-stopped
+  init: true
+  extra_hosts: ["fur-empire.de:${SMTP_GATEWAY:-172.18.0.1}"]
+  mem_limit: 1g
+  cpus: 2.0
+  pids_limit: 256
+  read_only: true
+  tmpfs: [/tmp, /app/data]
+  security_opt: [no-new-privileges:true]
+  cap_drop: [ALL]
+  secrets: [db_password, smtp_password, webpush_private_key]
+  environment: &environment
+    FUR_ENV: ${FUR_ENV:-local}
+    FUR_EMBEDDED_WORKER: "false"
+    PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://127.0.0.1:8081}
+    DB_HOST: db
+    DB_NAME: fur
+    DB_USER: fur
+    DB_PASSWORD_FILE: /run/secrets/db_password
+    SMTP_HOST: ${SMTP_HOST:-localhost}
+    SMTP_PORT: ${SMTP_PORT:-587}
+    SMTP_USER: ${SMTP_USER:-}
+    SMTP_PASSWORD_FILE: /run/secrets/smtp_password
+    WEBPUSH_PUBLIC_KEY: ${WEBPUSH_PUBLIC_KEY:-}
+    WEBPUSH_PRIVATE_KEY_FILE: /run/secrets/webpush_private_key
+    WEBPUSH_SUBJECT: ${WEBPUSH_SUBJECT:-}
+    SMTP_FROM: ${SMTP_FROM:-FUR Empire <noreply@localhost>}
+    SMTP_TLS: "true"
+    OPERATOR_NAME: ${OPERATOR_NAME:-Local Operator}
+    OPERATOR_CONTACT: ${OPERATOR_CONTACT:-local@localhost}
+  depends_on:
+    db: {condition: service_healthy}
+  networks: [backend]
+  logging:
+    driver: json-file
+    options: {max-size: 10m, max-file: "3"}
+services:
+  backup:
+    image: postgres:18-alpine
+    profiles: [ops]
+    entrypoint: [/bin/sh, /scripts/backup.sh]
+    environment:
+      PGHOST: db
+      PGUSER: fur
+      PGDATABASE: fur
+      DB_PASSWORD_FILE: /run/secrets/db_password
+    secrets: [db_password]
+    volumes:
+      - ./deploy/backup.sh:/scripts/backup.sh:ro
+      - ./backups:/backups
+    networks: [backend]
+    depends_on:
+      db: {condition: service_healthy}
+  backup-scheduler:
+    image: postgres:18-alpine
+    profiles: [ops]
+    restart: unless-stopped
+    entrypoint: [/bin/sh, /scripts/backup-scheduler.sh]
+    environment:
+      PGHOST: db
+      PGUSER: fur
+      PGDATABASE: fur
+      DB_PASSWORD_FILE: /run/secrets/db_password
+      BACKUP_INTERVAL_SECONDS: ${BACKUP_INTERVAL_SECONDS:-86400}
+    secrets: [db_password]
+    volumes:
+      - ./deploy/backup.sh:/scripts/backup.sh:ro
+      - ./deploy/backup-scheduler.sh:/scripts/backup-scheduler.sh:ro
+      - ./backups:/backups
+    networks: [backend]
+    depends_on:
+      db: {condition: service_healthy}
+  db:
+    image: postgres:18-alpine
+    mem_limit: 2g
+    cpus: 2.0
+    pids_limit: 256
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: fur
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_admin_password
+      FUR_APP_PASSWORD_FILE: /run/secrets/db_password
+      TZ: UTC
+    secrets: [db_password, db_admin_password]
+    volumes:
+      - postgres_data:/var/lib/postgresql
+      - ./deploy/init-db.sh:/docker-entrypoint-initdb.d/10-fur.sh:ro
+    networks: [backend]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U fur -d fur"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  app:
+    <<: *runtime
+    ports: ["${APP_BIND_ADDRESS:-127.0.0.1}:${APP_PORT:-8081}:8080"]
+    command:
+      - python
+      - -m
+      - uvicorn
+      - fur_empire.api:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --proxy-headers
+      - --forwarded-allow-ips
+      - "${PROXY_IP:-172.30.11.2}"
+      - --no-server-header
+    networks:
+      edge: {ipv4_address: "${APP_IP:-172.30.11.3}"}
+      backend: {}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/v1/health',timeout=3)"]
+      interval: 15s
+      timeout: 15s
+      retries: 5
+  worker:
+    <<: *runtime
+    command: [python, -m, fur_empire.worker]
+    healthcheck:
+      test: [CMD, python, -m, fur_empire.manage, check-worker]
+      interval: 15s
+      timeout: 15s
+      retries: 5
+  proxy:
+    profiles: [public]
+    image: caddy:2-alpine
+    mem_limit: 256m
+    cpus: 1.0
+    pids_limit: 128
+    restart: unless-stopped
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+      ACME_EMAIL: ${ACME_EMAIL:-}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      edge: {ipv4_address: "${PROXY_IP:-172.30.11.2}"}
+    depends_on:
+      app: {condition: service_healthy}
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+secrets:
+  db_password: {file: ./.secrets/db_password}
+  db_admin_password: {file: ./.secrets/db_admin_password}
+  smtp_password: {file: ./.secrets/smtp_password}
+  webpush_private_key: {file: ./.secrets/webpush_private_key}
+volumes:
+  postgres_data: {}
+  caddy_data: {}
+  caddy_config: {}
+networks:
+  edge:
+    ipam:
+      config: [{subnet: "${EDGE_SUBNET:-172.30.11.0/24}"}]
+  backend:
+    internal: false

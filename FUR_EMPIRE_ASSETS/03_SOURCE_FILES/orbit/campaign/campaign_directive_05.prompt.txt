@@ -1,0 +1,4 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID campaign_directive_05 | PACKAGE orbit | CATEGORY campaign
+Directive five, Capture the Citadel. A silver rabbit commander surveys the captured citadel's huge spire and shield bastions under luminous morning clouds with allied craft in the distance. Final Genesis victory scene, no casualties or text.
+Cinematic wide 16:9 key art. Maintain authentic FUR military colony aesthetic and white/gray anthropomorphic rabbits as requested.

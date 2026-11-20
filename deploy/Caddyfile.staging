@@ -1,0 +1,12 @@
+:8025 {
+    reverse_proxy mailpit:8025
+}
+
+https://localhost {
+    tls internal
+    encode zstd gzip
+    request_body {
+        max_size 16KB
+    }
+    reverse_proxy app:8080
+}

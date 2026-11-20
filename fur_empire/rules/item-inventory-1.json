@@ -1,0 +1,17 @@
+{
+  "version": "FUR-ITEM-INVENTORY-1",
+  "max_stack_types": 6,
+  "stack_limit": 1000,
+  "reserve_limit": 1000000,
+  "transport_weight": 1,
+  "items": [
+    {"id":"crafting_component","class":"crafting_component","name":"Fertigungskomponente","description":"Allgemeine Komponente für spätere FUR-3-Rezepte."},
+    {"id":"repair_kit","class":"repair_kit","name":"Feldreparaturkit","description":"Versiegelter Reparatursatz; derzeit noch ohne Reparaturaktion."},
+    {"id":"cosmetic_skin","class":"cosmetic_skin","name":"Kosmetikmarke","description":"Freischaltmarke ohne Kampf- oder Wirtschaftsbonus."},
+    {"id":"commander_badge","class":"commander_badge","name":"Kommandantenabzeichen","description":"Nicht handelbares Profilabzeichen."},
+    {"id":"loot_material","class":"loot_material","name":"Bergungsmaterial","description":"Material aus zulässigen FUR-3-Bergungsquellen."},
+    {"id":"research_artifact","class":"research_artifact","name":"Forschungsartefakt","description":"Forschungsfund für spätere FUR-3-Systeme."},
+    {"id":"mission_consumable_pve","class":"mission_consumable_pve","name":"PvE-Einsatzvorrat","description":"Verbrauchsgut für spätere PvE-Einsätze."},
+    {"id":"prestige_token_non_purchasable","class":"prestige_token_non_purchasable","name":"Prestigemarke","description":"Nicht käufliche, nicht übertragbare Auszeichnungsmarke."}
+  ]
+}

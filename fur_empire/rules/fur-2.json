@@ -1,0 +1,274 @@
+{
+  "version": "FUR-2",
+  "buildings": {
+    "hq": {
+      "name": "Kommandozentrale",
+      "icon": "⌂",
+      "cost": [
+        150,
+        120,
+        80
+      ],
+      "description": "Beschleunigt Bauaufträge und erhöht deine Macht.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "wood": {
+      "name": "Bioforst",
+      "icon": "♣",
+      "cost": [
+        75,
+        50,
+        20
+      ],
+      "description": "Produziert Holz für dein Imperium.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "stone": {
+      "name": "Steinbruch",
+      "icon": "▧",
+      "cost": [
+        90,
+        65,
+        30
+      ],
+      "description": "Fördert Stein für neue Bauwerke.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "ore": {
+      "name": "Erzraffinerie",
+      "icon": "◈",
+      "cost": [
+        100,
+        90,
+        45
+      ],
+      "description": "Gewinnt Erz für Forschung und Truppen.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "storage": {
+      "name": "Depot",
+      "icon": "▤",
+      "cost": [
+        120,
+        100,
+        50
+      ],
+      "description": "Erhöht das Rohstofflimit um 2.000 je Stufe.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "barracks": {
+      "name": "Kaserne",
+      "icon": "⚑",
+      "cost": [
+        130,
+        110,
+        90
+      ],
+      "description": "Schaltet Ranger und später schwere Truppen frei.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "lab": {
+      "name": "Forschungslabor",
+      "icon": "⌬",
+      "cost": [
+        120,
+        150,
+        130
+      ],
+      "description": "Erforscht Logistik, Taktik und Ingenieurswesen.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    },
+    "wall": {
+      "name": "Schildwall",
+      "icon": "⬡",
+      "cost": [
+        80,
+        160,
+        70
+      ],
+      "description": "Befestigt deinen Außenposten und erhöht die Imperiumsmacht.",
+      "requirements": {
+        "buildings": {},
+        "tech": {}
+      }
+    }
+  },
+  "tech": {
+    "tactics": {
+      "name": "Militärtaktik",
+      "cost": [
+        70,
+        90,
+        150
+      ],
+      "description": "+15 % Kampfkraft je Stufe.",
+      "requirements": {
+        "buildings": {
+          "lab": 1
+        },
+        "tech": {}
+      }
+    },
+    "logistics": {
+      "name": "Logistik",
+      "cost": [
+        130,
+        70,
+        100
+      ],
+      "description": "+10 Beutekapazität je Soldat und Stufe.",
+      "requirements": {
+        "buildings": {
+          "lab": 1
+        },
+        "tech": {}
+      }
+    },
+    "engineering": {
+      "name": "Ingenieurswesen",
+      "cost": [
+        100,
+        140,
+        90
+      ],
+      "description": "+15 % Produktion je Stufe.",
+      "requirements": {
+        "buildings": {
+          "lab": 1
+        },
+        "tech": {}
+      }
+    }
+  },
+  "units": {
+    "ranger": {
+      "name": "Ranger",
+      "cost": [
+        35,
+        15,
+        25
+      ],
+      "power": 12,
+      "time": 2,
+      "require": 1,
+      "requirements": {
+        "buildings": {
+          "barracks": 1
+        },
+        "tech": {}
+      }
+    },
+    "sentinel": {
+      "name": "Wächter",
+      "cost": [
+        50,
+        40,
+        60
+      ],
+      "power": 28,
+      "time": 4,
+      "require": 2,
+      "requirements": {
+        "buildings": {
+          "barracks": 2
+        },
+        "tech": {}
+      }
+    },
+    "mech": {
+      "name": "Sturmmech",
+      "cost": [
+        100,
+        90,
+        140
+      ],
+      "power": 70,
+      "time": 7,
+      "require": 3,
+      "requirements": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {}
+      }
+    }
+  },
+  "terrain": {
+    "plain": {
+      "name": "Ebene",
+      "movement_cost": 10,
+      "generation_weight": 52,
+      "production_percent": [
+        100,
+        100,
+        100
+      ],
+      "defense_percent": 100
+    },
+    "forest": {
+      "name": "Wald",
+      "movement_cost": 13,
+      "generation_weight": 22,
+      "production_percent": [
+        120,
+        90,
+        90
+      ],
+      "defense_percent": 110
+    },
+    "water": {
+      "name": "Wasser",
+      "movement_cost": null,
+      "generation_weight": 8,
+      "production_percent": [
+        0,
+        0,
+        0
+      ],
+      "defense_percent": 100
+    },
+    "mountain": {
+      "name": "Gebirge",
+      "movement_cost": 20,
+      "generation_weight": 12,
+      "production_percent": [
+        90,
+        120,
+        120
+      ],
+      "defense_percent": 125
+    },
+    "pass": {
+      "name": "Pass",
+      "movement_cost": 8,
+      "generation_weight": 6,
+      "production_percent": [
+        105,
+        105,
+        105
+      ],
+      "defense_percent": 90
+    }
+  }
+}

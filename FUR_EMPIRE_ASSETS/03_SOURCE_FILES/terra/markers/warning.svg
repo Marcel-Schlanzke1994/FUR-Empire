@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" class="fur-marker-warning"><title>warning</title><style>@supports (stroke:var(--fur-color)) { .fur-marker-warning #owner-rim,.fur-marker-warning #symbol path {stroke:var(--owner,#FFB160)} .fur-marker-warning #owner-fill {fill:var(--owner,#FFB160)} .fur-marker-warning #selection {opacity:var(--selected,0)} }</style>
+<g id="ownership"><path id="owner-rim" d="M64 12 108 34v56l-44 26-44-26V34Z" fill="#0B111A" stroke="#FFB160" stroke-width="4"/><path id="owner-fill" d="M64 19 102 38v48l-38 23-38-23V38Z" fill="#FFB160" opacity=".18"/></g>
+<path id="selection" d="M12 49V29l20-10m64 0 20 10v20m0 29v17l-20 12m-64 0L12 95V78" stroke="#F2D59D" stroke-width="4" fill="none" opacity="0"/>
+<g id="symbol" transform="translate(28 27) scale(3)"><path d="M12 3 22 20H2Zm0 6v4m0 3h.01" stroke="#FFB160" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+</svg>

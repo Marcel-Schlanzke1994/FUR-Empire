@@ -1,0 +1,15 @@
+{
+  "version": "FUR-2-RANKING-CATEGORIES-1",
+  "status": "provisional_balance_draft",
+  "scope": "current rankings scoped to the active world; category standings are captured at seasonal close",
+  "overall": "unchanged FUR-2 score: 10 per building level, 20 per technology level, 100 per captured neutral outpost",
+  "economy": "10 points per building level, summed over the account colonies in that world",
+  "research": "20 points per technology level, summed over the account colonies in that world",
+  "pve": "100 points per currently captured neutral outpost, summed over account colonies",
+  "war": "sum of immutable FUR-3 war score events; seasonal rows include events in the inclusive season window",
+  "regions": "2 points per region currently controlled by an account; season snapshot uses control at close",
+  "alliance": "sum member FUR-3 military events in active world; live ranking uses current members, season archive uses event-time alliance attribution",
+  "tie_break": "score descending then stable account/alliance ID ascending",
+  "season_snapshot": "At close, freeze current overall/economy/research/pve/region state and in-window war events; do not backfill category standings for seasons archived before this version",
+  "fur2_total_changed": false
+}

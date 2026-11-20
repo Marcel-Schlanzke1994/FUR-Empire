@@ -1,0 +1,35 @@
+{
+  "terrain": {
+    "compatible_edge_pairs": 1632,
+    "tiles": 48,
+    "atlas_image_sizes": [
+      1024,
+      768
+    ],
+    "webp_pixel_exact": true,
+    "base_edges_exact": true,
+    "texture_edges_exact": true
+  },
+  "effects": {
+    "shield_hit": {
+      "unique_frames": 16,
+      "transparent_last_frame": true
+    },
+    "projectile_hit": {
+      "unique_frames": 16,
+      "transparent_last_frame": true
+    },
+    "explosion": {
+      "unique_frames": 16,
+      "transparent_last_frame": true
+    },
+    "repair": {
+      "unique_frames": 16,
+      "transparent_last_frame": true
+    },
+    "salvage": {
+      "unique_frames": 16,
+      "transparent_last_frame": true
+    }
+  }
+}

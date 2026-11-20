@@ -1,0 +1,14 @@
+{
+  "version": "FUR-3-NPC-CONVOY-1",
+  "status": "provisional",
+  "warning_seconds": 300,
+  "stage_seconds": 14400,
+  "stages": 3,
+  "slots": 12,
+  "maximum_rangers": 40,
+  "power_per_ranger": 12,
+  "npc_power": {"escort": 120, "raid": 180},
+  "victory_loss_percent": 10,
+  "defeat_loss_percent": 50,
+  "reward_ore": 300
+}

@@ -1,0 +1,29 @@
+{
+  "version": "FUR-CRAFTING-1",
+  "max_batches_per_job": 10,
+  "max_active_jobs": 5,
+  "recipes": [
+    {
+      "id": "component_press",
+      "name": "Komponenten pressen",
+      "description": "Verdichtet Erz und Legierung zu Fertigungskomponenten.",
+      "min_hq": 1,
+      "duration_seconds": 300,
+      "resources": {"ore": 100},
+      "goods": {"alloy": 20, "circuits": 8},
+      "items": {},
+      "output": {"crafting_component": 4}
+    },
+    {
+      "id": "field_repair_kit",
+      "name": "Feldreparaturkit montieren",
+      "description": "Montiert aus Komponenten, Textilien und Rationen ein Reparaturkit.",
+      "min_hq": 2,
+      "duration_seconds": 600,
+      "resources": {},
+      "goods": {"textiles": 6, "rations": 10},
+      "items": {"crafting_component": 3},
+      "output": {"repair_kit": 1}
+    }
+  ]
+}

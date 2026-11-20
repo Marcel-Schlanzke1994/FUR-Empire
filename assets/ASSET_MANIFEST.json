@@ -1,0 +1,357 @@
+{
+  "phase": "A_IMPLEMENTATION_ONLY",
+  "inventory_complete": false,
+  "note": "Ten newly authored icons; existing assets and all remaining required families need inventory.",
+  "assets": [
+    {
+      "asset_id": "RESOURCE-WOOD",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/wood.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Holz: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Holz",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Holz; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-STONE",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/stone.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Stein: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Stein",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Stein; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-ORE",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/ore.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Erz: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Erz",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Erz; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-ALLOY",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/alloy.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Verbundlegierung: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Verbundlegierung",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Verbundlegierung; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-CIRCUITS",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/circuits.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Schaltmodule: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Schaltmodule",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Schaltmodule; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-TEXTILES",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/textiles.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Fasergewebe: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Fasergewebe",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Fasergewebe; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-RATIONS",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/rations.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Feldrationen: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Feldrationen",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Feldrationen; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-MEDICINE",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/medicine.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Medizinsätze: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Medizinsätze",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Medizinsätze; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-LUBRICANT",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/lubricant.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Schmiermittel: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Schmiermittel",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Schmiermittel; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    },
+    {
+      "asset_id": "RESOURCE-CERAMICS",
+      "feature_ids": [
+        "F2-048"
+      ],
+      "screen": "Handel / neutrale Warenbörse",
+      "path": "static/assets/goods/ceramics.svg",
+      "type": "icon",
+      "exact_size_px": [
+        128,
+        128
+      ],
+      "aspect_ratio": "1:1",
+      "format": "SVG",
+      "transparent": true,
+      "variants": [
+        "default; SVG scales to DPR 1/2/3"
+      ],
+      "description": "Schutzkeramik: eigenes geometrisches Gold-Liniensymbol.",
+      "palette": [
+        "#D4AD66"
+      ],
+      "states": [
+        "static"
+      ],
+      "alt_de": "Schutzkeramik",
+      "source_creator": "FUR original SVG authored in workspace",
+      "license": "owned-original",
+      "status": "integrated_unverified",
+      "priority": "P1",
+      "generation_prompt": "Create an original 128x128 transparent SVG icon of Schutzkeramik; gold #D4AD66 outline, tactical cyber geometry, no text, no logos, no third-party assets.",
+      "ui_binding": "static/app.js:neutralMarketMarkup; allowlisted file path, adjacent visible label",
+      "acceptance": "Visible and legible at 64px, correct good, keyboard/mobile checks in Phase B.",
+      "fallback": "Adjacent text, stock and price remain available without image."
+    }
+  ]
+}

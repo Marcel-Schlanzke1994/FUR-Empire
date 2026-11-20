@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img"><title>Legierung</title>
+<defs><linearGradient id="alloy" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#f2f5fa"/><stop offset=".53" stop-color="#bfccd9"/><stop offset="1" stop-color="#8899ae"/></linearGradient></defs><g stroke="#0B111A" stroke-width="2" stroke-linejoin="round"><path fill="#8393a9" d="m11 77 37-18h47l14 13v16l-37 20H25L11 94z"/><path fill="#596b84" d="m25 90h46l38-18v16l-37 20H25l-14-14V77z"/><path fill="url(#alloy)" d="m20 57 39-21h46l14 13v16L80 86H35L20 73z"/><path fill="#7789a0" d="m20 57 15 13h45l39-21v16L80 86H35L20 73z"/></g><path d="m29 57 31-16h44M40 72h37l35-18M30 93h37" stroke="#e4ecf8" stroke-width="1.5" fill="none" opacity=".85"/>
+</svg>

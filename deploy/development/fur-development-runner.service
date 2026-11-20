@@ -1,0 +1,35 @@
+[Unit]
+Description=FUR Empire single-worker development runner
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/etc/fur-development-runner.json
+
+[Service]
+Type=simple
+User=furdev
+Group=furdev
+WorkingDirectory=/opt/fur-empire-development/source
+ExecStart=/opt/fur-empire-development/venv/bin/python -m development_runner.cli --config /etc/fur-development-runner.json run
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=90
+KillMode=mixed
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryMax=3G
+MemoryHigh=2500M
+CPUQuota=200%
+TasksMax=256
+UMask=0077
+ReadWritePaths=/opt/fur-empire-development /var/lib/fur-development-runner
+
+[Install]
+WantedBy=multi-user.target

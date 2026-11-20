@@ -1,0 +1,157 @@
+{
+  "asset_id": "repair",
+  "sheet_size": [
+    1024,
+    1024
+  ],
+  "frame_count": 16,
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_duration_ms": 57,
+  "origin_px": [
+    128,
+    128
+  ],
+  "origin_normalized": [
+    0.5,
+    0.5
+  ],
+  "origin_reference": "frame_top_left",
+  "static_frame": 8,
+  "loop": false,
+  "transparent": true,
+  "alpha": "straight",
+  "order": "row_major",
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 1,
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 2,
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 3,
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 4,
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 5,
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 6,
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 7,
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 8,
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 9,
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 10,
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 11,
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 12,
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 13,
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 14,
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    },
+    {
+      "index": 15,
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256,
+      "duration_ms": 57
+    }
+  ]
+}

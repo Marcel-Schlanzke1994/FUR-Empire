@@ -1,0 +1,32 @@
+{
+  "version": "FUR-3-REPORT-SHARING-1",
+  "status": "provisional_conservative_policy",
+  "default_visibility": "private",
+  "scope": "owner-shared combat report summaries for current members of the owner's current alliance in the same active world",
+  "share_action": "explicit owner action per combat report",
+  "revoke_action": "owner may revoke an active share at any time",
+  "membership": {
+    "viewer_must_be_current_alliance_member": true,
+    "owner_must_remain_in_the_same_alliance": true,
+    "both_accounts_must_have_a_colony_in_the_shared_world": true,
+    "owner_leaving_or_being_removed_revokes_shares": true,
+    "viewer_leaving_removes_access_immediately": true
+  },
+  "shared_fields": [
+    "round number",
+    "per-round outcome",
+    "owner's aggregate unit losses",
+    "owner's aggregate surviving unit count",
+    "final outcome"
+  ],
+  "perspective": "derive every outcome and total from the owner's own combat side; for ACS, use only that owner's attacker wing. Refuse sharing when the owner's units cannot be separated from allied garrisons.",
+  "excluded_fields": [
+    "report, mission, target, account and colony identifiers",
+    "target name, player name, coordinates and exact timestamp",
+    "opponent units, losses, survivors and defenses",
+    "loot, resources, raw report title/body and raw combat object",
+    "replay seed, commitment, digests and hidden intelligence"
+  ],
+  "retention": "until owner revokes, owner leaves/is removed from alliance, or alliance/world is deleted",
+  "fur2_combat_rules_changed": false
+}

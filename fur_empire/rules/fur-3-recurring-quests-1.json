@@ -1,0 +1,14 @@
+{
+  "version": "FUR-3-RECURRING-QUESTS-1",
+  "status": "provisional_balance",
+  "daily_reset": "00:00 UTC",
+  "weekly_reset": "Monday 00:00 UTC",
+  "quests": [
+    {"id": "daily-build", "period": "daily", "event": "build", "title": "Schließe einen Bauauftrag ab", "target": 1, "reward": [40, 20, 15]},
+    {"id": "daily-research", "period": "daily", "event": "research", "title": "Schließe eine Forschung ab", "target": 1, "reward": [20, 30, 30]},
+    {"id": "daily-train", "period": "daily", "event": "train", "title": "Bilde vier Einheiten aus", "target": 4, "reward": [35, 25, 20]},
+    {"id": "weekly-build", "period": "weekly", "event": "build", "title": "Schließe fünf Bauaufträge ab", "target": 5, "reward": [160, 80, 60]},
+    {"id": "weekly-research", "period": "weekly", "event": "research", "title": "Schließe drei Forschungen ab", "target": 3, "reward": [80, 120, 120]},
+    {"id": "weekly-train", "period": "weekly", "event": "train", "title": "Bilde zwanzig Einheiten aus", "target": 20, "reward": [140, 100, 80]}
+  ]
+}

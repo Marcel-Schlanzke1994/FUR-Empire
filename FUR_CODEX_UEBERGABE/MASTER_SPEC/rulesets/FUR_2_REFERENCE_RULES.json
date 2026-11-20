@@ -1,0 +1,223 @@
+{
+  "id": "FUR-2",
+  "immutable_on_existing_worlds": true,
+  "source": "reference/SPIELANLEITUNG_FUR2_ORIGINAL.md",
+  "world": {
+    "width": 64,
+    "height": 64,
+    "neutral_outposts": 104,
+    "citadel_level": 8,
+    "map_view_max": 20
+  },
+  "start_resources": {
+    "wood": 1200,
+    "stone": 1000,
+    "ore": 800
+  },
+  "buildings": {
+    "command_center": {
+      "cost": [
+        150,
+        120,
+        80
+      ],
+      "roles": [
+        "build_speed",
+        "power",
+        "conquest_unlock"
+      ]
+    },
+    "bioforest": {
+      "cost": [
+        75,
+        50,
+        20
+      ],
+      "roles": [
+        "wood_production"
+      ]
+    },
+    "quarry": {
+      "cost": [
+        90,
+        65,
+        30
+      ],
+      "roles": [
+        "stone_production"
+      ]
+    },
+    "ore_refinery": {
+      "cost": [
+        100,
+        90,
+        45
+      ],
+      "roles": [
+        "ore_production"
+      ]
+    },
+    "storage": {
+      "cost": [
+        120,
+        100,
+        50
+      ],
+      "roles": [
+        "capacity"
+      ]
+    },
+    "barracks": {
+      "cost": [
+        130,
+        110,
+        90
+      ],
+      "roles": [
+        "unit_unlock"
+      ]
+    },
+    "research_lab": {
+      "cost": [
+        120,
+        150,
+        130
+      ],
+      "roles": [
+        "research_unlock"
+      ]
+    },
+    "shield_wall": {
+      "cost": [
+        80,
+        160,
+        70
+      ],
+      "roles": [
+        "defense"
+      ]
+    }
+  },
+  "build_max_level": 10,
+  "building_cost_multiplier": "target_level",
+  "storage_per_resource": "2000 + 2000 * level(storage)",
+  "production_per_resource_per_second": "(2 + 2 * resource_building_level)*(100 + 15*engineering_level + event_bonus_pp + 5*conquered_outposts + faction_bonus_pp)/100",
+  "resource_fractional_remainder": true,
+  "research": {
+    "tactics": {
+      "cost": [
+        70,
+        90,
+        150
+      ],
+      "effect": "attack_and_troop_defense +15%/level"
+    },
+    "logistics": {
+      "cost": [
+        130,
+        70,
+        100
+      ],
+      "effect": "cargo +10/unit/level"
+    },
+    "engineering": {
+      "cost": [
+        100,
+        140,
+        90
+      ],
+      "effect": "resource_production +15pp/level"
+    }
+  },
+  "research_seconds": "12 * target_level",
+  "units": {
+    "ranger": {
+      "cost": [
+        35,
+        15,
+        25
+      ],
+      "power": 12,
+      "train_seconds": 2,
+      "barracks_required": 1
+    },
+    "guardian": {
+      "cost": [
+        50,
+        40,
+        60
+      ],
+      "power": 28,
+      "train_seconds": 4,
+      "barracks_required": 2
+    },
+    "stormmech": {
+      "cost": [
+        100,
+        90,
+        140
+      ],
+      "power": 70,
+      "train_seconds": 7,
+      "barracks_required": 3
+    }
+  },
+  "max_units_per_order": 100,
+  "max_active_missions": 30,
+  "battle": {
+    "winner": "attack_power > defense_power",
+    "attacker_losses_on_defeat": "all",
+    "minimum_attacker_losses_on_win_percent": 10,
+    "loot_capacity": "survivors*(40+10*logistics_level)",
+    "min_travel_seconds": 5
+  },
+  "neutral": "outpost_stocks_do_not_regenerate",
+  "factions": {
+    "pioneers": {
+      "production_bonus_percentage_points": 10
+    },
+    "guardians": {
+      "pvp_shieldwall_bonus_percent": 40
+    },
+    "syndicate": {
+      "neutral_trade_payout_percent": 60
+    }
+  },
+  "base_neutral_trade_payout_percent": 50,
+  "trade_min_units": 10,
+  "market": {
+    "max_open_offers": 10,
+    "min_amount": 10,
+    "max_amount": 100000,
+    "expiry_hours": 24
+  },
+  "pvp": {
+    "both_accounts_min_age_hours": 1,
+    "requires_world_toggle": true,
+    "alliance_and_accepted_nap_protected": true
+  },
+  "vacation": {
+    "minimum_hours": 24,
+    "production_paused": true
+  },
+  "score": "10*sum(building_levels)+20*sum(tech_levels)+100*conquered_outposts",
+  "season": {
+    "min_days": 1,
+    "max_days": 365,
+    "does_not_reset_colony": true
+  },
+  "events": {
+    "production_bonus_pp_min": 0,
+    "production_bonus_pp_max": 100,
+    "duration_hours_min": 1,
+    "duration_hours_max": 168
+  },
+  "directive_rewards": {
+    "resource_level_2_each": 400,
+    "barracks_first": 300,
+    "first_research": 500,
+    "first_conquest": 900,
+    "citadel_conquer": 2000
+  },
+  "note": "FUR-2 numerical source contract from user-provided guide; edge-case semantics must be checked against source code before migration."
+}

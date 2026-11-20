@@ -1,0 +1,690 @@
+{
+  "basis": "FUR-2 Spielanleitung.md",
+  "audit": "document-only",
+  "date": "2026-11-06",
+  "repositories": {
+    "D": "https://github.com/ioying/devana",
+    "T": "https://github.com/laserswald/Tribal-Wars-Open-Source",
+    "U": "https://github.com/ugml/php-client",
+    "O": "https://github.com/lanedirt/OGameX",
+    "X4": "https://github.com/XGProyect/XGProyect",
+    "X3": "https://github.com/XGProyect/XG-Proyect-v3.x.x",
+    "L": "https://github.com/XGProyect/XG-Proyect-v3.x.x-Languages",
+    "A": "https://github.com/XGProyect/legacy-versions",
+    "X2": "https://github.com/XGProyect/XG-Proyect-v2.10.x"
+  },
+  "items": [
+    {
+      "group": "Welt & Expansion",
+      "id": "W01",
+      "function": "Mehrere vollständig ausbaubare Kolonien",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X4",
+        "X3",
+        "U"
+      ],
+      "recommendation": "Zweite Basis gründen, separat entwickeln und zentral verwalten"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W02",
+      "function": "Kolonisation leerer Sektoren",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X3",
+        "U"
+      ],
+      "recommendation": "Gründung statt nur Eroberung; Kolonisationskosten und Distanzen"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W03",
+      "function": "Eigene Kolonien untereinander versorgen",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X3",
+        "U"
+      ],
+      "recommendation": "Transfer zwischen eigenen Basen; übergreifende Missionsplanung"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W04",
+      "function": "Fog of War und Aufklärungsstufen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Nicht jedes gegnerische Militärdetail ohne Spionage sichtbar machen"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W05",
+      "function": "Strategische Geländearten (Wald, Wasser, Berge, Pass)",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "D"
+      ],
+      "recommendation": "Einfluss auf Bewegungswege, Produktion und Verteidigung"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W06",
+      "function": "Karten-Generator und weitere Welten",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "O",
+        "X4"
+      ],
+      "recommendation": "Seeds, Gelände, Welten mit eigenen Einstellungen und Weltenliste"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W07",
+      "function": "Dynamischer NPC-/Außenposten-Nachschub",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Neutrale Ziele respawnen oder Bestände erneuern; Schutz vor leerer Welt"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W08",
+      "function": "Territoriumsgrenzen / Regionen / Kontrollzonen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "D",
+        "T"
+      ],
+      "recommendation": "Strategische Regionsziele und Gebietsboni"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W09",
+      "function": "Karten-Suche, Marker, Favoriten",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Koordinatensuche, Ziel-Bookmarks, Sprungfunktionen"
+    },
+    {
+      "group": "Welt & Expansion",
+      "id": "W10",
+      "function": "Erweiterte NPC-Fraktionen und KI-Gegner",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Gegenbewegungen und eskalierende Herausforderungen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K01",
+      "function": "Mehrstufiger, rundenbasierter Kampf",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X4",
+        "X3",
+        "X2"
+      ],
+      "recommendation": "Eigene Schadens-, Rüstungs-, Schild- und Rundenlogik"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K02",
+      "function": "Einheiten mit spezifischen Rollen und Gegen-Effekten",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "D",
+        "O",
+        "X4"
+      ],
+      "recommendation": "Mindestens 8–12 zunächst klar unterscheidbare Einheiten"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K03",
+      "function": "Spionage / Gegenaufklärung",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Späher, verdeckte Informationen, Abfangchancen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K04",
+      "function": "Kampfsimulator vor Missionsstart",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "O"
+      ],
+      "recommendation": "Eigene Simulation, Anzeige von Verlustspannen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K05",
+      "function": "Gemeinsame Allianzangriffe (ACS)",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X4",
+        "X3",
+        "X2"
+      ],
+      "recommendation": "Kombinierter Verband mehrerer Spieler mit gemeinsamer Ankunft"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K06",
+      "function": "Unterstützung fremder Allianzbasen",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Defensive Garnison auch bei Verbündeten stationieren"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K07",
+      "function": "Taktischer Rückzug und laufende Mission abbrechen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Rückruf, Rückzugsschwellen, definierte Rückmarschfolgen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K08",
+      "function": "Expeditionen und Ereignis-Missionen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X4",
+        "X3"
+      ],
+      "recommendation": "PvE-Expedition mit zufälligen Chancen und Belohnungen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K09",
+      "function": "Trümmerfelder, Bergung und Reparatur",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Nach Schlachten zerstörte Materialien bergen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K10",
+      "function": "Fernkampfangriffe / Artillerie / Raketen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Spezielle Fernmissionen mit Gegenmaßnahmen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K11",
+      "function": "Unterschiedliche Truppen-Geschwindigkeit und Reichweite",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Armeezusammenstellung bestimmt Marschzeit und Kosten"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K12",
+      "function": "Kampfbericht pro Runde und Einheit",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3",
+        "X2"
+      ],
+      "recommendation": "Schaden, Einheitenverluste, Loot, Zeit, beteiligte Spieler"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K13",
+      "function": "Schlachtvorlagen / Angriffsprofile",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Schnelles wiederholbares Entsenden üblicher Truppentypen"
+    },
+    {
+      "group": "Kampf & Missionen",
+      "id": "K14",
+      "function": "Weitere Verteidigungsobjekte",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X4",
+        "X3",
+        "U"
+      ],
+      "recommendation": "Türme, Geschütze, Fallen, Reparatur und Anlagenslots"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E01",
+      "function": "Abhängiger Forschungs- und Freischaltbaum",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "D",
+        "O",
+        "X4",
+        "X3",
+        "U"
+      ],
+      "recommendation": "Tech-Voraussetzungen, neue Einheiten und Gebäudetypen"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E02",
+      "function": "Erweiterbare Gebäudekategorien / Spezialausbauten",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "O",
+        "X4"
+      ],
+      "recommendation": "Werkstatt, Versorgung, Spionagezentrum, Festung"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E03",
+      "function": "Energie-, Betriebs- oder Unterhaltsmechanik",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X4",
+        "X3"
+      ],
+      "recommendation": "Optionaler vierter Wirtschaftskreislauf statt trivialer Produktion"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E04",
+      "function": "Bau-/Forschungswarteschlangen umordnen & stornieren",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Stornieren, Rückerstattung und planbare Folgestufen"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E05",
+      "function": "Ausbau jenseits von Stufe 10 / Prestige",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "O",
+        "X4"
+      ],
+      "recommendation": "Späte Spielphase mit Kostenkurve und Meisterungsstufen"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E06",
+      "function": "Marktpreis-Statistiken und Handelsverlauf",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "X3",
+        "O"
+      ],
+      "recommendation": "Transparente Preisentwicklung und Transaktionshistorie"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E07",
+      "function": "Datengetriebene Konfig für Gebäude, Einheiten, Formeln",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "D",
+        "O",
+        "X4"
+      ],
+      "recommendation": "Versionierte Regeldefinitionen statt hartcodierter Spielwerte"
+    },
+    {
+      "group": "Wirtschaft & Technik",
+      "id": "E08",
+      "function": "Fraktionsspezifische Einheiten/Technologien",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "O"
+      ],
+      "recommendation": "Fraktionswahl wirkt stärker auf Spielstil als nur passive Boni"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A01",
+      "function": "Allianzkrieg mit Zielen, Wertung und Frieden",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "D",
+        "X3"
+      ],
+      "recommendation": "Krieg nicht bloß als Diplomatiestatus: Ziele, Zeit, Ergebnis"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A02",
+      "function": "Allianz-Rangliste und gemeinsame Siege",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Allianzstatistik, Saisonplatzierung, Kriegsfortschritt"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A03",
+      "function": "Allianzkasse / Gemeinschaftsprojekte",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Allianzdepot, gemeinsame Festungen, Beiträge"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A04",
+      "function": "Flexible Allianz-Rollen und Einzelberechtigungen",
+      "documented_state": "Teilweise",
+      "priority": "P2",
+      "sources": [
+        "X4",
+        "X3"
+      ],
+      "recommendation": "Rollen jenseits Leitung/Offizier/Mitglied"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A05",
+      "function": "Freundesliste und Blockliste",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Kontakte, Anfragen, private Kommunikation"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A06",
+      "function": "Interne Foren / Pinnwand",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "X3",
+        "T"
+      ],
+      "recommendation": "Längerfristige Strategiedokumente der Allianz"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A07",
+      "function": "Spielerprofile, Badges, Leistungsdaten",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Öffentliche Profilansicht und Historie"
+    },
+    {
+      "group": "Allianz & Spieler",
+      "id": "A08",
+      "function": "Notizen, Berichtsfreigaben, Zielmarkierungen",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Persönliche Kartenhinweise und gemeinsame Einsatzplanung"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P01",
+      "function": "Fortlaufende Quest-/Erfolgsysteme",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Fünf Direktiven zu einer Progressionskette ausbauen"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P02",
+      "function": "Langfristiges Endgame nach Zitadellen-Sieg",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "D",
+        "O"
+      ],
+      "recommendation": "Neue Boss-Stufen, wechselnde Kampagnen, globale Ziele"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P03",
+      "function": "Saisonmechaniken / faire Neustartwelten",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X4"
+      ],
+      "recommendation": "Optional Saisonwelt mit Reset und separatem Dauerwelt-Spielstand"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P04",
+      "function": "Spieler-Balance und Comeback-Schutz",
+      "documented_state": "Teilweise",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X4"
+      ],
+      "recommendation": "Schutz nach Niederlage, Noobschutz, Abschwächung des Snowballs"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P05",
+      "function": "Ereignisse mit Missions- und Kampfvarianten",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Nicht nur Produktion, sondern spezifische PvE-Events"
+    },
+    {
+      "group": "Progression & Livebetrieb",
+      "id": "P06",
+      "function": "Vernünftige Automatisierung für Rückkehrer",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X3"
+      ],
+      "recommendation": "Benachrichtigungen, Aufgabenstatus, Kommandoübersichten"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T01",
+      "function": "Automatische Backups + Restore-Probe",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "X4"
+      ],
+      "recommendation": "Backups, Wiederherstellungstest, Rotation und Zugriffsschutz"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T02",
+      "function": "Race-Condition-/Lasttests und Missions-Idempotenztests",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Parallelstart, doppelte Buchung, Worker-Absturz, Replay testen"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T03",
+      "function": "Anti-Bot/Anti-Multiaccount/Rate Limits",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P0",
+      "sources": [
+        "O",
+        "X4"
+      ],
+      "recommendation": "Abuse-Detektion ohne personenbezogene Überwachungsexzesse"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T04",
+      "function": "Umfassende Welt- und Balancing-Adminwerkzeuge",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "X4",
+        "O"
+      ],
+      "recommendation": "Weltregeln, Missions-Suche, Korrekturwerkzeuge und Telemetrie"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T05",
+      "function": "Mehrsprachigkeit / Lokalisierung",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P2",
+      "sources": [
+        "O",
+        "X4",
+        "L"
+      ],
+      "recommendation": "String-Katalog für DE/EN, anschließend weitere Sprachen"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T06",
+      "function": "Responsive Mobile-/Accessibility-Prüfung",
+      "documented_state": "Nicht dokumentiert",
+      "priority": "P1",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Bedienung und Tastaturzugänglichkeit für Karte und Kampf"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T07",
+      "function": "Echtzeit-Updates statt ausschließlich Polling",
+      "documented_state": "Teilweise",
+      "priority": "P2",
+      "sources": [
+        "O"
+      ],
+      "recommendation": "Websocket/SSE für Missionen und Allianzkoordination"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T08",
+      "function": "Spielregel-Migrationen und Balancing-Simulation",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "X4",
+        "O"
+      ],
+      "recommendation": "Regelversions-Snapshots gegen echte Formellogik validieren"
+    },
+    {
+      "group": "Technik & Betrieb",
+      "id": "T09",
+      "function": "Sicherer Test-/Produktions-Release-Prozess",
+      "documented_state": "Teilweise",
+      "priority": "P1",
+      "sources": [
+        "O",
+        "X4"
+      ],
+      "recommendation": "CI/CD mit Tests, Rollback, Spiel-DB-Migration, Monitoring"
+    }
+  ]
+}

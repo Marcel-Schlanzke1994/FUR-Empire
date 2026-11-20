@@ -1,0 +1,32 @@
+[
+  {
+    "id": "deep_navy",
+    "hex": "#0B111A",
+    "use": "Weltraum und dunkle Hintergründe"
+  },
+  {
+    "id": "panel_navy",
+    "hex": "#162432",
+    "use": "Rüstung, lackierte Metallflächen und UI"
+  },
+  {
+    "id": "imperial_gold",
+    "hex": "#D4AD66",
+    "use": "Wappen und Metallkanten"
+  },
+  {
+    "id": "light_gold",
+    "hex": "#F2D59D",
+    "use": "Warme Lichtkanten"
+  },
+  {
+    "id": "cyber_cyan",
+    "hex": "#5ED3DF",
+    "use": "Sensoren und Energie"
+  },
+  {
+    "id": "anthracite",
+    "hex": "#252D36",
+    "use": "Militärische Konstruktion"
+  }
+]

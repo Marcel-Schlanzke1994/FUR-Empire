@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!requirements.lock
+!fur_empire/
+!fur_empire/**
+!static/
+!static/**
+**/__pycache__/
+**/*.pyc

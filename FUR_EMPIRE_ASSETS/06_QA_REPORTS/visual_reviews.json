@@ -1,0 +1,1519 @@
+{
+  "01_TERRA/branding/fur_emblem": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra",
+    "note": "Zusätzlich in der 32-px-Darstellung bei dunklem Grund geprüft."
+  },
+  "01_TERRA/branding/fur_wordmark": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/branding/fur_favicon": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/title/terra_title": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/title/terra_title_mobile": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/title/social_preview": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra",
+    "note": "Eigens gezeichnete Wortmarke als getrennte Ebene über der neuen Illustration."
+  },
+  "01_TERRA/title/season_banner": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/hq": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra",
+    "note": "Freistellung zusätzlich auf dunklem und hellem Grund geprüft."
+  },
+  "01_TERRA/buildings/wood": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/stone": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/ore": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/storage": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/barracks": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/lab": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/buildings/wall": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/units/ranger": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/units/sentinel": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/units/mech": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/base/plain": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/base/forest": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/base/water": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/base/mountain": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/base/pass": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_00": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_01": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_02": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_03": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_04": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_05": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_06": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_07": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_08": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_09": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_10": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_11": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_12": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_13": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_14": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/shore_15": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_00": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_01": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_02": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_03": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_04": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_05": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_06": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_07": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_08": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_09": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_10": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_11": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_12": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_13": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_14": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/forest_edge_15": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_00": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_01": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_02": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_03": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_04": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_05": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_06": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_07": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_08": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_09": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_10": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_11": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_12": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_13": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_14": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/transitions/mountain_edge_15": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/terrain/atlases/terrain_transitions": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra",
+    "note": "Quadratische Projektion, 16 Masken je Familie, gemeinsame Ebenen-Ecken."
+  },
+  "01_TERRA/fog/fog_unknown": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/fog/fog_explored": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/fog/fog_visible": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/outposts/outpost_small": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/outposts/outpost_medium": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/outposts/outpost_large": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/outposts/outpost_citadel": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/damage_overlays/fortress_intact": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/damage_overlays/fortress_damaged": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/damage_overlays/fortress_destroyed": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/map_objects/ruin": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/map_objects/npc_camp": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/colony_own": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/colony_foreign": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/colony_allied": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/outpost_neutral": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/outpost_occupied": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/citadel_boss": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/npc_camp": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/ruin": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/attack": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/transport": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/scouting": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/expedition": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/return": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/warning": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/markers/favorite": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/wood": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/stone": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/ore": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/alloy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/circuits": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/textiles": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/rations": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/medicine": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/lubricant": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/ceramics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/energy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/resources/ether": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/research/tactics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/research/logistics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/research/engineering": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/crafting_component": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/field_repair_kit": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/cosmetic_token": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/commander_badge": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/salvage_material": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/research_artifact": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/pve_supply": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/inventory/prestige_token": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/overview": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/buildings": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/research": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/army": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/map": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/missions": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/reports": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/trade": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/inventory": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/alliance": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/diplomacy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/messages": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/leaderboard": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/commander": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/season": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/settings": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/security": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/help": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/navigation/administration": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/build": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/upgrade": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/cancel": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/reorder": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/send": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/recall": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/repair": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/lock": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/unlock": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/confirm": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/error": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/warning": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/information": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/timer": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/search": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/filter": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/close": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/next": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/actions/previous": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_missions": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_reports": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_messages": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_inventory": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_alliance": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/empty_states/empty_search": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/loading/loading_animated": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/loading/loading_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "01_TERRA/ui/textures/panel_texture": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/terra"
+  },
+  "02_ORBIT/buildings/scanner_tower": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/command_uplink": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/repair_bay": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/drone_foundry": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/artillery_battery": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/hospital": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/shield_generator": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/energy_core": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/fusion_plant": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/market_hub": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/supply_depot": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/advanced_lab": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/espionage_center": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/orbital_gateway": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/colony_station": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/trade_port": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/war_academy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/siege_factory": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/fortification": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/buildings/archive_vault": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/terraformer_drone": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/frontier_vanguard": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/bastion_walker": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/shield_sentinel": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/covert_courier": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/salvage_engineer": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/scout": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/saboteur": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/medic": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/shield_drone": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/sniper": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/siege_robot": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/artillery_platform": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/logistics_convoy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/engineer_squad": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/interceptor_drone": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/commander_guard": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/units/titan_colossus": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/defenses/kinetic_turret": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/defenses/aegis_emitter": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/defenses/proximity_mines": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/defenses/battle_bunker": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/terra_colonization": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/terra_logistics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/terrain_survival": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/reconnaissance": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/counterintelligence": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/ballistics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/shields": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/armor_technology": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/field_medicine": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/alliance_coordination": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/supply_chain": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/advanced_production": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/field_energy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/cybernetics": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/orbital_navigation": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/orbital_shipbuilding": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/orbital_scanning": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/ether_refining": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/advanced_propulsion": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/jump_gate_network": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/research/terra_prestige": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/probe": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/courier": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/light_fighter": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/heavy_fighter": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/frigate": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/cruiser": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/battleship": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/shield_carrier": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/carrier": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/colony_ship": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/freighter": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/salvager": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/siege_ship": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/ships/flagship": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/backgrounds/orbit_title": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/backgrounds/orbit_title_mobile": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/backgrounds/space_stars": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/backgrounds/space_nebula": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/backgrounds/space_frontier": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/planets/planet_rock": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/planets/planet_ice": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/planets/planet_desert": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/planets/planet_ocean": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/moon": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/asteroid_field": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit",
+    "note": "Freistellung zusätzlich auf dunklem und hellem Grund geprüft."
+  },
+  "02_ORBIT/orbital_objects/debris_field": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/space_station": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/defense_platform": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/jump_gate": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/sensor_relay": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/orbital_objects/orbital_shipyard": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/factions/ash_covenant": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/factions/iron_pact": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/factions/thorn_conclave": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/factions/dawn_alliance": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/factions/tide_alliance": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/commander/commander_default": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/commander/commander_economy": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/commander/commander_military": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/commander/commander_recon": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/commander/commander_command": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/prestige/frontier_veteran": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/prestige/star_guardian": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/prestige/empire_legend": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/skins/ashen_watch": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/skins/citadel_watch": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit",
+    "note": "Freistellung zusätzlich auf dunklem und hellem Grund geprüft."
+  },
+  "02_ORBIT/banners/frontier_dawn": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/banners/citadel_banner": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_shield": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_star": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_wings": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_gear": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_crest": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_laurel": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/alliance_emblems/alliance_lightning": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/campaign/campaign_directive_01": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/campaign/campaign_directive_02": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/campaign/campaign_directive_03": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/campaign/campaign_directive_04": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/campaign/campaign_directive_05": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/shield_hit": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/shield_hit_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/projectile_hit": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/projectile_hit_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/explosion": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit",
+    "note": "Der Referenzframe 6 zeigt die heiße Entfaltung; der letzte Frame ist transparent."
+  },
+  "02_ORBIT/effects/explosion_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/repair": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/repair_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/salvage": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  },
+  "02_ORBIT/effects/salvage_static": {
+    "style_reviewed": true,
+    "content_reviewed": true,
+    "evidence": "05_PREVIEWS/orbit"
+  }
+}

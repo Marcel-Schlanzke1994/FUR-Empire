@@ -1,0 +1,14 @@
+{
+  "version": "FUR-3-ALLIANCE-PROJECTS-1",
+  "status": "provisional_balance_draft",
+  "scope": "one active cooperative project per alliance and world",
+  "donation_policy": "current alliance member contributes from their own active colony in the active world; no overpayment",
+  "expiry_or_cancellation": "return every contribution to its source colony, falling back to the contributor's home colony in that world",
+  "completion_reward": "permanent visible alliance record only; no resources, production, combat or ranking bonus",
+  "projects": [
+    {"id":"frontier_beacon","name":"Grenzfeuer entzünden","target":[2000,1500,1000],"duration_seconds":604800,"record":"Grenzfeuer errichtet"},
+    {"id":"alliance_hall","name":"Allianzhalle errichten","target":[6000,5000,3500],"duration_seconds":1209600,"record":"Allianzhalle errichtet"},
+    {"id":"supply_festival","name":"Versorgungsfest vorbereiten","target":[4500,3500,4500],"duration_seconds":432000,"record":"Versorgungsfest ausgerichtet"}
+  ],
+  "fur2_rules_changed": false
+}

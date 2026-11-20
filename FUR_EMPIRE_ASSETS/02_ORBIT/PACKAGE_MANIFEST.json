@@ -1,0 +1,6711 @@
+{
+  "package": "orbit",
+  "asset_count": 133,
+  "status_counts": {
+    "approved": 133
+  },
+  "assets": [
+    {
+      "asset_id": "scanner_tower",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Scannerturm",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/scanner_tower",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/scanner_tower.png",
+        "02_ORBIT/buildings/scanner_tower.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/scanner_tower.png",
+        "03_SOURCE_FILES/orbit/buildings/scanner_tower.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-035a55d8-91ee-4307-8de4-08fdd9f239d6.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/scanner_tower.png": {
+          "bytes": 558665,
+          "sha256": "22fb986c49b6e7f1675ae9b6e56de735d11390e53acf5436da8812c0be54adde"
+        },
+        "02_ORBIT/buildings/scanner_tower.webp": {
+          "bytes": 402512,
+          "sha256": "7fcd022d38c53ccabba92b62659b8d4fc221e5fb04bbfba69bf5d304a145f61b"
+        }
+      }
+    },
+    {
+      "asset_id": "command_uplink",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kommando-Uplink",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/command_uplink",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/command_uplink.png",
+        "02_ORBIT/buildings/command_uplink.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/command_uplink.png",
+        "03_SOURCE_FILES/orbit/buildings/command_uplink.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-8a5e3e49-e2b0-45b4-a00a-97eccdb6479a.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/command_uplink.png": {
+          "bytes": 904198,
+          "sha256": "600bf38cf1eac80e7b34fd7824b3f7b477564b1991e854dcaa77a6dae46101dc"
+        },
+        "02_ORBIT/buildings/command_uplink.webp": {
+          "bytes": 650942,
+          "sha256": "e99d6781da7ab459df5e63cc3e2b0429a8b745cf624dc633543bc84588af2a87"
+        }
+      }
+    },
+    {
+      "asset_id": "repair_bay",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Reparaturhalle",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/repair_bay",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/repair_bay.png",
+        "02_ORBIT/buildings/repair_bay.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/repair_bay.png",
+        "03_SOURCE_FILES/orbit/buildings/repair_bay.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-778afc6d-899b-45af-9792-466fecb8950b.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/repair_bay.png": {
+          "bytes": 1017755,
+          "sha256": "ff2157e7aaf1c0a485cf4dd8ba47a9b9a8ed802c5efbe83afbdb766173807fe8"
+        },
+        "02_ORBIT/buildings/repair_bay.webp": {
+          "bytes": 732430,
+          "sha256": "214717436c360015928b675a07d06d671c0150a1d3744721f639683041b38c60"
+        }
+      }
+    },
+    {
+      "asset_id": "drone_foundry",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Drohnenfertigung",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/drone_foundry",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/drone_foundry.png",
+        "02_ORBIT/buildings/drone_foundry.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/drone_foundry.png",
+        "03_SOURCE_FILES/orbit/buildings/drone_foundry.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-59d643cf-b618-4239-aff1-4d19366616db.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/drone_foundry.png": {
+          "bytes": 848190,
+          "sha256": "f8bafd6d7f31b7b5ec832c4f34df3eedd29db77e749622f00f88a31fd0182604"
+        },
+        "02_ORBIT/buildings/drone_foundry.webp": {
+          "bytes": 622278,
+          "sha256": "01f4eef294f8ee0f09764e832db9000ae3f4458cdaa07d2a925465287eb66f00"
+        }
+      }
+    },
+    {
+      "asset_id": "artillery_battery",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Artilleriebatterie",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/artillery_battery",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/artillery_battery.png",
+        "02_ORBIT/buildings/artillery_battery.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/artillery_battery.png",
+        "03_SOURCE_FILES/orbit/buildings/artillery_battery.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7b34fdae-3b8c-4fd5-9356-e772edc305ac.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/artillery_battery.png": {
+          "bytes": 1088467,
+          "sha256": "2a518ab1e406e48f074d167d28f04630ce9dbe40c6878b64e5c203e7e7f6904b"
+        },
+        "02_ORBIT/buildings/artillery_battery.webp": {
+          "bytes": 775936,
+          "sha256": "b3b497cfdf76e8723db4fec7e9b241c9612a7933369cb54ce3b94b1e85acc019"
+        }
+      }
+    },
+    {
+      "asset_id": "hospital",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Feldhospital",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/hospital",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/hospital.png",
+        "02_ORBIT/buildings/hospital.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/hospital.png",
+        "03_SOURCE_FILES/orbit/buildings/hospital.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7b357699-3227-436d-9c38-12b963bd6790.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/hospital.png": {
+          "bytes": 743239,
+          "sha256": "2da75dc4b56d86e1b1e5e6c0a6f6857f3758285f4c2d5725cc2d66e165d43cef"
+        },
+        "02_ORBIT/buildings/hospital.webp": {
+          "bytes": 538936,
+          "sha256": "b2bfb34f6afddb3054a9d0bbf2da43240ab07dda96c12ec51dd69fee6440c7db"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_generator",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Schildgenerator",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/shield_generator",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/shield_generator.png",
+        "02_ORBIT/buildings/shield_generator.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/shield_generator.png",
+        "03_SOURCE_FILES/orbit/buildings/shield_generator.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-05ce2be6-d16a-4ff2-b8f8-13ef5b13670a.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/shield_generator.png": {
+          "bytes": 1090576,
+          "sha256": "31d2d39a483ab24d3e8d8cdaf36fabc0fbfbafc405f2c46e4601a5af5d3ff79f"
+        },
+        "02_ORBIT/buildings/shield_generator.webp": {
+          "bytes": 782732,
+          "sha256": "eae99ebde4200e81fcef3b9f4b972dd08e5c260039fdebd9367b299f9d37eede"
+        }
+      }
+    },
+    {
+      "asset_id": "energy_core",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Energiekern",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/energy_core",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/energy_core.png",
+        "02_ORBIT/buildings/energy_core.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/energy_core.png",
+        "03_SOURCE_FILES/orbit/buildings/energy_core.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ecbc076a-fa2c-40f2-9cc2-29d3f06d7488.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/energy_core.png": {
+          "bytes": 1022795,
+          "sha256": "b18270f1909b27b83d680390f3423dea20ea23d438155c07d718c22d4b5bc4ff"
+        },
+        "02_ORBIT/buildings/energy_core.webp": {
+          "bytes": 744378,
+          "sha256": "4546e5370cca46f409e7b1140c67e04a14d487f0b1ac63c2ce57423ec1c87b6e"
+        }
+      }
+    },
+    {
+      "asset_id": "fusion_plant",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Fusionskraftwerk",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/fusion_plant",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/fusion_plant.png",
+        "02_ORBIT/buildings/fusion_plant.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/fusion_plant.png",
+        "03_SOURCE_FILES/orbit/buildings/fusion_plant.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-26ce8415-a5e3-46f4-b5f4-28e92ac36e44.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/fusion_plant.png": {
+          "bytes": 1053790,
+          "sha256": "f509d89b1fe3ae8a2d060f4a5004ee1fb6addf34148759b0ee93ac485171eb34"
+        },
+        "02_ORBIT/buildings/fusion_plant.webp": {
+          "bytes": 784484,
+          "sha256": "fed1267350cdcfa9d0ab557732b6bbc0fac8afe366d7ef7a36169a4365d2fbff"
+        }
+      }
+    },
+    {
+      "asset_id": "market_hub",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Handelszentrum",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/market_hub",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/market_hub.png",
+        "02_ORBIT/buildings/market_hub.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/market_hub.png",
+        "03_SOURCE_FILES/orbit/buildings/market_hub.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-8faed0cd-c15d-421b-b5a7-f248229f4fbc.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/market_hub.png": {
+          "bytes": 868843,
+          "sha256": "ba4c96a132afebcaaacccf2a08d8a9b114a4bf4d08875a56942e9e43d863be98"
+        },
+        "02_ORBIT/buildings/market_hub.webp": {
+          "bytes": 644450,
+          "sha256": "6cfb93ee2a5ab47fad6f72c23396f98dd7ff79cb89a0df2c47b940efb7e61851"
+        }
+      }
+    },
+    {
+      "asset_id": "supply_depot",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Versorgungsdepot",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/supply_depot",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/supply_depot.png",
+        "02_ORBIT/buildings/supply_depot.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/supply_depot.png",
+        "03_SOURCE_FILES/orbit/buildings/supply_depot.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-29f92a23-b78b-42b4-bb4e-9395af0edfda.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/supply_depot.png": {
+          "bytes": 821814,
+          "sha256": "5b0c95680676dc030d05dba09743cc2fd91a636a30478ce807a62cb90959be75"
+        },
+        "02_ORBIT/buildings/supply_depot.webp": {
+          "bytes": 587776,
+          "sha256": "2e335b0776942b865b24ab8b95815917cc105f56f6e3a63c20d3cd22527a6282"
+        }
+      }
+    },
+    {
+      "asset_id": "advanced_lab",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Hochtechnologielabor",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/advanced_lab",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/advanced_lab.png",
+        "02_ORBIT/buildings/advanced_lab.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/advanced_lab.png",
+        "03_SOURCE_FILES/orbit/buildings/advanced_lab.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-09b8cc61-9906-4d5c-8d81-13355518fd04.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/advanced_lab.png": {
+          "bytes": 856432,
+          "sha256": "6b511586a4739a85e63e2567221897a79c84e12af487e2326b808d36151ac1a6"
+        },
+        "02_ORBIT/buildings/advanced_lab.webp": {
+          "bytes": 631844,
+          "sha256": "336b9c6e42ec3a6d603b4afd53f48f35b363e0843db5420ce3292ce7af21d82b"
+        }
+      }
+    },
+    {
+      "asset_id": "espionage_center",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Spionagezentrum",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/espionage_center",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/espionage_center.png",
+        "02_ORBIT/buildings/espionage_center.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/espionage_center.png",
+        "03_SOURCE_FILES/orbit/buildings/espionage_center.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-d05e036c-89b8-4c00-ab2b-7b8d455356e3.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/espionage_center.png": {
+          "bytes": 626687,
+          "sha256": "d09b82a46ce3b06612389bf8219676de5438026ca9f4c2a3d14965dca26e4d3e"
+        },
+        "02_ORBIT/buildings/espionage_center.webp": {
+          "bytes": 436538,
+          "sha256": "bfdf72f4da5bf69634af0e83c8e90866eb1d5d0491f3a8e38590f06ed111072f"
+        }
+      }
+    },
+    {
+      "asset_id": "orbital_gateway",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Orbitalzugang",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/orbital_gateway",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/orbital_gateway.png",
+        "02_ORBIT/buildings/orbital_gateway.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/orbital_gateway.png",
+        "03_SOURCE_FILES/orbit/buildings/orbital_gateway.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-691ec935-3783-4aad-9b80-b0c219a48ab1.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/orbital_gateway.png": {
+          "bytes": 929338,
+          "sha256": "b8bec52785932da61993b704885b294923acc4886ce9643c99a37e53fd2420a9"
+        },
+        "02_ORBIT/buildings/orbital_gateway.webp": {
+          "bytes": 688700,
+          "sha256": "25e07da1742fc889943c08aad04f0b6f3141f2d8552dc2d2531415db3b1e8975"
+        }
+      }
+    },
+    {
+      "asset_id": "colony_station",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kolonisationsstation",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/colony_station",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/colony_station.png",
+        "02_ORBIT/buildings/colony_station.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/colony_station.png",
+        "03_SOURCE_FILES/orbit/buildings/colony_station.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-b7feca6b-d89c-4b6e-9d15-30a9ec322d4f.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/colony_station.png": {
+          "bytes": 919270,
+          "sha256": "d75d60f5acc8a1ad472e7bc74fa5bb346f3e322411fc9a14dfc2b570f004e95b"
+        },
+        "02_ORBIT/buildings/colony_station.webp": {
+          "bytes": 675290,
+          "sha256": "2651e1aa8b7e561cbfd89e094a2b05e286a5decd98178a4852b39118e965409b"
+        }
+      }
+    },
+    {
+      "asset_id": "trade_port",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Handelshafen",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/trade_port",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/trade_port.png",
+        "02_ORBIT/buildings/trade_port.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/trade_port.png",
+        "03_SOURCE_FILES/orbit/buildings/trade_port.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-b2d39aa0-0bc6-40c4-8dca-d2ff1b90035e.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/trade_port.png": {
+          "bytes": 838304,
+          "sha256": "c944c9fc7fa97917def70686a16300f1b84e29b7fb211de1c84335250553c9d5"
+        },
+        "02_ORBIT/buildings/trade_port.webp": {
+          "bytes": 614994,
+          "sha256": "a6a8cf6adb46eb874bc356270a85545f476d0bd8bd5332de5101bba208f1333f"
+        }
+      }
+    },
+    {
+      "asset_id": "war_academy",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kriegsakademie",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/war_academy",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/war_academy.png",
+        "02_ORBIT/buildings/war_academy.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/war_academy.png",
+        "03_SOURCE_FILES/orbit/buildings/war_academy.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-f991e606-bb22-491f-a478-b81c9ece4ddc.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/war_academy.png": {
+          "bytes": 837561,
+          "sha256": "d672f43229a2fa6d156bca62de363967178a487ad0ed4736d609f204cd9a4022"
+        },
+        "02_ORBIT/buildings/war_academy.webp": {
+          "bytes": 616494,
+          "sha256": "a3cfc335719bbcc6603e83344723ba5886563e944bca04d6b36bae3bde61a9a3"
+        }
+      }
+    },
+    {
+      "asset_id": "siege_factory",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Belagerungsfabrik",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/siege_factory",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/siege_factory.png",
+        "02_ORBIT/buildings/siege_factory.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/siege_factory.png",
+        "03_SOURCE_FILES/orbit/buildings/siege_factory.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-90fe14aa-3eee-4c91-8495-d1811f690052.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/siege_factory.png": {
+          "bytes": 910200,
+          "sha256": "ab18c4b4fd331163fbd8a9aa136017bbd929a39f35a87b552b3b6d5ef496d267"
+        },
+        "02_ORBIT/buildings/siege_factory.webp": {
+          "bytes": 665316,
+          "sha256": "ed11ddf29794db2794eddef48d21cd70d2f44ee028421ce681d742830a5e4471"
+        }
+      }
+    },
+    {
+      "asset_id": "fortification",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Befestigungsanlage",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/fortification",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/fortification.png",
+        "02_ORBIT/buildings/fortification.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/fortification.png",
+        "03_SOURCE_FILES/orbit/buildings/fortification.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-db12c130-3dfd-4925-aa3f-b3c86297979e.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/fortification.png": {
+          "bytes": 848342,
+          "sha256": "ca358511537f578d14b25e906960813436c8fb7530cb733a70a95cc7a850687f"
+        },
+        "02_ORBIT/buildings/fortification.webp": {
+          "bytes": 610658,
+          "sha256": "419adf90dc50eab7ed9e6c58e9b2a48a8b56aaef57251dcdd0d7dcd5189e7150"
+        }
+      }
+    },
+    {
+      "asset_id": "archive_vault",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Archivbunker",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/buildings/archive_vault",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/buildings/archive_vault.png",
+        "02_ORBIT/buildings/archive_vault.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/buildings/archive_vault.png",
+        "03_SOURCE_FILES/orbit/buildings/archive_vault.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7d496228-50fa-47e8-b56d-990c1599178d.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/buildings/archive_vault.png": {
+          "bytes": 822484,
+          "sha256": "4fd4ba2ae9852f39116c4459505bed45b95890547aca56379ed066bab301b66a"
+        },
+        "02_ORBIT/buildings/archive_vault.webp": {
+          "bytes": 577388,
+          "sha256": "baf25a7f906b294c717018d4caf6f410effdbc6f301378b9dfcfd36a2324ec4b"
+        }
+      }
+    },
+    {
+      "asset_id": "terraformer_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Terraformerdrohne",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/terraformer_drone",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/terraformer_drone.png",
+        "02_ORBIT/units/terraformer_drone.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/terraformer_drone.png",
+        "03_SOURCE_FILES/orbit/units/terraformer_drone.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7f02165a-d910-4b7f-9d43-a538c4d7ed65.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/terraformer_drone.png": {
+          "bytes": 381775,
+          "sha256": "17976026b0efd0795545d79fbb157ae6047a7cc054579227b2111e7586286ab3"
+        },
+        "02_ORBIT/units/terraformer_drone.webp": {
+          "bytes": 267746,
+          "sha256": "8fffed06c763865ac29952e1a700ce5d0aa53141cf03cf49b5e85e22fc56b990"
+        }
+      }
+    },
+    {
+      "asset_id": "frontier_vanguard",
+      "package": "orbit",
+      "category": "units",
+      "name": "Grenzvorhut",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/frontier_vanguard",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/frontier_vanguard.png",
+        "02_ORBIT/units/frontier_vanguard.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/frontier_vanguard.png",
+        "03_SOURCE_FILES/orbit/units/frontier_vanguard.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ff42da34-0023-49e6-b249-ee175ac1cad9.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/frontier_vanguard.png": {
+          "bytes": 375156,
+          "sha256": "6c8907706bde10f0598c80ade047bd7c2297c7e42bb1de7aa4f1d8af289832ff"
+        },
+        "02_ORBIT/units/frontier_vanguard.webp": {
+          "bytes": 257534,
+          "sha256": "8dba77d359ed2a0593d43aaaa6141bdbae74012838342139a97b6380d9b3d118"
+        }
+      }
+    },
+    {
+      "asset_id": "bastion_walker",
+      "package": "orbit",
+      "category": "units",
+      "name": "Bastionswalker",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/bastion_walker",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/bastion_walker.png",
+        "02_ORBIT/units/bastion_walker.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/bastion_walker.png",
+        "03_SOURCE_FILES/orbit/units/bastion_walker.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-262c689e-7097-426b-b520-04f2f8ef8c88.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/bastion_walker.png": {
+          "bytes": 503188,
+          "sha256": "efce5e78306bf97fb3d3bc30f0f9a74792030bf6f133686f1f07156616083295"
+        },
+        "02_ORBIT/units/bastion_walker.webp": {
+          "bytes": 357810,
+          "sha256": "31a9cf43f7b1de43eb2a252dc3e982872e79450ef36fe795f6c9b433b7fe730b"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_sentinel",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schildwächter",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/shield_sentinel",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/shield_sentinel.png",
+        "02_ORBIT/units/shield_sentinel.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/shield_sentinel.png",
+        "03_SOURCE_FILES/orbit/units/shield_sentinel.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-cf4698fc-825f-4dae-b13d-cf7600d756c6.png",
+        "master_size": [
+          1230,
+          1278
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/shield_sentinel.png": {
+          "bytes": 587056,
+          "sha256": "4cf4885b0f7f874c10d32d71f2e3489dcfaff03504b96731fc60dbe30588fea9"
+        },
+        "02_ORBIT/units/shield_sentinel.webp": {
+          "bytes": 407522,
+          "sha256": "40671b02eeee75748beb77cf8b5c8e78920a012dba06ee7cb94485bb5fea57d9"
+        }
+      }
+    },
+    {
+      "asset_id": "covert_courier",
+      "package": "orbit",
+      "category": "units",
+      "name": "Verdeckter Kurier",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/covert_courier",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/covert_courier.png",
+        "02_ORBIT/units/covert_courier.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/covert_courier.png",
+        "03_SOURCE_FILES/orbit/units/covert_courier.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-3d5a43d8-7994-42e6-a478-c9066f1d1659.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/covert_courier.png": {
+          "bytes": 262442,
+          "sha256": "511e8d946f8f8eba6fd45a9259ff5c5ccc6829cd710d81079af5320f87f617bb"
+        },
+        "02_ORBIT/units/covert_courier.webp": {
+          "bytes": 178426,
+          "sha256": "21e1cef1df8671540751bd5e9d92b91bcd6e0fa84ba12159a545f3f1a1c3c82f"
+        }
+      }
+    },
+    {
+      "asset_id": "salvage_engineer",
+      "package": "orbit",
+      "category": "units",
+      "name": "Bergungstechniker",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/salvage_engineer",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/salvage_engineer.png",
+        "02_ORBIT/units/salvage_engineer.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/salvage_engineer.png",
+        "03_SOURCE_FILES/orbit/units/salvage_engineer.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ceb9210c-95ff-4a4a-a671-3a1448542ef3.png",
+        "master_size": [
+          1315,
+          1196
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/salvage_engineer.png": {
+          "bytes": 565004,
+          "sha256": "e392071808d0ec9a992d395eb6f21267804278a58b7a29284266ad9601f7b646"
+        },
+        "02_ORBIT/units/salvage_engineer.webp": {
+          "bytes": 391698,
+          "sha256": "2db1f72db10dd5a378f23501f11313bda28f15efa89f5e35ac38857912e58ca6"
+        }
+      }
+    },
+    {
+      "asset_id": "scout",
+      "package": "orbit",
+      "category": "units",
+      "name": "Späher",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/scout",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/scout.png",
+        "02_ORBIT/units/scout.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/scout.png",
+        "03_SOURCE_FILES/orbit/units/scout.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-61826fb1-a49a-4876-baab-9bf3d38bccd0.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/scout.png": {
+          "bytes": 325405,
+          "sha256": "a14abcc2657d010180815c564495209adcf46546d311dd103c5848a8eeb0e3a8"
+        },
+        "02_ORBIT/units/scout.webp": {
+          "bytes": 218606,
+          "sha256": "105a548f8009bf18107f101f3d4befc95ca9939ebe9b4e27db01f54fbd7a5a13"
+        }
+      }
+    },
+    {
+      "asset_id": "saboteur",
+      "package": "orbit",
+      "category": "units",
+      "name": "Saboteur",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/saboteur",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/saboteur.png",
+        "02_ORBIT/units/saboteur.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/saboteur.png",
+        "03_SOURCE_FILES/orbit/units/saboteur.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-f122d04e-6de9-4e28-826f-223e0083dcd9.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/saboteur.png": {
+          "bytes": 343343,
+          "sha256": "f82b0a2362d81130c8dc7358595024395cd030e9d767c9fa800bcc1b7443bc53"
+        },
+        "02_ORBIT/units/saboteur.webp": {
+          "bytes": 230856,
+          "sha256": "edab0e6880362114858b06ca3190098f2369af77d64eb7fae4f0d3c1a2c20dd4"
+        }
+      }
+    },
+    {
+      "asset_id": "medic",
+      "package": "orbit",
+      "category": "units",
+      "name": "Sanitäter",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/medic",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/medic.png",
+        "02_ORBIT/units/medic.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/medic.png",
+        "03_SOURCE_FILES/orbit/units/medic.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-3d6c6416-ddde-4601-995e-35ec0d478269.png",
+        "master_size": [
+          1220,
+          1289
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/medic.png": {
+          "bytes": 375374,
+          "sha256": "17e45c2057d456d70f009e335e94be08e2d72d3fc1518a4ecbeff5c01caae008"
+        },
+        "02_ORBIT/units/medic.webp": {
+          "bytes": 256070,
+          "sha256": "f085dd00c9dc0714373a62e0546f7e4ebec72dbe1838a06c8e83d6c6da0d33c4"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schilddrohne",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/shield_drone",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/shield_drone.png",
+        "02_ORBIT/units/shield_drone.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/shield_drone.png",
+        "03_SOURCE_FILES/orbit/units/shield_drone.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-bea8e5e5-5bca-4d55-bd5f-65f6f89584ec.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/shield_drone.png": {
+          "bytes": 417818,
+          "sha256": "2d89cf16ffdc9834616c1a68d81f101ba0e44ed5ffa8518f8f2450e97d9e736e"
+        },
+        "02_ORBIT/units/shield_drone.webp": {
+          "bytes": 292928,
+          "sha256": "ad9dfa496b2e8872f6d55af7499dbbeeb5a6eb4fa0a65b4fb46b456adad7ea80"
+        }
+      }
+    },
+    {
+      "asset_id": "sniper",
+      "package": "orbit",
+      "category": "units",
+      "name": "Scharfschütze",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/sniper",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/sniper.png",
+        "02_ORBIT/units/sniper.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/sniper.png",
+        "03_SOURCE_FILES/orbit/units/sniper.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-575dd312-eb04-48c2-9739-898202b01045.png",
+        "master_size": [
+          1240,
+          1269
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/sniper.png": {
+          "bytes": 380575,
+          "sha256": "7cb6bd8bf7631709e4c1d127fc6664f2a0b7eaae51a4253767a93cf94274b062"
+        },
+        "02_ORBIT/units/sniper.webp": {
+          "bytes": 260208,
+          "sha256": "0f93c51274c3a79128229c2cef8a02957a19a5e104f459438af4314bcec33e1d"
+        }
+      }
+    },
+    {
+      "asset_id": "siege_robot",
+      "package": "orbit",
+      "category": "units",
+      "name": "Belagerungsroboter",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/siege_robot",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/siege_robot.png",
+        "02_ORBIT/units/siege_robot.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/siege_robot.png",
+        "03_SOURCE_FILES/orbit/units/siege_robot.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-e133d7e2-74a9-4fdc-958e-5dcd2052113f.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/siege_robot.png": {
+          "bytes": 486119,
+          "sha256": "0c6b0828481399a8e42651a36a623c97bcea6ffbd5bad5039ef10bee804c45a2"
+        },
+        "02_ORBIT/units/siege_robot.webp": {
+          "bytes": 341716,
+          "sha256": "d7d522c691b03b2c1c744a7626ef3a9e79ea9dd1a744ca6ff8ae07d7eafd3a4d"
+        }
+      }
+    },
+    {
+      "asset_id": "artillery_platform",
+      "package": "orbit",
+      "category": "units",
+      "name": "Mobile Artillerieplattform",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/artillery_platform",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/artillery_platform.png",
+        "02_ORBIT/units/artillery_platform.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/artillery_platform.png",
+        "03_SOURCE_FILES/orbit/units/artillery_platform.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-708efdf6-50b5-4ae4-a23a-fe3ee432e986.png",
+        "master_size": [
+          1447,
+          1087
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/artillery_platform.png": {
+          "bytes": 625591,
+          "sha256": "6471ced8afcbf8439b33482d0ef7b7aafc853070115424d9eeeb9148d9eef1b9"
+        },
+        "02_ORBIT/units/artillery_platform.webp": {
+          "bytes": 438420,
+          "sha256": "1c1b4428d5064dcf47c059768fcfc526247f773a82070db5acc14d7eb8418a8a"
+        }
+      }
+    },
+    {
+      "asset_id": "logistics_convoy",
+      "package": "orbit",
+      "category": "units",
+      "name": "Logistikkonvoi",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/logistics_convoy",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/logistics_convoy.png",
+        "02_ORBIT/units/logistics_convoy.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/logistics_convoy.png",
+        "03_SOURCE_FILES/orbit/units/logistics_convoy.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ac8e3d8f-55c7-4c64-bb2d-584c7da5f1d2.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/logistics_convoy.png": {
+          "bytes": 400790,
+          "sha256": "015b4dd9091fb99e352d6950e74992f3a056e111661f3484a5d4cd7a707cb092"
+        },
+        "02_ORBIT/units/logistics_convoy.webp": {
+          "bytes": 283678,
+          "sha256": "58ef0f91433de108e16d5b5a13b1dc906c8006b4520ad5f3e35d7709abfa9bdc"
+        }
+      }
+    },
+    {
+      "asset_id": "engineer_squad",
+      "package": "orbit",
+      "category": "units",
+      "name": "Pioniertrupp",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/engineer_squad",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/engineer_squad.png",
+        "02_ORBIT/units/engineer_squad.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/engineer_squad.png",
+        "03_SOURCE_FILES/orbit/units/engineer_squad.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-dd51a152-d200-418e-8da7-0f58b671586b.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/engineer_squad.png": {
+          "bytes": 612697,
+          "sha256": "aa272e72228d15a4c3da9241936d048badf52d94ffe6e7ce6d5ac06b9acdf8a4"
+        },
+        "02_ORBIT/units/engineer_squad.webp": {
+          "bytes": 430130,
+          "sha256": "65bd70182f4fd91a85795e9cf7e5bd11625b19cd1163ca93ff8d2f775b312b5b"
+        }
+      }
+    },
+    {
+      "asset_id": "interceptor_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Abfangdrohne",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/interceptor_drone",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/interceptor_drone.png",
+        "02_ORBIT/units/interceptor_drone.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/interceptor_drone.png",
+        "03_SOURCE_FILES/orbit/units/interceptor_drone.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-8e29b0cf-b955-4fd2-b9eb-da59a4977334.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/interceptor_drone.png": {
+          "bytes": 265960,
+          "sha256": "767850b9ba990b766c5b62b23ffe5d5678bdf9a36470b803e2405af6bdba6846"
+        },
+        "02_ORBIT/units/interceptor_drone.webp": {
+          "bytes": 182030,
+          "sha256": "aad7437038fdbd45b7b03ff434206ddd6de3e361f3e83733b006a6b3170ed42c"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_guard",
+      "package": "orbit",
+      "category": "units",
+      "name": "Kommandantengarde",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/commander_guard",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/commander_guard.png",
+        "02_ORBIT/units/commander_guard.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/commander_guard.png",
+        "03_SOURCE_FILES/orbit/units/commander_guard.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-f928057d-4f16-4ca7-92c3-4146a527fbed.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/commander_guard.png": {
+          "bytes": 423786,
+          "sha256": "ff76ed4057e51183541cf1762aac03c5bf8a909c74e94e7f7e9463e08b5a8762"
+        },
+        "02_ORBIT/units/commander_guard.webp": {
+          "bytes": 298514,
+          "sha256": "41b2fb22c01067a86003f06fd3fea1e2216e48504e9fe8aa5e364e247767f05f"
+        }
+      }
+    },
+    {
+      "asset_id": "titan_colossus",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schwerer Titan-Koloss",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/units/titan_colossus",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/units/titan_colossus.png",
+        "02_ORBIT/units/titan_colossus.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/units/titan_colossus.png",
+        "03_SOURCE_FILES/orbit/units/titan_colossus.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-b47c2bb9-c989-439d-bb07-20613fb969b8.png",
+        "master_size": [
+          1247,
+          1261
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/units/titan_colossus.png": {
+          "bytes": 526302,
+          "sha256": "ae62ececd4b8b1e270c82aed1e6c2a0300e5e569791a097354d6180e74f9eaeb"
+        },
+        "02_ORBIT/units/titan_colossus.webp": {
+          "bytes": 373422,
+          "sha256": "45772004ccdf5dc36c35a1147d896c52f477613c9a201f2c7b3d08a24fa1210c"
+        }
+      }
+    },
+    {
+      "asset_id": "kinetic_turret",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Kinetikgeschütz",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/defenses/kinetic_turret",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/defenses/kinetic_turret.png",
+        "02_ORBIT/defenses/kinetic_turret.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/defenses/kinetic_turret.png",
+        "03_SOURCE_FILES/orbit/defenses/kinetic_turret.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-94c1dd77-5534-4d4a-bb14-029662161b85.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/defenses/kinetic_turret.png": {
+          "bytes": 787646,
+          "sha256": "89674b87a037ec172163912d7a8a47602374247b12f512f515d0d4a6525eeacb"
+        },
+        "02_ORBIT/defenses/kinetic_turret.webp": {
+          "bytes": 546324,
+          "sha256": "09145cb61e9a9964ca1f06efb1881a4c800a6ff342cc7177ea4409b87354b7fa"
+        }
+      }
+    },
+    {
+      "asset_id": "aegis_emitter",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Aegis-Emitter",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/defenses/aegis_emitter",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/defenses/aegis_emitter.png",
+        "02_ORBIT/defenses/aegis_emitter.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/defenses/aegis_emitter.png",
+        "03_SOURCE_FILES/orbit/defenses/aegis_emitter.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-34bcf255-503a-45ea-a9cb-b28cbe8502ed.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/defenses/aegis_emitter.png": {
+          "bytes": 459626,
+          "sha256": "a4fe2b180a31be3045224a8a465a192671cea9a63b5b63ccd8c40f63c9e6f885"
+        },
+        "02_ORBIT/defenses/aegis_emitter.webp": {
+          "bytes": 323336,
+          "sha256": "1124c2af53191cc6cf7154ec8afca2524c0a8ec0c16528fcf8d3a6da78bb9195"
+        }
+      }
+    },
+    {
+      "asset_id": "proximity_mines",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Annäherungsminenfeld",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/defenses/proximity_mines",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/defenses/proximity_mines.png",
+        "02_ORBIT/defenses/proximity_mines.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/defenses/proximity_mines.png",
+        "03_SOURCE_FILES/orbit/defenses/proximity_mines.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-380f2ea2-fa36-4b14-af50-c29a6b555aa7.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/defenses/proximity_mines.png": {
+          "bytes": 361713,
+          "sha256": "a686393ecdc0b2d2cc08cbbf8fcb985f438983e262fbb024f33a5c5d450e30f7"
+        },
+        "02_ORBIT/defenses/proximity_mines.webp": {
+          "bytes": 249640,
+          "sha256": "207995e7876274463cfe6c1b79d54ca331b4802a6b42d56d64c94c61e6c6546b"
+        }
+      }
+    },
+    {
+      "asset_id": "battle_bunker",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Gefechtsbunker",
+      "width": 768,
+      "height": 768,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/defenses/battle_bunker",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/defenses/battle_bunker.png",
+        "02_ORBIT/defenses/battle_bunker.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/defenses/battle_bunker.png",
+        "03_SOURCE_FILES/orbit/defenses/battle_bunker.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-3693e7a4-db9b-456c-893f-292a03c6ac19.png",
+        "master_size": [
+          1448,
+          1086
+        ],
+        "export_size": [
+          768,
+          768
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/defenses/battle_bunker.png": {
+          "bytes": 456687,
+          "sha256": "36ef7f7a38c17c9c282d3a2c41cfd6f7ce9c01790f53b8f7c97501d891bd350c"
+        },
+        "02_ORBIT/defenses/battle_bunker.webp": {
+          "bytes": 311060,
+          "sha256": "8b5392f8a42e5ca36c957c4a9e051dd32c94a371312b8960e9d26f4f01ff89f1"
+        }
+      }
+    },
+    {
+      "asset_id": "terra_colonization",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Kolonisierung",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/terra_colonization",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/terra_colonization.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/terra_colonization.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/terra_colonization.svg": {
+          "bytes": 687,
+          "sha256": "a6cce55a46855f1db17f45a245580d9d6d34ed81691ce04cbadf63db8fee5356"
+        }
+      }
+    },
+    {
+      "asset_id": "terra_logistics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Logistik",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/terra_logistics",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/terra_logistics.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/terra_logistics.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/terra_logistics.svg": {
+          "bytes": 662,
+          "sha256": "a511bf8d7ede0c7a7722ac9d538112ecf39e8e3e1777b192f4066ea8fd839115"
+        }
+      }
+    },
+    {
+      "asset_id": "terrain_survival",
+      "package": "orbit",
+      "category": "research",
+      "name": "Geländeüberleben",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/terrain_survival",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/terrain_survival.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/terrain_survival.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/terrain_survival.svg": {
+          "bytes": 649,
+          "sha256": "6a07d65a0324976b3f25246a948df66a5c203cb7b99b3d6c6a59d88e858be0bd"
+        }
+      }
+    },
+    {
+      "asset_id": "reconnaissance",
+      "package": "orbit",
+      "category": "research",
+      "name": "Aufklärung",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/reconnaissance",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/reconnaissance.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/reconnaissance.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/reconnaissance.svg": {
+          "bytes": 678,
+          "sha256": "7a888e37041a37bf5692148061672be2d56384e4ecb2b8453b14a2e7763b5aea"
+        }
+      }
+    },
+    {
+      "asset_id": "counterintelligence",
+      "package": "orbit",
+      "category": "research",
+      "name": "Gegenspionage",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/counterintelligence",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/counterintelligence.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/counterintelligence.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/counterintelligence.svg": {
+          "bytes": 660,
+          "sha256": "c4b2d233aa7924e843c5aa8b02b130930d94a77ced01d9b9e1d3573326a9c8ca"
+        }
+      }
+    },
+    {
+      "asset_id": "ballistics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Ballistik",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/ballistics",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/ballistics.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/ballistics.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/ballistics.svg": {
+          "bytes": 636,
+          "sha256": "c0f7c86c174e4bfeedcd750195b19d5100e2ce512db7d632ad5512d3fd8b05d1"
+        }
+      }
+    },
+    {
+      "asset_id": "shields",
+      "package": "orbit",
+      "category": "research",
+      "name": "Schilde",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/shields",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/shields.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/shields.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/shields.svg": {
+          "bytes": 647,
+          "sha256": "c0c7af944985f495bdbcb1d3c89d27426de916944604300da148264e72518c11"
+        }
+      }
+    },
+    {
+      "asset_id": "armor_technology",
+      "package": "orbit",
+      "category": "research",
+      "name": "Panzerungstechnik",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/armor_technology",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/armor_technology.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/armor_technology.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/armor_technology.svg": {
+          "bytes": 649,
+          "sha256": "2c3def9853cfe57e105efcf6ed3d257d00355bef3d745f268e48393b344b6a1a"
+        }
+      }
+    },
+    {
+      "asset_id": "field_medicine",
+      "package": "orbit",
+      "category": "research",
+      "name": "Feldmedizin",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/field_medicine",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/field_medicine.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/field_medicine.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/field_medicine.svg": {
+          "bytes": 649,
+          "sha256": "8720db8f7f48c2183cf5d951a7ddc3c23b0118af4267943064edbefbd4bf618b"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_coordination",
+      "package": "orbit",
+      "category": "research",
+      "name": "Allianzkoordination",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/alliance_coordination",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/alliance_coordination.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/alliance_coordination.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/alliance_coordination.svg": {
+          "bytes": 671,
+          "sha256": "a26ef32e4ce1f155a5b18afac968f9f3c493a406d6a9a9830b1fe43c30d4d9ff"
+        }
+      }
+    },
+    {
+      "asset_id": "supply_chain",
+      "package": "orbit",
+      "category": "research",
+      "name": "Versorgungskette",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/supply_chain",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/supply_chain.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/supply_chain.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/supply_chain.svg": {
+          "bytes": 647,
+          "sha256": "5dcb997ada8660652e5781aa7bd5300fab6d52452956280e2e7cb547f96aee06"
+        }
+      }
+    },
+    {
+      "asset_id": "advanced_production",
+      "package": "orbit",
+      "category": "research",
+      "name": "Fortschrittliche Produktion",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/advanced_production",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/advanced_production.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/advanced_production.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/advanced_production.svg": {
+          "bytes": 648,
+          "sha256": "0785938fde04102bf264304919691ab1e109244416c8b8b5806b89514b9d9af4"
+        }
+      }
+    },
+    {
+      "asset_id": "field_energy",
+      "package": "orbit",
+      "category": "research",
+      "name": "Feldenergie",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/field_energy",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/field_energy.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/field_energy.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/field_energy.svg": {
+          "bytes": 623,
+          "sha256": "9e4f192064e4d3ac5b3c312f7f7b1eb16f72d32aa3b8f70002c5307e7e7ec053"
+        }
+      }
+    },
+    {
+      "asset_id": "cybernetics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Kybernetik",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/cybernetics",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/cybernetics.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/cybernetics.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/cybernetics.svg": {
+          "bytes": 674,
+          "sha256": "3aca6bd6b0136b2e9998a47a53900492f4f00ce2c9d57014b196f384941ce6fe"
+        }
+      }
+    },
+    {
+      "asset_id": "orbital_navigation",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalnavigation",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/orbital_navigation",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/orbital_navigation.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/orbital_navigation.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/orbital_navigation.svg": {
+          "bytes": 686,
+          "sha256": "4a2dbd1da210ccb20b9ea01af77bec807939533c1b5931f7a8fd0a7bc8e06cd5"
+        }
+      }
+    },
+    {
+      "asset_id": "orbital_shipbuilding",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalschiffbau",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/orbital_shipbuilding",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/orbital_shipbuilding.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/orbital_shipbuilding.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/orbital_shipbuilding.svg": {
+          "bytes": 668,
+          "sha256": "52b284c465ae695cf331283839f809b0140733c43784ddd0cf98736fb110a1d8"
+        }
+      }
+    },
+    {
+      "asset_id": "orbital_scanning",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalscanning",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/orbital_scanning",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/orbital_scanning.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/orbital_scanning.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/orbital_scanning.svg": {
+          "bytes": 648,
+          "sha256": "1f0502dbe240bd406b3a338ed3e454f2527da225e149ea483c3243566013ee1e"
+        }
+      }
+    },
+    {
+      "asset_id": "ether_refining",
+      "package": "orbit",
+      "category": "research",
+      "name": "Ätherraffination",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/ether_refining",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/ether_refining.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/ether_refining.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/ether_refining.svg": {
+          "bytes": 675,
+          "sha256": "186d4b8ab1b375ec01622818104f06064588beefaf0d892c4c17744b1338b524"
+        }
+      }
+    },
+    {
+      "asset_id": "advanced_propulsion",
+      "package": "orbit",
+      "category": "research",
+      "name": "Fortschrittlicher Antrieb",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/advanced_propulsion",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/advanced_propulsion.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/advanced_propulsion.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/advanced_propulsion.svg": {
+          "bytes": 660,
+          "sha256": "254a380a478cbd7bcc9f6ce9c7b18dc506b5cbc58749d093caff3dadb19b0495"
+        }
+      }
+    },
+    {
+      "asset_id": "jump_gate_network",
+      "package": "orbit",
+      "category": "research",
+      "name": "Sprungtornetz",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/jump_gate_network",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/jump_gate_network.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/jump_gate_network.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/jump_gate_network.svg": {
+          "bytes": 681,
+          "sha256": "bfbf38f5ad22d937a2c46bfd194036265c919eb6ba2bb523bfc35014f6f3a1da"
+        }
+      }
+    },
+    {
+      "asset_id": "terra_prestige",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Prestige",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/research/terra_prestige",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/research/terra_prestige.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/research/terra_prestige.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/research/terra_prestige.svg": {
+          "bytes": 668,
+          "sha256": "cc186b40ee0e356df690f6141ccde78ba835b016ed59469c528731dfeff75a99"
+        }
+      }
+    },
+    {
+      "asset_id": "probe",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Aufklärungssonde",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/probe",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/probe.png",
+        "02_ORBIT/ships/probe.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/probe.png",
+        "03_SOURCE_FILES/orbit/ships/probe.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-452d7be2-df97-4e81-b0bf-6973bd7a0a82.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/probe.png": {
+          "bytes": 825607,
+          "sha256": "7fbb9db814504a737af039c2b0c2906d0d5a7859c25c506c6afb4be986430353"
+        },
+        "02_ORBIT/ships/probe.webp": {
+          "bytes": 590472,
+          "sha256": "d785b1d402c7bd00397c3dc7f35d1b6f6e20f06ca8ecf56e391d6edc4d6ef2eb"
+        }
+      }
+    },
+    {
+      "asset_id": "courier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kuriertransporter",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/courier",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/courier.png",
+        "02_ORBIT/ships/courier.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/courier.png",
+        "03_SOURCE_FILES/orbit/ships/courier.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-96806750-25df-4572-b655-ef79d471109e.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/courier.png": {
+          "bytes": 424143,
+          "sha256": "eaad8b93452a6a78b22ea999c07fd3d429184b40f37bd773cd32fc932c34b2b2"
+        },
+        "02_ORBIT/ships/courier.webp": {
+          "bytes": 293330,
+          "sha256": "b34481daf3a5d51d7d84c5457a9be7a84be548556ac68862307c11d94ca8e4e8"
+        }
+      }
+    },
+    {
+      "asset_id": "light_fighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Leichter Jäger",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/light_fighter",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/light_fighter.png",
+        "02_ORBIT/ships/light_fighter.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/light_fighter.png",
+        "03_SOURCE_FILES/orbit/ships/light_fighter.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7eb5b3ed-d23f-4400-a10d-77feb8ece37e.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/light_fighter.png": {
+          "bytes": 723395,
+          "sha256": "4ba09205c6f1884b0426ad38148a11f396c1d30b4bde1daefd111bdd5ee9b650"
+        },
+        "02_ORBIT/ships/light_fighter.webp": {
+          "bytes": 501674,
+          "sha256": "5b3a9f846c38a797146e9c98ad7290eec1bbd2b2b8b4bae0eafa1843d03d4972"
+        }
+      }
+    },
+    {
+      "asset_id": "heavy_fighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schwerer Jäger",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/heavy_fighter",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/heavy_fighter.png",
+        "02_ORBIT/ships/heavy_fighter.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/heavy_fighter.png",
+        "03_SOURCE_FILES/orbit/ships/heavy_fighter.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-2580b2a1-76ff-48c5-907d-fffd2e7f542c.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/heavy_fighter.png": {
+          "bytes": 805076,
+          "sha256": "d526604db0469eb76836369131d661f17c11106a95a654d713ecf2c4a87c5e83"
+        },
+        "02_ORBIT/ships/heavy_fighter.webp": {
+          "bytes": 564852,
+          "sha256": "b1d6d55cef55e2ac39baac1ef9549cdf3395ea2ea4b3882edde8476a31e7608b"
+        }
+      }
+    },
+    {
+      "asset_id": "frigate",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Fregatte",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/frigate",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/frigate.png",
+        "02_ORBIT/ships/frigate.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/frigate.png",
+        "03_SOURCE_FILES/orbit/ships/frigate.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-1f74484d-4498-4a1c-87ea-94bf78f08d74.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/frigate.png": {
+          "bytes": 470319,
+          "sha256": "913f3b449292c923d0075d68aebbbb570ea85ed39760f63c2a523eb9ad48a8df"
+        },
+        "02_ORBIT/ships/frigate.webp": {
+          "bytes": 323746,
+          "sha256": "715cc227de5adaa80d71a25a03ad48da8625afd8e4231288c5cfba2b8c812c5a"
+        }
+      }
+    },
+    {
+      "asset_id": "cruiser",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kreuzer",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/cruiser",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/cruiser.png",
+        "02_ORBIT/ships/cruiser.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/cruiser.png",
+        "03_SOURCE_FILES/orbit/ships/cruiser.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-54d01af3-b811-42db-a8aa-b45b30d36014.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/cruiser.png": {
+          "bytes": 616665,
+          "sha256": "416abd0074e9d7d8fa6b0c37601e04d4b99d8c6fdb96ffc7426c580b2a529709"
+        },
+        "02_ORBIT/ships/cruiser.webp": {
+          "bytes": 438778,
+          "sha256": "039a1bfe2df27d8d52846e2f5086bdc853561ce085be26a704afd437e3af1df8"
+        }
+      }
+    },
+    {
+      "asset_id": "battleship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schlachtschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/battleship",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/battleship.png",
+        "02_ORBIT/ships/battleship.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/battleship.png",
+        "03_SOURCE_FILES/orbit/ships/battleship.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-3003e5ff-bc76-49c0-a8a5-7c4ab97a07e3.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/battleship.png": {
+          "bytes": 717019,
+          "sha256": "73a729647519d39bda3503e9db7ba800da6cc4273ec82a2b5ae1eb111141643f"
+        },
+        "02_ORBIT/ships/battleship.webp": {
+          "bytes": 514100,
+          "sha256": "421c9dd7b5e5755e56d758fde81c09437b2f97cff845b7896b450c377e63d8a6"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_carrier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schildträgerschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/shield_carrier",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/shield_carrier.png",
+        "02_ORBIT/ships/shield_carrier.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/shield_carrier.png",
+        "03_SOURCE_FILES/orbit/ships/shield_carrier.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ac56c9b5-9d62-4805-b582-ee4b8f5ba273.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/shield_carrier.png": {
+          "bytes": 718904,
+          "sha256": "66724dd81f106294eb1f6f43662e0733acf0f5d27f7be3aaaf7315c08e0079a7"
+        },
+        "02_ORBIT/ships/shield_carrier.webp": {
+          "bytes": 515832,
+          "sha256": "1cf87165886422097b6a3e5ae8f7b54b70e38e4b93e360e260001f2c5089cf43"
+        }
+      }
+    },
+    {
+      "asset_id": "carrier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Trägerschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/carrier",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/carrier.png",
+        "02_ORBIT/ships/carrier.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/carrier.png",
+        "03_SOURCE_FILES/orbit/ships/carrier.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-01692721-306f-444d-9dd1-413b5751cb2c.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/carrier.png": {
+          "bytes": 598403,
+          "sha256": "ec15f9bdd81c718dd5b811cf74a1c0207562e7127a2f84fab30cbcd23def2235"
+        },
+        "02_ORBIT/ships/carrier.webp": {
+          "bytes": 427252,
+          "sha256": "ab1b7351ecd6bf24b18139d3b442f3f4fda2b517fbe73eb2179d835c48f52696"
+        }
+      }
+    },
+    {
+      "asset_id": "colony_ship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kolonieschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/colony_ship",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/colony_ship.png",
+        "02_ORBIT/ships/colony_ship.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/colony_ship.png",
+        "03_SOURCE_FILES/orbit/ships/colony_ship.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-0e379483-83fe-48d2-904b-de8a14a42336.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/colony_ship.png": {
+          "bytes": 609412,
+          "sha256": "fcfe4632a31b075fc3074bd1705a152659d0680542a2f434c8a54600c049f286"
+        },
+        "02_ORBIT/ships/colony_ship.webp": {
+          "bytes": 438552,
+          "sha256": "8b2f1165f82789d219ca0c25666fd110d36570ade56afc67234c4f6873606867"
+        }
+      }
+    },
+    {
+      "asset_id": "freighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Frachter",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/freighter",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/freighter.png",
+        "02_ORBIT/ships/freighter.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/freighter.png",
+        "03_SOURCE_FILES/orbit/ships/freighter.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-33c58c6f-cc9f-478f-aa57-50d57cbc92ff.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/freighter.png": {
+          "bytes": 738484,
+          "sha256": "63c6cce05342654b633a8894d70091a5a7d48bf90b13d0eb51f479e4b009c385"
+        },
+        "02_ORBIT/ships/freighter.webp": {
+          "bytes": 529282,
+          "sha256": "a908dbc9191c538036d4b3331aea1b81db72c0719cf2a894c1766a701b88dd6c"
+        }
+      }
+    },
+    {
+      "asset_id": "salvager",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Bergungsschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/salvager",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/salvager.png",
+        "02_ORBIT/ships/salvager.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/salvager.png",
+        "03_SOURCE_FILES/orbit/ships/salvager.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-48ce05b2-0111-4d1d-9891-eff334faa764.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/salvager.png": {
+          "bytes": 668797,
+          "sha256": "1ee70cbb3fff429c75ac9f4702bd841d012826718fa25bd44c653cfb655f2050"
+        },
+        "02_ORBIT/ships/salvager.webp": {
+          "bytes": 480552,
+          "sha256": "7cea1725b3db395de7d46ad31204559bb050b631d59f80d7b60c708d2bec7563"
+        }
+      }
+    },
+    {
+      "asset_id": "siege_ship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Belagerungsschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/siege_ship",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/siege_ship.png",
+        "02_ORBIT/ships/siege_ship.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/siege_ship.png",
+        "03_SOURCE_FILES/orbit/ships/siege_ship.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-d2a0e818-f592-4237-9b87-f2dd977f9506.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/siege_ship.png": {
+          "bytes": 625807,
+          "sha256": "ff2251b1c5c318a821457abbd4f366b3e60bb6171516595b0e7adbe080386252"
+        },
+        "02_ORBIT/ships/siege_ship.webp": {
+          "bytes": 441600,
+          "sha256": "b50ec36cf90db38d051a55641ea315e8d4d973bc6cdefc6a564812453a658de1"
+        }
+      }
+    },
+    {
+      "asset_id": "flagship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Flaggschiff",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/ships/flagship",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/ships/flagship.png",
+        "02_ORBIT/ships/flagship.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/ships/flagship.png",
+        "03_SOURCE_FILES/orbit/ships/flagship.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-e4e6c66c-4ef8-45ca-be3f-62d638edf398.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          3,
+          0,
+          1
+        ],
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/ships/flagship.png": {
+          "bytes": 700003,
+          "sha256": "4f5dbddae6e79b0124366fd30ab4184f2c5512109f9f8548ee6ffd3e2cc79958"
+        },
+        "02_ORBIT/ships/flagship.webp": {
+          "bytes": 502644,
+          "sha256": "5313a340eac1b597375981f160220d6f7986216fd6f1a1fa6a83dadf3417eab9"
+        }
+      }
+    },
+    {
+      "asset_id": "orbit_title",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Orbit Titelbild",
+      "width": 2560,
+      "height": 1440,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/backgrounds/orbit_title",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/backgrounds/orbit_title.png",
+        "02_ORBIT/backgrounds/orbit_title.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/backgrounds/orbit_title.png",
+        "03_SOURCE_FILES/orbit/backgrounds/orbit_title.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-b04b203d-44e8-445b-99c1-6cd3987cdbaf.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          2560,
+          1440
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": true
+      },
+      "file_info": {
+        "02_ORBIT/backgrounds/orbit_title.png": {
+          "bytes": 4387401,
+          "sha256": "4fb939412ce460b68037503fb3b39e754cb0851343c6109c8af37ecdbfcfc0ca"
+        },
+        "02_ORBIT/backgrounds/orbit_title.webp": {
+          "bytes": 529016,
+          "sha256": "5884be15b4a19cf95a46c933318d3c035345875bb3042a989f3b600fc1a4c3c2"
+        }
+      }
+    },
+    {
+      "asset_id": "orbit_title_mobile",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Mobiles Orbit Titelbild",
+      "width": 960,
+      "height": 1280,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/backgrounds/orbit_title_mobile",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/backgrounds/orbit_title_mobile.png",
+        "02_ORBIT/backgrounds/orbit_title_mobile.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/backgrounds/orbit_title_mobile.png",
+        "03_SOURCE_FILES/orbit/backgrounds/orbit_title_mobile.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-c2bc40af-04af-427e-8cf5-82212f061ba1.png",
+        "master_size": [
+          1086,
+          1448
+        ],
+        "export_size": [
+          960,
+          1280
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/backgrounds/orbit_title_mobile.png": {
+          "bytes": 1895882,
+          "sha256": "c483f0e9e7e9bd12b62a70c1ccef9f5942d6d6546e183cc4648b8b5ff61d742a"
+        },
+        "02_ORBIT/backgrounds/orbit_title_mobile.webp": {
+          "bytes": 270552,
+          "sha256": "673b17d8db2d3822534d796e0cd2d81a1a612d6ad02c551760ef61e6900eb343"
+        }
+      }
+    },
+    {
+      "asset_id": "space_stars",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Sternfeld",
+      "width": 3840,
+      "height": 2160,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/backgrounds/space_stars",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/backgrounds/space_stars.png",
+        "02_ORBIT/backgrounds/space_stars.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/backgrounds/space_stars.ora",
+        "03_SOURCE_FILES/orbit/backgrounds/space_stars.png",
+        "03_SOURCE_FILES/orbit/backgrounds/space_stars.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ef0f55cf-f9a8-4852-9cea-cb7dd229e062.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          3840,
+          2160
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": true
+      },
+      "file_info": {
+        "02_ORBIT/backgrounds/space_stars.png": {
+          "bytes": 5144095,
+          "sha256": "dc22fd5ff0fee908f31b0438b418b9090c46fa2eccb9575251f0975d84d474a3"
+        },
+        "02_ORBIT/backgrounds/space_stars.webp": {
+          "bytes": 339208,
+          "sha256": "2565bb1b4ed3c7e17ceba959477e32cf8e68410f103f07f072ec60aa0d49ba75"
+        }
+      }
+    },
+    {
+      "asset_id": "space_nebula",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Nebelregion",
+      "width": 3840,
+      "height": 2160,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/backgrounds/space_nebula",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/backgrounds/space_nebula.png",
+        "02_ORBIT/backgrounds/space_nebula.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/backgrounds/space_nebula.ora",
+        "03_SOURCE_FILES/orbit/backgrounds/space_nebula.png",
+        "03_SOURCE_FILES/orbit/backgrounds/space_nebula.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-84e0190a-d0b6-429d-b0bd-0afff364b53a.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          3840,
+          2160
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": true
+      },
+      "file_info": {
+        "02_ORBIT/backgrounds/space_nebula.png": {
+          "bytes": 8654933,
+          "sha256": "8b61147093ccd25d5bbc542c029006865783ec6696227cdd21bbc8921fb223af"
+        },
+        "02_ORBIT/backgrounds/space_nebula.webp": {
+          "bytes": 835340,
+          "sha256": "5ea03e8c2d4ace4279f342ca5f5edbcccd6b34b5d6a108bb07fd18ea33720ee1"
+        }
+      }
+    },
+    {
+      "asset_id": "space_frontier",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Dunkler Grenzraum",
+      "width": 3840,
+      "height": 2160,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/backgrounds/space_frontier",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/backgrounds/space_frontier.png",
+        "02_ORBIT/backgrounds/space_frontier.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/backgrounds/space_frontier.ora",
+        "03_SOURCE_FILES/orbit/backgrounds/space_frontier.png",
+        "03_SOURCE_FILES/orbit/backgrounds/space_frontier.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-616cf86f-3d36-4176-ac39-7b9fd1034fbb.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          3840,
+          2160
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": true
+      },
+      "file_info": {
+        "02_ORBIT/backgrounds/space_frontier.png": {
+          "bytes": 3552162,
+          "sha256": "2c5944cee6fca7789057f998668eed0582b3c66d3646f307f0e9f9bc6227e922"
+        },
+        "02_ORBIT/backgrounds/space_frontier.webp": {
+          "bytes": 199332,
+          "sha256": "c6a6571112722bc9014217d8c6499441321373d3b6ad8fb647c93388e6718421"
+        }
+      }
+    },
+    {
+      "asset_id": "planet_rock",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Gesteinsplanet",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/planets/planet_rock",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/planets/planet_rock.png",
+        "02_ORBIT/planets/planet_rock.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/planets/planet_rock.png",
+        "03_SOURCE_FILES/orbit/planets/planet_rock.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ef527598-330f-4cda-b9ab-b44a5cc64db8.png",
+        "master_size": [
+          1254,
+          1254
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/planets/planet_rock.png": {
+          "bytes": 1478930,
+          "sha256": "f4b46e1bebdc8780c0776704d76105aba16d0f07da15a830dd23c3b634bdf1b4"
+        },
+        "02_ORBIT/planets/planet_rock.webp": {
+          "bytes": 1005772,
+          "sha256": "6d08b37e2893bebdbae4a7219cf95101fe5f3339e94cd7c4f81d3bc1fced6427"
+        }
+      }
+    },
+    {
+      "asset_id": "planet_ice",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Eisplanet",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/planets/planet_ice",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/planets/planet_ice.png",
+        "02_ORBIT/planets/planet_ice.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/planets/planet_ice.png",
+        "03_SOURCE_FILES/orbit/planets/planet_ice.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-c5937c7e-5ca9-4ae1-a556-876f06cab494.png",
+        "master_size": [
+          1254,
+          1254
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/planets/planet_ice.png": {
+          "bytes": 1457170,
+          "sha256": "55e2e3df9990095a01a379201e358e4c5403cf2f36bbbfd222cb294a27cebc5e"
+        },
+        "02_ORBIT/planets/planet_ice.webp": {
+          "bytes": 1003348,
+          "sha256": "55ab1c0b0e91c0c041d78e30077debb6f451eea5679b85796c5dba88438d9fec"
+        }
+      }
+    },
+    {
+      "asset_id": "planet_desert",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Wüstenplanet",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/planets/planet_desert",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/planets/planet_desert.png",
+        "02_ORBIT/planets/planet_desert.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/planets/planet_desert.png",
+        "03_SOURCE_FILES/orbit/planets/planet_desert.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-5b6a0cb0-339a-43af-92d4-2596829a3a07.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/planets/planet_desert.png": {
+          "bytes": 1387530,
+          "sha256": "e0865d654b18b04d99c818628cf9346d455279b0a769f0fffa64ee849ed4b92a"
+        },
+        "02_ORBIT/planets/planet_desert.webp": {
+          "bytes": 987040,
+          "sha256": "2a6b5ffecc173f284cf1020f31972ffd693cc3ac81c7d3861c49816fde7d889e"
+        }
+      }
+    },
+    {
+      "asset_id": "planet_ocean",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Ozeanplanet",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/planets/planet_ocean",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/planets/planet_ocean.png",
+        "02_ORBIT/planets/planet_ocean.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/planets/planet_ocean.png",
+        "03_SOURCE_FILES/orbit/planets/planet_ocean.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-6fbd9e00-38a1-4c99-a6c7-777939b928ac.png",
+        "master_size": [
+          1254,
+          1254
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/planets/planet_ocean.png": {
+          "bytes": 1373587,
+          "sha256": "df2be83dc782a50c304e149045eade9c1155c92d4007a1acaf0fecb76d528731"
+        },
+        "02_ORBIT/planets/planet_ocean.webp": {
+          "bytes": 968242,
+          "sha256": "bf78e63d3b926db84f7bb40b83e7f275a1ae7b260221eb5490aebbb36b5b4e58"
+        }
+      }
+    },
+    {
+      "asset_id": "moon",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Mond",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/moon",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/moon.png",
+        "02_ORBIT/orbital_objects/moon.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/moon.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/moon.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-483893a5-7859-404c-9ff0-24635ce025b2.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/moon.png": {
+          "bytes": 1380143,
+          "sha256": "9bddc0908e64cc1ff006e22938b2ce56e66de964d40c0790dac8d95228706895"
+        },
+        "02_ORBIT/orbital_objects/moon.webp": {
+          "bytes": 918134,
+          "sha256": "76a13752b369e399b87c04e097bf65539cf15366180b1e28e088d62a495c105e"
+        }
+      }
+    },
+    {
+      "asset_id": "asteroid_field",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Asteroidenfeld",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/asteroid_field",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/asteroid_field.png",
+        "02_ORBIT/orbital_objects/asteroid_field.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/asteroid_field.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/asteroid_field.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-046dcce3-31d8-465e-af2f-6376c829e0f6.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "review_note": "Freistellung zusätzlich auf dunklem und hellem Grund geprüft.",
+      "file_info": {
+        "02_ORBIT/orbital_objects/asteroid_field.png": {
+          "bytes": 712994,
+          "sha256": "a6b1b16e888a04d37f653feb423971c558c73c0f55d35080303ceb74da16b64b"
+        },
+        "02_ORBIT/orbital_objects/asteroid_field.webp": {
+          "bytes": 501896,
+          "sha256": "9951fb23a6034780e92cb829b85480b5613d99702b00804eff7ca7584ee87056"
+        }
+      }
+    },
+    {
+      "asset_id": "debris_field",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Trümmerfeld",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/debris_field",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/debris_field.png",
+        "02_ORBIT/orbital_objects/debris_field.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/debris_field.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/debris_field.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-65d69481-7b9e-452c-b233-10a3441c3082.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/debris_field.png": {
+          "bytes": 466382,
+          "sha256": "440b8a9896a98a22b1db5629791fe2001b2fcae215029e7dbcfe0806428513b4"
+        },
+        "02_ORBIT/orbital_objects/debris_field.webp": {
+          "bytes": 343418,
+          "sha256": "6a3c513dee8d53506d54f3557e2b6ac98ed7594535396e70b45bb7e359d2632f"
+        }
+      }
+    },
+    {
+      "asset_id": "space_station",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Raumstation",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/space_station",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/space_station.png",
+        "02_ORBIT/orbital_objects/space_station.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/space_station.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/space_station.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-086dbe15-1649-43e9-a497-4c04f6a2ca49.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          7,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/space_station.png": {
+          "bytes": 748077,
+          "sha256": "b5a7cb2e7778e56e4bd7a54c17f47fbf7908f50b75474750b216a6519c89044f"
+        },
+        "02_ORBIT/orbital_objects/space_station.webp": {
+          "bytes": 552648,
+          "sha256": "14eeb5b7feeaf452ce138c80949adcf566aec34222dfc3974eea7f7f58ac360d"
+        }
+      }
+    },
+    {
+      "asset_id": "defense_platform",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Verteidigungsplattform",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/defense_platform",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/defense_platform.png",
+        "02_ORBIT/orbital_objects/defense_platform.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/defense_platform.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/defense_platform.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7ce2d258-b15c-4665-b8b9-cce02338b13b.png",
+        "master_size": [
+          1536,
+          1024
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/defense_platform.png": {
+          "bytes": 1068949,
+          "sha256": "7e0a8dcba65ccfdd5a45f82196bd763b1d570ea5af314dab52bc21c0b5b5b1b0"
+        },
+        "02_ORBIT/orbital_objects/defense_platform.webp": {
+          "bytes": 770944,
+          "sha256": "b1a0e07fba08f7669e7c8c3d38a35448c8ce63081fb68a03ece7b3521c78b2a1"
+        }
+      }
+    },
+    {
+      "asset_id": "jump_gate",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Sprungtor",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/jump_gate",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/jump_gate.png",
+        "02_ORBIT/orbital_objects/jump_gate.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/jump_gate.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/jump_gate.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7acce428-0f0a-4f8d-b50a-e4a283c3c138.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/jump_gate.png": {
+          "bytes": 1013897,
+          "sha256": "f7a37ffe5a1cb133f4557e8ec32fffb1bc8d32506284cfecf0464724f4091e0f"
+        },
+        "02_ORBIT/orbital_objects/jump_gate.webp": {
+          "bytes": 741258,
+          "sha256": "e40f9bb4fda883fd9397d3be057b915774ddb8522b0cec24a53f405a95d1abd3"
+        }
+      }
+    },
+    {
+      "asset_id": "sensor_relay",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Sensorrelais",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/sensor_relay",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/sensor_relay.png",
+        "02_ORBIT/orbital_objects/sensor_relay.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/sensor_relay.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/sensor_relay.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-1a420289-2f04-4a58-b536-63b747518ae6.png",
+        "master_size": [
+          1312,
+          1199
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/sensor_relay.png": {
+          "bytes": 691187,
+          "sha256": "7f25bc2f1b531424c64b972bf90add97d109a7a82e719abcb821143168add260"
+        },
+        "02_ORBIT/orbital_objects/sensor_relay.webp": {
+          "bytes": 505192,
+          "sha256": "8cd2abe6f087883315618edfdb80a3b59e5fb998d6e7079f4042b77493096aad"
+        }
+      }
+    },
+    {
+      "asset_id": "orbital_shipyard",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Orbitwerft",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/orbital_objects/orbital_shipyard",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/orbital_objects/orbital_shipyard.png",
+        "02_ORBIT/orbital_objects/orbital_shipyard.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/orbital_objects/orbital_shipyard.png",
+        "03_SOURCE_FILES/orbit/orbital_objects/orbital_shipyard.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-e8e65960-a8f6-4477-b336-4ee383f28728.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/orbital_objects/orbital_shipyard.png": {
+          "bytes": 635823,
+          "sha256": "c688bdcca4e05a401b51bb3e251281038c1daeedfa2a80d27018fb605a036a60"
+        },
+        "02_ORBIT/orbital_objects/orbital_shipyard.webp": {
+          "bytes": 475398,
+          "sha256": "d4aa5d3549bbca2fcb6ea5515cb506685db4c1625a2513da4eb0e3782ccbc55d"
+        }
+      }
+    },
+    {
+      "asset_id": "ash_covenant",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Aschebund",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/factions/ash_covenant",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/factions/ash_covenant.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/factions/ash_covenant.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/factions/ash_covenant.svg": {
+          "bytes": 875,
+          "sha256": "48764209f60e9fe9cd1279e2430e732ef70550ed34abc99a9c644e5380041a98"
+        }
+      }
+    },
+    {
+      "asset_id": "iron_pact",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Eisenpakt",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/factions/iron_pact",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/factions/iron_pact.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/factions/iron_pact.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/factions/iron_pact.svg": {
+          "bytes": 832,
+          "sha256": "93a24e2efab6e05db7329c0b666beb4d4454485b8f133536a694d4c50366f920"
+        }
+      }
+    },
+    {
+      "asset_id": "thorn_conclave",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Dornenkonklave",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/factions/thorn_conclave",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/factions/thorn_conclave.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/factions/thorn_conclave.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/factions/thorn_conclave.svg": {
+          "bytes": 831,
+          "sha256": "2c915449db76739ed14ecc16a9e4498363ad313a66e8ef861bd7c54bfa88eba6"
+        }
+      }
+    },
+    {
+      "asset_id": "dawn_alliance",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Morgenbund",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/factions/dawn_alliance",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/factions/dawn_alliance.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/factions/dawn_alliance.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/factions/dawn_alliance.svg": {
+          "bytes": 845,
+          "sha256": "832d99e5d7920823ca326f541f58b51f74102f6f49ca90245ad716fda272cb87"
+        }
+      }
+    },
+    {
+      "asset_id": "tide_alliance",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Gezeitenbund",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/factions/tide_alliance",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/factions/tide_alliance.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/factions/tide_alliance.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/factions/tide_alliance.svg": {
+          "bytes": 864,
+          "sha256": "9a454563df4e028dc79fee5690c0ea023f7cfa234fe21dd0c2fac86776142632"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_default",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Kommandantenporträt",
+      "width": 768,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/commander/commander_default",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/commander/commander_default.png",
+        "02_ORBIT/commander/commander_default.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/commander/commander_default.png",
+        "03_SOURCE_FILES/orbit/commander/commander_default.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-574341fa-c2b6-40a3-aeb4-5ea49d631ace.png",
+        "master_size": [
+          1086,
+          1448
+        ],
+        "export_size": [
+          768,
+          1024
+        ],
+        "alpha_source_edge": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/commander/commander_default.png": {
+          "bytes": 778717,
+          "sha256": "a39f82bdbbae096ad44c02996f7d35ec2fe603f9bbff047cd5719ca4ffbe7309"
+        },
+        "02_ORBIT/commander/commander_default.webp": {
+          "bytes": 544488,
+          "sha256": "6218aae457f8ca5a45d61b0d1d4b648227b2114029246ad6d8f4dec50d2aab2d"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_economy",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Wirtschaft",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/commander/commander_economy",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/commander/commander_economy.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/commander/commander_economy.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/commander/commander_economy.svg": {
+          "bytes": 660,
+          "sha256": "1d2464496c33eb0cb47419e8f79c5004b4c4f0d3e60046ffce5cbbf2bb914aac"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_military",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Militär",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/commander/commander_military",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/commander/commander_military.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/commander/commander_military.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/commander/commander_military.svg": {
+          "bytes": 644,
+          "sha256": "3029ebb9d9fb9ceaaea885ec6cd5042e892f85a1242350fd7ef900ef8a45682c"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_recon",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Aufklärung",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/commander/commander_recon",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/commander/commander_recon.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/commander/commander_recon.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/commander/commander_recon.svg": {
+          "bytes": 678,
+          "sha256": "e5c4d28f9765beced5d347cc177625a15a00f75045289742c49d571a761cbb1a"
+        }
+      }
+    },
+    {
+      "asset_id": "commander_command",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Kommando",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/commander/commander_command",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/commander/commander_command.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/commander/commander_command.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/commander/commander_command.svg": {
+          "bytes": 652,
+          "sha256": "39359f8a0745b21bbe36e4e12cee0c2f3146f7958e93c043ae232bb036efd02a"
+        }
+      }
+    },
+    {
+      "asset_id": "frontier_veteran",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Grenzveteran",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/prestige/frontier_veteran",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/prestige/frontier_veteran.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/prestige/frontier_veteran.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/prestige/frontier_veteran.svg": {
+          "bytes": 1047,
+          "sha256": "55203de10d0b5ccf2c7cc02955ded19df7c103c9ea6a42a68cd37530495a71ff"
+        }
+      }
+    },
+    {
+      "asset_id": "star_guardian",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Sternenwächter",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/prestige/star_guardian",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/prestige/star_guardian.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/prestige/star_guardian.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/prestige/star_guardian.svg": {
+          "bytes": 1035,
+          "sha256": "4aeb85fa5789f78eaaacf82462795f448303d486b18f31f9ed17d48eb9ef1fe3"
+        }
+      }
+    },
+    {
+      "asset_id": "empire_legend",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Imperiumslegende",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/prestige/empire_legend",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/prestige/empire_legend.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/prestige/empire_legend.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/prestige/empire_legend.svg": {
+          "bytes": 1195,
+          "sha256": "07561af82b7e30631b716bdd2f25e8d57869819e3ba083e97b7744038fbe60fe"
+        }
+      }
+    },
+    {
+      "asset_id": "ashen_watch",
+      "package": "orbit",
+      "category": "skins",
+      "name": "Aschenwacht",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/skins/ashen_watch",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/skins/ashen_watch.png",
+        "02_ORBIT/skins/ashen_watch.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/skins/ashen_watch.png",
+        "03_SOURCE_FILES/orbit/skins/ashen_watch.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-ce2f1f97-a842-4372-ad17-157e55686407.png",
+        "master_size": [
+          1199,
+          1312
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/skins/ashen_watch.png": {
+          "bytes": 650426,
+          "sha256": "86f62f6c65751d31348cf632d73b877714015858eae58d5103ae7efbd778c3cc"
+        },
+        "02_ORBIT/skins/ashen_watch.webp": {
+          "bytes": 459506,
+          "sha256": "a56d64ed3be6978481d700df655200f546dd60bbb3eac6dab390440ec5ed4fff"
+        }
+      }
+    },
+    {
+      "asset_id": "citadel_watch",
+      "package": "orbit",
+      "category": "skins",
+      "name": "Zitadellenwacht",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/skins/citadel_watch",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/skins/citadel_watch.png",
+        "02_ORBIT/skins/citadel_watch.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/skins/citadel_watch.png",
+        "03_SOURCE_FILES/orbit/skins/citadel_watch.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-d7aab5b1-a5d8-42a8-8816-5c40dc949169.png",
+        "master_size": [
+          1145,
+          1374
+        ],
+        "export_size": [
+          1024,
+          1024
+        ],
+        "alpha_source_edge": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "review_note": "Freistellung zusätzlich auf dunklem und hellem Grund geprüft.",
+      "file_info": {
+        "02_ORBIT/skins/citadel_watch.png": {
+          "bytes": 796374,
+          "sha256": "7200173d58722c31fafd2790d37ac93d7b3ef4b59391718748a64f69448562fb"
+        },
+        "02_ORBIT/skins/citadel_watch.webp": {
+          "bytes": 574520,
+          "sha256": "d306d4a72289082692364838324431c127a4f58639e624eafd5addbf579cc14e"
+        }
+      }
+    },
+    {
+      "asset_id": "frontier_dawn",
+      "package": "orbit",
+      "category": "banners",
+      "name": "Morgenrot der Grenze",
+      "width": 1920,
+      "height": 640,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/banners/frontier_dawn",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/banners/frontier_dawn.png",
+        "02_ORBIT/banners/frontier_dawn.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/banners/frontier_dawn.png",
+        "03_SOURCE_FILES/orbit/banners/frontier_dawn.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-066e534e-8e2a-4d34-9a3a-e39c844352b4.png",
+        "master_size": [
+          2172,
+          724
+        ],
+        "export_size": [
+          1920,
+          640
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/banners/frontier_dawn.png": {
+          "bytes": 1945729,
+          "sha256": "3fac6260cabd9882c59b4203c2fdfab901600e415c821ac18ec44ebc369d07f1"
+        },
+        "02_ORBIT/banners/frontier_dawn.webp": {
+          "bytes": 294474,
+          "sha256": "b283959d1cb4724546e1bd683a93c5593b5f0dd970e212872bcbcbd31ab6e995"
+        }
+      }
+    },
+    {
+      "asset_id": "citadel_banner",
+      "package": "orbit",
+      "category": "banners",
+      "name": "Banner der Zitadelle",
+      "width": 1920,
+      "height": 640,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/banners/citadel_banner",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/banners/citadel_banner.png",
+        "02_ORBIT/banners/citadel_banner.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/banners/citadel_banner.png",
+        "03_SOURCE_FILES/orbit/banners/citadel_banner.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-0ccb07b7-e039-4e14-bd0b-86a088e00048.png",
+        "master_size": [
+          2172,
+          724
+        ],
+        "export_size": [
+          1920,
+          640
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/banners/citadel_banner.png": {
+          "bytes": 1782305,
+          "sha256": "f821ddc8bf9cc8f40a298b0b51ada26575047800f652a16a30e5038642eb755e"
+        },
+        "02_ORBIT/banners/citadel_banner.webp": {
+          "bytes": 231354,
+          "sha256": "979c30a26f92379dd49d778ee14fac3d1b7dff879987eb9d169179fc2821b3a0"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_shield",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein shield",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_shield",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_shield.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_shield.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_shield.svg": {
+          "bytes": 681,
+          "sha256": "4fa1b3468acc609899e1ac6e1fde04a225ac39da277f952ea20e0899fa157682"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_star",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein star",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_star",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_star.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_star.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_star.svg": {
+          "bytes": 563,
+          "sha256": "3829fd94dc4cb17698a4496dc4eb24a4397d4845aa11f1043ef33c76a07bf89a"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_wings",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein wings",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_wings",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_wings.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_wings.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_wings.svg": {
+          "bytes": 551,
+          "sha256": "121f022948bae9b51dbf5302321862dcf32a120a4f4fda7e0ec141d0aba2c6d0"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_gear",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein gear",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_gear",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_gear.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_gear.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_gear.svg": {
+          "bytes": 674,
+          "sha256": "9ae9c07707c8233414d616bd2c359ad5f2c4e84d3bc019a5d224ab5092200801"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_crest",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein crest",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_crest",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_crest.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_crest.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_crest.svg": {
+          "bytes": 574,
+          "sha256": "83790b2576cf2977fa329a93e12123b20287b6420aa911c774e2bf9b0b826a59"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_laurel",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein laurel",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_laurel",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_laurel.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_laurel.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_laurel.svg": {
+          "bytes": 583,
+          "sha256": "e22d7c5d17ab073b0610eee4f010fceb38445855b57b4d0a7f1b00c6a488c0f3"
+        }
+      }
+    },
+    {
+      "asset_id": "alliance_lightning",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein lightning",
+      "width": 512,
+      "height": 512,
+      "formats_required": [
+        "svg"
+      ],
+      "transparent": true,
+      "production_mode": "vector",
+      "key": "02_ORBIT/alliance_emblems/alliance_lightning",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/alliance_emblems/alliance_lightning.svg"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/alliance_emblems/alliance_lightning.svg"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/alliance_emblems/alliance_lightning.svg": {
+          "bytes": 540,
+          "sha256": "6dfc823e91b5ad1b750928d8ddb67a3898d624c937d9c80c4f723f447830bf5e"
+        }
+      }
+    },
+    {
+      "asset_id": "campaign_directive_01",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Rohstoffgebäude auf Stufe 2",
+      "width": 1200,
+      "height": 675,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/campaign/campaign_directive_01",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/campaign/campaign_directive_01.png",
+        "02_ORBIT/campaign/campaign_directive_01.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_01.png",
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_01.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-93eda971-5e9d-4acb-9370-3fc287474cf6.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1200,
+          675
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/campaign/campaign_directive_01.png": {
+          "bytes": 1677712,
+          "sha256": "d9a84a24903365dd6ae141bd509c4d228efe55466837d54adfd3bd4a350a2412"
+        },
+        "02_ORBIT/campaign/campaign_directive_01.webp": {
+          "bytes": 447754,
+          "sha256": "29cc5f50833468da32d8895b60feff880f82946970d72f489701a5d39f6870f1"
+        }
+      }
+    },
+    {
+      "asset_id": "campaign_directive_02",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Kaserne bauen",
+      "width": 1200,
+      "height": 675,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/campaign/campaign_directive_02",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/campaign/campaign_directive_02.png",
+        "02_ORBIT/campaign/campaign_directive_02.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_02.png",
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_02.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-7a817a81-b2b3-4732-a794-a342762f679a.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1200,
+          675
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/campaign/campaign_directive_02.png": {
+          "bytes": 1516047,
+          "sha256": "67841fafa11affefa69525efb2ddf179a49b9037fa28b180b58239b75f4b6037"
+        },
+        "02_ORBIT/campaign/campaign_directive_02.webp": {
+          "bytes": 287962,
+          "sha256": "9ccac8e24ba706a7f9e55b31957e0796e23d0d85bd469efe9a9984949a71c240"
+        }
+      }
+    },
+    {
+      "asset_id": "campaign_directive_03",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Erste Technologie erforschen",
+      "width": 1200,
+      "height": 675,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/campaign/campaign_directive_03",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/campaign/campaign_directive_03.png",
+        "02_ORBIT/campaign/campaign_directive_03.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_03.png",
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_03.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-f064c2f2-a818-45a9-a17e-039e2bdd8b0b.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1200,
+          675
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/campaign/campaign_directive_03.png": {
+          "bytes": 1555053,
+          "sha256": "b0195b11e888e693bd9148a2f3e038f6c7c30e76a86ca10ba93b52f4988906bb"
+        },
+        "02_ORBIT/campaign/campaign_directive_03.webp": {
+          "bytes": 293522,
+          "sha256": "a659063bb6fcef54b67b86a4565d19146a7fcb729e0145bcc26f6efc1563f9d6"
+        }
+      }
+    },
+    {
+      "asset_id": "campaign_directive_04",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Ersten Außenposten erobern",
+      "width": 1200,
+      "height": 675,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/campaign/campaign_directive_04",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/campaign/campaign_directive_04.png",
+        "02_ORBIT/campaign/campaign_directive_04.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_04.png",
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_04.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-13a15d6f-135d-4cd0-b974-353a48540e64.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1200,
+          675
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/campaign/campaign_directive_04.png": {
+          "bytes": 1535247,
+          "sha256": "225da8a64b301c063114c671e9053911da45279195c95d8498e1207d5f1e05f5"
+        },
+        "02_ORBIT/campaign/campaign_directive_04.webp": {
+          "bytes": 286498,
+          "sha256": "4ada749cf1efa059b354952444be90dcac3a7a5fe07c02e2d663f3716c93ebd8"
+        }
+      }
+    },
+    {
+      "asset_id": "campaign_directive_05",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Zitadelle erobern",
+      "width": 1200,
+      "height": 675,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": false,
+      "production_mode": "illustration",
+      "key": "02_ORBIT/campaign/campaign_directive_05",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/campaign/campaign_directive_05.png",
+        "02_ORBIT/campaign/campaign_directive_05.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_05.png",
+        "03_SOURCE_FILES/orbit/campaign/campaign_directive_05.prompt.txt"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "production": {
+        "job": "exec-27259322-615d-4093-afb2-ffd8b30567dc.png",
+        "master_size": [
+          1672,
+          941
+        ],
+        "export_size": [
+          1200,
+          675
+        ],
+        "alpha_source_edge": null,
+        "framing": "standard",
+        "resampled_up": false
+      },
+      "file_info": {
+        "02_ORBIT/campaign/campaign_directive_05.png": {
+          "bytes": 1626826,
+          "sha256": "99c20552ff1bb4de93c142b8345cee5e94a1d76c8848bb745d6c5f47aff7796f"
+        },
+        "02_ORBIT/campaign/campaign_directive_05.webp": {
+          "bytes": 333024,
+          "sha256": "c80ef77aa78eba26238da4d84d9f6d520ac40e6b2910278fa47c654274121666"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_hit",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Schildtreffer",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/shield_hit",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/shield_hit.png",
+        "02_ORBIT/effects/shield_hit.webp",
+        "02_ORBIT/effects/shield_hit.json"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/shield_hit.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/shield_hit.png": {
+          "bytes": 211037,
+          "sha256": "2568a90ddbbbe8ecfe6efd5d77996a23aced47985ade2877ad15af4b30362200"
+        },
+        "02_ORBIT/effects/shield_hit.webp": {
+          "bytes": 140892,
+          "sha256": "eafb75776c7b9d23df3deca1aeb91b81e86106a33581e602be2bed1fa0e234bf"
+        },
+        "02_ORBIT/effects/shield_hit.json": {
+          "bytes": 2608,
+          "sha256": "822cc45ebf1f9029f135984c59b4d679290eb3a4dc7c9c3a4ebb8ff836fd18cb"
+        }
+      }
+    },
+    {
+      "asset_id": "shield_hit_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Schildtreffer (statisch)",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/shield_hit_static",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/shield_hit_static.png",
+        "02_ORBIT/effects/shield_hit_static.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/shield_hit.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/shield_hit_static.png": {
+          "bytes": 13050,
+          "sha256": "5f107229513fe3f250ad1999621d4b9b89cacc16d0758f2e8dd37663bbb8d9f4"
+        },
+        "02_ORBIT/effects/shield_hit_static.webp": {
+          "bytes": 8138,
+          "sha256": "f5094e1b3ee9cf60fae307f3552383a0a10d3ffa2f9b72065061703d247f4ea8"
+        }
+      }
+    },
+    {
+      "asset_id": "projectile_hit",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Projektiltreffer",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/projectile_hit",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/projectile_hit.png",
+        "02_ORBIT/effects/projectile_hit.webp",
+        "02_ORBIT/effects/projectile_hit.json"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/projectile_hit.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/projectile_hit.png": {
+          "bytes": 163517,
+          "sha256": "410c939ab0b664e3c51e93ea732f00f2ff09455c24cb336f3f974a9924e9fa19"
+        },
+        "02_ORBIT/effects/projectile_hit.webp": {
+          "bytes": 100676,
+          "sha256": "ea255c166a43ad0447124a07f628d130a0f485540bfc5603569d2abd4a1f2e81"
+        },
+        "02_ORBIT/effects/projectile_hit.json": {
+          "bytes": 2612,
+          "sha256": "572f00b06298283cd53d3cccc23e895a41bb70fac0fde4756bbb7b55f7f90863"
+        }
+      }
+    },
+    {
+      "asset_id": "projectile_hit_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Projektiltreffer (statisch)",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/projectile_hit_static",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/projectile_hit_static.png",
+        "02_ORBIT/effects/projectile_hit_static.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/projectile_hit.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/projectile_hit_static.png": {
+          "bytes": 11193,
+          "sha256": "6baed417ac89cd4ab223c1d75b0c409cda30474a71a36800f5a28e1eaa8fc1a1"
+        },
+        "02_ORBIT/effects/projectile_hit_static.webp": {
+          "bytes": 6460,
+          "sha256": "81cb130892bff079860fc1b983f08c6e3d9c9156727724e78f75184305f375f8"
+        }
+      }
+    },
+    {
+      "asset_id": "explosion",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Explosion",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/explosion",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/explosion.png",
+        "02_ORBIT/effects/explosion.webp",
+        "02_ORBIT/effects/explosion.json"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/explosion.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "review_note": "Der Referenzframe 6 zeigt die heiße Entfaltung; der letzte Frame ist transparent.",
+      "file_info": {
+        "02_ORBIT/effects/explosion.png": {
+          "bytes": 374662,
+          "sha256": "35a4ce04e5b6eafe082381477a870070a5ce547f2a2793baf9c452677945250a"
+        },
+        "02_ORBIT/effects/explosion.webp": {
+          "bytes": 267682,
+          "sha256": "7433570757a49991ef14c211d8bbefcf85fce1d7a984615fc4169bc058ae9cbd"
+        },
+        "02_ORBIT/effects/explosion.json": {
+          "bytes": 2607,
+          "sha256": "61f698a8ee5e53ff18aadfa94e315ff1128c021ec8497fe69a590e28a9ef6d71"
+        }
+      }
+    },
+    {
+      "asset_id": "explosion_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Explosion (statisch)",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/explosion_static",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/explosion_static.png",
+        "02_ORBIT/effects/explosion_static.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/explosion.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/explosion_static.png": {
+          "bytes": 23037,
+          "sha256": "964de6bea2399e5f098762136db29fd1af65c9e5cd615287eceb4fd3f2eeb1c1"
+        },
+        "02_ORBIT/effects/explosion_static.webp": {
+          "bytes": 15002,
+          "sha256": "48efebecb484d76ed917cebb6f2a061176446923704fe64c0103a45c6994b55a"
+        }
+      }
+    },
+    {
+      "asset_id": "repair",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Reparatur",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/repair",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/repair.png",
+        "02_ORBIT/effects/repair.webp",
+        "02_ORBIT/effects/repair.json"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/repair.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/repair.png": {
+          "bytes": 153243,
+          "sha256": "94bfad0d4f2b77e6f3a6d83c908ac3ac7515d813997cec456aaa986d3da90bd2"
+        },
+        "02_ORBIT/effects/repair.webp": {
+          "bytes": 99924,
+          "sha256": "18b92e628dae8d4b078dfcf4ab5222828347776f0446fd5208a0da36aedf467d"
+        },
+        "02_ORBIT/effects/repair.json": {
+          "bytes": 2604,
+          "sha256": "55221c162cd879d7d693b87c52a0c478ff5a023db89a398f7d984406e7d7de27"
+        }
+      }
+    },
+    {
+      "asset_id": "repair_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Reparatur (statisch)",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/repair_static",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/repair_static.png",
+        "02_ORBIT/effects/repair_static.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/repair.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/repair_static.png": {
+          "bytes": 13089,
+          "sha256": "92e3e5e5c552c414ff2988d0bffe391be3448bd8965937a4708fb99e279754ff"
+        },
+        "02_ORBIT/effects/repair_static.webp": {
+          "bytes": 8042,
+          "sha256": "c3a6c4f7eff93c31d8939d708495c8db5b63102c818c932ca65c06cdc17ba193"
+        }
+      }
+    },
+    {
+      "asset_id": "salvage",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Bergung",
+      "width": 1024,
+      "height": 1024,
+      "formats_required": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/salvage",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/salvage.png",
+        "02_ORBIT/effects/salvage.webp",
+        "02_ORBIT/effects/salvage.json"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/salvage.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/salvage.png": {
+          "bytes": 160522,
+          "sha256": "d4f80040d6273368fa3a4b9eb6af12e4034a36ca060f36c3b322d4d349ef21e7"
+        },
+        "02_ORBIT/effects/salvage.webp": {
+          "bytes": 108680,
+          "sha256": "5a0faebf7ef83d6b00f61eb5328370f451e08584c2e1d3b6b2425367dedeb6dc"
+        },
+        "02_ORBIT/effects/salvage.json": {
+          "bytes": 2605,
+          "sha256": "aac2263083d18b4c6e5180967edacb2c83fe28ba9bc521fb2dad6cfdddc3e898"
+        }
+      }
+    },
+    {
+      "asset_id": "salvage_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Bergung (statisch)",
+      "width": 256,
+      "height": 256,
+      "formats_required": [
+        "png",
+        "webp"
+      ],
+      "transparent": true,
+      "production_mode": "procedural",
+      "key": "02_ORBIT/effects/salvage_static",
+      "status": "approved",
+      "files": [
+        "02_ORBIT/effects/salvage_static.png",
+        "02_ORBIT/effects/salvage_static.webp"
+      ],
+      "source_files": [
+        "03_SOURCE_FILES/orbit/effects/salvage.ora"
+      ],
+      "qa": {
+        "style_reviewed": true,
+        "content_reviewed": true,
+        "dimensions_valid": true,
+        "alpha_valid": true,
+        "export_valid": true
+      },
+      "file_info": {
+        "02_ORBIT/effects/salvage_static.png": {
+          "bytes": 14652,
+          "sha256": "ce27fae0bd54fd1d450377e4b8db9580f90fb17a4561f1040cf7d23e9d289006"
+        },
+        "02_ORBIT/effects/salvage_static.webp": {
+          "bytes": 9648,
+          "sha256": "38ac12a3d607c18601d7d28c2aa51e0918311b1f96764f07a2c6276d6ee2cb01"
+        }
+      }
+    }
+  ]
+}

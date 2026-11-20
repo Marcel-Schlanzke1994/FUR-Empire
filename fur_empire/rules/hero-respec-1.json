@@ -1,0 +1,11 @@
+{
+  "version": "FUR-3-HERO-3",
+  "balance_status": "draft",
+  "enabled_key": "hero_respec_ruleset",
+  "cooldown_seconds": 604800,
+  "cost": {
+    "wood": 250,
+    "stone": 250,
+    "ore": 250
+  }
+}

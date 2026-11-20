@@ -1,0 +1,31 @@
+{
+  "size": [
+    512,
+    512
+  ],
+  "origin_px": [
+    256,
+    444
+  ],
+  "nominal_footprint_px": [
+    [
+      256,
+      270
+    ],
+    [
+      444,
+      352
+    ],
+    [
+      256,
+      444
+    ],
+    [
+      68,
+      352
+    ]
+  ],
+  "intact": "Optionaler Zustand über der Festung",
+  "damaged": "Über dem vorhandenen Festungssprite",
+  "destroyed": "Ersatz für den intakten Sprite am gleichen Anker"
+}

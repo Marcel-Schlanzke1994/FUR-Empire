@@ -1,0 +1,218 @@
+{
+  "version": "FUR-3-NPC-CAMPS-3",
+  "game": "terra",
+  "kind": "world_scoped_npc_camps_with_attacks",
+  "design_source": "FUR-2 frontier factions; independent provisional extension",
+  "legacy_fur2_preserved": true,
+  "status": "provisional_balance",
+  "starting_resources": {
+    "wood": 1200,
+    "stone": 1000,
+    "ore": 800
+  },
+  "units": [
+    "ranger",
+    "scout",
+    "guardian"
+  ],
+  "movement_quota_per_day": 4,
+  "deployment_quota_per_day": 8,
+  "autonomous_policy": {
+    "actions_per_camp_per_utc_day": 1,
+    "selection": "rotate the profile allowlist by UTC day, then choose the first affordable legal action",
+    "retry_key": "world, camp and UTC day",
+    "effects": "camp state, camp-only intelligence and combat; no outpost capture",
+    "attacks_or_player_loot": true
+  },
+  "attack_planning": {
+    "enabled": true,
+    "cadence_seconds": 300,
+    "world_event_budget": 1,
+    "max_target_candidates": 300,
+    "catchup": "no backlog; at most the current cycle is planned",
+    "selection": "least recently targeted player, then least used camp; stable id tie-break",
+    "knowledge": "target ownership must match camp-local owner intel observed within seven days",
+    "effects": "five-minute warning; deterministic combat; garrison losses; capped resource raid; survivors return to camp",
+    "idempotency": "plan id; one resolving mission per world per worker invocation",
+    "visibility": "only the player owning the targeted outpost",
+    "rules_version": "FUR-3-NPC-CAMPS-3",
+    "warning_seconds": 300,
+    "max_attacks_per_player_seconds": 86400,
+    "maximum_overdue_seconds": 3600,
+    "combat_rules_version": "FUR-3-TERRA-COMBAT-1",
+    "unit_mapping": {
+      "ranger": "ranger",
+      "scout": "covert_courier",
+      "guardian": "sentinel"
+    },
+    "loot_percent_per_resource": 10,
+    "loot_cap_per_resource": 200,
+    "camp_storage_cap_per_resource": 4000,
+    "combat_rules_version_policy": "use world's active FUR-3 ruleset; use COMBAT-1 in FUR-2 worlds"
+  },
+  "movement": {
+    "scout_radius": 3,
+    "scout_distance": "Manhattan",
+    "intel_expiry_days": 7,
+    "maneuver_steps_per_action": 1,
+    "path": "shortest four-direction route over non-water terrain",
+    "target": "nearest scouted, neutral, unowned outpost; tie-break by target ID",
+    "camp_standoff_from_player_colonies": 6,
+    "player_colony_standoff_from_camps": 6,
+    "camp_never_occupies": [
+      "water",
+      "outpost sectors",
+      "colony sectors",
+      "active ruins",
+      "protected colony radius",
+      "reserved spawn sectors"
+    ],
+    "no_target": "action is unavailable and consumes no resources or quota"
+  },
+  "action_rules": {
+    "resupply": {
+      "cost": [
+        100,
+        50,
+        50
+      ],
+      "yield": [
+        240,
+        180,
+        160
+      ],
+      "quota": "none"
+    },
+    "scout": {
+      "cost": [
+        40,
+        0,
+        30
+      ],
+      "yield": [
+        1,
+        0,
+        0
+      ],
+      "quota": "movement"
+    },
+    "reinforce": {
+      "cost": [
+        100,
+        80,
+        120
+      ],
+      "yield": {
+        "ranger": 2,
+        "guardian": 1
+      },
+      "quota": "deployment"
+    },
+    "fortify": {
+      "cost": [
+        80,
+        160,
+        100
+      ],
+      "yield": [
+        1,
+        0,
+        0
+      ],
+      "quota": "none"
+    },
+    "maneuver": {
+      "cost": [
+        50,
+        50,
+        100
+      ],
+      "yield": [
+        1,
+        0,
+        0
+      ],
+      "quota": "movement"
+    }
+  },
+  "profiles": [
+    {
+      "id": "ash_covenant",
+      "name": "Aschebund",
+      "doctrine": "logistics",
+      "actions": [
+        "resupply",
+        "scout",
+        "reinforce"
+      ],
+      "initial_units": {
+        "ranger": 18,
+        "scout": 8,
+        "guardian": 4
+      }
+    },
+    {
+      "id": "iron_compact",
+      "name": "Eisenpakt",
+      "doctrine": "fortification",
+      "actions": [
+        "fortify",
+        "reinforce",
+        "scout"
+      ],
+      "initial_units": {
+        "ranger": 10,
+        "scout": 5,
+        "guardian": 16
+      }
+    },
+    {
+      "id": "thorn_conclave",
+      "name": "Dornenkonklave",
+      "doctrine": "reconnaissance",
+      "actions": [
+        "scout",
+        "maneuver",
+        "resupply"
+      ],
+      "initial_units": {
+        "ranger": 12,
+        "scout": 18,
+        "guardian": 3
+      }
+    },
+    {
+      "id": "dawn_accord",
+      "name": "Morgenbund",
+      "doctrine": "balanced_defense",
+      "actions": [
+        "fortify",
+        "resupply",
+        "maneuver"
+      ],
+      "initial_units": {
+        "ranger": 14,
+        "scout": 8,
+        "guardian": 10
+      }
+    },
+    {
+      "id": "tide_syndicate",
+      "name": "Gezeitenbund",
+      "doctrine": "rapid_deployment",
+      "actions": [
+        "maneuver",
+        "reinforce",
+        "resupply"
+      ],
+      "initial_units": {
+        "ranger": 16,
+        "scout": 12,
+        "guardian": 5
+      }
+    }
+  ],
+  "unimplemented_actions": [
+    "autonomous_war"
+  ]
+}

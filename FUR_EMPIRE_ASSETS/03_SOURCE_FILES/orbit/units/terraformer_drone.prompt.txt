@@ -1,0 +1,5 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID terraformer_drone | PACKAGE orbit | CATEGORY units
+Flat quad-fan remote survey drone, vegetation sampler arms and visible teal soil cartography instrument, no face.
+Front-right elevated three-quarter full body camera, boots and the silhouette wholly visible, grounded neutral pose, no floor.
+Single complete subject centered, target 10% transparent border on each side; actual alpha transparency, no opaque background, no drop shadow beyond silhouette; no clipping.

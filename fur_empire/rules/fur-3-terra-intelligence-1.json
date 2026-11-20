@@ -1,0 +1,32 @@
+{
+  "version": "FUR-3-TERRA-INTELLIGENCE-1",
+  "kind": "terra_scout_counterintelligence",
+  "legacy_fur2_preserved": true,
+  "activation": "world_uses_FUR-3-TERRA-COMBAT-1",
+  "formula": {
+    "interception": {
+      "base_percent": 0,
+      "tactics_percent_per_level": 2,
+      "wall_percent_per_level": 3,
+      "maximum_percent": 50
+    },
+    "detection": {
+      "base_percent": 10,
+      "tactics_percent_per_level": 3,
+      "wall_percent_per_level": 2,
+      "maximum_percent": 60
+    }
+  },
+  "outcomes": {
+    "intercepted_rangers_lost": 1,
+    "interception_suppresses_intel": true,
+    "interception_always_detected": true,
+    "detection_report_exposes_attacker": false,
+    "counter_battle": false
+  },
+  "probability_scale": 10000,
+  "level_bounds": {
+    "tactics": [0, 10],
+    "wall": [0, 10]
+  }
+}

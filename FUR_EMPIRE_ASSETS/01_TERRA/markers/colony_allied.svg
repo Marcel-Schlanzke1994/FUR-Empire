@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" class="fur-marker-colony_allied"><title>colony_allied</title><style>@supports (stroke:var(--fur-color)) { .fur-marker-colony_allied #owner-rim,.fur-marker-colony_allied #symbol path {stroke:var(--owner,#94DFA3)} .fur-marker-colony_allied #owner-fill {fill:var(--owner,#94DFA3)} .fur-marker-colony_allied #selection {opacity:var(--selected,0)} }</style>
+<g id="ownership"><path id="owner-rim" d="M64 12 108 34v56l-44 26-44-26V34Z" fill="#0B111A" stroke="#94DFA3" stroke-width="4"/><path id="owner-fill" d="M64 19 102 38v48l-38 23-38-23V38Z" fill="#94DFA3" opacity=".18"/></g>
+<path id="selection" d="M12 49V29l20-10m64 0 20 10v20m0 29v17l-20 12m-64 0L12 95V78" stroke="#F2D59D" stroke-width="4" fill="none" opacity="0"/>
+<g id="symbol" transform="translate(28 27) scale(3)"><path d="M4 20V9l4-2V4l4-1 4 1v3l4 2v11h-6v-5h-4v5Zm3-9h2m6 0h2m-11 3h1m10 0h1" stroke="#94DFA3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+</svg>

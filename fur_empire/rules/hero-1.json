@@ -1,0 +1,19 @@
+{
+  "version": "FUR-3-HERO-1",
+  "enabled_key": "hero_ruleset",
+  "eligible_jobs": {
+    "raid": 12,
+    "attack": 12,
+    "expedition": 8,
+    "scout": 4
+  },
+  "level_cap": 20,
+  "xp_per_level": 100,
+  "stat_cap": 10,
+  "stats": [
+    "military",
+    "economy",
+    "recon",
+    "command"
+  ]
+}

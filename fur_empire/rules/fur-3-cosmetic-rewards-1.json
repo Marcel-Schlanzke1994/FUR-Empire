@@ -1,0 +1,40 @@
+{
+  "version": "FUR-3-COSMETIC-REWARDS-1",
+  "scope": "account",
+  "gameplay_effects": false,
+  "titles": {
+    "frontier_founder": "Grenzgründer",
+    "citadel_warden": "Zitadellenwacht"
+  },
+  "skins": {
+    "ash_guard": "Aschenwacht",
+    "citadel_guard": "Zitadellenwacht"
+  },
+  "banners": {
+    "frontier_dawn": "Morgenrot der Grenze",
+    "citadel_standard": "Banner der Zitadelle"
+  },
+  "prestige": {
+    "version": "FUR-3-PRESTIGE-1",
+    "max_level": 3,
+    "milestone_sources": {
+      "campaign_victory": 1,
+      "season_champion": 1,
+      "season_goal_achieved": 1
+    },
+    "thresholds": [1, 2, 3],
+    "profile_badges": {
+      "1": "Grenzveteran",
+      "2": "Sternenwächter",
+      "3": "Imperiumslegende"
+    },
+    "gameplay_effects": false,
+    "account_scope": true,
+    "idempotency": "one permanent milestone per account and source key; no transfer, purchase or decay"
+  },
+  "directive_rewards": {
+    "army": ["skin:ash_guard"],
+    "expansion": ["title:frontier_founder", "banner:frontier_dawn"],
+    "victory": ["title:citadel_warden", "skin:citadel_guard", "banner:citadel_standard"]
+  }
+}

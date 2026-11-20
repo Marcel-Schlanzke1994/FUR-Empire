@@ -1,0 +1,26 @@
+{
+  "version": "FUR-3-ALLIANCE-TREASURY-3",
+  "status": "owner_approved",
+  "scope": "alliance treasury, separately scoped by world",
+  "donations": {
+    "eligible": "current alliance members in the active world",
+    "fee_basis_points": 0
+  },
+  "withdrawals": {
+    "requester": "a current alliance member requests a gross resource vector for their own active colony",
+    "approver": "current leader or a current member with the treasury permission",
+    "requester_may_approve": false,
+    "recipient_fee_basis_points_per_resource": 100,
+    "fee_rounding": "ceil the requested net amount divided by 99 percent, per resource",
+    "recipient_gets": "the exact requested amount; the gross reserve covers that amount plus a 1 percent fee",
+    "approval_threshold_gross_resource_units": 5000,
+    "approvals_below_threshold": 1,
+    "approvals_at_or_above_threshold": 2,
+    "approvers_must_be_distinct": true,
+    "reserve_on_request": true,
+    "expiry_seconds": 604800,
+    "expiry_or_cancellation_refund": "release the full reserved gross amount"
+  },
+  "membership_changes": "the recipient must still belong to the same alliance at payout; otherwise the reservation is fully released",
+  "fur2_combat_rules_changed": false
+}

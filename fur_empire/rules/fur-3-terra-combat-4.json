@@ -1,0 +1,759 @@
+{
+  "version": "FUR-3-TERRA-COMBAT-4",
+  "game": "terra",
+  "kind": "deterministic_six_round_combat",
+  "design_source": "FUR-3-TERRA-COMBAT-3; lifecycle-enabled draft",
+  "legacy_fur2_preserved": true,
+  "roster_status": "provisional_balance",
+  "rounds": {
+    "maximum": 6,
+    "draw_after_maximum": "defender_holds_position",
+    "initiative_order": "descending_initiative_then_unit_id_then_attacker_first",
+    "end_early_when_side_destroyed": true,
+    "shield_recharge_percent_after_round": 25
+  },
+  "formula": {
+    "accuracy_base_percent": 72,
+    "accuracy_per_difference_percent": 2,
+    "accuracy_min_percent": 35,
+    "accuracy_max_percent": 95,
+    "damage_variance_min_percent": 90,
+    "damage_variance_max_percent": 110,
+    "damage_floor": 1,
+    "tactics_damage_percent_per_level": 15,
+    "counter_multiplier_percent": 125,
+    "base_multiplier_percent": 100,
+    "target_policy": "lowest_shield_plus_hull_fraction_then_target_priority_then_unit_id",
+    "round_shield_recharge_percent": 25,
+    "retreat": {
+      "threshold_min_percent": 1,
+      "threshold_max_percent": 100,
+      "check": "attacker_casualties_after_each_complete_round",
+      "default_threshold_percent": 60,
+      "effect": "stop_firing_and_return_survivors"
+    },
+    "wall_armor_bonus_per_level": 2
+  },
+  "limits": {
+    "maximum_army_units_per_side": 2000,
+    "maximum_targets_per_round": 12000
+  },
+  "neutral_outpost_fortification": {
+    "status": "provisional_balance",
+    "structure_per_tier_squared": 55,
+    "maximum_tier": 8,
+    "counterattack": false,
+    "persistent_damage": false
+  },
+  "unit_economy": {
+    "status": "provisional_balance",
+    "enabled_for_training": false,
+    "activation_gate": "requires_unit_dispatch_garrison_transport_and_repair_lifecycle_integration_and_balance_acceptance",
+    "cost_formula": "per_unit_base_cost_times_count",
+    "training_time_formula": "per_unit_seconds_times_count",
+    "repair_ratio_percent": 25,
+    "speed_formula": "ceil(route_cost_times_60_divided_by_slowest_unit_speed_seconds)",
+    "range_formula": "every_selected_unit_range_must_cover_route_cost",
+    "fuel_formula": "ceil(route_cost_times_sum_unit_fuel_rates_divided_by_100)_per_leg;_charge_two_legs_in_ore_at_dispatch",
+    "route_cost_limit": 120,
+    "maximum_units_per_colony": 2000,
+    "cargo_applies_only_to_logistic_convoy": true
+  },
+  "units": {
+    "ranger": {
+      "attack": 12,
+      "armor": 1,
+      "shield": 0,
+      "hull": 40,
+      "accuracy": 75,
+      "evasion": 15,
+      "initiative": 8,
+      "target_priority": 30,
+      "counters": [],
+      "role": "leichter Kampf",
+      "speed": 10,
+      "cargo": 0,
+      "fuel": 1,
+      "range": 120,
+      "training_time": 2,
+      "cost": [
+        35,
+        15,
+        25
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 1
+        },
+        "tech": {}
+      },
+      "repair_ratio": 25
+    },
+    "sentinel": {
+      "attack": 28,
+      "armor": 8,
+      "shield": 20,
+      "hull": 90,
+      "accuracy": 70,
+      "evasion": 3,
+      "initiative": 3,
+      "target_priority": 40,
+      "counters": [
+        "ranger",
+        "terraformer_drone",
+        "covert_courier"
+      ],
+      "role": "Frontverteidigung",
+      "speed": 6,
+      "cargo": 0,
+      "fuel": 2,
+      "range": 100,
+      "training_time": 4,
+      "cost": [
+        50,
+        40,
+        60
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 2
+        },
+        "tech": {}
+      },
+      "repair_ratio": 25
+    },
+    "mech": {
+      "attack": 70,
+      "armor": 15,
+      "shield": 0,
+      "hull": 160,
+      "accuracy": 65,
+      "evasion": 0,
+      "initiative": 1,
+      "target_priority": 60,
+      "counters": [
+        "sentinel",
+        "bastion_walker"
+      ],
+      "role": "schwere Einheit",
+      "speed": 4,
+      "cargo": 0,
+      "fuel": 4,
+      "range": 80,
+      "training_time": 7,
+      "cost": [
+        100,
+        90,
+        140
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {}
+      },
+      "repair_ratio": 25
+    },
+    "terraformer_drone": {
+      "attack": 38,
+      "armor": 3,
+      "shield": 10,
+      "hull": 75,
+      "accuracy": 70,
+      "evasion": 18,
+      "initiative": 8,
+      "target_priority": 20,
+      "counters": [
+        "mech",
+        "salvage_engineer"
+      ],
+      "role": "mobile Unterstützung",
+      "speed": 12,
+      "cargo": 0,
+      "fuel": 2,
+      "range": 120,
+      "training_time": 26,
+      "cost": [
+        105,
+        60,
+        90
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "adaptive_forestry": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "frontier_vanguard": {
+      "attack": 76,
+      "armor": 10,
+      "shield": 0,
+      "hull": 150,
+      "accuracy": 70,
+      "evasion": 9,
+      "initiative": 5,
+      "target_priority": 50,
+      "counters": [
+        "sentinel",
+        "mech"
+      ],
+      "role": "Angriffsvorhut",
+      "speed": 7,
+      "cargo": 0,
+      "fuel": 4,
+      "range": 100,
+      "training_time": 44,
+      "cost": [
+        165,
+        100,
+        145
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "adaptive_forestry": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "bastion_walker": {
+      "attack": 82,
+      "armor": 18,
+      "shield": 25,
+      "hull": 180,
+      "accuracy": 64,
+      "evasion": 0,
+      "initiative": 2,
+      "target_priority": 70,
+      "counters": [
+        "ranger",
+        "terraformer_drone"
+      ],
+      "role": "schwere Verteidigung",
+      "speed": 3,
+      "cargo": 0,
+      "fuel": 5,
+      "range": 80,
+      "training_time": 48,
+      "cost": [
+        125,
+        200,
+        155
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "kinetic_shield": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "shield_sentinel": {
+      "attack": 43,
+      "armor": 12,
+      "shield": 40,
+      "hull": 110,
+      "accuracy": 75,
+      "evasion": 8,
+      "initiative": 4,
+      "target_priority": 45,
+      "counters": [
+        "frontier_vanguard",
+        "salvage_engineer"
+      ],
+      "role": "Schildschutz",
+      "speed": 6,
+      "cargo": 0,
+      "fuel": 3,
+      "range": 100,
+      "training_time": 28,
+      "cost": [
+        75,
+        125,
+        100
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "kinetic_shield": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "covert_courier": {
+      "attack": 36,
+      "armor": 2,
+      "shield": 5,
+      "hull": 60,
+      "accuracy": 80,
+      "evasion": 28,
+      "initiative": 10,
+      "target_priority": 10,
+      "counters": [
+        "mech",
+        "bastion_walker"
+      ],
+      "role": "verdeckte Schnelleinheit",
+      "speed": 14,
+      "cargo": 0,
+      "fuel": 2,
+      "range": 120,
+      "training_time": 24,
+      "cost": [
+        80,
+        65,
+        105
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "smuggler_navigation": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "salvage_engineer": {
+      "attack": 72,
+      "armor": 12,
+      "shield": 0,
+      "hull": 130,
+      "accuracy": 66,
+      "evasion": 0,
+      "initiative": 3,
+      "target_priority": 55,
+      "counters": [
+        "sentinel",
+        "shield_sentinel"
+      ],
+      "role": "Bergung und Technik",
+      "speed": 5,
+      "cargo": 20,
+      "fuel": 5,
+      "range": 100,
+      "training_time": 40,
+      "cost": [
+        130,
+        105,
+        175
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "smuggler_navigation": 1
+        }
+      },
+      "repair_ratio": 50
+    },
+    "scout": {
+      "attack": 5,
+      "armor": 1,
+      "shield": 0,
+      "hull": 25,
+      "accuracy": 85,
+      "evasion": 35,
+      "initiative": 12,
+      "target_priority": 10,
+      "counters": [],
+      "role": "Aufklärung",
+      "speed": 16,
+      "cargo": 0,
+      "fuel": 2,
+      "range": 120,
+      "training_time": 4,
+      "cost": [
+        45,
+        20,
+        35
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 1
+        },
+        "tech": {
+          "tactics": 1
+        }
+      },
+      "repair_ratio": 25
+    },
+    "saboteur": {
+      "attack": 32,
+      "armor": 4,
+      "shield": 0,
+      "hull": 65,
+      "accuracy": 76,
+      "evasion": 18,
+      "initiative": 9,
+      "target_priority": 15,
+      "counters": [
+        "artillery_platform"
+      ],
+      "role": "Modulstörung",
+      "speed": 9,
+      "cargo": 0,
+      "fuel": 3,
+      "range": 90,
+      "training_time": 6,
+      "cost": [
+        55,
+        40,
+        50
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 2
+        },
+        "tech": {
+          "tactics": 2
+        }
+      },
+      "repair_ratio": 25
+    },
+    "medic": {
+      "attack": 10,
+      "armor": 3,
+      "shield": 5,
+      "hull": 70,
+      "accuracy": 60,
+      "evasion": 8,
+      "initiative": 5,
+      "target_priority": 25,
+      "counters": [],
+      "role": "Nachbereitung",
+      "speed": 10,
+      "cargo": 0,
+      "fuel": 3,
+      "range": 90,
+      "training_time": 6,
+      "cost": [
+        60,
+        35,
+        45
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 2
+        },
+        "tech": {
+          "engineering": 1
+        }
+      },
+      "repair_ratio": 50
+    },
+    "shield_drone": {
+      "attack": 22,
+      "armor": 4,
+      "shield": 55,
+      "hull": 65,
+      "accuracy": 68,
+      "evasion": 20,
+      "initiative": 7,
+      "target_priority": 25,
+      "counters": [
+        "sniper"
+      ],
+      "role": "Gruppenschutz",
+      "speed": 8,
+      "cargo": 0,
+      "fuel": 4,
+      "range": 80,
+      "training_time": 8,
+      "cost": [
+        65,
+        55,
+        70
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "tactics": 2
+        }
+      },
+      "repair_ratio": 25
+    },
+    "sniper": {
+      "attack": 52,
+      "armor": 2,
+      "shield": 0,
+      "hull": 45,
+      "accuracy": 92,
+      "evasion": 12,
+      "initiative": 8,
+      "target_priority": 20,
+      "counters": [
+        "ranger",
+        "scout",
+        "interceptor_drone"
+      ],
+      "role": "Leichttruppenkonter",
+      "speed": 8,
+      "cargo": 0,
+      "fuel": 4,
+      "range": 100,
+      "training_time": 8,
+      "cost": [
+        70,
+        35,
+        80
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "tactics": 3
+        }
+      },
+      "repair_ratio": 25
+    },
+    "siege_robot": {
+      "attack": 105,
+      "armor": 16,
+      "shield": 0,
+      "hull": 210,
+      "accuracy": 58,
+      "evasion": 0,
+      "initiative": 1,
+      "target_priority": 75,
+      "counters": [
+        "commander_guard",
+        "bastion_walker"
+      ],
+      "role": "Festungsbruch",
+      "speed": 4,
+      "cargo": 0,
+      "fuel": 8,
+      "range": 70,
+      "training_time": 14,
+      "cost": [
+        110,
+        95,
+        180
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "engineering": 2
+        }
+      },
+      "repair_ratio": 25
+    },
+    "artillery_platform": {
+      "attack": 120,
+      "armor": 9,
+      "shield": 0,
+      "hull": 145,
+      "accuracy": 62,
+      "evasion": 0,
+      "initiative": 2,
+      "target_priority": 65,
+      "counters": [
+        "sentinel",
+        "shield_sentinel"
+      ],
+      "role": "Fernkampf",
+      "speed": 3,
+      "cargo": 0,
+      "fuel": 9,
+      "range": 110,
+      "training_time": 16,
+      "cost": [
+        125,
+        110,
+        200
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "tactics": 4
+        }
+      },
+      "repair_ratio": 25
+    },
+    "logistics_convoy": {
+      "attack": 0,
+      "armor": 4,
+      "shield": 0,
+      "hull": 100,
+      "accuracy": 35,
+      "evasion": 5,
+      "initiative": 2,
+      "target_priority": 80,
+      "counters": [],
+      "role": "Frachttransport",
+      "speed": 7,
+      "cargo": 240,
+      "fuel": 5,
+      "range": 120,
+      "training_time": 10,
+      "cost": [
+        90,
+        80,
+        115
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "logistics": 2
+        }
+      },
+      "repair_ratio": 25
+    },
+    "engineer_squad": {
+      "attack": 28,
+      "armor": 9,
+      "shield": 5,
+      "hull": 115,
+      "accuracy": 60,
+      "evasion": 2,
+      "initiative": 2,
+      "target_priority": 60,
+      "counters": [
+        "sentinel"
+      ],
+      "role": "Reparatur und Bergung",
+      "speed": 5,
+      "cargo": 20,
+      "fuel": 7,
+      "range": 100,
+      "training_time": 12,
+      "cost": [
+        95,
+        100,
+        130
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "engineering": 3
+        }
+      },
+      "repair_ratio": 50
+    },
+    "interceptor_drone": {
+      "attack": 48,
+      "armor": 3,
+      "shield": 10,
+      "hull": 70,
+      "accuracy": 78,
+      "evasion": 32,
+      "initiative": 11,
+      "target_priority": 12,
+      "counters": [
+        "scout",
+        "covert_courier"
+      ],
+      "role": "Schnelle Abwehr",
+      "speed": 18,
+      "cargo": 0,
+      "fuel": 5,
+      "range": 100,
+      "training_time": 8,
+      "cost": [
+        75,
+        65,
+        100
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 3
+        },
+        "tech": {
+          "tactics": 3
+        }
+      },
+      "repair_ratio": 25
+    },
+    "commander_guard": {
+      "attack": 55,
+      "armor": 16,
+      "shield": 15,
+      "hull": 155,
+      "accuracy": 65,
+      "evasion": 0,
+      "initiative": 2,
+      "target_priority": 70,
+      "counters": [
+        "saboteur",
+        "sniper"
+      ],
+      "role": "Garnison",
+      "speed": 4,
+      "cargo": 0,
+      "fuel": 6,
+      "range": 80,
+      "training_time": 12,
+      "cost": [
+        100,
+        105,
+        120
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 4
+        },
+        "tech": {
+          "engineering": 2
+        }
+      },
+      "repair_ratio": 25
+    },
+    "titan_colossus": {
+      "attack": 190,
+      "armor": 30,
+      "shield": 50,
+      "hull": 460,
+      "accuracy": 60,
+      "evasion": 0,
+      "initiative": 1,
+      "target_priority": 90,
+      "counters": [
+        "artillery_platform"
+      ],
+      "role": "Schwere Einheit",
+      "speed": 2,
+      "cargo": 0,
+      "fuel": 15,
+      "range": 60,
+      "training_time": 30,
+      "cost": [
+        220,
+        200,
+        320
+      ],
+      "prerequisites": {
+        "buildings": {
+          "barracks": 6
+        },
+        "tech": {
+          "tactics": 5,
+          "engineering": 4
+        }
+      },
+      "repair_ratio": 25
+    }
+  }
+}

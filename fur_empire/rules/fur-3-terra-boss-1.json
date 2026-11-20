@@ -1,0 +1,18 @@
+{
+  "version": "FUR-3-TERRA-BOSS-1",
+  "status": "provisional_balance",
+  "warning_seconds": 300,
+  "active_seconds": 172800,
+  "attack_seconds": 300,
+  "health": 1000,
+  "phase_two_health_percent": 50,
+  "phase_one_damage_per_ranger": 25,
+  "phase_two_damage_per_ranger": 20,
+  "phase_one_loss_percent": 10,
+  "phase_two_loss_percent": 20,
+  "max_rangers_per_attack": 40,
+  "max_damage_per_attack": 500,
+  "attack_slots": 12,
+  "reward_ore_pool": 6000,
+  "reward_policy": "successful raids only; floor(pool * credited_damage / initial_health) once per participant"
+}

@@ -1,0 +1,1196 @@
+{
+  "id": "FUR-3 / ORBIT-1",
+  "status": "PROPOSED_DESIGN_DEFAULTS_NOT_VALIDATED_BY_BALANCE_TESTS",
+  "legacy_fur2_preserved": true,
+  "land": {
+    "default_world_width": 64,
+    "default_world_height": 64,
+    "max_terra_colonies_without_expansion": 5,
+    "max_terra_colonies_with_expansion": 12,
+    "new_world_newbie_protection_hours": 72,
+    "new_world_newbie_absolute_max_hours": 168,
+    "defeat_recovery_protection_hours": 12,
+    "max_combat_rounds": 6,
+    "max_active_missions_base": 30,
+    "max_alliance_operation_members": 12,
+    "max_active_market_offers": 10,
+    "max_queue_per_colony_by_type": 1,
+    "outpost_bonus_soft_cap": {
+      "linear_until": 5,
+      "additional_bonus_pp_per_outpost": 5,
+      "max_total_bonus_pp": 40
+    },
+    "loot_from_credits_prohibited": true,
+    "intel_expire_hours": 24,
+    "daily_npc_spawn_budget_per_region": 25,
+    "resource_caps_and_overflow_policy": "Resources saturate depot cap, deliveries go to reserve; remainders stored lossless."
+  },
+  "new_buildings": [
+    {
+      "id": "scanner_tower",
+      "class": "military_intelligence",
+      "required_command_level": 2,
+      "base_cost": {
+        "wood": 160,
+        "stone": 160,
+        "ore": 250
+      },
+      "effect": "increases_terra_intel_range",
+      "base_build_seconds": 47,
+      "max_level": 20
+    },
+    {
+      "id": "command_uplink",
+      "class": "logistics",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 220,
+        "stone": 260,
+        "ore": 300
+      },
+      "effect": "adds_mission_slots_capped",
+      "base_build_seconds": 65,
+      "max_level": 20
+    },
+    {
+      "id": "repair_bay",
+      "class": "support",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 270,
+        "stone": 330,
+        "ore": 240
+      },
+      "effect": "repairs_defense_and_wrecks",
+      "base_build_seconds": 70,
+      "max_level": 20
+    },
+    {
+      "id": "drone_foundry",
+      "class": "production",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 230,
+        "stone": 230,
+        "ore": 400
+      },
+      "effect": "crafts_support_drones",
+      "base_build_seconds": 71,
+      "max_level": 20
+    },
+    {
+      "id": "artillery_battery",
+      "class": "defense",
+      "required_command_level": 4,
+      "base_cost": {
+        "wood": 500,
+        "stone": 450,
+        "ore": 650
+      },
+      "effect": "long_range_defense",
+      "base_build_seconds": 133,
+      "max_level": 20
+    },
+    {
+      "id": "hospital",
+      "class": "support",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 200,
+        "stone": 340,
+        "ore": 380
+      },
+      "effect": "limited_unit_recovery",
+      "base_build_seconds": 76,
+      "max_level": 20
+    },
+    {
+      "id": "shield_generator",
+      "class": "defense",
+      "required_command_level": 5,
+      "base_cost": {
+        "wood": 450,
+        "stone": 700,
+        "ore": 800
+      },
+      "effect": "stationary_shield",
+      "base_build_seconds": 162,
+      "max_level": 20
+    },
+    {
+      "id": "energy_core",
+      "class": "energy",
+      "required_command_level": 2,
+      "base_cost": {
+        "wood": 150,
+        "stone": 170,
+        "ore": 260
+      },
+      "effect": "produces_energy",
+      "base_build_seconds": 48,
+      "max_level": 20
+    },
+    {
+      "id": "fusion_plant",
+      "class": "energy",
+      "required_command_level": 7,
+      "base_cost": {
+        "wood": 700,
+        "stone": 800,
+        "ore": 1400
+      },
+      "effect": "high_energy_upkeep",
+      "base_build_seconds": 241,
+      "max_level": 20
+    },
+    {
+      "id": "market_hub",
+      "class": "economy",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 250,
+        "stone": 350,
+        "ore": 220
+      },
+      "effect": "extends_trade_route_slots",
+      "base_build_seconds": 68,
+      "max_level": 20
+    },
+    {
+      "id": "supply_depot",
+      "class": "logistics",
+      "required_command_level": 4,
+      "base_cost": {
+        "wood": 390,
+        "stone": 420,
+        "ore": 250
+      },
+      "effect": "raises_resupply_range",
+      "base_build_seconds": 88,
+      "max_level": 20
+    },
+    {
+      "id": "advanced_lab",
+      "class": "research",
+      "required_command_level": 5,
+      "base_cost": {
+        "wood": 650,
+        "stone": 800,
+        "ore": 900
+      },
+      "effect": "unlocks_special_research",
+      "base_build_seconds": 195,
+      "max_level": 20
+    },
+    {
+      "id": "espionage_center",
+      "class": "intelligence",
+      "required_command_level": 4,
+      "base_cost": {
+        "wood": 380,
+        "stone": 250,
+        "ore": 500
+      },
+      "effect": "improves_counter_intelligence",
+      "base_build_seconds": 94,
+      "max_level": 20
+    },
+    {
+      "id": "orbital_gateway",
+      "class": "orbit",
+      "required_command_level": 8,
+      "base_cost": {
+        "wood": 1800,
+        "stone": 1600,
+        "ore": 3100
+      },
+      "effect": "enables_orbit_theater",
+      "base_build_seconds": 541,
+      "max_level": 20
+    },
+    {
+      "id": "colony_station",
+      "class": "expansion",
+      "required_command_level": 4,
+      "base_cost": {
+        "wood": 470,
+        "stone": 500,
+        "ore": 700
+      },
+      "effect": "colony_limit_and_colony_ship",
+      "base_build_seconds": 139,
+      "max_level": 20
+    },
+    {
+      "id": "trade_port",
+      "class": "economy",
+      "required_command_level": 5,
+      "base_cost": {
+        "wood": 600,
+        "stone": 450,
+        "ore": 530
+      },
+      "effect": "special_trading_and_convoys",
+      "base_build_seconds": 131,
+      "max_level": 20
+    },
+    {
+      "id": "war_academy",
+      "class": "military",
+      "required_command_level": 6,
+      "base_cost": {
+        "wood": 800,
+        "stone": 750,
+        "ore": 900
+      },
+      "effect": "unit_tactical_counters",
+      "base_build_seconds": 204,
+      "max_level": 20
+    },
+    {
+      "id": "siege_factory",
+      "class": "military",
+      "required_command_level": 7,
+      "base_cost": {
+        "wood": 900,
+        "stone": 1000,
+        "ore": 1200
+      },
+      "effect": "siege_units",
+      "base_build_seconds": 258,
+      "max_level": 20
+    },
+    {
+      "id": "fortification",
+      "class": "defense",
+      "required_command_level": 3,
+      "base_cost": {
+        "wood": 300,
+        "stone": 400,
+        "ore": 300
+      },
+      "effect": "terrain_garrison_bonuses",
+      "base_build_seconds": 83,
+      "max_level": 20
+    },
+    {
+      "id": "archive_vault",
+      "class": "research",
+      "required_command_level": 7,
+      "base_cost": {
+        "wood": 500,
+        "stone": 640,
+        "ore": 750
+      },
+      "effect": "advanced_tech_research",
+      "base_build_seconds": 157,
+      "max_level": 20
+    }
+  ],
+  "new_research": [
+    {
+      "id": "terra_colonization",
+      "category": "expansion",
+      "unlock_command_level": 2,
+      "base_cost": {
+        "wood": 250,
+        "stone": 250,
+        "ore": 370
+      },
+      "effect": "raises_land_colony_limit",
+      "max_level": 20,
+      "base_research_seconds": 87
+    },
+    {
+      "id": "terra_logistics",
+      "category": "logistics",
+      "unlock_command_level": 2,
+      "base_cost": {
+        "wood": 180,
+        "stone": 180,
+        "ore": 270
+      },
+      "effect": "increases_transport_capacity",
+      "max_level": 20,
+      "base_research_seconds": 63
+    },
+    {
+      "id": "terrain_survival",
+      "category": "exploration",
+      "unlock_command_level": 2,
+      "base_cost": {
+        "wood": 250,
+        "stone": 150,
+        "ore": 250
+      },
+      "effect": "reduces_terrain_penalty",
+      "max_level": 20,
+      "base_research_seconds": 65
+    },
+    {
+      "id": "reconnaissance",
+      "category": "intelligence",
+      "unlock_command_level": 3,
+      "base_cost": {
+        "wood": 160,
+        "stone": 150,
+        "ore": 300
+      },
+      "effect": "reveals_fog_layers",
+      "max_level": 20,
+      "base_research_seconds": 61
+    },
+    {
+      "id": "counter_intelligence",
+      "category": "intelligence",
+      "unlock_command_level": 3,
+      "base_cost": {
+        "wood": 210,
+        "stone": 190,
+        "ore": 360
+      },
+      "effect": "blocks_enemy_spying",
+      "max_level": 20,
+      "base_research_seconds": 76
+    },
+    {
+      "id": "ballistics",
+      "category": "military",
+      "unlock_command_level": 4,
+      "base_cost": {
+        "wood": 380,
+        "stone": 300,
+        "ore": 500
+      },
+      "effect": "unlocks_artillery_and_siege",
+      "max_level": 20,
+      "base_research_seconds": 118
+    },
+    {
+      "id": "shields",
+      "category": "military",
+      "unlock_command_level": 4,
+      "base_cost": {
+        "wood": 250,
+        "stone": 350,
+        "ore": 520
+      },
+      "effect": "improves_defensive_shield",
+      "max_level": 20,
+      "base_research_seconds": 112
+    },
+    {
+      "id": "armor_engineering",
+      "category": "military",
+      "unlock_command_level": 4,
+      "base_cost": {
+        "wood": 300,
+        "stone": 410,
+        "ore": 650
+      },
+      "effect": "improves_unit_armor",
+      "max_level": 20,
+      "base_research_seconds": 136
+    },
+    {
+      "id": "field_medicine",
+      "category": "support",
+      "unlock_command_level": 4,
+      "base_cost": {
+        "wood": 230,
+        "stone": 350,
+        "ore": 500
+      },
+      "effect": "recovers_small_share_of_losses",
+      "max_level": 20,
+      "base_research_seconds": 108
+    },
+    {
+      "id": "alliance_coordination",
+      "category": "alliance",
+      "unlock_command_level": 5,
+      "base_cost": {
+        "wood": 430,
+        "stone": 350,
+        "ore": 500
+      },
+      "effect": "unlock_coordinated_operations",
+      "max_level": 20,
+      "base_research_seconds": 128
+    },
+    {
+      "id": "supply_chain",
+      "category": "economy",
+      "unlock_command_level": 4,
+      "base_cost": {
+        "wood": 270,
+        "stone": 320,
+        "ore": 350
+      },
+      "effect": "reduces_transport_cost",
+      "max_level": 20,
+      "base_research_seconds": 94
+    },
+    {
+      "id": "advanced_production",
+      "category": "economy",
+      "unlock_command_level": 5,
+      "base_cost": {
+        "wood": 600,
+        "stone": 500,
+        "ore": 350
+      },
+      "effect": "economy_specialization",
+      "max_level": 20,
+      "base_research_seconds": 145
+    },
+    {
+      "id": "field_energy",
+      "category": "energy",
+      "unlock_command_level": 2,
+      "base_cost": {
+        "wood": 170,
+        "stone": 220,
+        "ore": 310
+      },
+      "effect": "unlocks_power_core",
+      "max_level": 20,
+      "base_research_seconds": 70
+    },
+    {
+      "id": "cybernetics",
+      "category": "military",
+      "unlock_command_level": 6,
+      "base_cost": {
+        "wood": 450,
+        "stone": 540,
+        "ore": 900
+      },
+      "effect": "unlocks_special_units",
+      "max_level": 20,
+      "base_research_seconds": 189
+    },
+    {
+      "id": "orbital_navigation",
+      "category": "orbit",
+      "unlock_command_level": 8,
+      "base_cost": {
+        "wood": 1500,
+        "stone": 1200,
+        "ore": 2200
+      },
+      "effect": "enables_orbital_systems",
+      "max_level": 20,
+      "base_research_seconds": 490
+    },
+    {
+      "id": "orbital_shipbuilding",
+      "category": "orbit",
+      "unlock_command_level": 8,
+      "base_cost": {
+        "wood": 1700,
+        "stone": 1600,
+        "ore": 2600
+      },
+      "effect": "unlocks_shipyard",
+      "max_level": 20,
+      "base_research_seconds": 590
+    },
+    {
+      "id": "orbital_scanning",
+      "category": "orbit",
+      "unlock_command_level": 8,
+      "base_cost": {
+        "wood": 1300,
+        "stone": 1200,
+        "ore": 2400
+      },
+      "effect": "unlocks_orbital_spy",
+      "max_level": 20,
+      "base_research_seconds": 490
+    },
+    {
+      "id": "ether_refinement",
+      "category": "orbit",
+      "unlock_command_level": 8,
+      "base_cost": {
+        "wood": 1300,
+        "stone": 1800,
+        "ore": 2700
+      },
+      "effect": "produces_ether",
+      "max_level": 20,
+      "base_research_seconds": 580
+    },
+    {
+      "id": "advanced_propulsion",
+      "category": "orbit",
+      "unlock_command_level": 9,
+      "base_cost": {
+        "wood": 1800,
+        "stone": 1600,
+        "ore": 3000
+      },
+      "effect": "speeds_space_fleets",
+      "max_level": 20,
+      "base_research_seconds": 640
+    },
+    {
+      "id": "jumpgate_network",
+      "category": "orbit",
+      "unlock_command_level": 10,
+      "base_cost": {
+        "wood": 2200,
+        "stone": 2500,
+        "ore": 4200
+      },
+      "effect": "unlocks_jumpgates",
+      "max_level": 20,
+      "base_research_seconds": 890
+    },
+    {
+      "id": "terra_prestige",
+      "category": "prestige",
+      "unlock_command_level": 10,
+      "base_cost": {
+        "wood": 2500,
+        "stone": 2500,
+        "ore": 3000
+      },
+      "effect": "cosmetic_and_softcap_progress",
+      "max_level": 20,
+      "base_research_seconds": 800
+    }
+  ],
+  "new_terra_units": [
+    {
+      "id": "recon_drone",
+      "role": "scout",
+      "counter_tag": "ranger",
+      "unlock_barracks_level": 2,
+      "attack": 6,
+      "armor": 1,
+      "hull": 80,
+      "speed_tiles_per_hour": 2,
+      "cargo": 6,
+      "cost": {
+        "wood": 25,
+        "stone": 25,
+        "ore": 65
+      }
+    },
+    {
+      "id": "field_medic",
+      "role": "support",
+      "counter_tag": "guardian",
+      "unlock_barracks_level": 3,
+      "attack": 4,
+      "armor": 1,
+      "hull": 45,
+      "speed_tiles_per_hour": 3,
+      "cargo": 4,
+      "cost": {
+        "wood": 55,
+        "stone": 60,
+        "ore": 80
+      }
+    },
+    {
+      "id": "vanguard",
+      "role": "frontline",
+      "counter_tag": "stormmech",
+      "unlock_barracks_level": 4,
+      "attack": 30,
+      "armor": 6,
+      "hull": 90,
+      "speed_tiles_per_hour": 3,
+      "cargo": 8,
+      "cost": {
+        "wood": 80,
+        "stone": 55,
+        "ore": 120
+      }
+    },
+    {
+      "id": "heavy_guard",
+      "role": "defender",
+      "counter_tag": "ranger",
+      "unlock_barracks_level": 4,
+      "attack": 16,
+      "armor": 15,
+      "hull": 135,
+      "speed_tiles_per_hour": 3,
+      "cargo": 6,
+      "cost": {
+        "wood": 85,
+        "stone": 110,
+        "ore": 130
+      }
+    },
+    {
+      "id": "saboteur",
+      "role": "espionage",
+      "counter_tag": "guardian",
+      "unlock_barracks_level": 5,
+      "attack": 18,
+      "armor": 3,
+      "hull": 70,
+      "speed_tiles_per_hour": 5,
+      "cargo": 6,
+      "cost": {
+        "wood": 85,
+        "stone": 120,
+        "ore": 135
+      }
+    },
+    {
+      "id": "sniper",
+      "role": "ranged",
+      "counter_tag": "vanguard",
+      "unlock_barracks_level": 5,
+      "attack": 42,
+      "armor": 2,
+      "hull": 45,
+      "speed_tiles_per_hour": 4,
+      "cargo": 4,
+      "cost": {
+        "wood": 65,
+        "stone": 70,
+        "ore": 140
+      }
+    },
+    {
+      "id": "siege_walker",
+      "role": "siege",
+      "counter_tag": "fortress",
+      "unlock_barracks_level": 7,
+      "attack": 95,
+      "armor": 12,
+      "hull": 200,
+      "speed_tiles_per_hour": 1,
+      "cargo": 12,
+      "cost": {
+        "wood": 170,
+        "stone": 180,
+        "ore": 250
+      }
+    },
+    {
+      "id": "artillery_tank",
+      "role": "ranged",
+      "counter_tag": "heavy_guard",
+      "unlock_barracks_level": 7,
+      "attack": 82,
+      "armor": 9,
+      "hull": 140,
+      "speed_tiles_per_hour": 2,
+      "cargo": 10,
+      "cost": {
+        "wood": 160,
+        "stone": 175,
+        "ore": 230
+      }
+    },
+    {
+      "id": "shield_engineer",
+      "role": "support",
+      "counter_tag": "artillery_tank",
+      "unlock_barracks_level": 6,
+      "attack": 5,
+      "armor": 18,
+      "hull": 110,
+      "speed_tiles_per_hour": 2,
+      "cargo": 6,
+      "cost": {
+        "wood": 110,
+        "stone": 150,
+        "ore": 160
+      }
+    },
+    {
+      "id": "assault_rider",
+      "role": "fast",
+      "counter_tag": "sniper",
+      "unlock_barracks_level": 4,
+      "attack": 27,
+      "armor": 4,
+      "hull": 70,
+      "speed_tiles_per_hour": 7,
+      "cargo": 5,
+      "cost": {
+        "wood": 80,
+        "stone": 45,
+        "ore": 120
+      }
+    },
+    {
+      "id": "supply_carrier",
+      "role": "transport",
+      "counter_tag": "none",
+      "unlock_barracks_level": 4,
+      "attack": 2,
+      "armor": 4,
+      "hull": 130,
+      "speed_tiles_per_hour": 5,
+      "cargo": 160,
+      "cost": {
+        "wood": 100,
+        "stone": 120,
+        "ore": 150
+      }
+    },
+    {
+      "id": "elite_commando",
+      "role": "elite",
+      "counter_tag": "support",
+      "unlock_barracks_level": 9,
+      "attack": 75,
+      "armor": 8,
+      "hull": 120,
+      "speed_tiles_per_hour": 6,
+      "cargo": 10,
+      "cost": {
+        "wood": 180,
+        "stone": 140,
+        "ore": 240
+      }
+    }
+  ],
+  "orbit": {
+    "colonies_without_tech": 3,
+    "colonies_with_tech": 8,
+    "new_resource": "ether",
+    "star_systems_per_galaxy": 100,
+    "planets_per_system": 16,
+    "travel_speed_formula_id": "orbit_distance_speed_v1",
+    "fuel_formula_id": "orbit_fuel_v1",
+    "default_max_fleet_slots": 10,
+    "max_allied_fleets": 12,
+    "debris_expiry_hours": 48,
+    "jumpgate_cooldown_hours": 6,
+    "new_ships": [
+      {
+        "id": "probe",
+        "role": "scout",
+        "speed_units": 2,
+        "attack": 1,
+        "shield": 3,
+        "hull": 8,
+        "cargo": 20,
+        "ore_cost": 20,
+        "ether_cost": 12,
+        "fuel_per_distance": 1
+      },
+      {
+        "id": "courier",
+        "role": "transport",
+        "speed_units": 4,
+        "attack": 2,
+        "shield": 8,
+        "hull": 15,
+        "cargo": 160,
+        "ore_cost": 50,
+        "ether_cost": 20,
+        "fuel_per_distance": 1
+      },
+      {
+        "id": "light_fighter",
+        "role": "fighter",
+        "speed_units": 9,
+        "attack": 6,
+        "shield": 15,
+        "hull": 25,
+        "cargo": 20,
+        "ore_cost": 120,
+        "ether_cost": 50,
+        "fuel_per_distance": 1
+      },
+      {
+        "id": "heavy_fighter",
+        "role": "fighter",
+        "speed_units": 15,
+        "attack": 9,
+        "shield": 21,
+        "hull": 40,
+        "cargo": 35,
+        "ore_cost": 150,
+        "ether_cost": 80,
+        "fuel_per_distance": 1
+      },
+      {
+        "id": "frigate",
+        "role": "frigate",
+        "speed_units": 20,
+        "attack": 16,
+        "shield": 33,
+        "hull": 60,
+        "cargo": 65,
+        "ore_cost": 250,
+        "ether_cost": 150,
+        "fuel_per_distance": 1
+      },
+      {
+        "id": "cruiser",
+        "role": "cruiser",
+        "speed_units": 28,
+        "attack": 30,
+        "shield": 60,
+        "hull": 100,
+        "cargo": 150,
+        "ore_cost": 450,
+        "ether_cost": 300,
+        "fuel_per_distance": 3
+      },
+      {
+        "id": "battleship",
+        "role": "capital",
+        "speed_units": 38,
+        "attack": 48,
+        "shield": 110,
+        "hull": 150,
+        "cargo": 250,
+        "ore_cost": 750,
+        "ether_cost": 620,
+        "fuel_per_distance": 7
+      },
+      {
+        "id": "shield_carrier",
+        "role": "support",
+        "speed_units": 12,
+        "attack": 85,
+        "shield": 180,
+        "hull": 50,
+        "cargo": 90,
+        "ore_cost": 780,
+        "ether_cost": 550,
+        "fuel_per_distance": 6
+      },
+      {
+        "id": "carrier",
+        "role": "capital",
+        "speed_units": 18,
+        "attack": 60,
+        "shield": 150,
+        "hull": 250,
+        "cargo": 170,
+        "ore_cost": 800,
+        "ether_cost": 650,
+        "fuel_per_distance": 8
+      },
+      {
+        "id": "colony_ship",
+        "role": "colonization",
+        "speed_units": 3,
+        "attack": 20,
+        "shield": 90,
+        "hull": 350,
+        "cargo": 160,
+        "ore_cost": 400,
+        "ether_cost": 350,
+        "fuel_per_distance": 4
+      },
+      {
+        "id": "freighter",
+        "role": "transport",
+        "speed_units": 5,
+        "attack": 15,
+        "shield": 90,
+        "hull": 800,
+        "cargo": 160,
+        "ore_cost": 400,
+        "ether_cost": 300,
+        "fuel_per_distance": 3
+      },
+      {
+        "id": "salvager",
+        "role": "recycle",
+        "speed_units": 4,
+        "attack": 12,
+        "shield": 80,
+        "hull": 550,
+        "cargo": 90,
+        "ore_cost": 330,
+        "ether_cost": 320,
+        "fuel_per_distance": 4
+      },
+      {
+        "id": "siege_ship",
+        "role": "siege",
+        "speed_units": 90,
+        "attack": 24,
+        "shield": 170,
+        "hull": 130,
+        "cargo": 340,
+        "ore_cost": 1200,
+        "ether_cost": 950,
+        "fuel_per_distance": 11
+      },
+      {
+        "id": "flagship",
+        "role": "capital",
+        "speed_units": 65,
+        "attack": 120,
+        "shield": 290,
+        "hull": 180,
+        "cargo": 420,
+        "ore_cost": 1900,
+        "ether_cost": 1700,
+        "fuel_per_distance": 21
+      }
+    ]
+  },
+  "battle": {
+    "turns_max": 6,
+    "accuracy_base": 0.72,
+    "accuracy_min": 0.35,
+    "accuracy_max": 0.95,
+    "damage_variance_min": 0.9,
+    "damage_variance_max": 1.1,
+    "armor_damage_floor": 1,
+    "time_order": "due_at,event_id",
+    "draw_after_max_turns": "defended_position_no_capture",
+    "replay_must_include_rule_hash": true,
+    "seed_revealed_only_after_resolution": true,
+    "dry_run_must_not_mutate": true,
+    "note": "Code-versioned detailed formulas must be frozen as test fixtures; use fixed-point precision to prevent nondeterminism."
+  },
+  "seasons": {
+    "default_length_days": 90,
+    "max_one_active_per_seasonal_world": true,
+    "permanent_world_must_not_reset": true,
+    "ratings": [
+      "power",
+      "economy",
+      "research",
+      "war",
+      "pve",
+      "alliance",
+      "region"
+    ]
+  },
+  "design_warning": "Alle neu definierten Kosten/Stats dienen als vollständiger implementierbarer Erstentwurf. Die spätere Freigabe verlangt verpflichtende Balance- und Property-Tests. Niemals FUR-2 Livewerte rückwirkend ersetzen.",
+  "faction_expansions": {
+    "pioneers": {
+      "special_research": [
+        "adaptive_forestry",
+        "rapid_construction",
+        "long_range_colony"
+      ],
+      "special_units": [
+        "terraformer_drone",
+        "frontier_vanguard"
+      ],
+      "unique_action": "survey_and_claim_cost_discount",
+      "default_benefit_caps": {
+        "production_pp_max": 20,
+        "colony_settle_discount_pct_max": 8
+      }
+    },
+    "guardians": {
+      "special_research": [
+        "kinetic_shield",
+        "bastion_protocol",
+        "mobile_fortress"
+      ],
+      "special_units": [
+        "bastion_walker",
+        "shield_sentinel"
+      ],
+      "unique_action": "fortify_allied_position",
+      "default_benefit_caps": {
+        "shield_buff_pct_max": 40,
+        "allied_defense_pct_max": 10
+      }
+    },
+    "syndicate": {
+      "special_research": [
+        "market_cipher",
+        "smuggler_navigation",
+        "efficient_salvage"
+      ],
+      "special_units": [
+        "covert_courier",
+        "salvage_engineer"
+      ],
+      "unique_action": "protected_market_convoy",
+      "default_benefit_caps": {
+        "market_discount_pct_max": 7,
+        "neutral_trade_pct_max": 60
+      }
+    }
+  },
+  "npc_factions": [
+    {
+      "id": "core_guard",
+      "focus": "defense_and_citadel",
+      "attacks_neutral_territory": false,
+      "behavior": "fortify_control_points"
+    },
+    {
+      "id": "marauders",
+      "focus": "raids_and_trade_routes",
+      "attacks_neutral_territory": true,
+      "behavior": "limited_budget_convoy_ambush"
+    },
+    {
+      "id": "archive_keepers",
+      "focus": "exploration_and_research",
+      "attacks_neutral_territory": false,
+      "behavior": "guard_ruins_and_quests"
+    },
+    {
+      "id": "shadow_traders",
+      "focus": "economy_and_convoys",
+      "attacks_neutral_territory": false,
+      "behavior": "limited_market_and_trade_quests"
+    },
+    {
+      "id": "orbital_renegades",
+      "focus": "orbit_late_game",
+      "attacks_neutral_territory": true,
+      "behavior": "orbital_raids_and_bosses"
+    }
+  ],
+  "quest_tracks": [
+    "tutorial",
+    "daily",
+    "weekly",
+    "story_citadel",
+    "terra_faction",
+    "alliance_cooperation",
+    "warfare",
+    "exploration",
+    "trade",
+    "orbit_discovery",
+    "orbital_war",
+    "endgame_mastery"
+  ],
+  "world_events": [
+    {
+      "id": "resource_surge",
+      "duration_hours_default": 24,
+      "world_affecting": true
+    },
+    {
+      "id": "npc_invasion",
+      "duration_hours_default": 48,
+      "world_affecting": true
+    },
+    {
+      "id": "convoy_defense",
+      "duration_hours_default": 12,
+      "world_affecting": true
+    },
+    {
+      "id": "research_festival",
+      "duration_hours_default": 24,
+      "world_affecting": true
+    },
+    {
+      "id": "faction_territory_war",
+      "duration_hours_default": 72,
+      "world_affecting": true
+    },
+    {
+      "id": "citadel_siege",
+      "duration_hours_default": 48,
+      "world_affecting": true
+    },
+    {
+      "id": "orbital_anomaly",
+      "duration_hours_default": 36,
+      "world_affecting": true
+    },
+    {
+      "id": "world_boss",
+      "duration_hours_default": 48,
+      "world_affecting": true
+    },
+    {
+      "id": "alliance_dominion",
+      "duration_hours_default": 72,
+      "world_affecting": true
+    },
+    {
+      "id": "winter_blackout",
+      "duration_hours_default": 24,
+      "world_affecting": true
+    }
+  ],
+  "missions": {
+    "terra": [
+      "raid",
+      "conquer",
+      "spy",
+      "counterspy",
+      "reinforce",
+      "withdraw",
+      "transport",
+      "ally_defend",
+      "acs_attack",
+      "siege",
+      "artillery",
+      "colonize",
+      "explore",
+      "expedition",
+      "salvage",
+      "return",
+      "recall",
+      "convoy",
+      "relocate",
+      "npc_event"
+    ],
+    "orbit": [
+      "attack",
+      "transport",
+      "deploy",
+      "colonize",
+      "spy",
+      "intercept",
+      "acs_attack",
+      "expedition",
+      "salvage",
+      "sensor_scan",
+      "moon_explore",
+      "missile",
+      "jumpgate",
+      "evacuate",
+      "return",
+      "recall",
+      "raid_npc"
+    ]
+  },
+  "item_classes": [
+    "crafting_component",
+    "repair_kit",
+    "cosmetic_skin",
+    "commander_badge",
+    "loot_material",
+    "research_artifact",
+    "mission_consumable_pve",
+    "prestige_token_non_purchasable"
+  ],
+  "monetization": {
+    "real_money_initially_disabled": true,
+    "no_pay_to_win": true,
+    "cosmetic_supporter_shop_future_only_requires_owner_and_legal_approval": true
+  },
+  "gameplay_default_timing": {
+    "terra_default_sector_time_seconds": 30,
+    "terra_min_travel_seconds": 5,
+    "orbit_min_travel_seconds": 60,
+    "anti_idle_mission_max_days": 30,
+    "spawn_review_interval_minutes": 15,
+    "market_expiry_hours": 24,
+    "rule_cutover": "all_running_missions_pinned_to_creation_ruleset"
+  },
+  "integrity": {
+    "resource_amount_type": "nonnegative integer small unit",
+    "fractional_production": "fixed-point or exact rational remainder",
+    "rng": "deterministic, cryptographically committed, revealed after battle",
+    "event_order": "due_at,event_id",
+    "idempotency": "command_id+payload_digest unique per world actor",
+    "resource_escrow": "mission origin debit and target arrival credit",
+    "privacy": "no cross-world or hidden data API visibility"
+  }
+}

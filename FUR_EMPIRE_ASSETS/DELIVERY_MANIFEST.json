@@ -1,0 +1,40 @@
+{
+  "project": "FUR EMPIRE",
+  "date": "2026-11-18",
+  "asset_count": 302,
+  "status_counts": {
+    "approved": 302
+  },
+  "packages": [
+    {
+      "package": "terra",
+      "folder": "01_TERRA",
+      "archive": "FUR_EMPIRE_TERRA.zip",
+      "archive_bytes": 113706591,
+      "archive_sha256": "cccec91d63472fd8a6b46ddd1206fd74d495637f25aaea08970e4e1ee06ec40d",
+      "archive_members": 474,
+      "manifest": "01_TERRA/PACKAGE_MANIFEST.json",
+      "asset_count": 169,
+      "status_counts": {
+        "approved": 169
+      }
+    },
+    {
+      "package": "orbit",
+      "folder": "02_ORBIT",
+      "archive": "FUR_EMPIRE_ORBIT.zip",
+      "archive_bytes": 336006591,
+      "archive_sha256": "f46db4b4f6c965599dc9203dd9a711497dee5da7e3229d36097711b625238b9c",
+      "archive_members": 476,
+      "manifest": "02_ORBIT/PACKAGE_MANIFEST.json",
+      "asset_count": 133,
+      "status_counts": {
+        "approved": 133
+      }
+    }
+  ],
+  "asset_manifest": "00_STYLE_GUIDE/asset_manifest.json",
+  "qa_report": "06_QA_REPORTS/QA_REPORT.md",
+  "previews": "05_PREVIEWS",
+  "source_root": "03_SOURCE_FILES"
+}

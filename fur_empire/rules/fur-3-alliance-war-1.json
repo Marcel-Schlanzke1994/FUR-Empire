@@ -1,0 +1,20 @@
+{
+  "version": "FUR-3-ALLIANCE-WAR-1",
+  "tier": "FUR-3",
+  "status": "provisional_balance_draft",
+  "legacy_fur2_preserved": true,
+  "objective": {
+    "kind": "enemy_unit_casualties",
+    "points_per_enemy_unit_lost": 1,
+    "target_points": 1000,
+    "winner": "first_alliance_to_target"
+  },
+  "score_allocation": "equal_share_per_eligible_participant_with_stable_user_id_remainder",
+  "peace": {
+    "offer_cost": 0,
+    "acceptance": "only_opposing_alliance",
+    "acceptance_ends_war": true,
+    "decline_reopens_war": true
+  },
+  "public_record": true
+}

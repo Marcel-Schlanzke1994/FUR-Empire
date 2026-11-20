@@ -1,0 +1,590 @@
+{
+  "project": "FUR EMPIRE",
+  "epics": [
+    {
+      "id": "E00",
+      "name": "Audit & Lizenz",
+      "depends_on": [],
+      "feature_ids": [],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E01",
+      "name": "Infrastruktur / CI",
+      "depends_on": [
+        "E00"
+      ],
+      "feature_ids": [
+        "OPS-001",
+        "OPS-002",
+        "OPS-003",
+        "OPS-005",
+        "OPS-006",
+        "OPS-007"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E02",
+      "name": "Identität / Welten / Datenschutz",
+      "depends_on": [
+        "E01"
+      ],
+      "feature_ids": [
+        "F2-001",
+        "F2-002",
+        "F2-003",
+        "F2-004",
+        "F2-005",
+        "F2-006",
+        "F2-007",
+        "ACC-001",
+        "ACC-002",
+        "ACC-003",
+        "ACC-004",
+        "ACC-005",
+        "ACC-006",
+        "ACC-007",
+        "ACC-008",
+        "ACC-009",
+        "ACC-010",
+        "ENG-001",
+        "ENG-002",
+        "ENG-003"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E03",
+      "name": "FUR-2-Migration / Ledger",
+      "depends_on": [
+        "E02"
+      ],
+      "feature_ids": [
+        "F2-008",
+        "F2-009",
+        "F2-010",
+        "F2-011",
+        "F2-012",
+        "F2-013",
+        "F2-014",
+        "F2-015",
+        "F2-016",
+        "F2-017",
+        "F2-018",
+        "F2-019",
+        "F2-020",
+        "F2-021",
+        "F2-022",
+        "F2-023",
+        "F2-024",
+        "F2-025",
+        "F2-026",
+        "F2-027",
+        "F2-028",
+        "F2-029",
+        "F2-030",
+        "F2-031",
+        "F2-032",
+        "F2-033",
+        "F2-034",
+        "F2-035",
+        "F2-036",
+        "F2-037",
+        "F2-038",
+        "F2-039",
+        "F2-040",
+        "F2-041",
+        "F2-042",
+        "F2-043",
+        "F2-044",
+        "F2-045",
+        "F2-046",
+        "F2-047",
+        "F2-048",
+        "F2-049",
+        "F2-050",
+        "F2-051",
+        "F2-052",
+        "F2-053",
+        "F2-054",
+        "F2-055",
+        "F2-056",
+        "F2-057",
+        "F2-058",
+        "F2-059",
+        "F2-060"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E04",
+      "name": "Zeit-Engine / Queues",
+      "depends_on": [
+        "E03"
+      ],
+      "feature_ids": [
+        "ENG-004",
+        "ENG-005",
+        "ENG-006",
+        "ENG-007",
+        "ENG-008",
+        "ENG-009",
+        "ENG-010",
+        "ENG-011",
+        "ENG-012",
+        "ENG-013",
+        "ENG-014",
+        "ENG-015",
+        "ENG-016",
+        "ENG-017"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E05",
+      "name": "Terra-Karte / Mehrkolonien",
+      "depends_on": [
+        "E04"
+      ],
+      "feature_ids": [
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "TERRA-001",
+        "TERRA-002",
+        "TERRA-003",
+        "TERRA-004",
+        "TERRA-005",
+        "TERRA-006",
+        "TERRA-007",
+        "TERRA-008",
+        "TERRA-009",
+        "TERRA-010",
+        "TERRA-011",
+        "TERRA-012",
+        "TERRA-013",
+        "TERRA-014",
+        "TERRA-015"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E06",
+      "name": "Wirtschaft / Gebäude / Forschung",
+      "depends_on": [
+        "E05"
+      ],
+      "feature_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "ECO-001",
+        "ECO-002",
+        "ECO-003",
+        "ECO-004",
+        "ECO-005",
+        "ECO-006",
+        "ECO-007",
+        "ECO-008",
+        "ECO-009",
+        "ECO-010",
+        "ECO-011",
+        "ECO-012",
+        "ECO-013",
+        "ECO-014",
+        "ECO-015",
+        "ECO-016"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E07",
+      "name": "Kampf-Engine / Units",
+      "depends_on": [
+        "E06"
+      ],
+      "feature_ids": [
+        "K01",
+        "K02",
+        "K04",
+        "K12",
+        "K14",
+        "WAR-001",
+        "WAR-002",
+        "WAR-003",
+        "WAR-004",
+        "WAR-005",
+        "WAR-006",
+        "WAR-007",
+        "WAR-008",
+        "WAR-009",
+        "WAR-010",
+        "WAR-011",
+        "WAR-012",
+        "WAR-013",
+        "WAR-014",
+        "WAR-015",
+        "WAR-016",
+        "WAR-017",
+        "WAR-018",
+        "WAR-019",
+        "WAR-020"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E08",
+      "name": "Missionen / Spionage / Fernkampf",
+      "depends_on": [
+        "E07"
+      ],
+      "feature_ids": [
+        "K03",
+        "K05",
+        "K06",
+        "K07",
+        "K08",
+        "K09",
+        "K10",
+        "K11",
+        "K13"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E09",
+      "name": "Allianz / Diplomatie",
+      "depends_on": [
+        "E08"
+      ],
+      "feature_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "SOC-001",
+        "SOC-002",
+        "SOC-003",
+        "SOC-004",
+        "SOC-005",
+        "SOC-006",
+        "SOC-007",
+        "SOC-008",
+        "SOC-009",
+        "SOC-010",
+        "SOC-011",
+        "SOC-012",
+        "SOC-013",
+        "SOC-014",
+        "SOC-015",
+        "SOC-016"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E10",
+      "name": "Sozial / Berichte / Moderation",
+      "depends_on": [
+        "E09"
+      ],
+      "feature_ids": [
+        "A05",
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E11",
+      "name": "NPC / Quests / Endgame",
+      "depends_on": [
+        "E08"
+      ],
+      "feature_ids": [
+        "P01",
+        "P02",
+        "P04",
+        "PVE-001",
+        "PVE-002",
+        "PVE-003",
+        "PVE-004",
+        "PVE-005",
+        "PVE-006",
+        "PVE-007",
+        "PVE-008",
+        "PVE-009",
+        "PVE-010",
+        "PVE-011",
+        "PVE-012",
+        "PVE-013",
+        "PVE-014",
+        "PVE-015",
+        "PVE-016",
+        "PVE-017"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E12",
+      "name": "Orbit Welten / Kolonien",
+      "depends_on": [
+        "E11"
+      ],
+      "feature_ids": [
+        "ORB-001",
+        "ORB-002",
+        "ORB-003",
+        "ORB-004",
+        "ORB-005",
+        "ORB-006",
+        "ORB-007",
+        "ORB-008",
+        "ORB-009",
+        "ORB-010"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E13",
+      "name": "Orbit Flotten / Kampf",
+      "depends_on": [
+        "E12"
+      ],
+      "feature_ids": [
+        "ORB-011",
+        "ORB-012",
+        "ORB-013",
+        "ORB-014",
+        "ORB-015",
+        "ORB-016",
+        "ORB-017",
+        "ORB-018",
+        "ORB-019",
+        "ORB-020",
+        "ORB-021",
+        "ORB-022",
+        "ORB-023",
+        "ORB-024",
+        "ORB-025",
+        "ORB-026",
+        "ORB-027",
+        "ORB-028",
+        "ORB-029",
+        "ORB-030",
+        "ORB-031",
+        "ORB-032"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E14",
+      "name": "Inventar / Handel / Helden",
+      "depends_on": [
+        "E13"
+      ],
+      "feature_ids": [
+        "P06",
+        "ITEM-001",
+        "ITEM-002",
+        "ITEM-003",
+        "ITEM-004",
+        "ITEM-005",
+        "ITEM-006",
+        "ITEM-007",
+        "ITEM-008",
+        "ITEM-009",
+        "ITEM-010",
+        "ITEM-011"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E15",
+      "name": "Saisons / LiveEvents / Ranking",
+      "depends_on": [
+        "E14"
+      ],
+      "feature_ids": [
+        "P03",
+        "P05",
+        "PVE-018",
+        "SEAS-001",
+        "SEAS-002",
+        "SEAS-003",
+        "SEAS-004",
+        "SEAS-005",
+        "SEAS-006",
+        "SEAS-007",
+        "SEAS-008",
+        "SEAS-009",
+        "SEAS-010",
+        "SEAS-011",
+        "SEAS-012",
+        "SEAS-013"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E16",
+      "name": "Administration / Anti-Abuse",
+      "depends_on": [
+        "E15"
+      ],
+      "feature_ids": [
+        "T04",
+        "T08",
+        "ADM-001",
+        "ADM-002",
+        "ADM-003",
+        "ADM-004",
+        "ADM-005",
+        "ADM-006",
+        "ADM-007",
+        "ADM-008",
+        "ADM-009",
+        "ADM-010",
+        "ADM-011",
+        "ADM-012",
+        "ADM-013",
+        "ADM-014",
+        "ADM-015",
+        "ADM-016",
+        "ADM-017",
+        "ADM-018",
+        "ADM-019"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E17",
+      "name": "Design / Mobile / i18n",
+      "depends_on": [
+        "E16"
+      ],
+      "feature_ids": [
+        "T05",
+        "T06",
+        "UX-001",
+        "UX-002",
+        "UX-003",
+        "UX-004",
+        "UX-005",
+        "UX-006",
+        "UX-007",
+        "UX-008",
+        "UX-009",
+        "UX-010"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E18",
+      "name": "Realtime / Integrationen",
+      "depends_on": [
+        "E17"
+      ],
+      "feature_ids": [
+        "T07",
+        "UX-011",
+        "UX-012",
+        "UX-013",
+        "UX-014",
+        "UX-015",
+        "UX-016",
+        "UX-017",
+        "UX-018"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E19",
+      "name": "Sicherheit / Datenschutz / Betrieb",
+      "depends_on": [
+        "E18"
+      ],
+      "feature_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "OPS-004",
+        "OPS-008",
+        "OPS-009",
+        "OPS-014",
+        "OPS-015",
+        "OPS-016",
+        "OPS-017",
+        "OPS-018",
+        "OPS-023",
+        "OPS-024"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E20",
+      "name": "Vollständige QA & Performance",
+      "depends_on": [
+        "E19"
+      ],
+      "feature_ids": [
+        "OPS-010",
+        "OPS-011",
+        "OPS-012",
+        "OPS-013",
+        "OPS-022"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    },
+    {
+      "id": "E21",
+      "name": "Betriebsbereites Handoff",
+      "depends_on": [
+        "E20"
+      ],
+      "feature_ids": [
+        "T09",
+        "OPS-019",
+        "OPS-020",
+        "OPS-021"
+      ],
+      "status": "not_verified",
+      "completion_gate": "All linked feature IDs verified with code, UI, DB, policy, tests, docs and no unsafe licensing."
+    }
+  ],
+  "feature_total": 344,
+  "note": "Execution order, not an implementation report."
+}

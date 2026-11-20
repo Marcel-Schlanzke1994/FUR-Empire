@@ -1,0 +1,2107 @@
+{
+  "01_TERRA/title/terra_title": {
+    "job": "exec-337ac0ce-45d6-49f3-8ec6-08f6be7554ce.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      2560,
+      1440
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": true
+  },
+  "01_TERRA/title/terra_title_mobile": {
+    "job": "exec-34a1d259-3da1-42cd-81e1-05f6100d6adb.png",
+    "master_size": [
+      1086,
+      1448
+    ],
+    "export_size": [
+      960,
+      1280
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/title/social_preview": {
+    "job": "exec-ddcc70c0-2a0a-45df-83d8-839140444aba.png",
+    "master_size": [
+      1729,
+      910
+    ],
+    "export_size": [
+      1200,
+      630
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/title/season_banner": {
+    "job": "exec-71fdfd89-72de-42ff-9a9b-f651140d5fbf.png",
+    "master_size": [
+      2172,
+      724
+    ],
+    "export_size": [
+      1920,
+      640
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/hq": {
+    "job": "exec-d922306e-a7dc-4e4e-a899-f8f32f43d11f.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/wood": {
+    "job": "exec-2891533a-441c-4cf6-a19f-e7f6cf6420bd.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/stone": {
+    "job": "exec-b499d792-2def-49da-b18f-16a5fcc15294.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/ore": {
+    "job": "exec-941e7f89-f356-4d41-9f70-bf00f4b10591.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/storage": {
+    "job": "exec-37a6bc36-a659-47ff-b466-e2468464a0f2.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/barracks": {
+    "job": "exec-f64f471a-d496-417a-83f2-06d48c632ead.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/lab": {
+    "job": "exec-777911d1-48d2-4fe0-a74a-d22aac12aeed.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/buildings/wall": {
+    "job": "exec-e22e7769-2485-4b19-88ea-983137837ccb.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/units/ranger": {
+    "job": "exec-3ca46aac-b7b0-43fd-9f3b-ee8fa1187dc2.png",
+    "master_size": [
+      1182,
+      1330
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/units/sentinel": {
+    "job": "exec-d3ea7935-de71-44ec-b667-7562524d0c69.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/units/mech": {
+    "job": "exec-5ccb895c-f11b-4e79-8580-db969dd3e0ca.png",
+    "master_size": [
+      1321,
+      1191
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/outposts/outpost_small": {
+    "job": "exec-3a393248-f728-41b2-837f-d96f9ff382e5.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "relative_category_size",
+    "resampled_up": false
+  },
+  "01_TERRA/outposts/outpost_medium": {
+    "job": "exec-33dc098c-5063-4bec-b159-45e37a6ff92c.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "relative_category_size",
+    "resampled_up": false
+  },
+  "01_TERRA/outposts/outpost_large": {
+    "job": "exec-a8f4983f-a1cb-4d35-8984-9bdf7490be68.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "relative_category_size",
+    "resampled_up": false
+  },
+  "01_TERRA/outposts/outpost_citadel": {
+    "job": "exec-65faa028-f21e-436e-9097-6b8e86ebb677.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "relative_category_size",
+    "resampled_up": false
+  },
+  "01_TERRA/damage_overlays/fortress_destroyed": {
+    "job": "exec-6f2f718c-c5dc-491e-a620-489654700eb8.png",
+    "master_size": [
+      1254,
+      1254
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/map_objects/ruin": {
+    "job": "exec-76bd75a6-f9c2-4ad3-83bd-edea86ce26d7.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/map_objects/npc_camp": {
+    "job": "exec-379e127c-d420-4516-8179-ca3a81924ff3.png",
+    "master_size": [
+      1478,
+      1064
+    ],
+    "export_size": [
+      512,
+      512
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/crafting_component": {
+    "job": "exec-623bdf5d-8fd0-4d2c-a661-900a7f705055.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/field_repair_kit": {
+    "job": "exec-40a29445-a712-44f3-a32a-2c673e2621c9.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/cosmetic_token": {
+    "job": "exec-e987ba25-429a-42d0-8b2d-3104402048a4.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/commander_badge": {
+    "job": "exec-3e12c7b7-532c-4a4f-9805-65a4bc86ca56.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/salvage_material": {
+    "job": "exec-e5a6f2f1-c877-4237-b5fb-8335323d07d5.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/research_artifact": {
+    "job": "exec-4eb1733a-4edc-4a39-9938-78e7093b80bd.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/pve_supply": {
+    "job": "exec-f783f93e-87a2-4697-9b0e-d5a05bfebbd9.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/inventory/prestige_token": {
+    "job": "exec-03b5a703-6dcf-4376-adcc-f1aef0cb3f2e.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      256,
+      256
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_missions": {
+    "job": "exec-17ca2399-075d-4386-a7a1-7b190e99972c.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_reports": {
+    "job": "exec-2c70cce9-687d-4cf7-ae57-7b79bbb0d765.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_messages": {
+    "job": "exec-7dcb3703-eb9d-4934-ba25-23ef58a341b5.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_inventory": {
+    "job": "exec-2f876795-db05-416f-aad8-6519ccca0168.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_alliance": {
+    "job": "exec-3c04bf01-b2e4-4f86-ac57-18587da8bd39.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "01_TERRA/ui/empty_states/empty_search": {
+    "job": "exec-c6acc812-ceae-4028-88c7-716cd8ad4042.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      640,
+      360
+    ],
+    "alpha_source_edge": null,
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/probe": {
+    "job": "exec-452d7be2-df97-4e81-b0bf-6973bd7a0a82.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/courier": {
+    "job": "exec-96806750-25df-4572-b655-ef79d471109e.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/light_fighter": {
+    "job": "exec-7eb5b3ed-d23f-4400-a10d-77feb8ece37e.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/heavy_fighter": {
+    "job": "exec-2580b2a1-76ff-48c5-907d-fffd2e7f542c.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/frigate": {
+    "job": "exec-1f74484d-4498-4a1c-87ea-94bf78f08d74.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/cruiser": {
+    "job": "exec-54d01af3-b811-42db-a8aa-b45b30d36014.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/battleship": {
+    "job": "exec-3003e5ff-bc76-49c0-a8a5-7c4ab97a07e3.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/shield_carrier": {
+    "job": "exec-ac56c9b5-9d62-4805-b582-ee4b8f5ba273.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/carrier": {
+    "job": "exec-01692721-306f-444d-9dd1-413b5751cb2c.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      2,
+      1,
+      2
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/colony_ship": {
+    "job": "exec-0e379483-83fe-48d2-904b-de8a14a42336.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/freighter": {
+    "job": "exec-33c58c6f-cc9f-478f-aa57-50d57cbc92ff.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/salvager": {
+    "job": "exec-48ce05b2-0111-4d1d-9891-eff334faa764.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/siege_ship": {
+    "job": "exec-d2a0e818-f592-4237-9b87-f2dd977f9506.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/ships/flagship": {
+    "job": "exec-e4e6c66c-4ef8-45ca-be3f-62d638edf398.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      3,
+      0,
+      1
+    ],
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/scanner_tower": {
+    "job": "exec-035a55d8-91ee-4307-8de4-08fdd9f239d6.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/command_uplink": {
+    "job": "exec-8a5e3e49-e2b0-45b4-a00a-97eccdb6479a.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      2
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/repair_bay": {
+    "job": "exec-778afc6d-899b-45af-9792-466fecb8950b.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/drone_foundry": {
+    "job": "exec-59d643cf-b618-4239-aff1-4d19366616db.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/artillery_battery": {
+    "job": "exec-7b34fdae-3b8c-4fd5-9356-e772edc305ac.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/hospital": {
+    "job": "exec-7b357699-3227-436d-9c38-12b963bd6790.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/shield_generator": {
+    "job": "exec-05ce2be6-d16a-4ff2-b8f8-13ef5b13670a.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/energy_core": {
+    "job": "exec-ecbc076a-fa2c-40f2-9cc2-29d3f06d7488.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/fusion_plant": {
+    "job": "exec-26ce8415-a5e3-46f4-b5f4-28e92ac36e44.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/market_hub": {
+    "job": "exec-8faed0cd-c15d-421b-b5a7-f248229f4fbc.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/supply_depot": {
+    "job": "exec-29f92a23-b78b-42b4-bb4e-9395af0edfda.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/advanced_lab": {
+    "job": "exec-09b8cc61-9906-4d5c-8d81-13355518fd04.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/espionage_center": {
+    "job": "exec-d05e036c-89b8-4c00-ab2b-7b8d455356e3.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/orbital_gateway": {
+    "job": "exec-691ec935-3783-4aad-9b80-b0c219a48ab1.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/colony_station": {
+    "job": "exec-b7feca6b-d89c-4b6e-9d15-30a9ec322d4f.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/trade_port": {
+    "job": "exec-b2d39aa0-0bc6-40c4-8dca-d2ff1b90035e.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/war_academy": {
+    "job": "exec-f991e606-bb22-491f-a478-b81c9ece4ddc.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/siege_factory": {
+    "job": "exec-90fe14aa-3eee-4c91-8495-d1811f690052.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/fortification": {
+    "job": "exec-db12c130-3dfd-4925-aa3f-b3c86297979e.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/buildings/archive_vault": {
+    "job": "exec-7d496228-50fa-47e8-b56d-990c1599178d.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/terraformer_drone": {
+    "job": "exec-7f02165a-d910-4b7f-9d43-a538c4d7ed65.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/frontier_vanguard": {
+    "job": "exec-ff42da34-0023-49e6-b249-ee175ac1cad9.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/bastion_walker": {
+    "job": "exec-262c689e-7097-426b-b520-04f2f8ef8c88.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/shield_sentinel": {
+    "job": "exec-cf4698fc-825f-4dae-b13d-cf7600d756c6.png",
+    "master_size": [
+      1230,
+      1278
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/covert_courier": {
+    "job": "exec-3d5a43d8-7994-42e6-a478-c9066f1d1659.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/salvage_engineer": {
+    "job": "exec-ceb9210c-95ff-4a4a-a671-3a1448542ef3.png",
+    "master_size": [
+      1315,
+      1196
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/scout": {
+    "job": "exec-61826fb1-a49a-4876-baab-9bf3d38bccd0.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/saboteur": {
+    "job": "exec-f122d04e-6de9-4e28-826f-223e0083dcd9.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/medic": {
+    "job": "exec-3d6c6416-ddde-4601-995e-35ec0d478269.png",
+    "master_size": [
+      1220,
+      1289
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/shield_drone": {
+    "job": "exec-bea8e5e5-5bca-4d55-bd5f-65f6f89584ec.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/sniper": {
+    "job": "exec-575dd312-eb04-48c2-9739-898202b01045.png",
+    "master_size": [
+      1240,
+      1269
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/siege_robot": {
+    "job": "exec-e133d7e2-74a9-4fdc-958e-5dcd2052113f.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/artillery_platform": {
+    "job": "exec-708efdf6-50b5-4ae4-a23a-fe3ee432e986.png",
+    "master_size": [
+      1447,
+      1087
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/logistics_convoy": {
+    "job": "exec-ac8e3d8f-55c7-4c64-bb2d-584c7da5f1d2.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/engineer_squad": {
+    "job": "exec-dd51a152-d200-418e-8da7-0f58b671586b.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/interceptor_drone": {
+    "job": "exec-8e29b0cf-b955-4fd2-b9eb-da59a4977334.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/commander_guard": {
+    "job": "exec-f928057d-4f16-4ca7-92c3-4146a527fbed.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/units/titan_colossus": {
+    "job": "exec-b47c2bb9-c989-439d-bb07-20613fb969b8.png",
+    "master_size": [
+      1247,
+      1261
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/defenses/kinetic_turret": {
+    "job": "exec-94c1dd77-5534-4d4a-bb14-029662161b85.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/defenses/aegis_emitter": {
+    "job": "exec-34bcf255-503a-45ea-a9cb-b28cbe8502ed.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/defenses/proximity_mines": {
+    "job": "exec-380f2ea2-fa36-4b14-af50-c29a6b555aa7.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/defenses/battle_bunker": {
+    "job": "exec-3693e7a4-db9b-456c-893f-292a03c6ac19.png",
+    "master_size": [
+      1448,
+      1086
+    ],
+    "export_size": [
+      768,
+      768
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/backgrounds/orbit_title": {
+    "job": "exec-b04b203d-44e8-445b-99c1-6cd3987cdbaf.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      2560,
+      1440
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": true
+  },
+  "02_ORBIT/backgrounds/orbit_title_mobile": {
+    "job": "exec-c2bc40af-04af-427e-8cf5-82212f061ba1.png",
+    "master_size": [
+      1086,
+      1448
+    ],
+    "export_size": [
+      960,
+      1280
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/backgrounds/space_stars": {
+    "job": "exec-ef0f55cf-f9a8-4852-9cea-cb7dd229e062.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": true
+  },
+  "02_ORBIT/backgrounds/space_nebula": {
+    "job": "exec-84e0190a-d0b6-429d-b0bd-0afff364b53a.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": true
+  },
+  "02_ORBIT/backgrounds/space_frontier": {
+    "job": "exec-616cf86f-3d36-4176-ac39-7b9fd1034fbb.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      3840,
+      2160
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": true
+  },
+  "02_ORBIT/planets/planet_rock": {
+    "job": "exec-ef527598-330f-4cda-b9ab-b44a5cc64db8.png",
+    "master_size": [
+      1254,
+      1254
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/planets/planet_ice": {
+    "job": "exec-c5937c7e-5ca9-4ae1-a556-876f06cab494.png",
+    "master_size": [
+      1254,
+      1254
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/planets/planet_desert": {
+    "job": "exec-5b6a0cb0-339a-43af-92d4-2596829a3a07.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/planets/planet_ocean": {
+    "job": "exec-6fbd9e00-38a1-4c99-a6c7-777939b928ac.png",
+    "master_size": [
+      1254,
+      1254
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/moon": {
+    "job": "exec-483893a5-7859-404c-9ff0-24635ce025b2.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/asteroid_field": {
+    "job": "exec-046dcce3-31d8-465e-af2f-6376c829e0f6.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/debris_field": {
+    "job": "exec-65d69481-7b9e-452c-b233-10a3441c3082.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/space_station": {
+    "job": "exec-086dbe15-1649-43e9-a497-4c04f6a2ca49.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      7,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/defense_platform": {
+    "job": "exec-7ce2d258-b15c-4665-b8b9-cce02338b13b.png",
+    "master_size": [
+      1536,
+      1024
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/jump_gate": {
+    "job": "exec-7acce428-0f0a-4f8d-b50a-e4a283c3c138.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/sensor_relay": {
+    "job": "exec-1a420289-2f04-4a58-b536-63b747518ae6.png",
+    "master_size": [
+      1312,
+      1199
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      2,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/orbital_objects/orbital_shipyard": {
+    "job": "exec-e8e65960-a8f6-4477-b336-4ee383f28728.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      3,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/commander/commander_default": {
+    "job": "exec-574341fa-c2b6-40a3-aeb4-5ea49d631ace.png",
+    "master_size": [
+      1086,
+      1448
+    ],
+    "export_size": [
+      768,
+      1024
+    ],
+    "alpha_source_edge": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/skins/ashen_watch": {
+    "job": "exec-ce2f1f97-a842-4372-ad17-157e55686407.png",
+    "master_size": [
+      1199,
+      1312
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/skins/citadel_watch": {
+    "job": "exec-d7aab5b1-a5d8-42a8-8816-5c40dc949169.png",
+    "master_size": [
+      1145,
+      1374
+    ],
+    "export_size": [
+      1024,
+      1024
+    ],
+    "alpha_source_edge": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/banners/frontier_dawn": {
+    "job": "exec-066e534e-8e2a-4d34-9a3a-e39c844352b4.png",
+    "master_size": [
+      2172,
+      724
+    ],
+    "export_size": [
+      1920,
+      640
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/banners/citadel_banner": {
+    "job": "exec-0ccb07b7-e039-4e14-bd0b-86a088e00048.png",
+    "master_size": [
+      2172,
+      724
+    ],
+    "export_size": [
+      1920,
+      640
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/campaign/campaign_directive_01": {
+    "job": "exec-93eda971-5e9d-4acb-9370-3fc287474cf6.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1200,
+      675
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/campaign/campaign_directive_02": {
+    "job": "exec-7a817a81-b2b3-4732-a794-a342762f679a.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1200,
+      675
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/campaign/campaign_directive_03": {
+    "job": "exec-f064c2f2-a818-45a9-a17e-039e2bdd8b0b.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1200,
+      675
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/campaign/campaign_directive_04": {
+    "job": "exec-13a15d6f-135d-4cd0-b974-353a48540e64.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1200,
+      675
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  },
+  "02_ORBIT/campaign/campaign_directive_05": {
+    "job": "exec-27259322-615d-4093-afb2-ffd8b30567dc.png",
+    "master_size": [
+      1672,
+      941
+    ],
+    "export_size": [
+      1200,
+      675
+    ],
+    "alpha_source_edge": null,
+    "framing": "standard",
+    "resampled_up": false
+  }
+}

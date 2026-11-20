@@ -1,0 +1,3 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID space_stars | PACKAGE orbit | CATEGORY backgrounds
+Native high-resolution 3840x2160 wide 16:9 cinematic star field for strategic orbital map. Deep navy and charcoal empty space with varied pinpoint stars, a very faint fine dust band and only a few subtle cyan-gold diffraction highlights. No planet or ship.

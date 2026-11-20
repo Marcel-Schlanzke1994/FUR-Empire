@@ -1,0 +1,16 @@
+{
+  "version": "FUR-3-TERRA-RECOVERY-1",
+  "game": "terra",
+  "kind": "unit_wreck_recovery",
+  "status": "provisional_balance",
+  "loss_recovery_percent": 25,
+  "loss_rounding": "floor_per_unit_type_and_colony",
+  "wreck_window_seconds": 172800,
+  "repair_cost_percent": 50,
+  "repair_cost_rounding": "ceil_per_resource_per_unit",
+  "repair_duration_formula": "unit_training_seconds_times_count",
+  "repair_queue": "one_active_order_per_colony",
+  "cancel_policy": "full_cost_refund_and_wreck_restore",
+  "legacy_fur2_preserved": true,
+  "training_activation_gate": "separate_balance_acceptance"
+}

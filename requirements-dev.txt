@@ -1,0 +1,7 @@
+-r requirements.lock
+pytest
+httpx
+ruff
+black
+mypy
+pip-audit

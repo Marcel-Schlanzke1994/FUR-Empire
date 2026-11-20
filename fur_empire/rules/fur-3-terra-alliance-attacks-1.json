@@ -1,0 +1,39 @@
+{
+  "version": "FUR-3-TERRA-ACS-2",
+  "operation": {
+    "minimum_members": 2,
+    "maximum_members": 12,
+    "assembly_seconds": 300,
+    "target_kinds": ["neutral_outpost", "enemy_home_colony"],
+    "target_locked_at_creation": true,
+    "neutral_capture_requires_leader_headquarters_level": 3,
+    "player_colonies_are_not_capturable": true,
+    "only_one_wing_per_player": true,
+    "same_alliance_and_world_required": true,
+    "leader_cancellation_before_lock_only": true,
+    "member_withdrawal_before_lock_only": true,
+    "leader_eligibility_failure_aborts_operation": true,
+    "invalid_nonleader_wings_return_intact": true
+  },
+  "arrival": {
+    "common_arrival": true,
+    "departure_at_assembly_deadline": true,
+    "travel_seconds": "existing terrain-weighted FUR-2 path for each origin",
+    "operation_arrival": "assembly deadline plus longest participant travel",
+    "arrival_rechecks": ["alliance membership", "world", "PVP", "beginner protection", "vacation", "NAP"]
+  },
+  "combat": {
+    "resolver": "FUR-2 deterministic single round",
+    "attacker_power": "sum of each participant's unit power multiplied by that participant's tactics bonus, integer-divided by 100 once",
+    "casualties": "existing FUR-2 deterministic loss percentage applied independently to every participant wing",
+    "leader_receives_neutral_capture": true,
+    "leader_receives_neutral_loot": true,
+    "loot_distribution": "proportional to each wing's surviving logistics capacity, largest remainder, member id tie-break",
+    "pvp_loot_distribution": "same as neutral loot"
+  },
+  "returns": {
+    "each_wing_returns_to_its_origin": true,
+    "return_duration_equals_that_wing_travel_seconds": true,
+    "return_jobs_are_idempotent": true
+  }
+}

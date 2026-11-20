@@ -1,0 +1,5867 @@
+{
+  "project": "FUR EMPIRE",
+  "packages": {
+    "terra": {
+      "asset_count": 169,
+      "status_counts": {
+        "approved": 169
+      },
+      "assets": [
+        "terra/branding/fur_emblem",
+        "terra/branding/fur_wordmark",
+        "terra/branding/fur_favicon",
+        "terra/title/terra_title",
+        "terra/title/terra_title_mobile",
+        "terra/title/social_preview",
+        "terra/title/season_banner",
+        "terra/buildings/hq",
+        "terra/buildings/wood",
+        "terra/buildings/stone",
+        "terra/buildings/ore",
+        "terra/buildings/storage",
+        "terra/buildings/barracks",
+        "terra/buildings/lab",
+        "terra/buildings/wall",
+        "terra/units/ranger",
+        "terra/units/sentinel",
+        "terra/units/mech",
+        "terra/terrain/base/plain",
+        "terra/terrain/base/forest",
+        "terra/terrain/base/water",
+        "terra/terrain/base/mountain",
+        "terra/terrain/base/pass",
+        "terra/terrain/transitions/shore_00",
+        "terra/terrain/transitions/shore_01",
+        "terra/terrain/transitions/shore_02",
+        "terra/terrain/transitions/shore_03",
+        "terra/terrain/transitions/shore_04",
+        "terra/terrain/transitions/shore_05",
+        "terra/terrain/transitions/shore_06",
+        "terra/terrain/transitions/shore_07",
+        "terra/terrain/transitions/shore_08",
+        "terra/terrain/transitions/shore_09",
+        "terra/terrain/transitions/shore_10",
+        "terra/terrain/transitions/shore_11",
+        "terra/terrain/transitions/shore_12",
+        "terra/terrain/transitions/shore_13",
+        "terra/terrain/transitions/shore_14",
+        "terra/terrain/transitions/shore_15",
+        "terra/terrain/transitions/forest_edge_00",
+        "terra/terrain/transitions/forest_edge_01",
+        "terra/terrain/transitions/forest_edge_02",
+        "terra/terrain/transitions/forest_edge_03",
+        "terra/terrain/transitions/forest_edge_04",
+        "terra/terrain/transitions/forest_edge_05",
+        "terra/terrain/transitions/forest_edge_06",
+        "terra/terrain/transitions/forest_edge_07",
+        "terra/terrain/transitions/forest_edge_08",
+        "terra/terrain/transitions/forest_edge_09",
+        "terra/terrain/transitions/forest_edge_10",
+        "terra/terrain/transitions/forest_edge_11",
+        "terra/terrain/transitions/forest_edge_12",
+        "terra/terrain/transitions/forest_edge_13",
+        "terra/terrain/transitions/forest_edge_14",
+        "terra/terrain/transitions/forest_edge_15",
+        "terra/terrain/transitions/mountain_edge_00",
+        "terra/terrain/transitions/mountain_edge_01",
+        "terra/terrain/transitions/mountain_edge_02",
+        "terra/terrain/transitions/mountain_edge_03",
+        "terra/terrain/transitions/mountain_edge_04",
+        "terra/terrain/transitions/mountain_edge_05",
+        "terra/terrain/transitions/mountain_edge_06",
+        "terra/terrain/transitions/mountain_edge_07",
+        "terra/terrain/transitions/mountain_edge_08",
+        "terra/terrain/transitions/mountain_edge_09",
+        "terra/terrain/transitions/mountain_edge_10",
+        "terra/terrain/transitions/mountain_edge_11",
+        "terra/terrain/transitions/mountain_edge_12",
+        "terra/terrain/transitions/mountain_edge_13",
+        "terra/terrain/transitions/mountain_edge_14",
+        "terra/terrain/transitions/mountain_edge_15",
+        "terra/terrain/atlases/terrain_transitions",
+        "terra/fog/fog_unknown",
+        "terra/fog/fog_explored",
+        "terra/fog/fog_visible",
+        "terra/outposts/outpost_small",
+        "terra/outposts/outpost_medium",
+        "terra/outposts/outpost_large",
+        "terra/outposts/outpost_citadel",
+        "terra/damage_overlays/fortress_intact",
+        "terra/damage_overlays/fortress_damaged",
+        "terra/damage_overlays/fortress_destroyed",
+        "terra/map_objects/ruin",
+        "terra/map_objects/npc_camp",
+        "terra/markers/colony_own",
+        "terra/markers/colony_foreign",
+        "terra/markers/colony_allied",
+        "terra/markers/outpost_neutral",
+        "terra/markers/outpost_occupied",
+        "terra/markers/citadel_boss",
+        "terra/markers/npc_camp",
+        "terra/markers/ruin",
+        "terra/markers/attack",
+        "terra/markers/transport",
+        "terra/markers/scouting",
+        "terra/markers/expedition",
+        "terra/markers/return",
+        "terra/markers/warning",
+        "terra/markers/favorite",
+        "terra/resources/wood",
+        "terra/resources/stone",
+        "terra/resources/ore",
+        "terra/resources/alloy",
+        "terra/resources/circuits",
+        "terra/resources/textiles",
+        "terra/resources/rations",
+        "terra/resources/medicine",
+        "terra/resources/lubricant",
+        "terra/resources/ceramics",
+        "terra/resources/energy",
+        "terra/resources/ether",
+        "terra/research/tactics",
+        "terra/research/logistics",
+        "terra/research/engineering",
+        "terra/inventory/crafting_component",
+        "terra/inventory/field_repair_kit",
+        "terra/inventory/cosmetic_token",
+        "terra/inventory/commander_badge",
+        "terra/inventory/salvage_material",
+        "terra/inventory/research_artifact",
+        "terra/inventory/pve_supply",
+        "terra/inventory/prestige_token",
+        "terra/ui/navigation/overview",
+        "terra/ui/navigation/buildings",
+        "terra/ui/navigation/research",
+        "terra/ui/navigation/army",
+        "terra/ui/navigation/map",
+        "terra/ui/navigation/missions",
+        "terra/ui/navigation/reports",
+        "terra/ui/navigation/trade",
+        "terra/ui/navigation/inventory",
+        "terra/ui/navigation/alliance",
+        "terra/ui/navigation/diplomacy",
+        "terra/ui/navigation/messages",
+        "terra/ui/navigation/leaderboard",
+        "terra/ui/navigation/commander",
+        "terra/ui/navigation/season",
+        "terra/ui/navigation/settings",
+        "terra/ui/navigation/security",
+        "terra/ui/navigation/help",
+        "terra/ui/navigation/administration",
+        "terra/ui/actions/build",
+        "terra/ui/actions/upgrade",
+        "terra/ui/actions/cancel",
+        "terra/ui/actions/reorder",
+        "terra/ui/actions/send",
+        "terra/ui/actions/recall",
+        "terra/ui/actions/repair",
+        "terra/ui/actions/lock",
+        "terra/ui/actions/unlock",
+        "terra/ui/actions/confirm",
+        "terra/ui/actions/error",
+        "terra/ui/actions/warning",
+        "terra/ui/actions/information",
+        "terra/ui/actions/timer",
+        "terra/ui/actions/search",
+        "terra/ui/actions/filter",
+        "terra/ui/actions/close",
+        "terra/ui/actions/next",
+        "terra/ui/actions/previous",
+        "terra/ui/empty_states/empty_missions",
+        "terra/ui/empty_states/empty_reports",
+        "terra/ui/empty_states/empty_messages",
+        "terra/ui/empty_states/empty_inventory",
+        "terra/ui/empty_states/empty_alliance",
+        "terra/ui/empty_states/empty_search",
+        "terra/ui/loading/loading_animated",
+        "terra/ui/loading/loading_static",
+        "terra/ui/textures/panel_texture"
+      ]
+    },
+    "orbit": {
+      "asset_count": 133,
+      "status_counts": {
+        "approved": 133
+      },
+      "assets": [
+        "orbit/buildings/scanner_tower",
+        "orbit/buildings/command_uplink",
+        "orbit/buildings/repair_bay",
+        "orbit/buildings/drone_foundry",
+        "orbit/buildings/artillery_battery",
+        "orbit/buildings/hospital",
+        "orbit/buildings/shield_generator",
+        "orbit/buildings/energy_core",
+        "orbit/buildings/fusion_plant",
+        "orbit/buildings/market_hub",
+        "orbit/buildings/supply_depot",
+        "orbit/buildings/advanced_lab",
+        "orbit/buildings/espionage_center",
+        "orbit/buildings/orbital_gateway",
+        "orbit/buildings/colony_station",
+        "orbit/buildings/trade_port",
+        "orbit/buildings/war_academy",
+        "orbit/buildings/siege_factory",
+        "orbit/buildings/fortification",
+        "orbit/buildings/archive_vault",
+        "orbit/units/terraformer_drone",
+        "orbit/units/frontier_vanguard",
+        "orbit/units/bastion_walker",
+        "orbit/units/shield_sentinel",
+        "orbit/units/covert_courier",
+        "orbit/units/salvage_engineer",
+        "orbit/units/scout",
+        "orbit/units/saboteur",
+        "orbit/units/medic",
+        "orbit/units/shield_drone",
+        "orbit/units/sniper",
+        "orbit/units/siege_robot",
+        "orbit/units/artillery_platform",
+        "orbit/units/logistics_convoy",
+        "orbit/units/engineer_squad",
+        "orbit/units/interceptor_drone",
+        "orbit/units/commander_guard",
+        "orbit/units/titan_colossus",
+        "orbit/defenses/kinetic_turret",
+        "orbit/defenses/aegis_emitter",
+        "orbit/defenses/proximity_mines",
+        "orbit/defenses/battle_bunker",
+        "orbit/research/terra_colonization",
+        "orbit/research/terra_logistics",
+        "orbit/research/terrain_survival",
+        "orbit/research/reconnaissance",
+        "orbit/research/counterintelligence",
+        "orbit/research/ballistics",
+        "orbit/research/shields",
+        "orbit/research/armor_technology",
+        "orbit/research/field_medicine",
+        "orbit/research/alliance_coordination",
+        "orbit/research/supply_chain",
+        "orbit/research/advanced_production",
+        "orbit/research/field_energy",
+        "orbit/research/cybernetics",
+        "orbit/research/orbital_navigation",
+        "orbit/research/orbital_shipbuilding",
+        "orbit/research/orbital_scanning",
+        "orbit/research/ether_refining",
+        "orbit/research/advanced_propulsion",
+        "orbit/research/jump_gate_network",
+        "orbit/research/terra_prestige",
+        "orbit/ships/probe",
+        "orbit/ships/courier",
+        "orbit/ships/light_fighter",
+        "orbit/ships/heavy_fighter",
+        "orbit/ships/frigate",
+        "orbit/ships/cruiser",
+        "orbit/ships/battleship",
+        "orbit/ships/shield_carrier",
+        "orbit/ships/carrier",
+        "orbit/ships/colony_ship",
+        "orbit/ships/freighter",
+        "orbit/ships/salvager",
+        "orbit/ships/siege_ship",
+        "orbit/ships/flagship",
+        "orbit/backgrounds/orbit_title",
+        "orbit/backgrounds/orbit_title_mobile",
+        "orbit/backgrounds/space_stars",
+        "orbit/backgrounds/space_nebula",
+        "orbit/backgrounds/space_frontier",
+        "orbit/planets/planet_rock",
+        "orbit/planets/planet_ice",
+        "orbit/planets/planet_desert",
+        "orbit/planets/planet_ocean",
+        "orbit/orbital_objects/moon",
+        "orbit/orbital_objects/asteroid_field",
+        "orbit/orbital_objects/debris_field",
+        "orbit/orbital_objects/space_station",
+        "orbit/orbital_objects/defense_platform",
+        "orbit/orbital_objects/jump_gate",
+        "orbit/orbital_objects/sensor_relay",
+        "orbit/orbital_objects/orbital_shipyard",
+        "orbit/factions/ash_covenant",
+        "orbit/factions/iron_pact",
+        "orbit/factions/thorn_conclave",
+        "orbit/factions/dawn_alliance",
+        "orbit/factions/tide_alliance",
+        "orbit/commander/commander_default",
+        "orbit/commander/commander_economy",
+        "orbit/commander/commander_military",
+        "orbit/commander/commander_recon",
+        "orbit/commander/commander_command",
+        "orbit/prestige/frontier_veteran",
+        "orbit/prestige/star_guardian",
+        "orbit/prestige/empire_legend",
+        "orbit/skins/ashen_watch",
+        "orbit/skins/citadel_watch",
+        "orbit/banners/frontier_dawn",
+        "orbit/banners/citadel_banner",
+        "orbit/alliance_emblems/alliance_shield",
+        "orbit/alliance_emblems/alliance_star",
+        "orbit/alliance_emblems/alliance_wings",
+        "orbit/alliance_emblems/alliance_gear",
+        "orbit/alliance_emblems/alliance_crest",
+        "orbit/alliance_emblems/alliance_laurel",
+        "orbit/alliance_emblems/alliance_lightning",
+        "orbit/campaign/campaign_directive_01",
+        "orbit/campaign/campaign_directive_02",
+        "orbit/campaign/campaign_directive_03",
+        "orbit/campaign/campaign_directive_04",
+        "orbit/campaign/campaign_directive_05",
+        "orbit/effects/shield_hit",
+        "orbit/effects/shield_hit_static",
+        "orbit/effects/projectile_hit",
+        "orbit/effects/projectile_hit_static",
+        "orbit/effects/explosion",
+        "orbit/effects/explosion_static",
+        "orbit/effects/repair",
+        "orbit/effects/repair_static",
+        "orbit/effects/salvage",
+        "orbit/effects/salvage_static"
+      ]
+    }
+  },
+  "aliases": {
+    "fur_emblem": "terra/branding/fur_emblem",
+    "fur_wordmark": "terra/branding/fur_wordmark",
+    "fur_favicon": "terra/branding/fur_favicon",
+    "terra_title": "terra/title/terra_title",
+    "terra_title_mobile": "terra/title/terra_title_mobile",
+    "social_preview": "terra/title/social_preview",
+    "season_banner": "terra/title/season_banner",
+    "hq": "terra/buildings/hq",
+    "storage": "terra/buildings/storage",
+    "barracks": "terra/buildings/barracks",
+    "lab": "terra/buildings/lab",
+    "wall": "terra/buildings/wall",
+    "ranger": "terra/units/ranger",
+    "sentinel": "terra/units/sentinel",
+    "mech": "terra/units/mech",
+    "plain": "terra/terrain/base/plain",
+    "forest": "terra/terrain/base/forest",
+    "water": "terra/terrain/base/water",
+    "mountain": "terra/terrain/base/mountain",
+    "pass": "terra/terrain/base/pass",
+    "shore_00": "terra/terrain/transitions/shore_00",
+    "shore_01": "terra/terrain/transitions/shore_01",
+    "shore_02": "terra/terrain/transitions/shore_02",
+    "shore_03": "terra/terrain/transitions/shore_03",
+    "shore_04": "terra/terrain/transitions/shore_04",
+    "shore_05": "terra/terrain/transitions/shore_05",
+    "shore_06": "terra/terrain/transitions/shore_06",
+    "shore_07": "terra/terrain/transitions/shore_07",
+    "shore_08": "terra/terrain/transitions/shore_08",
+    "shore_09": "terra/terrain/transitions/shore_09",
+    "shore_10": "terra/terrain/transitions/shore_10",
+    "shore_11": "terra/terrain/transitions/shore_11",
+    "shore_12": "terra/terrain/transitions/shore_12",
+    "shore_13": "terra/terrain/transitions/shore_13",
+    "shore_14": "terra/terrain/transitions/shore_14",
+    "shore_15": "terra/terrain/transitions/shore_15",
+    "forest_edge_00": "terra/terrain/transitions/forest_edge_00",
+    "forest_edge_01": "terra/terrain/transitions/forest_edge_01",
+    "forest_edge_02": "terra/terrain/transitions/forest_edge_02",
+    "forest_edge_03": "terra/terrain/transitions/forest_edge_03",
+    "forest_edge_04": "terra/terrain/transitions/forest_edge_04",
+    "forest_edge_05": "terra/terrain/transitions/forest_edge_05",
+    "forest_edge_06": "terra/terrain/transitions/forest_edge_06",
+    "forest_edge_07": "terra/terrain/transitions/forest_edge_07",
+    "forest_edge_08": "terra/terrain/transitions/forest_edge_08",
+    "forest_edge_09": "terra/terrain/transitions/forest_edge_09",
+    "forest_edge_10": "terra/terrain/transitions/forest_edge_10",
+    "forest_edge_11": "terra/terrain/transitions/forest_edge_11",
+    "forest_edge_12": "terra/terrain/transitions/forest_edge_12",
+    "forest_edge_13": "terra/terrain/transitions/forest_edge_13",
+    "forest_edge_14": "terra/terrain/transitions/forest_edge_14",
+    "forest_edge_15": "terra/terrain/transitions/forest_edge_15",
+    "mountain_edge_00": "terra/terrain/transitions/mountain_edge_00",
+    "mountain_edge_01": "terra/terrain/transitions/mountain_edge_01",
+    "mountain_edge_02": "terra/terrain/transitions/mountain_edge_02",
+    "mountain_edge_03": "terra/terrain/transitions/mountain_edge_03",
+    "mountain_edge_04": "terra/terrain/transitions/mountain_edge_04",
+    "mountain_edge_05": "terra/terrain/transitions/mountain_edge_05",
+    "mountain_edge_06": "terra/terrain/transitions/mountain_edge_06",
+    "mountain_edge_07": "terra/terrain/transitions/mountain_edge_07",
+    "mountain_edge_08": "terra/terrain/transitions/mountain_edge_08",
+    "mountain_edge_09": "terra/terrain/transitions/mountain_edge_09",
+    "mountain_edge_10": "terra/terrain/transitions/mountain_edge_10",
+    "mountain_edge_11": "terra/terrain/transitions/mountain_edge_11",
+    "mountain_edge_12": "terra/terrain/transitions/mountain_edge_12",
+    "mountain_edge_13": "terra/terrain/transitions/mountain_edge_13",
+    "mountain_edge_14": "terra/terrain/transitions/mountain_edge_14",
+    "mountain_edge_15": "terra/terrain/transitions/mountain_edge_15",
+    "terrain_transitions": "terra/terrain/atlases/terrain_transitions",
+    "fog_unknown": "terra/fog/fog_unknown",
+    "fog_explored": "terra/fog/fog_explored",
+    "fog_visible": "terra/fog/fog_visible",
+    "outpost_small": "terra/outposts/outpost_small",
+    "outpost_medium": "terra/outposts/outpost_medium",
+    "outpost_large": "terra/outposts/outpost_large",
+    "outpost_citadel": "terra/outposts/outpost_citadel",
+    "fortress_intact": "terra/damage_overlays/fortress_intact",
+    "fortress_damaged": "terra/damage_overlays/fortress_damaged",
+    "fortress_destroyed": "terra/damage_overlays/fortress_destroyed",
+    "colony_own": "terra/markers/colony_own",
+    "colony_foreign": "terra/markers/colony_foreign",
+    "colony_allied": "terra/markers/colony_allied",
+    "outpost_neutral": "terra/markers/outpost_neutral",
+    "outpost_occupied": "terra/markers/outpost_occupied",
+    "citadel_boss": "terra/markers/citadel_boss",
+    "attack": "terra/markers/attack",
+    "transport": "terra/markers/transport",
+    "scouting": "terra/markers/scouting",
+    "expedition": "terra/markers/expedition",
+    "return": "terra/markers/return",
+    "favorite": "terra/markers/favorite",
+    "alloy": "terra/resources/alloy",
+    "circuits": "terra/resources/circuits",
+    "textiles": "terra/resources/textiles",
+    "rations": "terra/resources/rations",
+    "medicine": "terra/resources/medicine",
+    "lubricant": "terra/resources/lubricant",
+    "ceramics": "terra/resources/ceramics",
+    "energy": "terra/resources/energy",
+    "ether": "terra/resources/ether",
+    "tactics": "terra/research/tactics",
+    "logistics": "terra/research/logistics",
+    "engineering": "terra/research/engineering",
+    "crafting_component": "terra/inventory/crafting_component",
+    "field_repair_kit": "terra/inventory/field_repair_kit",
+    "cosmetic_token": "terra/inventory/cosmetic_token",
+    "commander_badge": "terra/inventory/commander_badge",
+    "salvage_material": "terra/inventory/salvage_material",
+    "research_artifact": "terra/inventory/research_artifact",
+    "pve_supply": "terra/inventory/pve_supply",
+    "prestige_token": "terra/inventory/prestige_token",
+    "overview": "terra/ui/navigation/overview",
+    "buildings": "terra/ui/navigation/buildings",
+    "research": "terra/ui/navigation/research",
+    "army": "terra/ui/navigation/army",
+    "map": "terra/ui/navigation/map",
+    "missions": "terra/ui/navigation/missions",
+    "reports": "terra/ui/navigation/reports",
+    "trade": "terra/ui/navigation/trade",
+    "inventory": "terra/ui/navigation/inventory",
+    "alliance": "terra/ui/navigation/alliance",
+    "diplomacy": "terra/ui/navigation/diplomacy",
+    "messages": "terra/ui/navigation/messages",
+    "leaderboard": "terra/ui/navigation/leaderboard",
+    "commander": "terra/ui/navigation/commander",
+    "season": "terra/ui/navigation/season",
+    "settings": "terra/ui/navigation/settings",
+    "security": "terra/ui/navigation/security",
+    "help": "terra/ui/navigation/help",
+    "administration": "terra/ui/navigation/administration",
+    "build": "terra/ui/actions/build",
+    "upgrade": "terra/ui/actions/upgrade",
+    "cancel": "terra/ui/actions/cancel",
+    "reorder": "terra/ui/actions/reorder",
+    "send": "terra/ui/actions/send",
+    "recall": "terra/ui/actions/recall",
+    "lock": "terra/ui/actions/lock",
+    "unlock": "terra/ui/actions/unlock",
+    "confirm": "terra/ui/actions/confirm",
+    "error": "terra/ui/actions/error",
+    "information": "terra/ui/actions/information",
+    "timer": "terra/ui/actions/timer",
+    "search": "terra/ui/actions/search",
+    "filter": "terra/ui/actions/filter",
+    "close": "terra/ui/actions/close",
+    "next": "terra/ui/actions/next",
+    "previous": "terra/ui/actions/previous",
+    "empty_missions": "terra/ui/empty_states/empty_missions",
+    "empty_reports": "terra/ui/empty_states/empty_reports",
+    "empty_messages": "terra/ui/empty_states/empty_messages",
+    "empty_inventory": "terra/ui/empty_states/empty_inventory",
+    "empty_alliance": "terra/ui/empty_states/empty_alliance",
+    "empty_search": "terra/ui/empty_states/empty_search",
+    "loading_animated": "terra/ui/loading/loading_animated",
+    "loading_static": "terra/ui/loading/loading_static",
+    "panel_texture": "terra/ui/textures/panel_texture",
+    "scanner_tower": "orbit/buildings/scanner_tower",
+    "command_uplink": "orbit/buildings/command_uplink",
+    "repair_bay": "orbit/buildings/repair_bay",
+    "drone_foundry": "orbit/buildings/drone_foundry",
+    "artillery_battery": "orbit/buildings/artillery_battery",
+    "hospital": "orbit/buildings/hospital",
+    "shield_generator": "orbit/buildings/shield_generator",
+    "energy_core": "orbit/buildings/energy_core",
+    "fusion_plant": "orbit/buildings/fusion_plant",
+    "market_hub": "orbit/buildings/market_hub",
+    "supply_depot": "orbit/buildings/supply_depot",
+    "advanced_lab": "orbit/buildings/advanced_lab",
+    "espionage_center": "orbit/buildings/espionage_center",
+    "orbital_gateway": "orbit/buildings/orbital_gateway",
+    "colony_station": "orbit/buildings/colony_station",
+    "trade_port": "orbit/buildings/trade_port",
+    "war_academy": "orbit/buildings/war_academy",
+    "siege_factory": "orbit/buildings/siege_factory",
+    "fortification": "orbit/buildings/fortification",
+    "archive_vault": "orbit/buildings/archive_vault",
+    "terraformer_drone": "orbit/units/terraformer_drone",
+    "frontier_vanguard": "orbit/units/frontier_vanguard",
+    "bastion_walker": "orbit/units/bastion_walker",
+    "shield_sentinel": "orbit/units/shield_sentinel",
+    "covert_courier": "orbit/units/covert_courier",
+    "salvage_engineer": "orbit/units/salvage_engineer",
+    "scout": "orbit/units/scout",
+    "saboteur": "orbit/units/saboteur",
+    "medic": "orbit/units/medic",
+    "shield_drone": "orbit/units/shield_drone",
+    "sniper": "orbit/units/sniper",
+    "siege_robot": "orbit/units/siege_robot",
+    "artillery_platform": "orbit/units/artillery_platform",
+    "logistics_convoy": "orbit/units/logistics_convoy",
+    "engineer_squad": "orbit/units/engineer_squad",
+    "interceptor_drone": "orbit/units/interceptor_drone",
+    "commander_guard": "orbit/units/commander_guard",
+    "titan_colossus": "orbit/units/titan_colossus",
+    "kinetic_turret": "orbit/defenses/kinetic_turret",
+    "aegis_emitter": "orbit/defenses/aegis_emitter",
+    "proximity_mines": "orbit/defenses/proximity_mines",
+    "battle_bunker": "orbit/defenses/battle_bunker",
+    "terra_colonization": "orbit/research/terra_colonization",
+    "terra_logistics": "orbit/research/terra_logistics",
+    "terrain_survival": "orbit/research/terrain_survival",
+    "reconnaissance": "orbit/research/reconnaissance",
+    "counterintelligence": "orbit/research/counterintelligence",
+    "ballistics": "orbit/research/ballistics",
+    "shields": "orbit/research/shields",
+    "armor_technology": "orbit/research/armor_technology",
+    "field_medicine": "orbit/research/field_medicine",
+    "alliance_coordination": "orbit/research/alliance_coordination",
+    "supply_chain": "orbit/research/supply_chain",
+    "advanced_production": "orbit/research/advanced_production",
+    "field_energy": "orbit/research/field_energy",
+    "cybernetics": "orbit/research/cybernetics",
+    "orbital_navigation": "orbit/research/orbital_navigation",
+    "orbital_shipbuilding": "orbit/research/orbital_shipbuilding",
+    "orbital_scanning": "orbit/research/orbital_scanning",
+    "ether_refining": "orbit/research/ether_refining",
+    "advanced_propulsion": "orbit/research/advanced_propulsion",
+    "jump_gate_network": "orbit/research/jump_gate_network",
+    "terra_prestige": "orbit/research/terra_prestige",
+    "probe": "orbit/ships/probe",
+    "courier": "orbit/ships/courier",
+    "light_fighter": "orbit/ships/light_fighter",
+    "heavy_fighter": "orbit/ships/heavy_fighter",
+    "frigate": "orbit/ships/frigate",
+    "cruiser": "orbit/ships/cruiser",
+    "battleship": "orbit/ships/battleship",
+    "shield_carrier": "orbit/ships/shield_carrier",
+    "carrier": "orbit/ships/carrier",
+    "colony_ship": "orbit/ships/colony_ship",
+    "freighter": "orbit/ships/freighter",
+    "salvager": "orbit/ships/salvager",
+    "siege_ship": "orbit/ships/siege_ship",
+    "flagship": "orbit/ships/flagship",
+    "orbit_title": "orbit/backgrounds/orbit_title",
+    "orbit_title_mobile": "orbit/backgrounds/orbit_title_mobile",
+    "space_stars": "orbit/backgrounds/space_stars",
+    "space_nebula": "orbit/backgrounds/space_nebula",
+    "space_frontier": "orbit/backgrounds/space_frontier",
+    "planet_rock": "orbit/planets/planet_rock",
+    "planet_ice": "orbit/planets/planet_ice",
+    "planet_desert": "orbit/planets/planet_desert",
+    "planet_ocean": "orbit/planets/planet_ocean",
+    "moon": "orbit/orbital_objects/moon",
+    "asteroid_field": "orbit/orbital_objects/asteroid_field",
+    "debris_field": "orbit/orbital_objects/debris_field",
+    "space_station": "orbit/orbital_objects/space_station",
+    "defense_platform": "orbit/orbital_objects/defense_platform",
+    "jump_gate": "orbit/orbital_objects/jump_gate",
+    "sensor_relay": "orbit/orbital_objects/sensor_relay",
+    "orbital_shipyard": "orbit/orbital_objects/orbital_shipyard",
+    "ash_covenant": "orbit/factions/ash_covenant",
+    "iron_pact": "orbit/factions/iron_pact",
+    "thorn_conclave": "orbit/factions/thorn_conclave",
+    "dawn_alliance": "orbit/factions/dawn_alliance",
+    "tide_alliance": "orbit/factions/tide_alliance",
+    "commander_default": "orbit/commander/commander_default",
+    "commander_economy": "orbit/commander/commander_economy",
+    "commander_military": "orbit/commander/commander_military",
+    "commander_recon": "orbit/commander/commander_recon",
+    "commander_command": "orbit/commander/commander_command",
+    "frontier_veteran": "orbit/prestige/frontier_veteran",
+    "star_guardian": "orbit/prestige/star_guardian",
+    "empire_legend": "orbit/prestige/empire_legend",
+    "ashen_watch": "orbit/skins/ashen_watch",
+    "citadel_watch": "orbit/skins/citadel_watch",
+    "frontier_dawn": "orbit/banners/frontier_dawn",
+    "citadel_banner": "orbit/banners/citadel_banner",
+    "alliance_shield": "orbit/alliance_emblems/alliance_shield",
+    "alliance_star": "orbit/alliance_emblems/alliance_star",
+    "alliance_wings": "orbit/alliance_emblems/alliance_wings",
+    "alliance_gear": "orbit/alliance_emblems/alliance_gear",
+    "alliance_crest": "orbit/alliance_emblems/alliance_crest",
+    "alliance_laurel": "orbit/alliance_emblems/alliance_laurel",
+    "alliance_lightning": "orbit/alliance_emblems/alliance_lightning",
+    "campaign_directive_01": "orbit/campaign/campaign_directive_01",
+    "campaign_directive_02": "orbit/campaign/campaign_directive_02",
+    "campaign_directive_03": "orbit/campaign/campaign_directive_03",
+    "campaign_directive_04": "orbit/campaign/campaign_directive_04",
+    "campaign_directive_05": "orbit/campaign/campaign_directive_05",
+    "shield_hit": "orbit/effects/shield_hit",
+    "shield_hit_static": "orbit/effects/shield_hit_static",
+    "projectile_hit": "orbit/effects/projectile_hit",
+    "projectile_hit_static": "orbit/effects/projectile_hit_static",
+    "explosion": "orbit/effects/explosion",
+    "explosion_static": "orbit/effects/explosion_static",
+    "repair_static": "orbit/effects/repair_static",
+    "salvage": "orbit/effects/salvage",
+    "salvage_static": "orbit/effects/salvage_static"
+  },
+  "assets": {
+    "terra/branding/fur_emblem": {
+      "asset_id": "fur_emblem",
+      "package": "terra",
+      "category": "branding",
+      "name": "Imperiales Kaninchenemblem",
+      "width": 2048,
+      "height": 2048,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/branding/fur_emblem.svg",
+        "/static/assets/game/terra/branding/fur_emblem.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/branding/fur_wordmark": {
+      "asset_id": "fur_wordmark",
+      "package": "terra",
+      "category": "branding",
+      "name": "FUR EMPIRE Wortmarke",
+      "width": 2400,
+      "height": 720,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/branding/fur_wordmark.svg",
+        "/static/assets/game/terra/branding/fur_wordmark.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/branding/fur_favicon": {
+      "asset_id": "fur_favicon",
+      "package": "terra",
+      "category": "branding",
+      "name": "Favicon",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/branding/fur_favicon.svg",
+        "/static/assets/game/terra/branding/fur_favicon.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/title/terra_title": {
+      "asset_id": "terra_title",
+      "package": "terra",
+      "category": "title",
+      "name": "Terra Titelbild",
+      "width": 2560,
+      "height": 1440,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/title/terra_title.png",
+        "/static/assets/game/terra/title/terra_title.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/title/terra_title_mobile": {
+      "asset_id": "terra_title_mobile",
+      "package": "terra",
+      "category": "title",
+      "name": "Mobiles Terra Titelbild",
+      "width": 960,
+      "height": 1280,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/title/terra_title_mobile.png",
+        "/static/assets/game/terra/title/terra_title_mobile.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/title/social_preview": {
+      "asset_id": "social_preview",
+      "package": "terra",
+      "category": "title",
+      "name": "Social-Vorschau",
+      "width": 1200,
+      "height": 630,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/title/social_preview.png",
+        "/static/assets/game/terra/title/social_preview.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/title/season_banner": {
+      "asset_id": "season_banner",
+      "package": "terra",
+      "category": "title",
+      "name": "Saisonbanner",
+      "width": 1920,
+      "height": 640,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/title/season_banner.png",
+        "/static/assets/game/terra/title/season_banner.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/hq": {
+      "asset_id": "hq",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Kommandozentrale",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/hq.png",
+        "/static/assets/game/terra/buildings/hq.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/wood": {
+      "asset_id": "wood",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Bioforst",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/wood.png",
+        "/static/assets/game/terra/buildings/wood.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/stone": {
+      "asset_id": "stone",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Steinbruch",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/stone.png",
+        "/static/assets/game/terra/buildings/stone.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/ore": {
+      "asset_id": "ore",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Erzraffinerie",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/ore.png",
+        "/static/assets/game/terra/buildings/ore.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/storage": {
+      "asset_id": "storage",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Depot",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/storage.png",
+        "/static/assets/game/terra/buildings/storage.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/barracks": {
+      "asset_id": "barracks",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Kaserne",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/barracks.png",
+        "/static/assets/game/terra/buildings/barracks.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/lab": {
+      "asset_id": "lab",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Forschungslabor",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/lab.png",
+        "/static/assets/game/terra/buildings/lab.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/buildings/wall": {
+      "asset_id": "wall",
+      "package": "terra",
+      "category": "buildings",
+      "name": "Schildwall",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/buildings/wall.png",
+        "/static/assets/game/terra/buildings/wall.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/units/ranger": {
+      "asset_id": "ranger",
+      "package": "terra",
+      "category": "units",
+      "name": "Ranger",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/units/ranger.png",
+        "/static/assets/game/terra/units/ranger.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/units/sentinel": {
+      "asset_id": "sentinel",
+      "package": "terra",
+      "category": "units",
+      "name": "Wächter",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/units/sentinel.png",
+        "/static/assets/game/terra/units/sentinel.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/units/mech": {
+      "asset_id": "mech",
+      "package": "terra",
+      "category": "units",
+      "name": "Sturmmech",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/units/mech.png",
+        "/static/assets/game/terra/units/mech.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/base/plain": {
+      "asset_id": "plain",
+      "package": "terra",
+      "category": "terrain/base",
+      "name": "Ebene",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/base/plain.png",
+        "/static/assets/game/terra/terrain/base/plain.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/base/forest": {
+      "asset_id": "forest",
+      "package": "terra",
+      "category": "terrain/base",
+      "name": "Wald",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/base/forest.png",
+        "/static/assets/game/terra/terrain/base/forest.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/base/water": {
+      "asset_id": "water",
+      "package": "terra",
+      "category": "terrain/base",
+      "name": "Wasser",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/base/water.png",
+        "/static/assets/game/terra/terrain/base/water.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/base/mountain": {
+      "asset_id": "mountain",
+      "package": "terra",
+      "category": "terrain/base",
+      "name": "Gebirge",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/base/mountain.png",
+        "/static/assets/game/terra/terrain/base/mountain.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/base/pass": {
+      "asset_id": "pass",
+      "package": "terra",
+      "category": "terrain/base",
+      "name": "Gebirgspass",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/base/pass.png",
+        "/static/assets/game/terra/terrain/base/pass.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_00": {
+      "asset_id": "shore_00",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 0",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_00.png",
+        "/static/assets/game/terra/terrain/transitions/shore_00.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_01": {
+      "asset_id": "shore_01",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 1",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_01.png",
+        "/static/assets/game/terra/terrain/transitions/shore_01.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_02": {
+      "asset_id": "shore_02",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 2",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_02.png",
+        "/static/assets/game/terra/terrain/transitions/shore_02.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_03": {
+      "asset_id": "shore_03",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 3",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_03.png",
+        "/static/assets/game/terra/terrain/transitions/shore_03.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_04": {
+      "asset_id": "shore_04",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 4",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_04.png",
+        "/static/assets/game/terra/terrain/transitions/shore_04.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_05": {
+      "asset_id": "shore_05",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 5",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_05.png",
+        "/static/assets/game/terra/terrain/transitions/shore_05.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_06": {
+      "asset_id": "shore_06",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 6",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_06.png",
+        "/static/assets/game/terra/terrain/transitions/shore_06.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_07": {
+      "asset_id": "shore_07",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 7",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_07.png",
+        "/static/assets/game/terra/terrain/transitions/shore_07.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_08": {
+      "asset_id": "shore_08",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 8",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_08.png",
+        "/static/assets/game/terra/terrain/transitions/shore_08.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_09": {
+      "asset_id": "shore_09",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 9",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_09.png",
+        "/static/assets/game/terra/terrain/transitions/shore_09.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_10": {
+      "asset_id": "shore_10",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 10",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_10.png",
+        "/static/assets/game/terra/terrain/transitions/shore_10.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_11": {
+      "asset_id": "shore_11",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 11",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_11.png",
+        "/static/assets/game/terra/terrain/transitions/shore_11.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_12": {
+      "asset_id": "shore_12",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 12",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_12.png",
+        "/static/assets/game/terra/terrain/transitions/shore_12.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_13": {
+      "asset_id": "shore_13",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 13",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_13.png",
+        "/static/assets/game/terra/terrain/transitions/shore_13.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_14": {
+      "asset_id": "shore_14",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 14",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_14.png",
+        "/static/assets/game/terra/terrain/transitions/shore_14.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/shore_15": {
+      "asset_id": "shore_15",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Wasserufer · Maske 15",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/shore_15.png",
+        "/static/assets/game/terra/terrain/transitions/shore_15.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_00": {
+      "asset_id": "forest_edge_00",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 0",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_00.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_00.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_01": {
+      "asset_id": "forest_edge_01",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 1",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_01.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_01.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_02": {
+      "asset_id": "forest_edge_02",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 2",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_02.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_02.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_03": {
+      "asset_id": "forest_edge_03",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 3",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_03.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_03.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_04": {
+      "asset_id": "forest_edge_04",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 4",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_04.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_04.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_05": {
+      "asset_id": "forest_edge_05",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 5",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_05.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_05.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_06": {
+      "asset_id": "forest_edge_06",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 6",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_06.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_06.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_07": {
+      "asset_id": "forest_edge_07",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 7",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_07.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_07.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_08": {
+      "asset_id": "forest_edge_08",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 8",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_08.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_08.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_09": {
+      "asset_id": "forest_edge_09",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 9",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_09.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_09.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_10": {
+      "asset_id": "forest_edge_10",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 10",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_10.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_10.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_11": {
+      "asset_id": "forest_edge_11",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 11",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_11.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_11.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_12": {
+      "asset_id": "forest_edge_12",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 12",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_12.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_12.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_13": {
+      "asset_id": "forest_edge_13",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 13",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_13.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_13.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_14": {
+      "asset_id": "forest_edge_14",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 14",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_14.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_14.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/forest_edge_15": {
+      "asset_id": "forest_edge_15",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Waldrand · Maske 15",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/forest_edge_15.png",
+        "/static/assets/game/terra/terrain/transitions/forest_edge_15.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_00": {
+      "asset_id": "mountain_edge_00",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 0",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_00.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_00.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_01": {
+      "asset_id": "mountain_edge_01",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 1",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_01.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_01.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_02": {
+      "asset_id": "mountain_edge_02",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 2",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_02.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_02.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_03": {
+      "asset_id": "mountain_edge_03",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 3",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_03.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_03.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_04": {
+      "asset_id": "mountain_edge_04",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 4",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_04.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_04.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_05": {
+      "asset_id": "mountain_edge_05",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 5",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_05.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_05.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_06": {
+      "asset_id": "mountain_edge_06",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 6",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_06.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_06.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_07": {
+      "asset_id": "mountain_edge_07",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 7",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_07.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_07.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_08": {
+      "asset_id": "mountain_edge_08",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 8",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_08.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_08.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_09": {
+      "asset_id": "mountain_edge_09",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 9",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_09.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_09.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_10": {
+      "asset_id": "mountain_edge_10",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 10",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_10.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_10.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_11": {
+      "asset_id": "mountain_edge_11",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 11",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_11.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_11.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_12": {
+      "asset_id": "mountain_edge_12",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 12",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_12.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_12.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_13": {
+      "asset_id": "mountain_edge_13",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 13",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_13.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_13.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_14": {
+      "asset_id": "mountain_edge_14",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 14",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_14.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_14.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/transitions/mountain_edge_15": {
+      "asset_id": "mountain_edge_15",
+      "package": "terra",
+      "category": "terrain/transitions",
+      "name": "Gebirgsrand · Maske 15",
+      "width": 128,
+      "height": 128,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_15.png",
+        "/static/assets/game/terra/terrain/transitions/mountain_edge_15.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/terrain/atlases/terrain_transitions": {
+      "asset_id": "terrain_transitions",
+      "package": "terra",
+      "category": "terrain/atlases",
+      "name": "Geländeübergangsatlas",
+      "width": 1024,
+      "height": 768,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/terrain/atlases/terrain_transitions.png",
+        "/static/assets/game/terra/terrain/atlases/terrain_transitions.webp",
+        "/static/assets/game/terra/terrain/atlases/terrain_transitions.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "terra/fog/fog_unknown": {
+      "asset_id": "fog_unknown",
+      "package": "terra",
+      "category": "fog",
+      "name": "Unbekannt",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/fog/fog_unknown.png",
+        "/static/assets/game/terra/fog/fog_unknown.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/fog/fog_explored": {
+      "asset_id": "fog_explored",
+      "package": "terra",
+      "category": "fog",
+      "name": "Früher erkundet",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/fog/fog_explored.png",
+        "/static/assets/game/terra/fog/fog_explored.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/fog/fog_visible": {
+      "asset_id": "fog_visible",
+      "package": "terra",
+      "category": "fog",
+      "name": "Aktuell sichtbar",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/fog/fog_visible.png",
+        "/static/assets/game/terra/fog/fog_visible.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/outposts/outpost_small": {
+      "asset_id": "outpost_small",
+      "package": "terra",
+      "category": "outposts",
+      "name": "Kleine Anlage",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/outposts/outpost_small.png",
+        "/static/assets/game/terra/outposts/outpost_small.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/outposts/outpost_medium": {
+      "asset_id": "outpost_medium",
+      "package": "terra",
+      "category": "outposts",
+      "name": "Mittlere Festung",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/outposts/outpost_medium.png",
+        "/static/assets/game/terra/outposts/outpost_medium.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/outposts/outpost_large": {
+      "asset_id": "outpost_large",
+      "package": "terra",
+      "category": "outposts",
+      "name": "Große Festung",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/outposts/outpost_large.png",
+        "/static/assets/game/terra/outposts/outpost_large.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/outposts/outpost_citadel": {
+      "asset_id": "outpost_citadel",
+      "package": "terra",
+      "category": "outposts",
+      "name": "Zitadelle",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/outposts/outpost_citadel.png",
+        "/static/assets/game/terra/outposts/outpost_citadel.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/damage_overlays/fortress_intact": {
+      "asset_id": "fortress_intact",
+      "package": "terra",
+      "category": "damage_overlays",
+      "name": "Intakter Zustand",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/damage_overlays/fortress_intact.png",
+        "/static/assets/game/terra/damage_overlays/fortress_intact.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/damage_overlays/fortress_damaged": {
+      "asset_id": "fortress_damaged",
+      "package": "terra",
+      "category": "damage_overlays",
+      "name": "Beschädigter Zustand",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/damage_overlays/fortress_damaged.png",
+        "/static/assets/game/terra/damage_overlays/fortress_damaged.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/damage_overlays/fortress_destroyed": {
+      "asset_id": "fortress_destroyed",
+      "package": "terra",
+      "category": "damage_overlays",
+      "name": "Zerstörter Zustand",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/damage_overlays/fortress_destroyed.png",
+        "/static/assets/game/terra/damage_overlays/fortress_destroyed.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/map_objects/ruin": {
+      "asset_id": "ruin",
+      "package": "terra",
+      "category": "map_objects",
+      "name": "Verlassene technische Ruine",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/map_objects/ruin.png",
+        "/static/assets/game/terra/map_objects/ruin.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/map_objects/npc_camp": {
+      "asset_id": "npc_camp",
+      "package": "terra",
+      "category": "map_objects",
+      "name": "Mobiles militärisches NPC-Lager",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/map_objects/npc_camp.png",
+        "/static/assets/game/terra/map_objects/npc_camp.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/colony_own": {
+      "asset_id": "colony_own",
+      "package": "terra",
+      "category": "markers",
+      "name": "Eigene Kolonie",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/colony_own.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/colony_foreign": {
+      "asset_id": "colony_foreign",
+      "package": "terra",
+      "category": "markers",
+      "name": "Fremde Kolonie",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/colony_foreign.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/colony_allied": {
+      "asset_id": "colony_allied",
+      "package": "terra",
+      "category": "markers",
+      "name": "Verbündete Kolonie",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/colony_allied.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/outpost_neutral": {
+      "asset_id": "outpost_neutral",
+      "package": "terra",
+      "category": "markers",
+      "name": "Neutraler Außenposten",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/outpost_neutral.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/outpost_occupied": {
+      "asset_id": "outpost_occupied",
+      "package": "terra",
+      "category": "markers",
+      "name": "Besetzter Außenposten",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/outpost_occupied.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/citadel_boss": {
+      "asset_id": "citadel_boss",
+      "package": "terra",
+      "category": "markers",
+      "name": "Zitadelle / Bossziel",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/citadel_boss.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/npc_camp": {
+      "asset_id": "npc_camp",
+      "package": "terra",
+      "category": "markers",
+      "name": "NPC-Lager",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/npc_camp.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/ruin": {
+      "asset_id": "ruin",
+      "package": "terra",
+      "category": "markers",
+      "name": "Ruine",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/ruin.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/attack": {
+      "asset_id": "attack",
+      "package": "terra",
+      "category": "markers",
+      "name": "Angriff",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/attack.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/transport": {
+      "asset_id": "transport",
+      "package": "terra",
+      "category": "markers",
+      "name": "Transport",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/transport.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/scouting": {
+      "asset_id": "scouting",
+      "package": "terra",
+      "category": "markers",
+      "name": "Aufklärung",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/scouting.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/expedition": {
+      "asset_id": "expedition",
+      "package": "terra",
+      "category": "markers",
+      "name": "Expedition",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/expedition.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/return": {
+      "asset_id": "return",
+      "package": "terra",
+      "category": "markers",
+      "name": "Rückkehr",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/return.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/warning": {
+      "asset_id": "warning",
+      "package": "terra",
+      "category": "markers",
+      "name": "Warnung",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/warning.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/markers/favorite": {
+      "asset_id": "favorite",
+      "package": "terra",
+      "category": "markers",
+      "name": "Favorit",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/markers/favorite.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/wood": {
+      "asset_id": "wood",
+      "package": "terra",
+      "category": "resources",
+      "name": "Holz",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/wood.svg",
+        "/static/assets/game/terra/resources/wood.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/stone": {
+      "asset_id": "stone",
+      "package": "terra",
+      "category": "resources",
+      "name": "Stein",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/stone.svg",
+        "/static/assets/game/terra/resources/stone.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/ore": {
+      "asset_id": "ore",
+      "package": "terra",
+      "category": "resources",
+      "name": "Erz",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/ore.svg",
+        "/static/assets/game/terra/resources/ore.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/alloy": {
+      "asset_id": "alloy",
+      "package": "terra",
+      "category": "resources",
+      "name": "Legierung",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/alloy.svg",
+        "/static/assets/game/terra/resources/alloy.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/circuits": {
+      "asset_id": "circuits",
+      "package": "terra",
+      "category": "resources",
+      "name": "Schaltkreise",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/circuits.svg",
+        "/static/assets/game/terra/resources/circuits.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/textiles": {
+      "asset_id": "textiles",
+      "package": "terra",
+      "category": "resources",
+      "name": "Textilien",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/textiles.svg",
+        "/static/assets/game/terra/resources/textiles.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/rations": {
+      "asset_id": "rations",
+      "package": "terra",
+      "category": "resources",
+      "name": "Rationen",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/rations.svg",
+        "/static/assets/game/terra/resources/rations.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/medicine": {
+      "asset_id": "medicine",
+      "package": "terra",
+      "category": "resources",
+      "name": "Medizin",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/medicine.svg",
+        "/static/assets/game/terra/resources/medicine.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/lubricant": {
+      "asset_id": "lubricant",
+      "package": "terra",
+      "category": "resources",
+      "name": "Schmiermittel",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/lubricant.svg",
+        "/static/assets/game/terra/resources/lubricant.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/ceramics": {
+      "asset_id": "ceramics",
+      "package": "terra",
+      "category": "resources",
+      "name": "Keramik",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/ceramics.svg",
+        "/static/assets/game/terra/resources/ceramics.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/energy": {
+      "asset_id": "energy",
+      "package": "terra",
+      "category": "resources",
+      "name": "Energie",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/energy.svg",
+        "/static/assets/game/terra/resources/energy.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/resources/ether": {
+      "asset_id": "ether",
+      "package": "terra",
+      "category": "resources",
+      "name": "Äther",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/resources/ether.svg",
+        "/static/assets/game/terra/resources/ether.png"
+      ],
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "status": "approved"
+    },
+    "terra/research/tactics": {
+      "asset_id": "tactics",
+      "package": "terra",
+      "category": "research",
+      "name": "Militärtaktik: taktisches Raster, Formation",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/research/tactics.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/research/logistics": {
+      "asset_id": "logistics",
+      "package": "terra",
+      "category": "research",
+      "name": "Logistik: vernetzte Transport- und Versorgungswege",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/research/logistics.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/research/engineering": {
+      "asset_id": "engineering",
+      "package": "terra",
+      "category": "research",
+      "name": "Ingenieurswesen: technisches Werkzeug mit Bauplanstruktur",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/research/engineering.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/crafting_component": {
+      "asset_id": "crafting_component",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Fertigungskomponente",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/crafting_component.png",
+        "/static/assets/game/terra/inventory/crafting_component.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/field_repair_kit": {
+      "asset_id": "field_repair_kit",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Feldreparaturkit",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/field_repair_kit.png",
+        "/static/assets/game/terra/inventory/field_repair_kit.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/cosmetic_token": {
+      "asset_id": "cosmetic_token",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Kosmetikmarke",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/cosmetic_token.png",
+        "/static/assets/game/terra/inventory/cosmetic_token.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/commander_badge": {
+      "asset_id": "commander_badge",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Kommandantenabzeichen",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/commander_badge.png",
+        "/static/assets/game/terra/inventory/commander_badge.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/salvage_material": {
+      "asset_id": "salvage_material",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Bergungsmaterial",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/salvage_material.png",
+        "/static/assets/game/terra/inventory/salvage_material.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/research_artifact": {
+      "asset_id": "research_artifact",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Forschungsartefakt",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/research_artifact.png",
+        "/static/assets/game/terra/inventory/research_artifact.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/pve_supply": {
+      "asset_id": "pve_supply",
+      "package": "terra",
+      "category": "inventory",
+      "name": "PvE-Einsatzvorrat",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/pve_supply.png",
+        "/static/assets/game/terra/inventory/pve_supply.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/inventory/prestige_token": {
+      "asset_id": "prestige_token",
+      "package": "terra",
+      "category": "inventory",
+      "name": "Prestigemarke",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/inventory/prestige_token.png",
+        "/static/assets/game/terra/inventory/prestige_token.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/overview": {
+      "asset_id": "overview",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Übersicht",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/overview.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/buildings": {
+      "asset_id": "buildings",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Gebäude",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/buildings.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/research": {
+      "asset_id": "research",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Forschung",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/research.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/army": {
+      "asset_id": "army",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Armee",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/army.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/map": {
+      "asset_id": "map",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Karte",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/map.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/missions": {
+      "asset_id": "missions",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Missionen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/missions.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/reports": {
+      "asset_id": "reports",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Berichte",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/reports.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/trade": {
+      "asset_id": "trade",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Handel",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/trade.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/inventory": {
+      "asset_id": "inventory",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Inventar",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/inventory.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/alliance": {
+      "asset_id": "alliance",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Allianz",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/alliance.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/diplomacy": {
+      "asset_id": "diplomacy",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Diplomatie",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/diplomacy.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/messages": {
+      "asset_id": "messages",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Nachrichten",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/messages.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/leaderboard": {
+      "asset_id": "leaderboard",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Rangliste",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/leaderboard.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/commander": {
+      "asset_id": "commander",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Commander",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/commander.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/season": {
+      "asset_id": "season",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Saison",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/season.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/settings": {
+      "asset_id": "settings",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Einstellungen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/settings.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/security": {
+      "asset_id": "security",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Sicherheit",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/security.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/help": {
+      "asset_id": "help",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Hilfe",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/help.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/navigation/administration": {
+      "asset_id": "administration",
+      "package": "terra",
+      "category": "ui/navigation",
+      "name": "Administration",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/navigation/administration.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/build": {
+      "asset_id": "build",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Bauen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/build.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/upgrade": {
+      "asset_id": "upgrade",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Verbessern",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/upgrade.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/cancel": {
+      "asset_id": "cancel",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Abbrechen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/cancel.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/reorder": {
+      "asset_id": "reorder",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Umsortieren",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/reorder.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/send": {
+      "asset_id": "send",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Senden",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/send.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/recall": {
+      "asset_id": "recall",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Zurückrufen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/recall.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/repair": {
+      "asset_id": "repair",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Reparieren",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/repair.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/lock": {
+      "asset_id": "lock",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Sperren",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/lock.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/unlock": {
+      "asset_id": "unlock",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Entsperren",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/unlock.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/confirm": {
+      "asset_id": "confirm",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Bestätigen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/confirm.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/error": {
+      "asset_id": "error",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Fehler",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/error.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/warning": {
+      "asset_id": "warning",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Warnung",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/warning.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/information": {
+      "asset_id": "information",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Information",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/information.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/timer": {
+      "asset_id": "timer",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Timer",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/timer.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/search": {
+      "asset_id": "search",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Suche",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/search.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/filter": {
+      "asset_id": "filter",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Filter",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/filter.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/close": {
+      "asset_id": "close",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Schließen",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/close.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/next": {
+      "asset_id": "next",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Vor",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/next.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/actions/previous": {
+      "asset_id": "previous",
+      "package": "terra",
+      "category": "ui/actions",
+      "name": "Zurück",
+      "width": 24,
+      "height": 24,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/actions/previous.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_missions": {
+      "asset_id": "empty_missions",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Keine Missionen",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_missions.png",
+        "/static/assets/game/terra/ui/empty_states/empty_missions.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_reports": {
+      "asset_id": "empty_reports",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Keine Berichte",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_reports.png",
+        "/static/assets/game/terra/ui/empty_states/empty_reports.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_messages": {
+      "asset_id": "empty_messages",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Keine Nachrichten",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_messages.png",
+        "/static/assets/game/terra/ui/empty_states/empty_messages.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_inventory": {
+      "asset_id": "empty_inventory",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Leeres Inventar",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_inventory.png",
+        "/static/assets/game/terra/ui/empty_states/empty_inventory.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_alliance": {
+      "asset_id": "empty_alliance",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Keine Allianz",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_alliance.png",
+        "/static/assets/game/terra/ui/empty_states/empty_alliance.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/empty_states/empty_search": {
+      "asset_id": "empty_search",
+      "package": "terra",
+      "category": "ui/empty_states",
+      "name": "Keine Suchtreffer",
+      "width": 640,
+      "height": 360,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/empty_states/empty_search.png",
+        "/static/assets/game/terra/ui/empty_states/empty_search.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/loading/loading_animated": {
+      "asset_id": "loading_animated",
+      "package": "terra",
+      "category": "ui/loading",
+      "name": "Animierte Ladeanzeige",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/loading/loading_animated.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/loading/loading_static": {
+      "asset_id": "loading_static",
+      "package": "terra",
+      "category": "ui/loading",
+      "name": "Statische Ladeanzeige",
+      "width": 128,
+      "height": 128,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/terra/ui/loading/loading_static.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "terra/ui/textures/panel_texture": {
+      "asset_id": "panel_texture",
+      "package": "terra",
+      "category": "ui/textures",
+      "name": "Nahtlose Paneltextur",
+      "width": 512,
+      "height": 512,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/terra/ui/textures/panel_texture.png",
+        "/static/assets/game/terra/ui/textures/panel_texture.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/scanner_tower": {
+      "asset_id": "scanner_tower",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Scannerturm",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/scanner_tower.png",
+        "/static/assets/game/orbit/buildings/scanner_tower.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/command_uplink": {
+      "asset_id": "command_uplink",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kommando-Uplink",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/command_uplink.png",
+        "/static/assets/game/orbit/buildings/command_uplink.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/repair_bay": {
+      "asset_id": "repair_bay",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Reparaturhalle",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/repair_bay.png",
+        "/static/assets/game/orbit/buildings/repair_bay.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/drone_foundry": {
+      "asset_id": "drone_foundry",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Drohnenfertigung",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/drone_foundry.png",
+        "/static/assets/game/orbit/buildings/drone_foundry.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/artillery_battery": {
+      "asset_id": "artillery_battery",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Artilleriebatterie",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/artillery_battery.png",
+        "/static/assets/game/orbit/buildings/artillery_battery.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/hospital": {
+      "asset_id": "hospital",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Feldhospital",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/hospital.png",
+        "/static/assets/game/orbit/buildings/hospital.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/shield_generator": {
+      "asset_id": "shield_generator",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Schildgenerator",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/shield_generator.png",
+        "/static/assets/game/orbit/buildings/shield_generator.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/energy_core": {
+      "asset_id": "energy_core",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Energiekern",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/energy_core.png",
+        "/static/assets/game/orbit/buildings/energy_core.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/fusion_plant": {
+      "asset_id": "fusion_plant",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Fusionskraftwerk",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/fusion_plant.png",
+        "/static/assets/game/orbit/buildings/fusion_plant.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/market_hub": {
+      "asset_id": "market_hub",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Handelszentrum",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/market_hub.png",
+        "/static/assets/game/orbit/buildings/market_hub.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/supply_depot": {
+      "asset_id": "supply_depot",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Versorgungsdepot",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/supply_depot.png",
+        "/static/assets/game/orbit/buildings/supply_depot.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/advanced_lab": {
+      "asset_id": "advanced_lab",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Hochtechnologielabor",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/advanced_lab.png",
+        "/static/assets/game/orbit/buildings/advanced_lab.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/espionage_center": {
+      "asset_id": "espionage_center",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Spionagezentrum",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/espionage_center.png",
+        "/static/assets/game/orbit/buildings/espionage_center.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/orbital_gateway": {
+      "asset_id": "orbital_gateway",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Orbitalzugang",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/orbital_gateway.png",
+        "/static/assets/game/orbit/buildings/orbital_gateway.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/colony_station": {
+      "asset_id": "colony_station",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kolonisationsstation",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/colony_station.png",
+        "/static/assets/game/orbit/buildings/colony_station.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/trade_port": {
+      "asset_id": "trade_port",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Handelshafen",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/trade_port.png",
+        "/static/assets/game/orbit/buildings/trade_port.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/war_academy": {
+      "asset_id": "war_academy",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Kriegsakademie",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/war_academy.png",
+        "/static/assets/game/orbit/buildings/war_academy.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/siege_factory": {
+      "asset_id": "siege_factory",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Belagerungsfabrik",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/siege_factory.png",
+        "/static/assets/game/orbit/buildings/siege_factory.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/fortification": {
+      "asset_id": "fortification",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Befestigungsanlage",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/fortification.png",
+        "/static/assets/game/orbit/buildings/fortification.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/buildings/archive_vault": {
+      "asset_id": "archive_vault",
+      "package": "orbit",
+      "category": "buildings",
+      "name": "Archivbunker",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/buildings/archive_vault.png",
+        "/static/assets/game/orbit/buildings/archive_vault.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/terraformer_drone": {
+      "asset_id": "terraformer_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Terraformerdrohne",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/terraformer_drone.png",
+        "/static/assets/game/orbit/units/terraformer_drone.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/frontier_vanguard": {
+      "asset_id": "frontier_vanguard",
+      "package": "orbit",
+      "category": "units",
+      "name": "Grenzvorhut",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/frontier_vanguard.png",
+        "/static/assets/game/orbit/units/frontier_vanguard.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/bastion_walker": {
+      "asset_id": "bastion_walker",
+      "package": "orbit",
+      "category": "units",
+      "name": "Bastionswalker",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/bastion_walker.png",
+        "/static/assets/game/orbit/units/bastion_walker.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/shield_sentinel": {
+      "asset_id": "shield_sentinel",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schildwächter",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/shield_sentinel.png",
+        "/static/assets/game/orbit/units/shield_sentinel.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/covert_courier": {
+      "asset_id": "covert_courier",
+      "package": "orbit",
+      "category": "units",
+      "name": "Verdeckter Kurier",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/covert_courier.png",
+        "/static/assets/game/orbit/units/covert_courier.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/salvage_engineer": {
+      "asset_id": "salvage_engineer",
+      "package": "orbit",
+      "category": "units",
+      "name": "Bergungstechniker",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/salvage_engineer.png",
+        "/static/assets/game/orbit/units/salvage_engineer.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/scout": {
+      "asset_id": "scout",
+      "package": "orbit",
+      "category": "units",
+      "name": "Späher",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/scout.png",
+        "/static/assets/game/orbit/units/scout.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/saboteur": {
+      "asset_id": "saboteur",
+      "package": "orbit",
+      "category": "units",
+      "name": "Saboteur",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/saboteur.png",
+        "/static/assets/game/orbit/units/saboteur.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/medic": {
+      "asset_id": "medic",
+      "package": "orbit",
+      "category": "units",
+      "name": "Sanitäter",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/medic.png",
+        "/static/assets/game/orbit/units/medic.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/shield_drone": {
+      "asset_id": "shield_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schilddrohne",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/shield_drone.png",
+        "/static/assets/game/orbit/units/shield_drone.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/sniper": {
+      "asset_id": "sniper",
+      "package": "orbit",
+      "category": "units",
+      "name": "Scharfschütze",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/sniper.png",
+        "/static/assets/game/orbit/units/sniper.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/siege_robot": {
+      "asset_id": "siege_robot",
+      "package": "orbit",
+      "category": "units",
+      "name": "Belagerungsroboter",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/siege_robot.png",
+        "/static/assets/game/orbit/units/siege_robot.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/artillery_platform": {
+      "asset_id": "artillery_platform",
+      "package": "orbit",
+      "category": "units",
+      "name": "Mobile Artillerieplattform",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/artillery_platform.png",
+        "/static/assets/game/orbit/units/artillery_platform.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/logistics_convoy": {
+      "asset_id": "logistics_convoy",
+      "package": "orbit",
+      "category": "units",
+      "name": "Logistikkonvoi",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/logistics_convoy.png",
+        "/static/assets/game/orbit/units/logistics_convoy.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/engineer_squad": {
+      "asset_id": "engineer_squad",
+      "package": "orbit",
+      "category": "units",
+      "name": "Pioniertrupp",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/engineer_squad.png",
+        "/static/assets/game/orbit/units/engineer_squad.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/interceptor_drone": {
+      "asset_id": "interceptor_drone",
+      "package": "orbit",
+      "category": "units",
+      "name": "Abfangdrohne",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/interceptor_drone.png",
+        "/static/assets/game/orbit/units/interceptor_drone.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/commander_guard": {
+      "asset_id": "commander_guard",
+      "package": "orbit",
+      "category": "units",
+      "name": "Kommandantengarde",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/commander_guard.png",
+        "/static/assets/game/orbit/units/commander_guard.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/units/titan_colossus": {
+      "asset_id": "titan_colossus",
+      "package": "orbit",
+      "category": "units",
+      "name": "Schwerer Titan-Koloss",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/units/titan_colossus.png",
+        "/static/assets/game/orbit/units/titan_colossus.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/defenses/kinetic_turret": {
+      "asset_id": "kinetic_turret",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Kinetikgeschütz",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/defenses/kinetic_turret.png",
+        "/static/assets/game/orbit/defenses/kinetic_turret.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/defenses/aegis_emitter": {
+      "asset_id": "aegis_emitter",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Aegis-Emitter",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/defenses/aegis_emitter.png",
+        "/static/assets/game/orbit/defenses/aegis_emitter.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/defenses/proximity_mines": {
+      "asset_id": "proximity_mines",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Annäherungsminenfeld",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/defenses/proximity_mines.png",
+        "/static/assets/game/orbit/defenses/proximity_mines.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/defenses/battle_bunker": {
+      "asset_id": "battle_bunker",
+      "package": "orbit",
+      "category": "defenses",
+      "name": "Gefechtsbunker",
+      "width": 768,
+      "height": 768,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/defenses/battle_bunker.png",
+        "/static/assets/game/orbit/defenses/battle_bunker.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/terra_colonization": {
+      "asset_id": "terra_colonization",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Kolonisierung",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/terra_colonization.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/terra_logistics": {
+      "asset_id": "terra_logistics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Logistik",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/terra_logistics.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/terrain_survival": {
+      "asset_id": "terrain_survival",
+      "package": "orbit",
+      "category": "research",
+      "name": "Geländeüberleben",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/terrain_survival.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/reconnaissance": {
+      "asset_id": "reconnaissance",
+      "package": "orbit",
+      "category": "research",
+      "name": "Aufklärung",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/reconnaissance.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/counterintelligence": {
+      "asset_id": "counterintelligence",
+      "package": "orbit",
+      "category": "research",
+      "name": "Gegenspionage",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/counterintelligence.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/ballistics": {
+      "asset_id": "ballistics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Ballistik",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/ballistics.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/shields": {
+      "asset_id": "shields",
+      "package": "orbit",
+      "category": "research",
+      "name": "Schilde",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/shields.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/armor_technology": {
+      "asset_id": "armor_technology",
+      "package": "orbit",
+      "category": "research",
+      "name": "Panzerungstechnik",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/armor_technology.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/field_medicine": {
+      "asset_id": "field_medicine",
+      "package": "orbit",
+      "category": "research",
+      "name": "Feldmedizin",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/field_medicine.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/alliance_coordination": {
+      "asset_id": "alliance_coordination",
+      "package": "orbit",
+      "category": "research",
+      "name": "Allianzkoordination",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/alliance_coordination.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/supply_chain": {
+      "asset_id": "supply_chain",
+      "package": "orbit",
+      "category": "research",
+      "name": "Versorgungskette",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/supply_chain.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/advanced_production": {
+      "asset_id": "advanced_production",
+      "package": "orbit",
+      "category": "research",
+      "name": "Fortschrittliche Produktion",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/advanced_production.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/field_energy": {
+      "asset_id": "field_energy",
+      "package": "orbit",
+      "category": "research",
+      "name": "Feldenergie",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/field_energy.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/cybernetics": {
+      "asset_id": "cybernetics",
+      "package": "orbit",
+      "category": "research",
+      "name": "Kybernetik",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/cybernetics.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/orbital_navigation": {
+      "asset_id": "orbital_navigation",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalnavigation",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/orbital_navigation.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/orbital_shipbuilding": {
+      "asset_id": "orbital_shipbuilding",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalschiffbau",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/orbital_shipbuilding.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/orbital_scanning": {
+      "asset_id": "orbital_scanning",
+      "package": "orbit",
+      "category": "research",
+      "name": "Orbitalscanning",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/orbital_scanning.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/ether_refining": {
+      "asset_id": "ether_refining",
+      "package": "orbit",
+      "category": "research",
+      "name": "Ätherraffination",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/ether_refining.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/advanced_propulsion": {
+      "asset_id": "advanced_propulsion",
+      "package": "orbit",
+      "category": "research",
+      "name": "Fortschrittlicher Antrieb",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/advanced_propulsion.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/jump_gate_network": {
+      "asset_id": "jump_gate_network",
+      "package": "orbit",
+      "category": "research",
+      "name": "Sprungtornetz",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/jump_gate_network.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/research/terra_prestige": {
+      "asset_id": "terra_prestige",
+      "package": "orbit",
+      "category": "research",
+      "name": "Terra-Prestige",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/research/terra_prestige.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/probe": {
+      "asset_id": "probe",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Aufklärungssonde",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/probe.png",
+        "/static/assets/game/orbit/ships/probe.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/courier": {
+      "asset_id": "courier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kuriertransporter",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/courier.png",
+        "/static/assets/game/orbit/ships/courier.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/light_fighter": {
+      "asset_id": "light_fighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Leichter Jäger",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/light_fighter.png",
+        "/static/assets/game/orbit/ships/light_fighter.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/heavy_fighter": {
+      "asset_id": "heavy_fighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schwerer Jäger",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/heavy_fighter.png",
+        "/static/assets/game/orbit/ships/heavy_fighter.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/frigate": {
+      "asset_id": "frigate",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Fregatte",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/frigate.png",
+        "/static/assets/game/orbit/ships/frigate.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/cruiser": {
+      "asset_id": "cruiser",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kreuzer",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/cruiser.png",
+        "/static/assets/game/orbit/ships/cruiser.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/battleship": {
+      "asset_id": "battleship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schlachtschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/battleship.png",
+        "/static/assets/game/orbit/ships/battleship.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/shield_carrier": {
+      "asset_id": "shield_carrier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Schildträgerschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/shield_carrier.png",
+        "/static/assets/game/orbit/ships/shield_carrier.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/carrier": {
+      "asset_id": "carrier",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Trägerschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/carrier.png",
+        "/static/assets/game/orbit/ships/carrier.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/colony_ship": {
+      "asset_id": "colony_ship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Kolonieschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/colony_ship.png",
+        "/static/assets/game/orbit/ships/colony_ship.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/freighter": {
+      "asset_id": "freighter",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Frachter",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/freighter.png",
+        "/static/assets/game/orbit/ships/freighter.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/salvager": {
+      "asset_id": "salvager",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Bergungsschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/salvager.png",
+        "/static/assets/game/orbit/ships/salvager.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/siege_ship": {
+      "asset_id": "siege_ship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Belagerungsschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/siege_ship.png",
+        "/static/assets/game/orbit/ships/siege_ship.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/ships/flagship": {
+      "asset_id": "flagship",
+      "package": "orbit",
+      "category": "ships",
+      "name": "Flaggschiff",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/ships/flagship.png",
+        "/static/assets/game/orbit/ships/flagship.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/backgrounds/orbit_title": {
+      "asset_id": "orbit_title",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Orbit Titelbild",
+      "width": 2560,
+      "height": 1440,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/backgrounds/orbit_title.png",
+        "/static/assets/game/orbit/backgrounds/orbit_title.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/backgrounds/orbit_title_mobile": {
+      "asset_id": "orbit_title_mobile",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Mobiles Orbit Titelbild",
+      "width": 960,
+      "height": 1280,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/backgrounds/orbit_title_mobile.png",
+        "/static/assets/game/orbit/backgrounds/orbit_title_mobile.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/backgrounds/space_stars": {
+      "asset_id": "space_stars",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Sternfeld",
+      "width": 3840,
+      "height": 2160,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/backgrounds/space_stars.png",
+        "/static/assets/game/orbit/backgrounds/space_stars.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/backgrounds/space_nebula": {
+      "asset_id": "space_nebula",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Nebelregion",
+      "width": 3840,
+      "height": 2160,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/backgrounds/space_nebula.png",
+        "/static/assets/game/orbit/backgrounds/space_nebula.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/backgrounds/space_frontier": {
+      "asset_id": "space_frontier",
+      "package": "orbit",
+      "category": "backgrounds",
+      "name": "Dunkler Grenzraum",
+      "width": 3840,
+      "height": 2160,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/backgrounds/space_frontier.png",
+        "/static/assets/game/orbit/backgrounds/space_frontier.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/planets/planet_rock": {
+      "asset_id": "planet_rock",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Gesteinsplanet",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/planets/planet_rock.png",
+        "/static/assets/game/orbit/planets/planet_rock.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/planets/planet_ice": {
+      "asset_id": "planet_ice",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Eisplanet",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/planets/planet_ice.png",
+        "/static/assets/game/orbit/planets/planet_ice.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/planets/planet_desert": {
+      "asset_id": "planet_desert",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Wüstenplanet",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/planets/planet_desert.png",
+        "/static/assets/game/orbit/planets/planet_desert.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/planets/planet_ocean": {
+      "asset_id": "planet_ocean",
+      "package": "orbit",
+      "category": "planets",
+      "name": "Ozeanplanet",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/planets/planet_ocean.png",
+        "/static/assets/game/orbit/planets/planet_ocean.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/moon": {
+      "asset_id": "moon",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Mond",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/moon.png",
+        "/static/assets/game/orbit/orbital_objects/moon.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/asteroid_field": {
+      "asset_id": "asteroid_field",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Asteroidenfeld",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/asteroid_field.png",
+        "/static/assets/game/orbit/orbital_objects/asteroid_field.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/debris_field": {
+      "asset_id": "debris_field",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Trümmerfeld",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/debris_field.png",
+        "/static/assets/game/orbit/orbital_objects/debris_field.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/space_station": {
+      "asset_id": "space_station",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Raumstation",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/space_station.png",
+        "/static/assets/game/orbit/orbital_objects/space_station.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/defense_platform": {
+      "asset_id": "defense_platform",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Verteidigungsplattform",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/defense_platform.png",
+        "/static/assets/game/orbit/orbital_objects/defense_platform.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/jump_gate": {
+      "asset_id": "jump_gate",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Sprungtor",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/jump_gate.png",
+        "/static/assets/game/orbit/orbital_objects/jump_gate.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/sensor_relay": {
+      "asset_id": "sensor_relay",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Sensorrelais",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/sensor_relay.png",
+        "/static/assets/game/orbit/orbital_objects/sensor_relay.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/orbital_objects/orbital_shipyard": {
+      "asset_id": "orbital_shipyard",
+      "package": "orbit",
+      "category": "orbital_objects",
+      "name": "Orbitwerft",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/orbital_objects/orbital_shipyard.png",
+        "/static/assets/game/orbit/orbital_objects/orbital_shipyard.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/factions/ash_covenant": {
+      "asset_id": "ash_covenant",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Aschebund",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/factions/ash_covenant.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/factions/iron_pact": {
+      "asset_id": "iron_pact",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Eisenpakt",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/factions/iron_pact.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/factions/thorn_conclave": {
+      "asset_id": "thorn_conclave",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Dornenkonklave",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/factions/thorn_conclave.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/factions/dawn_alliance": {
+      "asset_id": "dawn_alliance",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Morgenbund",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/factions/dawn_alliance.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/factions/tide_alliance": {
+      "asset_id": "tide_alliance",
+      "package": "orbit",
+      "category": "factions",
+      "name": "Gezeitenbund",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/factions/tide_alliance.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/commander/commander_default": {
+      "asset_id": "commander_default",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Kommandantenporträt",
+      "width": 768,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/commander/commander_default.png",
+        "/static/assets/game/orbit/commander/commander_default.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/commander/commander_economy": {
+      "asset_id": "commander_economy",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Wirtschaft",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/commander/commander_economy.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/commander/commander_military": {
+      "asset_id": "commander_military",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Militär",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/commander/commander_military.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/commander/commander_recon": {
+      "asset_id": "commander_recon",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Aufklärung",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/commander/commander_recon.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/commander/commander_command": {
+      "asset_id": "commander_command",
+      "package": "orbit",
+      "category": "commander",
+      "name": "Kommando",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/commander/commander_command.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/prestige/frontier_veteran": {
+      "asset_id": "frontier_veteran",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Grenzveteran",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/prestige/frontier_veteran.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/prestige/star_guardian": {
+      "asset_id": "star_guardian",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Sternenwächter",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/prestige/star_guardian.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/prestige/empire_legend": {
+      "asset_id": "empire_legend",
+      "package": "orbit",
+      "category": "prestige",
+      "name": "Imperiumslegende",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/prestige/empire_legend.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/skins/ashen_watch": {
+      "asset_id": "ashen_watch",
+      "package": "orbit",
+      "category": "skins",
+      "name": "Aschenwacht",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/skins/ashen_watch.png",
+        "/static/assets/game/orbit/skins/ashen_watch.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/skins/citadel_watch": {
+      "asset_id": "citadel_watch",
+      "package": "orbit",
+      "category": "skins",
+      "name": "Zitadellenwacht",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/skins/citadel_watch.png",
+        "/static/assets/game/orbit/skins/citadel_watch.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/banners/frontier_dawn": {
+      "asset_id": "frontier_dawn",
+      "package": "orbit",
+      "category": "banners",
+      "name": "Morgenrot der Grenze",
+      "width": 1920,
+      "height": 640,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/banners/frontier_dawn.png",
+        "/static/assets/game/orbit/banners/frontier_dawn.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/banners/citadel_banner": {
+      "asset_id": "citadel_banner",
+      "package": "orbit",
+      "category": "banners",
+      "name": "Banner der Zitadelle",
+      "width": 1920,
+      "height": 640,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/banners/citadel_banner.png",
+        "/static/assets/game/orbit/banners/citadel_banner.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_shield": {
+      "asset_id": "alliance_shield",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein shield",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_shield.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_star": {
+      "asset_id": "alliance_star",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein star",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_star.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_wings": {
+      "asset_id": "alliance_wings",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein wings",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_wings.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_gear": {
+      "asset_id": "alliance_gear",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein gear",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_gear.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_crest": {
+      "asset_id": "alliance_crest",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein crest",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_crest.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_laurel": {
+      "asset_id": "alliance_laurel",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein laurel",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_laurel.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/alliance_emblems/alliance_lightning": {
+      "asset_id": "alliance_lightning",
+      "package": "orbit",
+      "category": "alliance_emblems",
+      "name": "Allianz-Baustein lightning",
+      "width": 512,
+      "height": 512,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/alliance_emblems/alliance_lightning.svg"
+      ],
+      "formats": [
+        "svg"
+      ],
+      "status": "approved"
+    },
+    "orbit/campaign/campaign_directive_01": {
+      "asset_id": "campaign_directive_01",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Rohstoffgebäude auf Stufe 2",
+      "width": 1200,
+      "height": 675,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/campaign/campaign_directive_01.png",
+        "/static/assets/game/orbit/campaign/campaign_directive_01.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/campaign/campaign_directive_02": {
+      "asset_id": "campaign_directive_02",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Kaserne bauen",
+      "width": 1200,
+      "height": 675,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/campaign/campaign_directive_02.png",
+        "/static/assets/game/orbit/campaign/campaign_directive_02.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/campaign/campaign_directive_03": {
+      "asset_id": "campaign_directive_03",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Erste Technologie erforschen",
+      "width": 1200,
+      "height": 675,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/campaign/campaign_directive_03.png",
+        "/static/assets/game/orbit/campaign/campaign_directive_03.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/campaign/campaign_directive_04": {
+      "asset_id": "campaign_directive_04",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Ersten Außenposten erobern",
+      "width": 1200,
+      "height": 675,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/campaign/campaign_directive_04.png",
+        "/static/assets/game/orbit/campaign/campaign_directive_04.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/campaign/campaign_directive_05": {
+      "asset_id": "campaign_directive_05",
+      "package": "orbit",
+      "category": "campaign",
+      "name": "Zitadelle erobern",
+      "width": 1200,
+      "height": 675,
+      "transparent": false,
+      "files": [
+        "/static/assets/game/orbit/campaign/campaign_directive_05.png",
+        "/static/assets/game/orbit/campaign/campaign_directive_05.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/shield_hit": {
+      "asset_id": "shield_hit",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Schildtreffer",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/shield_hit.png",
+        "/static/assets/game/orbit/effects/shield_hit.webp",
+        "/static/assets/game/orbit/effects/shield_hit.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/shield_hit_static": {
+      "asset_id": "shield_hit_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Schildtreffer (statisch)",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/shield_hit_static.png",
+        "/static/assets/game/orbit/effects/shield_hit_static.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/projectile_hit": {
+      "asset_id": "projectile_hit",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Projektiltreffer",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/projectile_hit.png",
+        "/static/assets/game/orbit/effects/projectile_hit.webp",
+        "/static/assets/game/orbit/effects/projectile_hit.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/projectile_hit_static": {
+      "asset_id": "projectile_hit_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Projektiltreffer (statisch)",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/projectile_hit_static.png",
+        "/static/assets/game/orbit/effects/projectile_hit_static.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/explosion": {
+      "asset_id": "explosion",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Explosion",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/explosion.png",
+        "/static/assets/game/orbit/effects/explosion.webp",
+        "/static/assets/game/orbit/effects/explosion.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/explosion_static": {
+      "asset_id": "explosion_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Explosion (statisch)",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/explosion_static.png",
+        "/static/assets/game/orbit/effects/explosion_static.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/repair": {
+      "asset_id": "repair",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Reparatur",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/repair.png",
+        "/static/assets/game/orbit/effects/repair.webp",
+        "/static/assets/game/orbit/effects/repair.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/repair_static": {
+      "asset_id": "repair_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Reparatur (statisch)",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/repair_static.png",
+        "/static/assets/game/orbit/effects/repair_static.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/salvage": {
+      "asset_id": "salvage",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Bergung",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/salvage.png",
+        "/static/assets/game/orbit/effects/salvage.webp",
+        "/static/assets/game/orbit/effects/salvage.json"
+      ],
+      "formats": [
+        "png",
+        "webp",
+        "json"
+      ],
+      "status": "approved"
+    },
+    "orbit/effects/salvage_static": {
+      "asset_id": "salvage_static",
+      "package": "orbit",
+      "category": "effects",
+      "name": "Bergung (statisch)",
+      "width": 256,
+      "height": 256,
+      "transparent": true,
+      "files": [
+        "/static/assets/game/orbit/effects/salvage_static.png",
+        "/static/assets/game/orbit/effects/salvage_static.webp"
+      ],
+      "formats": [
+        "png",
+        "webp"
+      ],
+      "status": "approved"
+    }
+  }
+}

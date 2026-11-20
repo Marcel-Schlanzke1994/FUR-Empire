@@ -1,0 +1,1 @@
+"""FUR Empire local game."""

@@ -1,0 +1,183 @@
+{
+  "design_source": "agent/FUR_EMPIRE_GESAMTKONZEPT_UND_AGENT_ROADMAP.md §9 FUR-3-Mehr-Runden-Motor",
+  "formula": {
+    "accuracy_base_percent": 72,
+    "accuracy_max_percent": 95,
+    "accuracy_min_percent": 35,
+    "accuracy_per_difference_percent": 2,
+    "base_multiplier_percent": 100,
+    "counter_multiplier_percent": 125,
+    "damage_floor": 1,
+    "damage_variance_max_percent": 110,
+    "damage_variance_min_percent": 90,
+    "retreat": {
+      "check": "attacker_casualties_after_each_complete_round",
+      "default_threshold_percent": 60,
+      "effect": "stop_firing_and_return_survivors",
+      "threshold_max_percent": 100,
+      "threshold_min_percent": 1
+    },
+    "round_shield_recharge_percent": 25,
+    "tactics_damage_percent_per_level": 15,
+    "target_policy": "lowest_shield_plus_hull_fraction_then_target_priority_then_unit_id",
+    "wall_armor_bonus_per_level": 2
+  },
+  "game": "terra",
+  "kind": "deterministic_six_round_combat",
+  "legacy_fur2_preserved": true,
+  "limits": {
+    "maximum_army_units_per_side": 2000,
+    "maximum_targets_per_round": 12000
+  },
+  "neutral_outpost_fortification": {
+    "note": "Opt-in provisional FUR-3 rules; balance approval required.",
+    "status": "provisional_balance",
+    "unit": "outpost_fortification",
+    "units_per_tier_squared": 1
+  },
+  "rounds": {
+    "draw_after_maximum": "defender_holds_position",
+    "end_early_when_side_destroyed": true,
+    "initiative_order": "descending_initiative_then_unit_id_then_attacker_first",
+    "maximum": 6,
+    "shield_recharge_percent_after_round": 25
+  },
+  "units": {
+    "bastion_walker": {
+      "accuracy": 64,
+      "armor": 18,
+      "attack": 82,
+      "counters": [
+        "ranger",
+        "terraformer_drone"
+      ],
+      "evasion": 0,
+      "hull": 180,
+      "initiative": 2,
+      "shield": 25,
+      "target_priority": 70
+    },
+    "covert_courier": {
+      "accuracy": 80,
+      "armor": 2,
+      "attack": 36,
+      "counters": [
+        "mech",
+        "bastion_walker"
+      ],
+      "evasion": 28,
+      "hull": 60,
+      "initiative": 10,
+      "shield": 5,
+      "target_priority": 10
+    },
+    "frontier_vanguard": {
+      "accuracy": 70,
+      "armor": 10,
+      "attack": 76,
+      "counters": [
+        "sentinel",
+        "mech"
+      ],
+      "evasion": 9,
+      "hull": 150,
+      "initiative": 5,
+      "shield": 0,
+      "target_priority": 50
+    },
+    "mech": {
+      "accuracy": 65,
+      "armor": 15,
+      "attack": 70,
+      "counters": [
+        "sentinel",
+        "bastion_walker"
+      ],
+      "evasion": 0,
+      "hull": 160,
+      "initiative": 1,
+      "shield": 0,
+      "target_priority": 60
+    },
+    "outpost_fortification": {
+      "accuracy": 0,
+      "armor": 0,
+      "attack": 0,
+      "counters": [],
+      "evasion": 0,
+      "hull": 55,
+      "initiative": 0,
+      "shield": 0,
+      "target_priority": 100
+    },
+    "ranger": {
+      "accuracy": 75,
+      "armor": 1,
+      "attack": 12,
+      "counters": [],
+      "evasion": 15,
+      "hull": 40,
+      "initiative": 8,
+      "shield": 0,
+      "target_priority": 30
+    },
+    "salvage_engineer": {
+      "accuracy": 66,
+      "armor": 12,
+      "attack": 72,
+      "counters": [
+        "sentinel",
+        "shield_sentinel"
+      ],
+      "evasion": 0,
+      "hull": 130,
+      "initiative": 3,
+      "shield": 0,
+      "target_priority": 55
+    },
+    "sentinel": {
+      "accuracy": 70,
+      "armor": 8,
+      "attack": 28,
+      "counters": [
+        "ranger",
+        "terraformer_drone",
+        "covert_courier"
+      ],
+      "evasion": 3,
+      "hull": 90,
+      "initiative": 3,
+      "shield": 20,
+      "target_priority": 40
+    },
+    "shield_sentinel": {
+      "accuracy": 75,
+      "armor": 12,
+      "attack": 43,
+      "counters": [
+        "frontier_vanguard",
+        "salvage_engineer"
+      ],
+      "evasion": 8,
+      "hull": 110,
+      "initiative": 4,
+      "shield": 40,
+      "target_priority": 45
+    },
+    "terraformer_drone": {
+      "accuracy": 70,
+      "armor": 3,
+      "attack": 38,
+      "counters": [
+        "mech",
+        "salvage_engineer"
+      ],
+      "evasion": 18,
+      "hull": 75,
+      "initiative": 8,
+      "shield": 10,
+      "target_priority": 20
+    }
+  },
+  "version": "FUR-3-TERRA-COMBAT-2"
+}

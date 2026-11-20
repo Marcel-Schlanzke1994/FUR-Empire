@@ -1,0 +1,15 @@
+{
+  "version": "FUR-3-TERRA-RUIN-EXPLORATION-1",
+  "kind": "terra_ruin_exploration",
+  "legacy_fur2_preserved": true,
+  "seed_encoding": "sha256-hex-256-bit-server-private",
+  "probability_scale": 10000,
+  "outcomes": [
+    {"id": "relic_cache", "weight": 3000, "resource_min": 80, "resource_max": 160, "loss_min_percent": 0, "loss_max_percent": 0},
+    {"id": "salvage", "weight": 2500, "resource_min": 40, "resource_max": 120, "loss_min_percent": 0, "loss_max_percent": 0},
+    {"id": "unstable_ruin", "weight": 2000, "resource_min": 0, "resource_max": 40, "loss_min_percent": 5, "loss_max_percent": 15},
+    {"id": "hazard", "weight": 1500, "resource_min": 0, "resource_max": 0, "loss_min_percent": 15, "loss_max_percent": 30},
+    {"id": "quiet", "weight": 1000, "resource_min": 0, "resource_max": 0, "loss_min_percent": 0, "loss_max_percent": 0}
+  ],
+  "ruin_survey": {"expires_at_dispatch_required": true, "update_sector_intel": true, "update_private_ruin_intel": true, "intel_retention_seconds": 86400, "resource_capacity_per_survivor": 100, "maximum_resource_reward": 160}
+}

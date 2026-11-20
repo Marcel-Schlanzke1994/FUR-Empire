@@ -1,0 +1,48 @@
+{
+  "version": "FUR-3-TERRA-ACS-3",
+  "operation": {
+    "minimum_members": 2,
+    "maximum_members": 12,
+    "assembly_seconds": 300,
+    "target_kinds": [
+      "neutral_outpost",
+      "enemy_home_colony"
+    ],
+    "target_locked_at_creation": true,
+    "neutral_capture_requires_leader_headquarters_level": 3,
+    "player_colonies_are_not_capturable": true,
+    "only_one_wing_per_player": true,
+    "same_alliance_and_world_required": true,
+    "leader_cancellation_before_lock_only": true,
+    "member_withdrawal_before_lock_only": true,
+    "leader_eligibility_failure_aborts_operation": true,
+    "invalid_nonleader_wings_return_intact": true
+  },
+  "arrival": {
+    "common_arrival": true,
+    "departure_at_assembly_deadline": true,
+    "travel_seconds": "existing terrain-weighted FUR-2 path for each origin",
+    "operation_arrival": "assembly deadline plus longest participant travel",
+    "arrival_rechecks": [
+      "alliance membership",
+      "world",
+      "PVP",
+      "beginner protection",
+      "vacation",
+      "NAP"
+    ]
+  },
+  "combat": {
+    "resolver": "world-pinned FUR-3 six-round combat",
+    "participant_stacks": "each member and unit type remains an independent deterministic combat stack",
+    "tactics": "each participant tactics level modifies only that participant stack",
+    "neutral_fortification": "inherits pinned FUR-3 world combat rules; COMBAT-2 uses passive tier-squared structure",
+    "loot_distribution": "unchanged proportional surviving logistics capacity with largest-remainder member-id ties",
+    "returns": "each wing returns its own per-unit survivors to its origin"
+  },
+  "returns": {
+    "each_wing_returns_to_its_origin": true,
+    "return_duration_equals_that_wing_travel_seconds": true,
+    "return_jobs_are_idempotent": true
+  }
+}

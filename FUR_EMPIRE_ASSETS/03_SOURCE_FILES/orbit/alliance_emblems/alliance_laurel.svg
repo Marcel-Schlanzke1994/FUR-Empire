@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" class="fur-alliance-alliance_laurel"><title>laurel</title><style>@supports (fill:var(--fur-color)) { .fur-alliance-alliance_laurel #shield {fill:var(--shield-fill,#162432);stroke:var(--shield-rim,#D4AD66)} .fur-alliance-alliance_laurel #symbol {fill:var(--symbol-color,#D4AD66)} }</style>
+<g id="symbol" transform="translate(124 111) scale(11)" fill="#D4AD66" fill-rule="evenodd"><path d="M11 23C4 20 0 15 2 7l3 4 1-6 3 5-1 5 3 5Zm2 0c7-3 11-8 9-16l-3 4-1-6-3 5 1 5-3 5Z"/></g>
+</svg>

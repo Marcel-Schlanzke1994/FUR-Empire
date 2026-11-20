@@ -1,0 +1,98 @@
+name: FUR Empire checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: integration-test-only
+          POSTGRES_DB: fur_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d fur_test"
+          --health-interval 5s --health-timeout 5s --health-retries 15
+    env:
+      FUR_TEST_POSTGRES: postgresql://postgres:integration-test-only@127.0.0.1:5432/fur_test
+      FUR_EMBEDDED_WORKER: "false"
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Scan repository history for secrets
+        uses: gitleaks/gitleaks-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_ENABLE_COMMENTS: "false"
+      - uses: actions/setup-python@v7
+        with: {python-version: "3.14"}
+      - uses: actions/setup-node@v7
+        with: {node-version: "22"}
+      - run: npm ci
+      - run: npm audit --audit-level=high
+      - run: npm run lint
+      - run: npm run check
+      - run: npm test
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m ruff check fur_empire tests scripts
+      - run: python -m black --check fur_empire tests scripts
+      - run: python -m mypy fur_empire
+      - run: python scripts/check_traceability.py
+      - run: python -m pytest -q
+      - run: node --check static/app.js && node --check static/community.js
+      - run: python -m pip_audit -r requirements.lock --no-deps --disable-pip
+      - name: Generate dependency SBOMs
+        run: |
+          mkdir -p build-artifacts/sbom
+          python -m pip_audit -r requirements.lock --no-deps --disable-pip --format cyclonedx-json --output build-artifacts/sbom/python.cdx.json
+          npm sbom --sbom-format cyclonedx --package-lock-only > build-artifacts/sbom/node.cdx.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dependency-sbom
+          path: build-artifacts/sbom/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Prepare disposable deployment config
+        run: |
+          mkdir -p .secrets
+          openssl rand -hex 32 > .secrets/db_password
+          openssl rand -hex 32 > .secrets/db_admin_password
+          touch .secrets/smtp_password
+          cp .env.example .env
+          printf '\nOPERATOR_NAME=CI\nOPERATOR_CONTACT=ci@example.org\n' >> .env
+      - run: docker compose config --quiet
+      - run: docker compose up -d --build --wait db app worker
+      - run: docker compose exec -T app python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/v1/ready')"
+      - run: docker compose --profile ops run --rm backup
+      - name: Verify backup health timestamp
+        run: >-
+          docker compose exec -T app python -c "import time; from fur_empire.api import game;
+          db=game.connect(); row=db.execute('SELECT completed_at FROM backup_status WHERE id=1').fetchone();
+          db.raw.close(); assert row and 0 <= time.time()-row[0] < 300, row"
+      - name: Restore drill inside PostgreSQL container
+        run: |
+          docker compose exec -T db pg_dump -U postgres -d fur --format=custom --file=/tmp/test.dump
+          docker compose exec -T db createdb -U postgres fur_restore_drill
+          docker compose exec -T db pg_restore -U postgres -d fur_restore_drill --exit-on-error /tmp/test.dump
+      - name: Prepare isolated staging secrets
+        run: |
+          cp .env.staging.example .env.staging
+          openssl rand -hex 32 > .secrets/staging_db_password
+          openssl rand -hex 32 > .secrets/staging_db_admin_password
+          openssl rand -hex 32 > .secrets/staging_smtp_password
+      - name: Validate private staging configuration
+        run: docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging config --quiet
+      - name: Launch and seed isolated staging
+        run: |
+          docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging up -d --build --wait db app worker mailpit staging-proxy
+          credentials="$(docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging exec -T app python -m fur_empire.manage seed-staging-demo --accounts 2)"
+          demo_name="${credentials%%:*}"
+          demo_password="$(printf '%s\n' "$credentials" | sed -n '1s/^[^:]*: //p')"
+          FUR_STAGING_DEMO_NAME="$demo_name" FUR_STAGING_DEMO_PASSWORD="$demo_password" python scripts/staging_smoke.py
+      - if: always()
+        run: |
+          if [ -f .env.staging ]; then docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging down -v; fi
+          docker compose down -v

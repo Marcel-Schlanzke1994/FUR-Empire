@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img"><title>orbital_navigation</title>
+<g id="plate"><path d="M128 13 224 68v115l-96 60-96-60V68Z" fill="#162432" stroke="#D4AD66" stroke-width="5"/><path d="M128 24 214 74v102l-86 55-86-55V74Z" fill="#0B111A" stroke="#416373" stroke-width="2"/><path d="M84 200h88m-76 4h64" stroke="#5ED3DF" stroke-opacity=".55" stroke-width="2"/></g><g id="symbol" transform="translate(62 59) scale(5.5)"><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm-8-3C.5 15 3 11 10 7s12-4 11-1c-1 3-8 8-15 10" stroke="#A4F1F5" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+</svg>

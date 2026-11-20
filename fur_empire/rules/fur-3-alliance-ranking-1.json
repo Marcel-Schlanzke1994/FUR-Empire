@@ -1,0 +1,13 @@
+{
+  "version": "FUR-3-ALLIANCE-RANKING-1",
+  "status": "provisional_balance_draft",
+  "scope": "FUR-3 season worlds only",
+  "attribution": "alliance membership when the score event is recorded",
+  "eligible_account": "profile is verified and has a non-empty unique email at season close",
+  "score_window": "season start inclusive, season end inclusive",
+  "score_source": "immutable FUR-3 military score events recorded with this rules version",
+  "ranking": "score descending, alliance id ascending",
+  "membership_changes": "historical points remain attributed to the alliance recorded at event time",
+  "multiple_accounts": "globally identical email addresses are prevented by the existing unique index; separate email addresses are not reliably detectable and are not merged",
+  "fur2_changed": false
+}

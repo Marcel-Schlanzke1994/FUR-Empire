@@ -1,0 +1,345 @@
+id,group,priority,title,behavior_contract,origin,status
+F2-001,FUR-2 Bestandswahrung,P0,Genesis-Login und Registrierung,Neue Benutzer werden sicher angelegt und können sich authentifiziert anmelden; lokale und Produktionsregeln sind getrennt.,fur2_documented,not_verified
+F2-002,FUR-2 Bestandswahrung,P0,Registrierungsmodus,Die Spielleitung kann Registrierung deaktivieren; neue Accounts sind dann gesperrt und alte bleiben nutzbar.,fur2_documented,not_verified
+F2-003,FUR-2 Bestandswahrung,P0,E-Mail-Bestätigung,Produktionsaccounts dürfen vor bestätigter Adresse keine Spielaktionen ausführen.,fur2_documented,not_verified
+F2-004,FUR-2 Bestandswahrung,P0,7-Tage-Session,Sitzungen haben serverseitige Ablaufzeit; Logout widerruft sie.,fur2_documented,not_verified
+F2-005,FUR-2 Bestandswahrung,P0,2FA-TOTP,Anmeldung unterstützt gültigen sechsstelligen TOTP-Code und verhindert Wiederverwendung.,fur2_documented,not_verified
+F2-006,FUR-2 Bestandswahrung,P0,Wiederherstellung,Einmalcode verfällt nach 30 Minuten und kann kein zweites Mal genutzt werden.,fur2_documented,not_verified
+F2-007,FUR-2 Bestandswahrung,P0,Kontosicherheit,E-Mailwechsel erfordert erneute Passwortprüfung; Admin benötigt in Produktion 2FA.,fur2_documented,not_verified
+F2-008,FUR-2 Bestandswahrung,P0,Welt mit 64×64 Feldern,4096 eindeutige Sektorkoordinaten und ein Kartenfenster bis 20×20 sind vorhanden.,fur2_documented,not_verified
+F2-009,FUR-2 Bestandswahrung,P0,104 neutrale Außenposten,Historische Welt enthält 104 neutrale Außenposten einschließlich Stufe-8-Zitadelle.,fur2_documented,not_verified
+F2-010,FUR-2 Bestandswahrung,P0,Startkolonie und Ressourcen,Neue Spieler starten mit Holz=1200 Stein=1000 Erz=800.,fur2_documented,not_verified
+F2-011,FUR-2 Bestandswahrung,P0,Holzproduktion,Bioforst nach FUR-2-Formel mit Nachkomma-Rest und Offlinestatus.,fur2_documented,not_verified
+F2-012,FUR-2 Bestandswahrung,P0,Steinproduktion,Steinbruch nach FUR-2-Formel mit Nachkomma-Rest und Offlinestatus.,fur2_documented,not_verified
+F2-013,FUR-2 Bestandswahrung,P0,Erzproduktion,Erzraffinerie nach FUR-2-Formel mit Nachkomma-Rest und Offlinestatus.,fur2_documented,not_verified
+F2-014,FUR-2 Bestandswahrung,P0,Depotlimit,Je Ressource 2000+2000×Depotstufe; Überlauf von Lieferungen/Claims ins Reserve-Lager.,fur2_documented,not_verified
+F2-015,FUR-2 Bestandswahrung,P0,Reserve-Lager,Reserve wird nur bis zur Depotkapazität aufgenommen; kein Verlust bei Rückgaben.,fur2_documented,not_verified
+F2-016,FUR-2 Bestandswahrung,P0,Kommandozentrale,"Bestandsgebäude beschleunigt Bau, erhöht Macht und schaltet ab Stufe 3 Eroberung frei.",fur2_documented,not_verified
+F2-017,FUR-2 Bestandswahrung,P0,Bioforst,Bestandsgebäude produziert Holz und kostet 75/50/20 je Zielstufe.,fur2_documented,not_verified
+F2-018,FUR-2 Bestandswahrung,P0,Steinbruch,Bestandsgebäude produziert Stein und kostet 90/65/30 je Zielstufe.,fur2_documented,not_verified
+F2-019,FUR-2 Bestandswahrung,P0,Erzraffinerie,Bestandsgebäude produziert Erz und kostet 100/90/45 je Zielstufe.,fur2_documented,not_verified
+F2-020,FUR-2 Bestandswahrung,P0,Depot,Bestandsgebäude vergrößert Lager; Grundkosten 120/100/50 je Zielstufe.,fur2_documented,not_verified
+F2-021,FUR-2 Bestandswahrung,P0,Kaserne,"Bestandsgebäude schaltet Ranger ab 1, Wächter ab 2 und Sturmmechs ab 3 frei.",fur2_documented,not_verified
+F2-022,FUR-2 Bestandswahrung,P0,Forschungslabor,Bestandsgebäude Voraussetzung für die drei FUR-2-Forschungen.,fur2_documented,not_verified
+F2-023,FUR-2 Bestandswahrung,P0,Schildwall,Bestandsgebäude erhöht Koloniedefensive inklusive Wächterbund-Bonus im PvP.,fur2_documented,not_verified
+F2-024,FUR-2 Bestandswahrung,P0,FUR-2-Gebäudelimit,Historische Welten erlauben höchstens Stufe 10.,fur2_documented,not_verified
+F2-025,FUR-2 Bestandswahrung,P0,Einzelne Bauqueue,Eine aktive Bauqueue pro Bestandskolonie; Kosten und Zeit serverseitig.,fur2_documented,not_verified
+F2-026,FUR-2 Bestandswahrung,P0,Taktikforschung,+15 Prozent Angriff und Truppenverteidigung je Level nach FUR-2.,fur2_documented,not_verified
+F2-027,FUR-2 Bestandswahrung,P0,Logistikforschung,+10 Tragekapazität je Einheit und Level nach FUR-2.,fur2_documented,not_verified
+F2-028,FUR-2 Bestandswahrung,P0,Ingenieurforschung,+15 Prozentpunkte Produktion je Level nach FUR-2.,fur2_documented,not_verified
+F2-029,FUR-2 Bestandswahrung,P0,Einzelne Forschungsqueue,Eine aktive Researchqueue pro Bestandskolonie mit 12×Zielstufe Sekunden Dauer.,fur2_documented,not_verified
+F2-030,FUR-2 Bestandswahrung,P0,Ranger,"Bestandseinheit Basisstärke 12, Kaserne 1, 2s Ausbildungszeit, 35/15/25 Kosten.",fur2_documented,not_verified
+F2-031,FUR-2 Bestandswahrung,P0,Wächter,"Bestandseinheit Basisstärke 28, Kaserne 2, 4s Ausbildungszeit, 50/40/60 Kosten.",fur2_documented,not_verified
+F2-032,FUR-2 Bestandswahrung,P0,Sturmmech,"Bestandseinheit Basisstärke 70, Kaserne 3, 7s Ausbildungszeit, 100/90/140 Kosten.",fur2_documented,not_verified
+F2-033,FUR-2 Bestandswahrung,P0,Einzelne Trainingsqueue,"Eine Trainingqueue pro Bestandskolonie, 1–100 Einheiten pro Auftrag.",fur2_documented,not_verified
+F2-034,FUR-2 Bestandswahrung,P0,Fünf Direktiven,"Wirtschaft-2, Kaserne, erste Forschung, erster Außenposten, Zitadelle jeweils einmal belohnen.",fur2_documented,not_verified
+F2-035,FUR-2 Bestandswahrung,P0,Überfall auf Neutrale,Kampfvergleich Angriff größer Verteidigung; Retourtruppen/Beute nach Rückmarsch.,fur2_documented,not_verified
+F2-036,FUR-2 Bestandswahrung,P0,FUR-2-Verlustregel,"Niederlage alle entsandten Units verloren, Sieg mind. 10 Prozent Verlust pro Type aufgerundet.",fur2_documented,not_verified
+F2-037,FUR-2 Bestandswahrung,P0,FUR-2-Loot,Nach Sieg Lootlimit SurvivingUnits×(40+10×Logistik) und tatsächlicher Postenbestand.,fur2_documented,not_verified
+F2-038,FUR-2 Bestandswahrung,P0,Rohstoff-Transport,Anderen Spieler mit ausreichend Trägern/Beständen beliefern; Retourtruppen laufen serverseitig.,fur2_documented,not_verified
+F2-039,FUR-2 Bestandswahrung,P0,Außenposten erobern,Commandcenter3 und Sieg besitzen Posten dauerhaft; +100 Power und +5pp Produktion nach Bestandsregel.,fur2_documented,not_verified
+F2-040,FUR-2 Bestandswahrung,P0,Garnison verstärken,Eigene Außenposten bekommen entsandte Truppen mit Reisezeit; kein Dupe.,fur2_documented,not_verified
+F2-041,FUR-2 Bestandswahrung,P0,Garnison zurückrufen,Stationierte Truppen kehren zum Ursprung zurück und sind unterwegs nicht verfügbar.,fur2_documented,not_verified
+F2-042,FUR-2 Bestandswahrung,P0,PvP mit aktivierbarer Weltregel,PvP nur unter aktiver Adminregel; Angreifer und Verteidiger historisch mind. 1h alt.,fur2_documented,not_verified
+F2-043,FUR-2 Bestandswahrung,P0,Allianz-NAP-Schutz,Aktive Allianzmitglieder und akzeptierte Nichtangriffspakte verhindern PvP.,fur2_documented,not_verified
+F2-044,FUR-2 Bestandswahrung,P0,Urlaubsmodus,Start mind. 24h bei fehlenden laufenden feindlichen Angriffsaufträgen; Produktion/Actions pausieren.,fur2_documented,not_verified
+F2-045,FUR-2 Bestandswahrung,P0,Pioniere,Einmalige FUR-2-Fraktionswahl bewirkt +10pp Produktion.,fur2_documented,not_verified
+F2-046,FUR-2 Bestandswahrung,P0,Wächterbund,Einmalige FUR-2-Fraktionswahl bewirkt 40 Prozent Schildwallbonus gegen PvP.,fur2_documented,not_verified
+F2-047,FUR-2 Bestandswahrung,P0,Syndikat,Einmalige FUR-2-Fraktionswahl bewirkt 60 statt 50 Prozent Soforttausch.,fur2_documented,not_verified
+F2-048,FUR-2 Bestandswahrung,P0,Neutralmarkt,"Mindestens 10 Waren, Ressourcenwechsel 50 Prozent oder 60 Prozent beim Syndikat.",fur2_documented,not_verified
+F2-049,FUR-2 Bestandswahrung,P0,Spielermarkt,Bis 10 Angebote/Spieler von 10–100000 je Seite; 24h Ablauf; Escrow und Reserve.,fur2_documented,not_verified
+F2-050,FUR-2 Bestandswahrung,P0,Allianzgründung,"Tag 3–8, Name 3–30 Zeichen; Besitzer wird Leiter.",fur2_documented,not_verified
+F2-051,FUR-2 Bestandswahrung,P0,Allianzrollen und Einladungen,Leitung/Offizier/Mitglied mit beschriebenen Befugnissen; Einladung muss akzeptiert werden.,fur2_documented,not_verified
+F2-052,FUR-2 Bestandswahrung,P0,Diplomatie,Nichtangriffspakt wird beidseitig angenommen; Krieg/Neutralstatus verfügbar.,fur2_documented,not_verified
+F2-053,FUR-2 Bestandswahrung,P0,Chat und Postfach,"Welt, Allianz und privat; Nachricht maximal 2000 Zeichen, rollen- und empfängerbegrenzt.",fur2_documented,not_verified
+F2-054,FUR-2 Bestandswahrung,P0,Meldungen und Sanktionen,"Mute, Ban, Wartung, Registrierungs- und PvP-Sperre mit Audit durch Spielleitung.",fur2_documented,not_verified
+F2-055,FUR-2 Bestandswahrung,P0,Ranking Machtwert,FUR-2-Score = 10×Gebäudestufen +20×Forschungsstufen +100×Posten.,fur2_documented,not_verified
+F2-056,FUR-2 Bestandswahrung,P0,Saisonarchiv,"Eine aktive Saison, 1–365 Tage, Einfrieren der Rangliste, keine Kolonie-Resets der Bestandswelt.",fur2_documented,not_verified
+F2-057,FUR-2 Bestandswahrung,P0,Produktionsereignisse,Admin startet Bonus 0–100 Prozentpunkte für 1–168h; zeitkorrekt berücksichtigt.,fur2_documented,not_verified
+F2-058,FUR-2 Bestandswahrung,P0,Zitadellenkampagne,Stufe-8-Zitadelle ist eroberbares Ziel und belohnt einmal; Weiterspielen möglich.,fur2_documented,not_verified
+F2-059,FUR-2 Bestandswahrung,P0,Spielauftrag-Limit,Maximal 30 eigene gleichzeitige relevante Missionen/Operationen nach Bestandsregeln.,fur2_documented,not_verified
+F2-060,FUR-2 Bestandswahrung,P0,SQLite und Postgres Betriebsmodi,"Lokaler Speicher und Dockerwelt getrennt, kein behaupteter automatischer Synchronisierungsprozess.",fur2_documented,not_verified
+W01,Original-55: Welt & Expansion,P0,Mehrere vollständig ausbaubare Kolonien,"Zweite Basis gründen, separat entwickeln und zentral verwalten",gap_from_prior_review,not_verified
+W02,Original-55: Welt & Expansion,P0,Kolonisation leerer Sektoren,Gründung statt nur Eroberung; Kolonisationskosten und Distanzen,gap_from_prior_review,not_verified
+W03,Original-55: Welt & Expansion,P0,Eigene Kolonien untereinander versorgen,Transfer zwischen eigenen Basen; übergreifende Missionsplanung,gap_from_prior_review,not_verified
+W04,Original-55: Welt & Expansion,P0,Fog of War und Aufklärungsstufen,Nicht jedes gegnerische Militärdetail ohne Spionage sichtbar machen,gap_from_prior_review,not_verified
+W05,Original-55: Welt & Expansion,P1,"Strategische Geländearten (Wald, Wasser, Berge, Pass)","Einfluss auf Bewegungswege, Produktion und Verteidigung",gap_from_prior_review,not_verified
+W06,Original-55: Welt & Expansion,P1,Karten-Generator und weitere Welten,"Seeds, Gelände, Welten mit eigenen Einstellungen und Weltenliste",gap_from_prior_review,not_verified
+W07,Original-55: Welt & Expansion,P0,Dynamischer NPC-/Außenposten-Nachschub,Neutrale Ziele respawnen oder Bestände erneuern; Schutz vor leerer Welt,gap_from_prior_review,not_verified
+W08,Original-55: Welt & Expansion,P2,Territoriumsgrenzen / Regionen / Kontrollzonen,Strategische Regionsziele und Gebietsboni,gap_from_prior_review,not_verified
+W09,Original-55: Welt & Expansion,P1,"Karten-Suche, Marker, Favoriten","Koordinatensuche, Ziel-Bookmarks, Sprungfunktionen",gap_from_prior_review,not_verified
+W10,Original-55: Welt & Expansion,P1,Erweiterte NPC-Fraktionen und KI-Gegner,Gegenbewegungen und eskalierende Herausforderungen,gap_from_prior_review,not_verified
+K01,Original-55: Kampf & Missionen,P0,"Mehrstufiger, rundenbasierter Kampf","Eigene Schadens-, Rüstungs-, Schild- und Rundenlogik",gap_from_prior_review,not_verified
+K02,Original-55: Kampf & Missionen,P0,Einheiten mit spezifischen Rollen und Gegen-Effekten,Mindestens 8–12 zunächst klar unterscheidbare Einheiten,gap_from_prior_review,not_verified
+K03,Original-55: Kampf & Missionen,P0,Spionage / Gegenaufklärung,"Späher, verdeckte Informationen, Abfangchancen",gap_from_prior_review,not_verified
+K04,Original-55: Kampf & Missionen,P1,Kampfsimulator vor Missionsstart,"Eigene Simulation, Anzeige von Verlustspannen",gap_from_prior_review,not_verified
+K05,Original-55: Kampf & Missionen,P0,Gemeinsame Allianzangriffe (ACS),Kombinierter Verband mehrerer Spieler mit gemeinsamer Ankunft,gap_from_prior_review,not_verified
+K06,Original-55: Kampf & Missionen,P0,Unterstützung fremder Allianzbasen,Defensive Garnison auch bei Verbündeten stationieren,gap_from_prior_review,not_verified
+K07,Original-55: Kampf & Missionen,P1,Taktischer Rückzug und laufende Mission abbrechen,"Rückruf, Rückzugsschwellen, definierte Rückmarschfolgen",gap_from_prior_review,not_verified
+K08,Original-55: Kampf & Missionen,P1,Expeditionen und Ereignis-Missionen,PvE-Expedition mit zufälligen Chancen und Belohnungen,gap_from_prior_review,not_verified
+K09,Original-55: Kampf & Missionen,P2,"Trümmerfelder, Bergung und Reparatur",Nach Schlachten zerstörte Materialien bergen,gap_from_prior_review,not_verified
+K10,Original-55: Kampf & Missionen,P2,Fernkampfangriffe / Artillerie / Raketen,Spezielle Fernmissionen mit Gegenmaßnahmen,gap_from_prior_review,not_verified
+K11,Original-55: Kampf & Missionen,P1,Unterschiedliche Truppen-Geschwindigkeit und Reichweite,Armeezusammenstellung bestimmt Marschzeit und Kosten,gap_from_prior_review,not_verified
+K12,Original-55: Kampf & Missionen,P1,Kampfbericht pro Runde und Einheit,"Schaden, Einheitenverluste, Loot, Zeit, beteiligte Spieler",gap_from_prior_review,not_verified
+K13,Original-55: Kampf & Missionen,P2,Schlachtvorlagen / Angriffsprofile,Schnelles wiederholbares Entsenden üblicher Truppentypen,gap_from_prior_review,not_verified
+K14,Original-55: Kampf & Missionen,P1,Weitere Verteidigungsobjekte,"Türme, Geschütze, Fallen, Reparatur und Anlagenslots",gap_from_prior_review,not_verified
+E01,Original-55: Wirtschaft & Technik,P0,Abhängiger Forschungs- und Freischaltbaum,"Tech-Voraussetzungen, neue Einheiten und Gebäudetypen",gap_from_prior_review,not_verified
+E02,Original-55: Wirtschaft & Technik,P1,Erweiterbare Gebäudekategorien / Spezialausbauten,"Werkstatt, Versorgung, Spionagezentrum, Festung",gap_from_prior_review,not_verified
+E03,Original-55: Wirtschaft & Technik,P2,"Energie-, Betriebs- oder Unterhaltsmechanik",Optionaler vierter Wirtschaftskreislauf statt trivialer Produktion,gap_from_prior_review,not_verified
+E04,Original-55: Wirtschaft & Technik,P1,Bau-/Forschungswarteschlangen umordnen & stornieren,"Stornieren, Rückerstattung und planbare Folgestufen",gap_from_prior_review,not_verified
+E05,Original-55: Wirtschaft & Technik,P1,Ausbau jenseits von Stufe 10 / Prestige,Späte Spielphase mit Kostenkurve und Meisterungsstufen,gap_from_prior_review,not_verified
+E06,Original-55: Wirtschaft & Technik,P2,Marktpreis-Statistiken und Handelsverlauf,Transparente Preisentwicklung und Transaktionshistorie,gap_from_prior_review,not_verified
+E07,Original-55: Wirtschaft & Technik,P0,"Datengetriebene Konfig für Gebäude, Einheiten, Formeln",Versionierte Regeldefinitionen statt hartcodierter Spielwerte,gap_from_prior_review,not_verified
+E08,Original-55: Wirtschaft & Technik,P1,Fraktionsspezifische Einheiten/Technologien,Fraktionswahl wirkt stärker auf Spielstil als nur passive Boni,gap_from_prior_review,not_verified
+A01,Original-55: Allianz & Spieler,P1,"Allianzkrieg mit Zielen, Wertung und Frieden","Krieg nicht bloß als Diplomatiestatus: Ziele, Zeit, Ergebnis",gap_from_prior_review,not_verified
+A02,Original-55: Allianz & Spieler,P1,Allianz-Rangliste und gemeinsame Siege,"Allianzstatistik, Saisonplatzierung, Kriegsfortschritt",gap_from_prior_review,not_verified
+A03,Original-55: Allianz & Spieler,P2,Allianzkasse / Gemeinschaftsprojekte,"Allianzdepot, gemeinsame Festungen, Beiträge",gap_from_prior_review,not_verified
+A04,Original-55: Allianz & Spieler,P2,Flexible Allianz-Rollen und Einzelberechtigungen,Rollen jenseits Leitung/Offizier/Mitglied,gap_from_prior_review,not_verified
+A05,Original-55: Allianz & Spieler,P2,Freundesliste und Blockliste,"Kontakte, Anfragen, private Kommunikation",gap_from_prior_review,not_verified
+A06,Original-55: Allianz & Spieler,P2,Interne Foren / Pinnwand,Längerfristige Strategiedokumente der Allianz,gap_from_prior_review,not_verified
+A07,Original-55: Allianz & Spieler,P2,"Spielerprofile, Badges, Leistungsdaten",Öffentliche Profilansicht und Historie,gap_from_prior_review,not_verified
+A08,Original-55: Allianz & Spieler,P2,"Notizen, Berichtsfreigaben, Zielmarkierungen",Persönliche Kartenhinweise und gemeinsame Einsatzplanung,gap_from_prior_review,not_verified
+P01,Original-55: Progression & Livebetrieb,P1,Fortlaufende Quest-/Erfolgsysteme,Fünf Direktiven zu einer Progressionskette ausbauen,gap_from_prior_review,not_verified
+P02,Original-55: Progression & Livebetrieb,P0,Langfristiges Endgame nach Zitadellen-Sieg,"Neue Boss-Stufen, wechselnde Kampagnen, globale Ziele",gap_from_prior_review,not_verified
+P03,Original-55: Progression & Livebetrieb,P1,Saisonmechaniken / faire Neustartwelten,Optional Saisonwelt mit Reset und separatem Dauerwelt-Spielstand,gap_from_prior_review,not_verified
+P04,Original-55: Progression & Livebetrieb,P0,Spieler-Balance und Comeback-Schutz,"Schutz nach Niederlage, Noobschutz, Abschwächung des Snowballs",gap_from_prior_review,not_verified
+P05,Original-55: Progression & Livebetrieb,P1,Ereignisse mit Missions- und Kampfvarianten,"Nicht nur Produktion, sondern spezifische PvE-Events",gap_from_prior_review,not_verified
+P06,Original-55: Progression & Livebetrieb,P2,Vernünftige Automatisierung für Rückkehrer,"Benachrichtigungen, Aufgabenstatus, Kommandoübersichten",gap_from_prior_review,not_verified
+T01,Original-55: Technik & Betrieb,P0,Automatische Backups + Restore-Probe,"Backups, Wiederherstellungstest, Rotation und Zugriffsschutz",gap_from_prior_review,not_verified
+T02,Original-55: Technik & Betrieb,P0,Race-Condition-/Lasttests und Missions-Idempotenztests,"Parallelstart, doppelte Buchung, Worker-Absturz, Replay testen",gap_from_prior_review,not_verified
+T03,Original-55: Technik & Betrieb,P0,Anti-Bot/Anti-Multiaccount/Rate Limits,Abuse-Detektion ohne personenbezogene Überwachungsexzesse,gap_from_prior_review,not_verified
+T04,Original-55: Technik & Betrieb,P1,Umfassende Welt- und Balancing-Adminwerkzeuge,"Weltregeln, Missions-Suche, Korrekturwerkzeuge und Telemetrie",gap_from_prior_review,not_verified
+T05,Original-55: Technik & Betrieb,P2,Mehrsprachigkeit / Lokalisierung,"String-Katalog für DE/EN, anschließend weitere Sprachen",gap_from_prior_review,not_verified
+T06,Original-55: Technik & Betrieb,P1,Responsive Mobile-/Accessibility-Prüfung,Bedienung und Tastaturzugänglichkeit für Karte und Kampf,gap_from_prior_review,not_verified
+T07,Original-55: Technik & Betrieb,P2,Echtzeit-Updates statt ausschließlich Polling,Websocket/SSE für Missionen und Allianzkoordination,gap_from_prior_review,not_verified
+T08,Original-55: Technik & Betrieb,P1,Spielregel-Migrationen und Balancing-Simulation,Regelversions-Snapshots gegen echte Formellogik validieren,gap_from_prior_review,not_verified
+T09,Original-55: Technik & Betrieb,P1,Sicherer Test-/Produktions-Release-Prozess,"CI/CD mit Tests, Rollback, Spiel-DB-Migration, Monitoring",gap_from_prior_review,not_verified
+ACC-001,Identität und Konto,P0,Passwortänderung,"Altes Passwort und TOTP prüfen, danach aktive Sessions nach Policy widerrufen.",new_design,not_verified
+ACC-002,Identität und Konto,P0,Recovery-Codes,"TOTP-Recovery Codes einmalig, gehasht, regenerierbar nach starker Authentifizierung.",new_design,not_verified
+ACC-003,Identität und Konto,P0,Sitzungsverwaltung,"Geräte/Sessions auflisten, einzeln/weltweit widerrufen und Audit anlegen.",new_design,not_verified
+ACC-004,Identität und Konto,P0,Accountname ändern,"Umbenennen mit Cooldown, Uniqueness und historischer Referenzpflege.",new_design,not_verified
+ACC-005,Identität und Konto,P0,Avatare und Profildetails,"Nur eigene oder freigegebene Assets, Größen-/Typprüfung und Moderationsweg.",new_design,not_verified
+ACC-006,Identität und Konto,P0,Privacy Export,Spieler erhält strukturierten Export eigener personenbezogener Daten ohne fremde Inhalte.,new_design,not_verified
+ACC-007,Identität und Konto,P0,Privacy Delete,Datenschutzanfrage wird auditiert und anonymisiert/löscht nach rechtlicher Aufbewahrungsregel.,new_design,not_verified
+ACC-008,Identität und Konto,P0,Benachrichtigungseinstellungen,E-Mail/Browser/Ingame je Ereigniskategorie opt-in steuerbar.,new_design,not_verified
+ACC-009,Identität und Konto,P0,Login-Schutz,Rate limit pro Account/Netz plus sichere Fehlermeldung ohne Email-Enumeration.,new_design,not_verified
+ACC-010,Identität und Konto,P0,WebAuthn optional,Passkey Enrollment und Recovery werden hinter sicherem Featureflag verfügbar und getestbar.,new_design,not_verified
+ENG-001,Game-Engine und Infrastruktur,P0,Globale Accounts und WorldPlayer,Ein Account kann mehreren Welten angehören; Progress ist pro Welt getrennt.,new_design,not_verified
+ENG-002,Game-Engine und Infrastruktur,P0,Dauer- Saison- Sandboxwelten,Weltmodus erlaubt explizite Regeln; Data Leakage und saisonaler Reset sind unmöglich.,new_design,not_verified
+ENG-003,Game-Engine und Infrastruktur,P0,Regelversionierter Katalog,FUR-2 und FUR-3/ORBIT-1 haben immutable Hash und eingefrorene Rechenformeln.,new_design,not_verified
+ENG-004,Game-Engine und Infrastruktur,P0,Domain Commands,Alle Spielbefehle laufen über autorisierte Commands statt Client-Datenmanipulation.,new_design,not_verified
+ENG-005,Game-Engine und Infrastruktur,P0,Event-Outbox,DB Commit und publish reproduzieren Events ohne Nachrichtenverlust.,new_design,not_verified
+ENG-006,Game-Engine und Infrastruktur,P0,Idempotenz,"Gleicher Command kann mehrfach zugestellt werden, hat aber nur eine Wirkung.",new_design,not_verified
+ENG-007,Game-Engine und Infrastruktur,P0,Persistenter Worker,Fällige Aufträge laufen ohne Browser und sind nach Neustart verarbeitbar.,new_design,not_verified
+ENG-008,Game-Engine und Infrastruktur,P0,Scheduler-Lag und Deadletter,Gestörte Worker und fehlgeschlagene Tasks sind sichtbar und sicher erneut anstoßbar.,new_design,not_verified
+ENG-009,Game-Engine und Infrastruktur,P0,Transaktionales Ressourcenledger,"Jede Resource-Buchung hat Ursache, Besitzer, Welt und nachvollziehbaren Saldo.",new_design,not_verified
+ENG-010,Game-Engine und Infrastruktur,P0,Deterministische Zeitintegration,Produktion berechnet UTC-Intervalle mit Eventbeginn/-ende und Urlaubsmodi korrekt.,new_design,not_verified
+ENG-011,Game-Engine und Infrastruktur,P0,Stabile IDs und FK,Jeder Welt-/Kolonie-/Missionsdatensatz ist eindeutig und besitzt gesicherte referenzielle Integrität.,new_design,not_verified
+ENG-012,Game-Engine und Infrastruktur,P0,Welt-Snapshot,"Snapshot/Restore pro Welt und Regeln mit dokumentierter Gültigkeit, keine Live-Destruktion.",new_design,not_verified
+ENG-013,Game-Engine und Infrastruktur,P0,Regeländerungs-Simulation,Admin sieht Auswirkungen auf Economy/Power/aktive Missionen vor Publikation.,new_design,not_verified
+ENG-014,Game-Engine und Infrastruktur,P0,Datenbankmigration FUR-2,Alte Welt und laufende Queues bleiben nach Migration konsistent und im Notfall wiederherstellbar.,new_design,not_verified
+ENG-015,Game-Engine und Infrastruktur,P0,Produktions-Fehlerformat,"API verwendet definierte Fehlercodes, Request-ID und keine Stacktraces.",new_design,not_verified
+ENG-016,Game-Engine und Infrastruktur,P0,Read Model + Pagination,Große Listen sind gefiltert/paginiert und leaken keine versteckten Gegnerdaten.,new_design,not_verified
+ENG-017,Game-Engine und Infrastruktur,P0,Monitoring und Warnschwellen,"p95, event lag, Ressourcenintegrität, DB, Backupalter erzeugen Metriken/Alarme.",new_design,not_verified
+TERRA-001,Terra-Welt detailliert,P0,Kartengenerator,"Welt ist aus einem Seed reproduzierbar, mit begehbaren Startbereichen und Ressourcen.",new_design,not_verified
+TERRA-002,Terra-Welt detailliert,P0,Sektorbesitztransaktionen,Kachelbesitz ist je Welt eindeutig; Race mit zwei Gründern erzeugt einen Gewinner.,new_design,not_verified
+TERRA-003,Terra-Welt detailliert,P0,Ausgeglichene Startpositionen,Neue Spieler können innerhalb Schutzzeit für Fortschritt notwendige Ressourcen erreichen.,new_design,not_verified
+TERRA-004,Terra-Welt detailliert,P0,Fog-Koordinatenliste,"Sichtzustand je Spieler ist unbekannt/alt/aktuell, mit Zeitstempel und Berechtigung.",new_design,not_verified
+TERRA-005,Terra-Welt detailliert,P0,Regionen-Score,Gebietskontrolle ist separat von persönlichen Basenwerten und hat gedeckelte Boni.,new_design,not_verified
+TERRA-006,Terra-Welt detailliert,P0,Geländemodifikatoren,"Terrain beeinflusst zulässige Wege, Reisezeit und Defense aus Regelkatalog.",new_design,not_verified
+TERRA-007,Terra-Welt detailliert,P0,Kolonie umbenennen,Neue Namen mit validierter Länge und Sperre gegen fremden Zugriff.,new_design,not_verified
+TERRA-008,Terra-Welt detailliert,P0,Hauptkolonie wechseln,Player kann die Hauptkolonie nach Cooldown ändern ohne Einheitentransfer.,new_design,not_verified
+TERRA-009,Terra-Welt detailliert,P0,Kolonie aufgeben,Letzte Heimatkolonie nicht aufgebbar; Missionen/Items/Waren werden vorher geregelt.,new_design,not_verified
+TERRA-010,Terra-Welt detailliert,P0,Kolonie versetzen,Targetreserving/Cooldown/Kosten und sichere Abwicklung aller offenen Missionen.,new_design,not_verified
+TERRA-011,Terra-Welt detailliert,P0,Außenposten zu Kolonie ausbauen,Nur zulässiger Posten und verfügbarer Kolonieslot; eindeutige Besitz- und Kostenbuchung.,new_design,not_verified
+TERRA-012,Terra-Welt detailliert,P0,Kartenfavoriten,Pro Welt private Marker/Filter/Routen- und Koordinatensuche.,new_design,not_verified
+TERRA-013,Terra-Welt detailliert,P0,Territorialkontrolle,Allianzgrenzen und Regionen werden aus tatsächlichem Sektorbesitz berechnet.,new_design,not_verified
+TERRA-014,Terra-Welt detailliert,P0,Schutzgebiete und Spawnregeln,Neue Kolonien dürfen keine reservierten/geschützten/unerreichbaren Kacheln belegen.,new_design,not_verified
+TERRA-015,Terra-Welt detailliert,P0,Verlassene Kolonien und Ruinen,Inaktive Basen werden nach Regeln gesichert in Ruinen umgewandelt; keine überraschende Löschung.,new_design,not_verified
+ECO-001,Ökonomie und Forschung erweitert,P1,Energieversorgung,"Gebäude haben Erzeugung, Verbrauch und bei Unterdeckung definierte Produktionsdrosselung.",new_design,not_verified
+ECO-002,Ökonomie und Forschung erweitert,P1,Unterhaltskosten,Spezielle Units/Orbitflotten belasten regelkonforme Ressourcen ohne negative Bestände.,new_design,not_verified
+ECO-003,Ökonomie und Forschung erweitert,P1,Bauqueue umordnen,"Erlaubte Reorder-Kontrolle respektiert Slots, Ressourcen und bereits gestartete Aufträge.",new_design,not_verified
+ECO-004,Ökonomie und Forschung erweitert,P1,Bauqueue abbrechen,"Stornierungsregel definiert Credit, bereits verbrauchte Zeit und Upgrade-Invariante.",new_design,not_verified
+ECO-005,Ökonomie und Forschung erweitert,P1,Forschung global vs lokal,"Forschungs- und Kolonieeffekte sind sauber getrennt, kein doppelt gerechneter Bonus.",new_design,not_verified
+ECO-006,Ökonomie und Forschung erweitert,P1,Technologieabhängigkeiten,Server prüft Bau/Forschung/Einheit-Freischaltungen auch bei parallelen Aufträgen.,new_design,not_verified
+ECO-007,Ökonomie und Forschung erweitert,P1,Spezialgebäude,Militär/Spionage/Energie/Logistik/Fertigung/Orbit und Support haben eigene Bauklassen.,new_design,not_verified
+ECO-008,Ökonomie und Forschung erweitert,P1,Prestigeausbau,Nach Level-10 Altweltregel neue Prestigeslots nur bei neuer Regelversion mit Kosten.,new_design,not_verified
+ECO-009,Ökonomie und Forschung erweitert,P1,Ressourcenproduktionsgrafik,Backend liefert genaue Produktionskomponenten mit Cap/Pause und Forecast.,new_design,not_verified
+ECO-010,Ökonomie und Forschung erweitert,P1,Markt-Preisverlauf,Trades erzeugen nachvollziehbare Statistik je Welt ohne Account-Leak.,new_design,not_verified
+ECO-011,Ökonomie und Forschung erweitert,P1,Allianzversorgungsrouten,"Cargo-Transfers brauchen Weg, Kapazität, Empfang und Abbruchregeln.",new_design,not_verified
+ECO-012,Ökonomie und Forschung erweitert,P1,Dauerhafte Handelsrouten,"Periodischer Transport hat Limit, Reservierung und Stop bei ungenügenden Rohstoffen.",new_design,not_verified
+ECO-013,Ökonomie und Forschung erweitert,P1,Produktionsvorlagen,Bau/Forschung/Rekrutierung unterstützen wiederholbare autorisierte Presets.,new_design,not_verified
+ECO-014,Ökonomie und Forschung erweitert,P1,Ressourcen-Faucets/Sinks,Neutrale Belohnungen und Wirtschaftssinks sind versioniert und simuliert.,new_design,not_verified
+ECO-015,Ökonomie und Forschung erweitert,P1,Forschungsspezialisierung,"Mindestens drei strategisch unterschiedliche Pfade, kein dominanter Autowin.",new_design,not_verified
+ECO-016,Ökonomie und Forschung erweitert,P1,Fraktions-Spezialaktionen,Jede Faktion hat die laut Master-GDD freigeschalteten fairen Spezialeinheiten/Technologien.,new_design,not_verified
+WAR-001,"Kampf, Missionen und Schutz",P0,FUR-3 Gefecht mit 6 Runden,"Angriff/Verteidigung, Rüstung, Schild, Schaden und Flucht werden deterministisch aufgelöst.",new_design,not_verified
+WAR-002,"Kampf, Missionen und Schutz",P0,Unit Counter Matrix,"Jede neue Kampfeinheit hat Rolle, Stärken, Schwächen, Kosten, Tempo und konfigurierbare Zielwahl.",new_design,not_verified
+WAR-003,"Kampf, Missionen und Schutz",P0,Verteidigungsobjekte,"Kanonen, Schilde, Minen und Unterstützungsbauwerke haben eigene Defense-Stacks und Reparatur.",new_design,not_verified
+WAR-004,"Kampf, Missionen und Schutz",P0,Gefechts-RNG,"Server seedet Kampf, speichert Commitment/Replay und liefert bei Wiederholung exaktes Ergebnis.",new_design,not_verified
+WAR-005,"Kampf, Missionen und Schutz",P0,Kampf Dry-run,Simulator nutzt denselben Resolver ohne Datenbankmutation oder Intel-Leak.,new_design,not_verified
+WAR-006,"Kampf, Missionen und Schutz",P0,Zeitgestaffelte Bewegungen,"Anmarsch, Transit und Rückmarsch berücksichtigen Terrain, Unit-Speed, Fuel und UTC.",new_design,not_verified
+WAR-007,"Kampf, Missionen und Schutz",P0,Mission Recall,"Rückruf an erlaubtem Punkt erzeugt genau eine gültige Retourmission, kein Verlust/Dupe.",new_design,not_verified
+WAR-008,"Kampf, Missionen und Schutz",P0,Taktischer Rückzug,Server prüft Retreat-Bedingungen und rechnet Überlebende/Rückflug eindeutig ab.,new_design,not_verified
+WAR-009,"Kampf, Missionen und Schutz",P0,Spionage-Mission,"Report enthüllt nur Informationen, die erlaubte Intel-Levels tatsächlich gewähren.",new_design,not_verified
+WAR-010,"Kampf, Missionen und Schutz",P0,Gegenaufklärung,"Abfangchance nach Tech/RNG, bei Entdeckung Report/optional Gegenkampf ohne private Daten.",new_design,not_verified
+WAR-011,"Kampf, Missionen und Schutz",P0,Reparatur und Wrackbergung,"Verluste erzeugen begrenzte Trümmer, Bergung benötigt Mission und Cargo.",new_design,not_verified
+WAR-012,"Kampf, Missionen und Schutz",P0,Artillerie und Fernwaffen,"Kosten, Reichweite, Schutzregeln, Gegenwehr und Eventwirkung serverseitig.",new_design,not_verified
+WAR-013,"Kampf, Missionen und Schutz",P0,Koordinierte Attacke,"Mehrere Mitglieder senden Einheiten zu gemeinsamem Arrival, Anteile und Rechte geprüft.",new_design,not_verified
+WAR-014,"Kampf, Missionen und Schutz",P0,Verteidiger-Verband,Unterstützung allierter Kolonien mit Besitzerrechten/Abzug und verlusttreuer Auszahlung.,new_design,not_verified
+WAR-015,"Kampf, Missionen und Schutz",P0,Taktische Belagerung,Belagerung braucht spezifische Units/Zeit; Defense gewinnt bei Ablauf ungebrochen.,new_design,not_verified
+WAR-016,"Kampf, Missionen und Schutz",P0,Kriegseinfluss auf Angriff,NAP/War/Vacation/Beginner-Schutz Start und Ankunft relevant und transparent.,new_design,not_verified
+WAR-017,"Kampf, Missionen und Schutz",P0,Raid-Limit,Beschränkung auf Ziele/Angriffe/Verluste reduziert unendliches Farmen desselben Spielers.,new_design,not_verified
+WAR-018,"Kampf, Missionen und Schutz",P0,Welt- und Allianz-Rankings,Militärwertungen unterscheiden Angriff/Defense/Support und sind auditierbar.,new_design,not_verified
+WAR-019,"Kampf, Missionen und Schutz",P0,Bericht Replay und Freigabe,"Nur Rechteinhaber sieht vollständiges Replay, öffentliche Freigabe anonymisiert Geheimdaten.",new_design,not_verified
+WAR-020,"Kampf, Missionen und Schutz",P0,Kampf-Balance-Test,Mindestens ein Gegenbeispiel für jede Unit-Klasse verhindert nutzlose Einheit oder Autowin.,new_design,not_verified
+SOC-001,Allianz und soziale Plattform,P1,Allianzaufnahmeverfahren,"Bewerbung, Einladung, Rücknahme, Annahme und Ablehnung sind einheitliche Zustände.",new_design,not_verified
+SOC-002,Allianz und soziale Plattform,P1,Granulare Allianzrechte,"Rollen können spezifische Permissions erhalten, ohne Moderator/Server-Owner zu werden.",new_design,not_verified
+SOC-003,Allianz und soziale Plattform,P1,Führungsübertrag,"Letzte Leitung darf nicht gehen, bevor neuer Leiter bestätigt ist.",new_design,not_verified
+SOC-004,Allianz und soziale Plattform,P1,Allianzkrieg-Objektive,"Krieg hat Start, Ziele, Kriegswertung, Friedensverhandlung, Ende und öffentliches Protokoll.",new_design,not_verified
+SOC-005,Allianz und soziale Plattform,P1,Allianz-Rangliste,Aggregierte Score-Werte mit Anti-Multiaccount-Regeln und saisonaler Archivierung.,new_design,not_verified
+SOC-006,Allianz und soziale Plattform,P1,Allianzkasse,"Spende, Ausgabe, Anforderung, Gebühren, Ledger und Vier-Augen-Gate für große Buchungen.",new_design,not_verified
+SOC-007,Allianz und soziale Plattform,P1,Allianzprojekte,Mitglieder leisten Ressourcenbeiträge zu endlich getimten Bau-/Eventzielen.,new_design,not_verified
+SOC-008,Allianz und soziale Plattform,P1,Allianzforum,"Threads, Rechte, Archiv und Edit-/Report-Funktionen, XSS-Schutz.",new_design,not_verified
+SOC-009,Allianz und soziale Plattform,P1,Pinnwand,Moderierte Allianzankündigungen mit Sichtbarkeit und zeitlicher Reihenfolge.,new_design,not_verified
+SOC-010,Allianz und soziale Plattform,P1,Freundeslisten,"Anfragen, Zustimmungen, Entfernen und private Sichtbarkeit.",new_design,not_verified
+SOC-011,Allianz und soziale Plattform,P1,Blocklisten,Blockierte Nutzer können keine privaten Nachrichten senden; Moderation bleibt möglich.,new_design,not_verified
+SOC-012,Allianz und soziale Plattform,P1,Spielerprofil,"Titel, Abzeichen, Stats, Account-Privacy ohne preisgeben sensibler Daten.",new_design,not_verified
+SOC-013,Allianz und soziale Plattform,P1,Notizen,Private Notizen zu Koordinaten/Reports mit Textbegrenzung und Weltbindung.,new_design,not_verified
+SOC-014,Allianz und soziale Plattform,P1,Berichtsfreigabe,"Kampfberichte teilbar in Allianz, ohne verborgene IDs/Informationen preiszugeben.",new_design,not_verified
+SOC-015,Allianz und soziale Plattform,P1,Chatmoderation,"Melden, Ausblenden, Mute, Appeal und auditierte Rechte.",new_design,not_verified
+SOC-016,Allianz und soziale Plattform,P1,Ankündigung und Briefkasten,Private und öffentliche Ankündigungen getrennt; Leser erhält nur erlaubte Inhalte.,new_design,not_verified
+PVE-001,"NPC, Quests, Endgame",P1,NPC-Fraktionen,Mindestens fünf eigene NPC-Lager mit unterschiedlichen Profilen und erlaubten Aktionen.,new_design,not_verified
+PVE-002,"NPC, Quests, Endgame",P1,NPC-Lagerzustand,"NPC-Basen besitzen Ressourcen, Einheiten, Bewegungen und Bereitstellungskontingent.",new_design,not_verified
+PVE-003,"NPC, Quests, Endgame",P1,NPC Angriffskette,"Strategie-KI erzeugt geplante Missionen innerhalb CPU-/Event-Budget, fair und auditierbar.",new_design,not_verified
+PVE-004,"NPC, Quests, Endgame",P1,NPC Außenposten Regeneration,Nicht besetzte Außenposten erzeugen regelbegrenzt Ressourcen und Verteidigung.,new_design,not_verified
+PVE-005,"NPC, Quests, Endgame",P1,Ruinenerkundung,"Erkundungs-Mission mit Danger/Reward, Fog- und Intel-Updates.",new_design,not_verified
+PVE-006,"NPC, Quests, Endgame",P1,Expeditionskatalog,PvE-Expeditionen mit deterministischer Reward-Distribution und Rückmarsch.,new_design,not_verified
+PVE-007,"NPC, Quests, Endgame",P1,Boss-Raid,"Kooperative Boss-Lebenspunkte, Angriffsslots, Contribution und endliche Belohnung.",new_design,not_verified
+PVE-008,"NPC, Quests, Endgame",P1,Weltinvasion,"Spawnwelle hat Budget, Warnphase, Angriff, Verlauf und Ende.",new_design,not_verified
+PVE-009,"NPC, Quests, Endgame",P1,Konvoi-Ereignis,Zeitgestaffelte NPC-Handelsroute wird verteidigt/überfallen mit klarer Belohnung.,new_design,not_verified
+PVE-010,"NPC, Quests, Endgame",P1,Questlinien,Tutorial/Story/Forschung/Militär/Handel/Allianz/Orbit Quests mit Progress.,new_design,not_verified
+PVE-011,"NPC, Quests, Endgame",P1,Tagesquests,Täglich resetbare Quests haben UTC-Grenze und Claim-Einmaligkeit.,new_design,not_verified
+PVE-012,"NPC, Quests, Endgame",P1,Wochenquests,Wöchentliche Ziele werden sicher bei Wochenwechsel versioniert.,new_design,not_verified
+PVE-013,"NPC, Quests, Endgame",P1,Erfolge,Persistente Achievements mit einmaliger Vergabe und öffentlicher/privater Anzeige.,new_design,not_verified
+PVE-014,"NPC, Quests, Endgame",P1,Questreward-Reserve,Belohnungen bei vollem Depot vollständig in Reserve oder Inventar.,new_design,not_verified
+PVE-015,"NPC, Quests, Endgame",P1,Zitadellen-Endgame,Nach Historischem Kern-Sieg weitere regionale/Orbit- und Allianzkampagnen.,new_design,not_verified
+PVE-016,"NPC, Quests, Endgame",P1,Comeback-Hilfe,Abwesende Spieler erhalten kein unfairen PvP-Startnachteil und transparente Schutzfenster.,new_design,not_verified
+PVE-017,"NPC, Quests, Endgame",P1,NPC Simulation,"Weltbot hat deterministische Seeds, kann nicht moderieren und verteilt keine willkürlichen Lootbeträge.",new_design,not_verified
+PVE-018,"NPC, Quests, Endgame",P1,Abgeschlossene Kampagne,Story-Fortschritt wird pro Welt gespeichert; Replay/Neue-Welt-Entscheidung klar.,new_design,not_verified
+ORB-001,Orbit und Raumsysteme,P1,Orbitfreischaltung,Terra-Zitadelle oder Forschung und erforderliche Materialien schalten Orbit sicher frei.,new_design,not_verified
+ORB-002,Orbit und Raumsysteme,P1,System- und Galaxiekarte,Generierte Galaxie/Sektoren/Slots sind pro Welt eindeutig und navigierbar.,new_design,not_verified
+ORB-003,Orbit und Raumsysteme,P1,Orbitale Sicht,Sensorik und Fog schützen gegnerische Systemdaten nach Intel-Regel.,new_design,not_verified
+ORB-004,Orbit und Raumsysteme,P1,Planeten-Kolonisierung,Kolonieschiff reserviert leeren Slot und gründet nach Ankunft Orbitalbasis.,new_design,not_verified
+ORB-005,Orbit und Raumsysteme,P1,Mondentstehung,"Monde entstehen nach geregelten Missionen/Ereignissen, nicht zufällig ohne Ereignislog.",new_design,not_verified
+ORB-006,Orbit und Raumsysteme,P1,Raumstationen,"Stationen besitzen Ausbau, Wartung, Garrison, Inventar und Owner-Berechtigungen.",new_design,not_verified
+ORB-007,Orbit und Raumsysteme,P1,Orbitbau,"Orbitkolonien haben eigene Bauqueue, Gebäudekosten, Zeit und Kapazität.",new_design,not_verified
+ORB-008,Orbit und Raumsysteme,P1,Orbitforschung,Orbitaltechbaum mit Voraussetzungskette und Forschungslimits.,new_design,not_verified
+ORB-009,Orbit und Raumsysteme,P1,Energiehaushalt,"Orbitaler Energie-Input/Verbrauch drosselt Module, nie negativer Bestand.",new_design,not_verified
+ORB-010,Orbit und Raumsysteme,P1,Ätherförderung,"Orbitressource hat Fördergebäude, Obergrenze und persistente Fraktionalreste.",new_design,not_verified
+ORB-011,Orbit und Raumsysteme,P1,Orbitaler Frachtraum,Frachtlimit und Frachtressourcen sind serverseitig beim Abflug gebucht.,new_design,not_verified
+ORB-012,Orbit und Raumsysteme,P1,Flottenaufbau,"14 Schifftypen mit Speed, Fracht, Treibstoff, Angriff, Schild, Hülle und Freischaltung.",new_design,not_verified
+ORB-013,Orbit und Raumsysteme,P1,Schiffswerft,Auftragsqueue mit Einheitenausbau und Anti-Duplikation.,new_design,not_verified
+ORB-014,Orbit und Raumsysteme,P1,Flottenentsendung,Validierte Flottenbefehle nutzen dieselben Missionsstandards wie Terra.,new_design,not_verified
+ORB-015,Orbit und Raumsysteme,P1,Orbitaler Angriff,Flottenkampf verwendet versionierte Kampfschilde und Verteidiger inklusive Mond/Station.,new_design,not_verified
+ORB-016,Orbit und Raumsysteme,P1,Orbitale Spionage,Sensor- und Spähsonden liefern abgestufte Intel-Reports und können abgefangen werden.,new_design,not_verified
+ORB-017,Orbit und Raumsysteme,P1,Orbitaler Transport,Fracht und Fuel werden beim Dispatch abgezogen und am Ende einmal verbucht.,new_design,not_verified
+ORB-018,Orbit und Raumsysteme,P1,Flottenstationierung,"Eigene oder allierte Stationierung mit Berechtigung, Rückruf und Versorgung.",new_design,not_verified
+ORB-019,Orbit und Raumsysteme,P1,Orbitkolonisation,Neue Kolonie bekommt eigenen Welt-/Account-/Slotbezug und saubere Reservierung.,new_design,not_verified
+ORB-020,Orbit und Raumsysteme,P1,Orbitale Expedition,"Anomalien und Raumruinen mit Risiko, Ereignis, Belohnung und Missionabschluss.",new_design,not_verified
+ORB-021,Orbit und Raumsysteme,P1,Bergungsmission,"Begrenzte Trümmerfelder, Cargo-Berechtigung, Raid-/Recycle-Competition.",new_design,not_verified
+ORB-022,Orbit und Raumsysteme,P1,Sensorphalanx,"Scan zeigt nur Missionsdaten je Reichweite, Kosten und Gegenabwehr.",new_design,not_verified
+ORB-023,Orbit und Raumsysteme,P1,Sprungtor,"Zwei kompatible Tore und Cooldown; atomare Transferbilanz, kein Teleportdupe.",new_design,not_verified
+ORB-024,Orbit und Raumsysteme,P1,Mondzerstörung,Spezialmission mit Sicherheits-/Balancegrenzen und korrekter Schadensbilanz.,new_design,not_verified
+ORB-025,Orbit und Raumsysteme,P1,Verbandflotte,"Gemeinsame Flotte mit Teilnehmerrechten, Ankunft und Ergebnisaufteilung.",new_design,not_verified
+ORB-026,Orbit und Raumsysteme,P1,Orbitaler Rückzug,"Taktischer Flottenrückzug, Fuel und Losses transparent, kein Out-of-Combat Dupe.",new_design,not_verified
+ORB-027,Orbit und Raumsysteme,P1,Schiffswerft-vorlagen,Spieler speichert Flotten- und Fertigungsvorlagen pro Welt.,new_design,not_verified
+ORB-028,Orbit und Raumsysteme,P1,Unterhalt und Versorgung,"Flotten benötigen begrenzte Unterhaltsressourcen, aber keine irreversible Offline-Extinktion.",new_design,not_verified
+ORB-029,Orbit und Raumsysteme,P1,Wrackfeld-Reparatur,Reparaturcenter heilt nur vorhandene Wracks gegen regelbasierte Kosten.,new_design,not_verified
+ORB-030,Orbit und Raumsysteme,P1,Terra-Orbit Cargo,Routen zwischen Ebenen verbuchen Cargo und Reisezeit ohne magisches Material.,new_design,not_verified
+ORB-031,Orbit und Raumsysteme,P1,Orbitale Verteidigungsraketen,"Missile/Missile-Abwehr mit eigenen FUR-Namen, Reichweite und Gegenwehr.",new_design,not_verified
+ORB-032,Orbit und Raumsysteme,P1,Orbit-Spezialereignisse,"Sternevents, Anomalien und Bosse nutzen dieselbe Regelversionierung und Reward-Caps.",new_design,not_verified
+ITEM-001,"Inventar, Craft, Charakter",P1,Inventar,"Besitz von Stack-Items mit Slot-/Cap-Policy, Weltbindung und Audit.",new_design,not_verified
+ITEM-002,"Inventar, Craft, Charakter",P1,Crafting,"Rezepte kosten definierte Ressourcen/Items, dauern ggf. und erzeugen exakt einmal Output.",new_design,not_verified
+ITEM-003,"Inventar, Craft, Charakter",P1,Item-Recycling,Zerlegen von Items gibt bestimmte Teilmengen und erzeugt keinen positiven Endloskreislauf.,new_design,not_verified
+ITEM-004,"Inventar, Craft, Charakter",P1,Lootbox-freies Itemdrop-System,Deterministisch seedbare PvE-Itemdrops mit dokumentierten Wahrscheinlichkeiten und Caps.,new_design,not_verified
+ITEM-005,"Inventar, Craft, Charakter",P1,Heldenverwaltung,Eigener Commander mit XP/Stats/Skillpunkten aus Spielaktionen statt Kauf.,new_design,not_verified
+ITEM-006,"Inventar, Craft, Charakter",P1,Helden-Doktrinen,Wirtschaft/Militär/Spionage/Flotte haben definierte passive Boni mit Power-Caps.,new_design,not_verified
+ITEM-007,"Inventar, Craft, Charakter",P1,Talent-Reset,"Respec hat Cooldown und Kosten, kein zusätzlicher Skillpunkt durch Replay.",new_design,not_verified
+ITEM-008,"Inventar, Craft, Charakter",P1,Kosmetische Belohnungen,"Skins, Titel, Banner ohne Kampfkraft oder Produktivitätsvorteil.",new_design,not_verified
+ITEM-009,"Inventar, Craft, Charakter",P1,Baupläne,Vorlagen für Bau/Rekrutierung/Forschung mit Servervalidierung und Ownership.,new_design,not_verified
+ITEM-010,"Inventar, Craft, Charakter",P1,Ingame Benachrichtigungen,"Spieler kann Kategorien lesen, stummschalten und Zustellfehler nachvollziehen.",new_design,not_verified
+ITEM-011,"Inventar, Craft, Charakter",P1,Brower Push optional,"Opt-in Push nach Freigabe, Unsubscribe funktioniert, keine sensitiven Details in Vorschau.",new_design,not_verified
+SEAS-001,"Welten, Saisons, Rankings, LiveOps",P1,Multiworld Browser,"Spieler sieht Welten, Regeln, Status, Ranglisten, ohne sich mehrfach registrieren zu müssen.",new_design,not_verified
+SEAS-002,"Welten, Saisons, Rankings, LiveOps",P1,Neue Welt gründen,"Admin nutzt seed/Ruleset/Type und schafft leere, getestete Welt ohne alte Daten.",new_design,not_verified
+SEAS-003,"Welten, Saisons, Rankings, LiveOps",P1,Neue Saison,"Nur in Saisonwelt, Laufzeit und Ziele gesetzt, separate Ranglisten und Archiv.",new_design,not_verified
+SEAS-004,"Welten, Saisons, Rankings, LiveOps",P1,Saisonabschluss,"Scores und Awards archivieren exakt einmal, anschließend Status archived.",new_design,not_verified
+SEAS-005,"Welten, Saisons, Rankings, LiveOps",P1,Dauerwelt schützen,Saisonabschluss darf niemals fremde Welt oder Dauerwelt zurücksetzen.,new_design,not_verified
+SEAS-006,"Welten, Saisons, Rankings, LiveOps",P1,LiveEvent-Editor,"Admin kann Produktionsboni, Ziele, Warn- und Endphase versioniert konfigurieren.",new_design,not_verified
+SEAS-007,"Welten, Saisons, Rankings, LiveOps",P1,Mehrfach-Event Regeln,Überlappende Boni werden gedeckelt und in Zeitsegmenten korrekt integriert.,new_design,not_verified
+SEAS-008,"Welten, Saisons, Rankings, LiveOps",P1,Allianzrangliste,Rangliste aggregiert Beiträge auf Allianz-/Weltbasis mit historischen Snapshots.,new_design,not_verified
+SEAS-009,"Welten, Saisons, Rankings, LiveOps",P1,Ranglistenarten,"Gesamt, Wirtschaft, Forschung, Krieg, PvE, Allianz/Regionen saisonal und permanent.",new_design,not_verified
+SEAS-010,"Welten, Saisons, Rankings, LiveOps",P1,Hall of Fame,"Historische Gewinner, Seasons, Boss- und Kriegserfolge bleiben sichtbar.",new_design,not_verified
+SEAS-011,"Welten, Saisons, Rankings, LiveOps",P1,Imperium-Prestige,Endgame erhöht kosmetische Prestigelevel ohne unbegrenzte PvP-Macht.,new_design,not_verified
+SEAS-012,"Welten, Saisons, Rankings, LiveOps",P1,Server-Ankündigungen,Geplante Texte und Notfallankündigungen erreichen betroffene Welten mit Audit.,new_design,not_verified
+SEAS-013,"Welten, Saisons, Rankings, LiveOps",P1,Regelupdate Rollout,"Ruleset-Publish per Welt/Aktivzeit, laufende Missionen behalten gültigen Vertrag.",new_design,not_verified
+ADM-001,"Administration, Sicherheit, Betrieb",P0,RBAC Owner/Admin/GM/Mod,Rollen und Einzelpermissions verhindern unberechtigten Zugriff.,new_design,not_verified
+ADM-002,"Administration, Sicherheit, Betrieb",P0,Admin-TOTP-Pflicht,Live Admin muss TOTP vor privilegierter Aktion bestätigen.,new_design,not_verified
+ADM-003,"Administration, Sicherheit, Betrieb",P0,Admin Vier-Augen Gate,Kritische Welt-/Ressourcen-/Accountänderung verlangt zweiten berechtigten Zustimmer.,new_design,not_verified
+ADM-004,"Administration, Sicherheit, Betrieb",P0,Auditlog,Jede privilegierte Aktion mit Actor/World/Grund/Zeit/Result ohne Secrets.,new_design,not_verified
+ADM-005,"Administration, Sicherheit, Betrieb",P0,Spielerverwaltung,"Admin kann Spieler nach berechtigtem Scope suchen, ansehen, sperren und entsperren.",new_design,not_verified
+ADM-006,"Administration, Sicherheit, Betrieb",P0,Allianzverwaltung,"Admin kann Allianzkonflikte bearbeiten, Rollen prüfen, gezielt reparieren.",new_design,not_verified
+ADM-007,"Administration, Sicherheit, Betrieb",P0,Weltsteuerung,Admin verwaltet Wartung/Registrierung/PvP/Events/Saison ohne manuelle SQL-Eingriffe.,new_design,not_verified
+ADM-008,"Administration, Sicherheit, Betrieb",P0,Regelvorschau,"Neue Definitionen laufen erst in Dry-run/Simulation, Veröffentlichung wird auditierbar.",new_design,not_verified
+ADM-009,"Administration, Sicherheit, Betrieb",P0,Map/NPC Editor,"Region/Spawn-Preview, Invasion/Event-Verwaltung unter Schutz vor Kolonieüberschreibung.",new_design,not_verified
+ADM-010,"Administration, Sicherheit, Betrieb",P0,Missions-Support,"Stuck Missions, Worker-DLQ und Rückruf haben wiederholbare Korrekturwege.",new_design,not_verified
+ADM-011,"Administration, Sicherheit, Betrieb",P0,Integritätskontrolle,"Admin sieht negative Bestände, ungültige FK, Doppelmissionen/Claims/Inventar-Auffälligkeiten.",new_design,not_verified
+ADM-012,"Administration, Sicherheit, Betrieb",P0,GameMaster-Maßnahmen,"Eventstart, NPC/Quest-Steuerung ohne Kontozugriff oder Ownersecrets.",new_design,not_verified
+ADM-013,"Administration, Sicherheit, Betrieb",P0,Melde- und Appealverwaltung,"Moderationsfälle sind einsehbar, bearbeitbar und begründet.",new_design,not_verified
+ADM-014,"Administration, Sicherheit, Betrieb",P0,AutoBot Monitoring,Raten-/Abuse-Anomalien führen zu Review statt blindem IP-Bann.,new_design,not_verified
+ADM-015,"Administration, Sicherheit, Betrieb",P0,Stats und Servermonitor,"Worker, DB, Last, Error rate und Backupalter werden dargestellt.",new_design,not_verified
+ADM-016,"Administration, Sicherheit, Betrieb",P0,Admin Backups,"DB-Backup initiiert, zeigt Checksum/Alter und getrennten Restore-Drill.",new_design,not_verified
+ADM-017,"Administration, Sicherheit, Betrieb",P0,Data retention Controls,Datenschutz-Anfragen und Aufbewahrungsregeln mit Audit und Freigabe.,new_design,not_verified
+ADM-018,"Administration, Sicherheit, Betrieb",P0,Admin Rollenprüfung,"Negativtest aller Admin-Endpoints gegen Player, Mod, GM, Admin und Owner.",new_design,not_verified
+ADM-019,"Administration, Sicherheit, Betrieb",P0,Notfall-Flag,Kill Switch für Handel/PvP/Missionen erhalten laufende Abwicklung ohne Dupe.,new_design,not_verified
+UX-001,"Frontend, Internationalisierung, Usability",P1,Eigenes Cyber-Gold-Design,"Dark Onyx, Gold und Cyan, keine geschützten Fremdassets; konsistente Komponenten.",new_design,not_verified
+UX-002,"Frontend, Internationalisierung, Usability",P1,Globale Navigation,Alle Screens aus 07_COMPLETE_SCREEN_AND_GAMEPLAY_MATRIX sind erreichbar und nutzbar.,new_design,not_verified
+UX-003,"Frontend, Internationalisierung, Usability",P1,Responsiv 320-1920,Alle Eingaben/Tabellen/Karten auf Mobile und Desktop ohne Funktionsverlust.,new_design,not_verified
+UX-004,"Frontend, Internationalisierung, Usability",P1,Tastatur und ARIA,"Fokussteuerung, Modale, Statusmeldungen und Kontrast barrierearm gemäß WCAG 2.2 AA.",new_design,not_verified
+UX-005,"Frontend, Internationalisierung, Usability",P1,Internationalisierung Deutsch,Alle Spielelemente samt Hilfetext und Validierung in Deutsch.,new_design,not_verified
+UX-006,"Frontend, Internationalisierung, Usability",P1,Internationalisierung Englisch,Gleiche Featureabdeckung und gleiche Bedeutungen auf Englisch.,new_design,not_verified
+UX-007,"Frontend, Internationalisierung, Usability",P1,Internationalisierung Vietnamesisch,Locale Vi vollständig und überprüfbare Fallback-Strategie.,new_design,not_verified
+UX-008,"Frontend, Internationalisierung, Usability",P1,Internationalisierung Spanisch,Locale Es vollständig und überprüfbare Fallback-Strategie.,new_design,not_verified
+UX-009,"Frontend, Internationalisierung, Usability",P1,Internationalisierung Türkisch,Locale Tr vollständig und überprüfbare Fallback-Strategie.,new_design,not_verified
+UX-010,"Frontend, Internationalisierung, Usability",P1,"Zeit, Zahlen, Plural","Datums-, Reisezeit-, Ressourcenzahlen und Plural korrekt nach Sprachgebiet.",new_design,not_verified
+UX-011,"Frontend, Internationalisierung, Usability",P1,Echtzeit SSE/Websocket,Privat-/Allianz-/Weltkanäle sind autorisiert mit Reconnect und EventIDs.,new_design,not_verified
+UX-012,"Frontend, Internationalisierung, Usability",P1,Polling-Fallback,Nach Verbindungsfehler bleiben Queue-/Kampf-/Chatinformationen aktuell.,new_design,not_verified
+UX-013,"Frontend, Internationalisierung, Usability",P1,Hilfetexte,In jedem Funktionsbereich steht eine vollständige benutzbare Erklärung.,new_design,not_verified
+UX-014,"Frontend, Internationalisierung, Usability",P1,Systemstatus/Fehlerzustände,Loading/Empty/Fail/Offline für alle Screens und Aktionen abgedeckt.,new_design,not_verified
+UX-015,"Frontend, Internationalisierung, Usability",P1,Interaktive Bau-/Research-Graphen,Preconditions und freigeschaltete Knoten können per Screenreader gelesen werden.,new_design,not_verified
+UX-016,"Frontend, Internationalisierung, Usability",P1,Map-Leistungsoptimierung,"Karten und Bewegungen paginiert/Tile-optimiert, ohne gigantische Ganzweltpayload.",new_design,not_verified
+UX-017,"Frontend, Internationalisierung, Usability",P1,Notification Center,Missionen/Forschung/Kampf/Adminevents erscheinen sichtbar und filterbar.,new_design,not_verified
+UX-018,"Frontend, Internationalisierung, Usability",P1,PWA offline read-only,Optional Offline-Navigation von Hilfetexten; offline keine mutierenden Commands.,new_design,not_verified
+OPS-001,"Automatisierung, Tests und Deployment",P0,One command dev,Sauberer Checkout startet lokale DB/Worker/API und seedbare Demowelt.,new_design,not_verified
+OPS-002,"Automatisierung, Tests und Deployment",P0,One command staging,Private Stagingumgebung startet mit produktionsnahen Services und Testdaten.,new_design,not_verified
+OPS-003,"Automatisierung, Tests und Deployment",P0,Docker production bundle,Container starten ohne dev reload; DB und Redis privat; Persistenz und Proxy.,new_design,not_verified
+OPS-004,"Automatisierung, Tests und Deployment",P0,Migration-Upgrade,Migrationen ohne Datenverlust und Restoreplan nachweisbar.,new_design,not_verified
+OPS-005,"Automatisierung, Tests und Deployment",P0,Automatische CI,"Lint, Format, Types, Unit/Integration/Browser und Scans laufen auf Pull Request.",new_design,not_verified
+OPS-006,"Automatisierung, Tests und Deployment",P0,Secretscanner,Vor Kommit/Release werden Token und Private Keys entdeckt und blockiert.,new_design,not_verified
+OPS-007,"Automatisierung, Tests und Deployment",P0,SBOM und Drittanbieter-Notices,Abhängigkeiten und Herkunft dokumentiert; Lizenzgates vor Imagebau.,new_design,not_verified
+OPS-008,"Automatisierung, Tests und Deployment",P0,Rate-Limit/CSRF/XSS/IDOR Tests,Häufige Webrisiken und fremde Objekte mit negativen Tests abgedeckt.,new_design,not_verified
+OPS-009,"Automatisierung, Tests und Deployment",P0,Race Condition Tests,Dispatch/Market/Claim/Colonize/Worker parallel und nach Crash genau einmal.,new_design,not_verified
+OPS-010,"Automatisierung, Tests und Deployment",P0,Property tests,Ressourcen und Einheiten bleiben innerhalb Invarianten und deterministisch.,new_design,not_verified
+OPS-011,"Automatisierung, Tests und Deployment",P0,Kampfreplay-Testruns,1000 Seed-Fälle liefern stable Output und no mutation bei dry_run.,new_design,not_verified
+OPS-012,"Automatisierung, Tests und Deployment",P0,Loadtest 30min,200 aktive/1000 Accounts Szenario mit dokumentierten p95/error/queue lag.,new_design,not_verified
+OPS-013,"Automatisierung, Tests und Deployment",P0,Multiworld-Isolationstest,Cross-World Spieler können kein Geheimdaten/Items/Ressourcen bewegen.,new_design,not_verified
+OPS-014,"Automatisierung, Tests und Deployment",P0,Backup-Retention,"Tag/Woche/Monat Plan, Verschlüsselung und Offsite-Adapter dokumentiert.",new_design,not_verified
+OPS-015,"Automatisierung, Tests und Deployment",P0,Restore-Probe,Isolierter Restore plus DB/Resource/Missionschecksum ist erfolgreich.,new_design,not_verified
+OPS-016,"Automatisierung, Tests und Deployment",P0,Health/Ready Endpoint,Web und Worker signalisieren getrennte Lebens-/Bereitschaftsdaten.,new_design,not_verified
+OPS-017,"Automatisierung, Tests und Deployment",P0,Alerts und Observability,"Backupalter, Eventlag, Errorrate und DB/Service-Ausfall erzeugen Alarm.",new_design,not_verified
+OPS-018,"Automatisierung, Tests und Deployment",P0,Systemhärtung,"Nicht-root Container, Firewall, Dienstkonto, restrictive secrets und TLS-Ready.",new_design,not_verified
+OPS-019,"Automatisierung, Tests und Deployment",P0,Operator Runbook,Start/Stop/Migration/Incident/Backup/Restore/KeyRotation sind Schritt-für-Schritt dokumentiert.,new_design,not_verified
+OPS-020,"Automatisierung, Tests und Deployment",P0,Live Launch Gate,Externe Domain/VPS/SMTP/Rechtstexte bleiben bis Ownergenehmigung offline vorbereitet.,new_design,not_verified
+OPS-021,"Automatisierung, Tests und Deployment",P0,Fail/Resume Agent,Agent schreibt validen Checkpoint und kann auf neuer Sitzung ohne Ratefragen fortsetzen.,new_design,not_verified
+OPS-022,"Automatisierung, Tests und Deployment",P0,Ausführlicher QA Report,Jedes Feature hat echten Test-/UI-/Codebeleg statt bloßem Checkboxstatus.,new_design,not_verified
+OPS-023,"Automatisierung, Tests und Deployment",P0,License Gate,MIT/Devana nur mit Notice/Rechten; GPL/AGPL/CC unterbleiben ohne bewussten Lizenzentscheid.,new_design,not_verified
+OPS-024,"Automatisierung, Tests und Deployment",P0,Dependencies Upgrade,Veraltete/unmaintained Komponenten werden bewertet und Tests bei Updates durchgeführt.,new_design,not_verified

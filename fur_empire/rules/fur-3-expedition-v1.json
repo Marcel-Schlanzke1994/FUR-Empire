@@ -1,0 +1,11 @@
+{
+  "version": "FUR-3-EXPEDITIONS-1",
+  "outcome_rolls": 10000,
+  "outcomes": [
+    {"id": "discovery", "weight": 3500, "resource_min": 120, "resource_max": 240, "loss_min_percent": 0, "loss_max_percent": 0},
+    {"id": "cache", "weight": 2500, "resource_min": 240, "resource_max": 420, "loss_min_percent": 0, "loss_max_percent": 0},
+    {"id": "skirmish", "weight": 2000, "resource_min": 80, "resource_max": 180, "loss_min_percent": 10, "loss_max_percent": 25},
+    {"id": "hazard", "weight": 1000, "resource_min": 0, "resource_max": 0, "loss_min_percent": 20, "loss_max_percent": 40},
+    {"id": "quiet", "weight": 1000, "resource_min": 0, "resource_max": 0, "loss_min_percent": 0, "loss_max_percent": 0}
+  ]
+}

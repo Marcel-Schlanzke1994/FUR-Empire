@@ -1,0 +1,12 @@
+{
+  "version": "FUR-3-ITEM-DROPS-1",
+  "roll_space": 10000,
+  "drops": [
+    {
+      "item_id": "loot_material",
+      "eligible_outcomes": ["discovery", "cache", "skirmish"],
+      "chance_basis_points": 1000,
+      "max_per_mission": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "terrain": {
+    "png": "01_TERRA/terrain/atlases/terrain_transitions.png",
+    "webp": "01_TERRA/terrain/atlases/terrain_transitions.webp",
+    "mapping": "01_TERRA/terrain/atlases/terrain_transitions.json"
+  },
+  "effects": {
+    "shield_hit": "02_ORBIT/effects/shield_hit.json",
+    "projectile_hit": "02_ORBIT/effects/projectile_hit.json",
+    "explosion": "02_ORBIT/effects/explosion.json",
+    "repair": "02_ORBIT/effects/repair.json",
+    "salvage": "02_ORBIT/effects/salvage.json"
+  }
+}

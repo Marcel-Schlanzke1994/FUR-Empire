@@ -1,0 +1,4 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID empty_missions | PACKAGE terra | CATEGORY empty_states
+A gray rabbit operations officer in repose beside a compact tactical console displaying only a blank cyan grid. Folded blank field map, unused dispatch rail.
+Single wide 16:9 scene, reduced, softly vignetted navy backdrop, crop-safe composition, no readable UI or text.

@@ -1,0 +1,79 @@
+{
+  "version": "FUR-3-TERRA-DEFENSE-1",
+  "status": "provisional_balance",
+  "activation": "FUR-3-TERRA-COMBAT-4-only",
+  "legacy_fur2_preserved": true,
+  "slots": {
+    "base": 1,
+    "per_hq_levels": 3,
+    "maximum": 4
+  },
+  "objects": {
+    "kinetic_turret": {
+      "kind": "cannon",
+      "name": "Kinetikgeschütz",
+      "cost": [500, 350, 100],
+      "slot_cost": 1,
+      "defense_power": 180,
+      "structure_points": 100,
+      "repair_cost_percent": 50,
+      "maximum_count": 4,
+      "combat_profile": {"attack": 45, "armor": 15, "accuracy": 85, "evasion": 0, "initiative": 8, "target_priority": 15},
+      "prerequisites": {"buildings": {"barracks": 2}, "tech": {"weapons": 1}}
+    },
+    "aegis_emitter": {
+      "kind": "shield",
+      "name": "Aegis-Emitter",
+      "cost": [400, 550, 200],
+      "slot_cost": 1,
+      "defense_power": 140,
+      "structure_points": 120,
+      "repair_cost_percent": 50,
+      "maximum_count": 3,
+      "combat_profile": {"attack": 0, "armor": 50, "accuracy": 0, "evasion": 0, "initiative": 0, "target_priority": 5},
+      "prerequisites": {"buildings": {"hq": 2}, "tech": {"shields": 1}}
+    },
+    "proximity_mines": {
+      "kind": "minefield",
+      "name": "Annäherungsminen",
+      "cost": [350, 250, 250],
+      "slot_cost": 1,
+      "defense_power": 100,
+      "structure_points": 80,
+      "repair_cost_percent": 50,
+      "maximum_count": 2,
+      "combat_profile": null,
+      "prerequisites": {"buildings": {"barracks": 1}, "tech": {"weapons": 1}}
+    },
+    "command_bunker": {
+      "kind": "support",
+      "name": "Gefechtsbunker",
+      "cost": [600, 500, 150],
+      "slot_cost": 1,
+      "defense_power": 80,
+      "structure_points": 160,
+      "repair_cost_percent": 50,
+      "maximum_count": 1,
+      "garrison_defense_percent": 10,
+      "combat_profile": {"attack": 0, "armor": 30, "accuracy": 0, "evasion": 0, "initiative": 0, "target_priority": 10},
+      "prerequisites": {"buildings": {"hq": 3}, "tech": {}}
+    }
+  },
+  "damage": {
+    "repair_requires_safe_colony": true,
+    "minimum_integrity": 0,
+    "minefield_consumed_on_successful_trigger": true
+  },
+  "minefield": {
+    "scope": ["player_attack", "alliance_player_attack"],
+    "trigger_chance_base_percent": 20,
+    "trigger_chance_per_defender_tactics_level": 5,
+    "trigger_chance_max_percent": 50,
+    "attacker_damage_percent_when_triggered": 80,
+    "maximum_triggers_per_mission": 1
+  },
+  "reports": {
+    "include_minefield_trigger_in_participant_combat_report": true
+  },
+  "provisional": true
+}

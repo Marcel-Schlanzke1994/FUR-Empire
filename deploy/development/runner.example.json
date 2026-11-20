@@ -1,0 +1,18 @@
+{
+  "state_dir": "/var/lib/fur-development-runner",
+  "repository": "/opt/fur-empire-development/worktree",
+  "worker_id": "fur-coding-1",
+  "idle_seconds": 60,
+  "lease_seconds": 15000,
+  "command": [
+    "/usr/local/bin/codex",
+    "exec",
+    "--sandbox",
+    "workspace-write",
+    "--json",
+    "-"
+  ],
+  "environment": {
+    "CODEX_HOME": "/var/lib/fur-development-runner/codex"
+  }
+}

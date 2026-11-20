@@ -1,0 +1,31 @@
+{
+  "project": "FUR EMPIRE",
+  "schema_version": "1.0.0",
+  "status": "template_until_code_and_assets_are_inspected",
+  "source": "GRAFIK.md",
+  "design_system": {
+    "colors": {"background": "#0B111A", "surface": "#162432", "gold": "#D4AD66", "gold_light": "#F2D59D", "cyan": "#5ED3DF"},
+    "brand_direction": "original cyber gold terra-orbit strategy art",
+    "reference_asset_reuse": "forbidden_without_rights_review"
+  },
+  "asset_entry_schema": {
+    "asset_id": "unique ID",
+    "feature_ids": [],
+    "screens": [],
+    "path": "static/assets/...",
+    "width_px": 0,
+    "height_px": 0,
+    "format": "svg|png|webp|avif",
+    "transparency": true,
+    "responsive_variants": [],
+    "motif": "exact motif, environment, perspective and colors",
+    "generation_prompt": "original-art generation instructions",
+    "alt_de": "short screen-reader description",
+    "license": "original|verified third party",
+    "source": "own creation, tool, author or license reference",
+    "status": "planned|generating|integrated|asset_pending|final",
+    "fallback_path": "static/assets/fallbacks/placeholder.svg",
+    "ui_binding": "real UI component path"
+  },
+  "assets": []
+}

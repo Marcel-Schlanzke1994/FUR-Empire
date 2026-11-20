@@ -1,0 +1,15 @@
+{
+  "renderer": "Google Chrome headless over temporary loopback",
+  "runs": [
+    {
+      "reduce_motion": false,
+      "image_decodes": 152,
+      "inline_controls": "passed"
+    },
+    {
+      "reduce_motion": true,
+      "image_decodes": 152,
+      "inline_controls": "passed"
+    }
+  ]
+}

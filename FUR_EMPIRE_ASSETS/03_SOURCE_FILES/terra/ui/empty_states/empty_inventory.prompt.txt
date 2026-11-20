@@ -1,0 +1,4 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID empty_inventory | PACKAGE terra | CATEGORY empty_states
+A single empty open alloy supply trunk with gold latches, blue lining and no items, on an out-of-focus depot apron. No character required.
+Single wide 16:9 scene, reduced, softly vignetted navy backdrop, crop-safe composition, no readable UI or text.

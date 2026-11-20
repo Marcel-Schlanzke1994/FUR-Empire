@@ -1,0 +1,8 @@
+{
+  "version": "FUR-3-NPC-INVASION-1",
+  "status": "provisional_balance",
+  "warning_seconds": 1800,
+  "active_seconds": 172800,
+  "mission_budget": 6,
+  "policy": "Replace the regular CAMPS-3 planning window with a finite budget. Keep existing target protections, attack timing, combat and loot caps."
+}

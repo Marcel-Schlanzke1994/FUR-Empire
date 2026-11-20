@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+data/*
+!data/.gitkeep
+backups/
+tools/
+Neuer Ordner/
+.env
+.env.*
+!.env.example
+!.env.staging.example
+node_modules/
+test-results/
+playwright-report/
+.secrets/
+build-artifacts/
+.probe-*
+FUR_EMPIRE_ASSETS/*.zip
+chat mit anderer Ki.txt
+FUR_EMPIRE_ASSETS/
+FUR_CODEX_UEBERGABE/

@@ -1,0 +1,4440 @@
+[
+  {
+    "asset_id": "fur_emblem",
+    "package": "terra",
+    "category": "branding",
+    "name": "Imperiales Kaninchenemblem",
+    "width": 2048,
+    "height": 2048,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/branding/fur_emblem",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "fur_wordmark",
+    "package": "terra",
+    "category": "branding",
+    "name": "FUR EMPIRE Wortmarke",
+    "width": 2400,
+    "height": 720,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/branding/fur_wordmark",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "fur_favicon",
+    "package": "terra",
+    "category": "branding",
+    "name": "Favicon",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/branding/fur_favicon",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "terra_title",
+    "package": "terra",
+    "category": "title",
+    "name": "Terra Titelbild",
+    "width": 2560,
+    "height": 1440,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/title/terra_title",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "terra_title_mobile",
+    "package": "terra",
+    "category": "title",
+    "name": "Mobiles Terra Titelbild",
+    "width": 960,
+    "height": 1280,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/title/terra_title_mobile",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "social_preview",
+    "package": "terra",
+    "category": "title",
+    "name": "Social-Vorschau",
+    "width": 1200,
+    "height": 630,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/title/social_preview",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "season_banner",
+    "package": "terra",
+    "category": "title",
+    "name": "Saisonbanner",
+    "width": 1920,
+    "height": 640,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/title/season_banner",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "hq",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Kommandozentrale",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/hq",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "wood",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Bioforst",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/wood",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "stone",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Steinbruch",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/stone",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "ore",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Erzraffinerie",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/ore",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "storage",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Depot",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/storage",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "barracks",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Kaserne",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/barracks",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "lab",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Forschungslabor",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/lab",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "wall",
+    "package": "terra",
+    "category": "buildings",
+    "name": "Schildwall",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/buildings/wall",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "ranger",
+    "package": "terra",
+    "category": "units",
+    "name": "Ranger",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/units/ranger",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "sentinel",
+    "package": "terra",
+    "category": "units",
+    "name": "Wächter",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/units/sentinel",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "mech",
+    "package": "terra",
+    "category": "units",
+    "name": "Sturmmech",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/units/mech",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "plain",
+    "package": "terra",
+    "category": "terrain/base",
+    "name": "Ebene",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/base/plain",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest",
+    "package": "terra",
+    "category": "terrain/base",
+    "name": "Wald",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/base/forest",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "water",
+    "package": "terra",
+    "category": "terrain/base",
+    "name": "Wasser",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/base/water",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain",
+    "package": "terra",
+    "category": "terrain/base",
+    "name": "Gebirge",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/base/mountain",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "pass",
+    "package": "terra",
+    "category": "terrain/base",
+    "name": "Gebirgspass",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/base/pass",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_00",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 0",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_00",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_01",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 1",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_01",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_02",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 2",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_02",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_03",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 3",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_03",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_04",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 4",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_04",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_05",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 5",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_05",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_06",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 6",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_06",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_07",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 7",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_07",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_08",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 8",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_08",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_09",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 9",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_09",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_10",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 10",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_10",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_11",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 11",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_11",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_12",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 12",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_12",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_13",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 13",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_13",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_14",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 14",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_14",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shore_15",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Wasserufer · Maske 15",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/shore_15",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_00",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 0",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_00",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_01",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 1",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_01",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_02",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 2",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_02",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_03",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 3",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_03",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_04",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 4",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_04",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_05",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 5",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_05",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_06",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 6",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_06",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_07",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 7",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_07",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_08",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 8",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_08",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_09",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 9",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_09",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_10",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 10",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_10",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_11",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 11",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_11",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_12",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 12",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_12",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_13",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 13",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_13",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_14",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 14",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_14",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "forest_edge_15",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Waldrand · Maske 15",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/forest_edge_15",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_00",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 0",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_00",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_01",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 1",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_01",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_02",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 2",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_02",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_03",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 3",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_03",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_04",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 4",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_04",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_05",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 5",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_05",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_06",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 6",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_06",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_07",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 7",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_07",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_08",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 8",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_08",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_09",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 9",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_09",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_10",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 10",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_10",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_11",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 11",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_11",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_12",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 12",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_12",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_13",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 13",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_13",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_14",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 14",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_14",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "mountain_edge_15",
+    "package": "terra",
+    "category": "terrain/transitions",
+    "name": "Gebirgsrand · Maske 15",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/transitions/mountain_edge_15",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "terrain_transitions",
+    "package": "terra",
+    "category": "terrain/atlases",
+    "name": "Geländeübergangsatlas",
+    "width": 1024,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/terrain/atlases/terrain_transitions",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "fog_unknown",
+    "package": "terra",
+    "category": "fog",
+    "name": "Unbekannt",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/fog/fog_unknown",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "fog_explored",
+    "package": "terra",
+    "category": "fog",
+    "name": "Früher erkundet",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/fog/fog_explored",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "fog_visible",
+    "package": "terra",
+    "category": "fog",
+    "name": "Aktuell sichtbar",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/fog/fog_visible",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "outpost_small",
+    "package": "terra",
+    "category": "outposts",
+    "name": "Kleine Anlage",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/outposts/outpost_small",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "outpost_medium",
+    "package": "terra",
+    "category": "outposts",
+    "name": "Mittlere Festung",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/outposts/outpost_medium",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "outpost_large",
+    "package": "terra",
+    "category": "outposts",
+    "name": "Große Festung",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/outposts/outpost_large",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "outpost_citadel",
+    "package": "terra",
+    "category": "outposts",
+    "name": "Zitadelle",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/outposts/outpost_citadel",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "fortress_intact",
+    "package": "terra",
+    "category": "damage_overlays",
+    "name": "Intakter Zustand",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/damage_overlays/fortress_intact",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "fortress_damaged",
+    "package": "terra",
+    "category": "damage_overlays",
+    "name": "Beschädigter Zustand",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/damage_overlays/fortress_damaged",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "fortress_destroyed",
+    "package": "terra",
+    "category": "damage_overlays",
+    "name": "Zerstörter Zustand",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/damage_overlays/fortress_destroyed",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "ruin",
+    "package": "terra",
+    "category": "map_objects",
+    "name": "Verlassene technische Ruine",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/map_objects/ruin",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "npc_camp",
+    "package": "terra",
+    "category": "map_objects",
+    "name": "Mobiles militärisches NPC-Lager",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/map_objects/npc_camp",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "colony_own",
+    "package": "terra",
+    "category": "markers",
+    "name": "Eigene Kolonie",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/colony_own",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "colony_foreign",
+    "package": "terra",
+    "category": "markers",
+    "name": "Fremde Kolonie",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/colony_foreign",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "colony_allied",
+    "package": "terra",
+    "category": "markers",
+    "name": "Verbündete Kolonie",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/colony_allied",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "outpost_neutral",
+    "package": "terra",
+    "category": "markers",
+    "name": "Neutraler Außenposten",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/outpost_neutral",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "outpost_occupied",
+    "package": "terra",
+    "category": "markers",
+    "name": "Besetzter Außenposten",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/outpost_occupied",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "citadel_boss",
+    "package": "terra",
+    "category": "markers",
+    "name": "Zitadelle / Bossziel",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/citadel_boss",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "npc_camp",
+    "package": "terra",
+    "category": "markers",
+    "name": "NPC-Lager",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/npc_camp",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ruin",
+    "package": "terra",
+    "category": "markers",
+    "name": "Ruine",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/ruin",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "attack",
+    "package": "terra",
+    "category": "markers",
+    "name": "Angriff",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/attack",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "transport",
+    "package": "terra",
+    "category": "markers",
+    "name": "Transport",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/transport",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "scouting",
+    "package": "terra",
+    "category": "markers",
+    "name": "Aufklärung",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/scouting",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "expedition",
+    "package": "terra",
+    "category": "markers",
+    "name": "Expedition",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/expedition",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "return",
+    "package": "terra",
+    "category": "markers",
+    "name": "Rückkehr",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/return",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "warning",
+    "package": "terra",
+    "category": "markers",
+    "name": "Warnung",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/warning",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "favorite",
+    "package": "terra",
+    "category": "markers",
+    "name": "Favorit",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/markers/favorite",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "wood",
+    "package": "terra",
+    "category": "resources",
+    "name": "Holz",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/wood",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "stone",
+    "package": "terra",
+    "category": "resources",
+    "name": "Stein",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/stone",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ore",
+    "package": "terra",
+    "category": "resources",
+    "name": "Erz",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/ore",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alloy",
+    "package": "terra",
+    "category": "resources",
+    "name": "Legierung",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/alloy",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "circuits",
+    "package": "terra",
+    "category": "resources",
+    "name": "Schaltkreise",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/circuits",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "textiles",
+    "package": "terra",
+    "category": "resources",
+    "name": "Textilien",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/textiles",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "rations",
+    "package": "terra",
+    "category": "resources",
+    "name": "Rationen",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/rations",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "medicine",
+    "package": "terra",
+    "category": "resources",
+    "name": "Medizin",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/medicine",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "lubricant",
+    "package": "terra",
+    "category": "resources",
+    "name": "Schmiermittel",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/lubricant",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ceramics",
+    "package": "terra",
+    "category": "resources",
+    "name": "Keramik",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/ceramics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "energy",
+    "package": "terra",
+    "category": "resources",
+    "name": "Energie",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/energy",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ether",
+    "package": "terra",
+    "category": "resources",
+    "name": "Äther",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg",
+      "png"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/resources/ether",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "tactics",
+    "package": "terra",
+    "category": "research",
+    "name": "Militärtaktik: taktisches Raster, Formation",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/research/tactics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "logistics",
+    "package": "terra",
+    "category": "research",
+    "name": "Logistik: vernetzte Transport- und Versorgungswege",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/research/logistics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "engineering",
+    "package": "terra",
+    "category": "research",
+    "name": "Ingenieurswesen: technisches Werkzeug mit Bauplanstruktur",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/research/engineering",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "crafting_component",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Fertigungskomponente",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/crafting_component",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "field_repair_kit",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Feldreparaturkit",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/field_repair_kit",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "cosmetic_token",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Kosmetikmarke",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/cosmetic_token",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "commander_badge",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Kommandantenabzeichen",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/commander_badge",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "salvage_material",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Bergungsmaterial",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/salvage_material",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "research_artifact",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Forschungsartefakt",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/research_artifact",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "pve_supply",
+    "package": "terra",
+    "category": "inventory",
+    "name": "PvE-Einsatzvorrat",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/pve_supply",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "prestige_token",
+    "package": "terra",
+    "category": "inventory",
+    "name": "Prestigemarke",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/inventory/prestige_token",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "overview",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Übersicht",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/overview",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "buildings",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Gebäude",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/buildings",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "research",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Forschung",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/research",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "army",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Armee",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/army",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "map",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Karte",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/map",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "missions",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Missionen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/missions",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "reports",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Berichte",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/reports",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "trade",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Handel",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/trade",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "inventory",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Inventar",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/inventory",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Allianz",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/alliance",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "diplomacy",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Diplomatie",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/diplomacy",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "messages",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Nachrichten",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/messages",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "leaderboard",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Rangliste",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/leaderboard",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "commander",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Commander",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/commander",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "season",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Saison",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/season",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "settings",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Einstellungen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/settings",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "security",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Sicherheit",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/security",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "help",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Hilfe",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/help",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "administration",
+    "package": "terra",
+    "category": "ui/navigation",
+    "name": "Administration",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/navigation/administration",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "build",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Bauen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/build",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "upgrade",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Verbessern",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/upgrade",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "cancel",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Abbrechen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/cancel",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "reorder",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Umsortieren",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/reorder",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "send",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Senden",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/send",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "recall",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Zurückrufen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/recall",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "repair",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Reparieren",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/repair",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "lock",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Sperren",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/lock",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "unlock",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Entsperren",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/unlock",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "confirm",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Bestätigen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/confirm",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "error",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Fehler",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/error",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "warning",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Warnung",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/warning",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "information",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Information",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/information",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "timer",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Timer",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/timer",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "search",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Suche",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/search",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "filter",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Filter",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/filter",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "close",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Schließen",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/close",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "next",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Vor",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/next",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "previous",
+    "package": "terra",
+    "category": "ui/actions",
+    "name": "Zurück",
+    "width": 24,
+    "height": 24,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/actions/previous",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "empty_missions",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Keine Missionen",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_missions",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "empty_reports",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Keine Berichte",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_reports",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "empty_messages",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Keine Nachrichten",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_messages",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "empty_inventory",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Leeres Inventar",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_inventory",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "empty_alliance",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Keine Allianz",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_alliance",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "empty_search",
+    "package": "terra",
+    "category": "ui/empty_states",
+    "name": "Keine Suchtreffer",
+    "width": 640,
+    "height": 360,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/empty_states/empty_search",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "loading_animated",
+    "package": "terra",
+    "category": "ui/loading",
+    "name": "Animierte Ladeanzeige",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/loading/loading_animated",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "loading_static",
+    "package": "terra",
+    "category": "ui/loading",
+    "name": "Statische Ladeanzeige",
+    "width": 128,
+    "height": 128,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "01_TERRA/ui/loading/loading_static",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "panel_texture",
+    "package": "terra",
+    "category": "ui/textures",
+    "name": "Nahtlose Paneltextur",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "01_TERRA/ui/textures/panel_texture",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "scanner_tower",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Scannerturm",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/scanner_tower",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "command_uplink",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Kommando-Uplink",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/command_uplink",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "repair_bay",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Reparaturhalle",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/repair_bay",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "drone_foundry",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Drohnenfertigung",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/drone_foundry",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "artillery_battery",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Artilleriebatterie",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/artillery_battery",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "hospital",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Feldhospital",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/hospital",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "shield_generator",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Schildgenerator",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/shield_generator",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "energy_core",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Energiekern",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/energy_core",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "fusion_plant",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Fusionskraftwerk",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/fusion_plant",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "market_hub",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Handelszentrum",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/market_hub",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "supply_depot",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Versorgungsdepot",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/supply_depot",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "advanced_lab",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Hochtechnologielabor",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/advanced_lab",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "espionage_center",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Spionagezentrum",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/espionage_center",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "orbital_gateway",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Orbitalzugang",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/orbital_gateway",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "colony_station",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Kolonisationsstation",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/colony_station",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "trade_port",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Handelshafen",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/trade_port",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "war_academy",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Kriegsakademie",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/war_academy",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "siege_factory",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Belagerungsfabrik",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/siege_factory",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "fortification",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Befestigungsanlage",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/fortification",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "archive_vault",
+    "package": "orbit",
+    "category": "buildings",
+    "name": "Archivbunker",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/buildings/archive_vault",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "terraformer_drone",
+    "package": "orbit",
+    "category": "units",
+    "name": "Terraformerdrohne",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/terraformer_drone",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "frontier_vanguard",
+    "package": "orbit",
+    "category": "units",
+    "name": "Grenzvorhut",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/frontier_vanguard",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "bastion_walker",
+    "package": "orbit",
+    "category": "units",
+    "name": "Bastionswalker",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/bastion_walker",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "shield_sentinel",
+    "package": "orbit",
+    "category": "units",
+    "name": "Schildwächter",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/shield_sentinel",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "covert_courier",
+    "package": "orbit",
+    "category": "units",
+    "name": "Verdeckter Kurier",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/covert_courier",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "salvage_engineer",
+    "package": "orbit",
+    "category": "units",
+    "name": "Bergungstechniker",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/salvage_engineer",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "scout",
+    "package": "orbit",
+    "category": "units",
+    "name": "Späher",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/scout",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "saboteur",
+    "package": "orbit",
+    "category": "units",
+    "name": "Saboteur",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/saboteur",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "medic",
+    "package": "orbit",
+    "category": "units",
+    "name": "Sanitäter",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/medic",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "shield_drone",
+    "package": "orbit",
+    "category": "units",
+    "name": "Schilddrohne",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/shield_drone",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "sniper",
+    "package": "orbit",
+    "category": "units",
+    "name": "Scharfschütze",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/sniper",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "siege_robot",
+    "package": "orbit",
+    "category": "units",
+    "name": "Belagerungsroboter",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/siege_robot",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "artillery_platform",
+    "package": "orbit",
+    "category": "units",
+    "name": "Mobile Artillerieplattform",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/artillery_platform",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "logistics_convoy",
+    "package": "orbit",
+    "category": "units",
+    "name": "Logistikkonvoi",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/logistics_convoy",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "engineer_squad",
+    "package": "orbit",
+    "category": "units",
+    "name": "Pioniertrupp",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/engineer_squad",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "interceptor_drone",
+    "package": "orbit",
+    "category": "units",
+    "name": "Abfangdrohne",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/interceptor_drone",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "commander_guard",
+    "package": "orbit",
+    "category": "units",
+    "name": "Kommandantengarde",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/commander_guard",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "titan_colossus",
+    "package": "orbit",
+    "category": "units",
+    "name": "Schwerer Titan-Koloss",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/units/titan_colossus",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "kinetic_turret",
+    "package": "orbit",
+    "category": "defenses",
+    "name": "Kinetikgeschütz",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/defenses/kinetic_turret",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "aegis_emitter",
+    "package": "orbit",
+    "category": "defenses",
+    "name": "Aegis-Emitter",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/defenses/aegis_emitter",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "proximity_mines",
+    "package": "orbit",
+    "category": "defenses",
+    "name": "Annäherungsminenfeld",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/defenses/proximity_mines",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "battle_bunker",
+    "package": "orbit",
+    "category": "defenses",
+    "name": "Gefechtsbunker",
+    "width": 768,
+    "height": 768,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/defenses/battle_bunker",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "terra_colonization",
+    "package": "orbit",
+    "category": "research",
+    "name": "Terra-Kolonisierung",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/terra_colonization",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "terra_logistics",
+    "package": "orbit",
+    "category": "research",
+    "name": "Terra-Logistik",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/terra_logistics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "terrain_survival",
+    "package": "orbit",
+    "category": "research",
+    "name": "Geländeüberleben",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/terrain_survival",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "reconnaissance",
+    "package": "orbit",
+    "category": "research",
+    "name": "Aufklärung",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/reconnaissance",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "counterintelligence",
+    "package": "orbit",
+    "category": "research",
+    "name": "Gegenspionage",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/counterintelligence",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ballistics",
+    "package": "orbit",
+    "category": "research",
+    "name": "Ballistik",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/ballistics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "shields",
+    "package": "orbit",
+    "category": "research",
+    "name": "Schilde",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/shields",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "armor_technology",
+    "package": "orbit",
+    "category": "research",
+    "name": "Panzerungstechnik",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/armor_technology",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "field_medicine",
+    "package": "orbit",
+    "category": "research",
+    "name": "Feldmedizin",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/field_medicine",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_coordination",
+    "package": "orbit",
+    "category": "research",
+    "name": "Allianzkoordination",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/alliance_coordination",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "supply_chain",
+    "package": "orbit",
+    "category": "research",
+    "name": "Versorgungskette",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/supply_chain",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "advanced_production",
+    "package": "orbit",
+    "category": "research",
+    "name": "Fortschrittliche Produktion",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/advanced_production",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "field_energy",
+    "package": "orbit",
+    "category": "research",
+    "name": "Feldenergie",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/field_energy",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "cybernetics",
+    "package": "orbit",
+    "category": "research",
+    "name": "Kybernetik",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/cybernetics",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "orbital_navigation",
+    "package": "orbit",
+    "category": "research",
+    "name": "Orbitalnavigation",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/orbital_navigation",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "orbital_shipbuilding",
+    "package": "orbit",
+    "category": "research",
+    "name": "Orbitalschiffbau",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/orbital_shipbuilding",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "orbital_scanning",
+    "package": "orbit",
+    "category": "research",
+    "name": "Orbitalscanning",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/orbital_scanning",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ether_refining",
+    "package": "orbit",
+    "category": "research",
+    "name": "Ätherraffination",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/ether_refining",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "advanced_propulsion",
+    "package": "orbit",
+    "category": "research",
+    "name": "Fortschrittlicher Antrieb",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/advanced_propulsion",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "jump_gate_network",
+    "package": "orbit",
+    "category": "research",
+    "name": "Sprungtornetz",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/jump_gate_network",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "terra_prestige",
+    "package": "orbit",
+    "category": "research",
+    "name": "Terra-Prestige",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/research/terra_prestige",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "probe",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Aufklärungssonde",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/probe",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "courier",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Kuriertransporter",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/courier",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "light_fighter",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Leichter Jäger",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/light_fighter",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "heavy_fighter",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Schwerer Jäger",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/heavy_fighter",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "frigate",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Fregatte",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/frigate",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "cruiser",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Kreuzer",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/cruiser",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "battleship",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Schlachtschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/battleship",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "shield_carrier",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Schildträgerschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/shield_carrier",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "carrier",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Trägerschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/carrier",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "colony_ship",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Kolonieschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/colony_ship",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "freighter",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Frachter",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/freighter",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "salvager",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Bergungsschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/salvager",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "siege_ship",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Belagerungsschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/siege_ship",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "flagship",
+    "package": "orbit",
+    "category": "ships",
+    "name": "Flaggschiff",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/ships/flagship",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "orbit_title",
+    "package": "orbit",
+    "category": "backgrounds",
+    "name": "Orbit Titelbild",
+    "width": 2560,
+    "height": 1440,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/backgrounds/orbit_title",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "orbit_title_mobile",
+    "package": "orbit",
+    "category": "backgrounds",
+    "name": "Mobiles Orbit Titelbild",
+    "width": 960,
+    "height": 1280,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/backgrounds/orbit_title_mobile",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "space_stars",
+    "package": "orbit",
+    "category": "backgrounds",
+    "name": "Sternfeld",
+    "width": 3840,
+    "height": 2160,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/backgrounds/space_stars",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "space_nebula",
+    "package": "orbit",
+    "category": "backgrounds",
+    "name": "Nebelregion",
+    "width": 3840,
+    "height": 2160,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/backgrounds/space_nebula",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "space_frontier",
+    "package": "orbit",
+    "category": "backgrounds",
+    "name": "Dunkler Grenzraum",
+    "width": 3840,
+    "height": 2160,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/backgrounds/space_frontier",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "planet_rock",
+    "package": "orbit",
+    "category": "planets",
+    "name": "Gesteinsplanet",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/planets/planet_rock",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "planet_ice",
+    "package": "orbit",
+    "category": "planets",
+    "name": "Eisplanet",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/planets/planet_ice",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "planet_desert",
+    "package": "orbit",
+    "category": "planets",
+    "name": "Wüstenplanet",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/planets/planet_desert",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "planet_ocean",
+    "package": "orbit",
+    "category": "planets",
+    "name": "Ozeanplanet",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/planets/planet_ocean",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "moon",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Mond",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/moon",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "asteroid_field",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Asteroidenfeld",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/asteroid_field",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "debris_field",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Trümmerfeld",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/debris_field",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "space_station",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Raumstation",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/space_station",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "defense_platform",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Verteidigungsplattform",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/defense_platform",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "jump_gate",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Sprungtor",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/jump_gate",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "sensor_relay",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Sensorrelais",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/sensor_relay",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "orbital_shipyard",
+    "package": "orbit",
+    "category": "orbital_objects",
+    "name": "Orbitwerft",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/orbital_objects/orbital_shipyard",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "ash_covenant",
+    "package": "orbit",
+    "category": "factions",
+    "name": "Aschebund",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/factions/ash_covenant",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "iron_pact",
+    "package": "orbit",
+    "category": "factions",
+    "name": "Eisenpakt",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/factions/iron_pact",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "thorn_conclave",
+    "package": "orbit",
+    "category": "factions",
+    "name": "Dornenkonklave",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/factions/thorn_conclave",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "dawn_alliance",
+    "package": "orbit",
+    "category": "factions",
+    "name": "Morgenbund",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/factions/dawn_alliance",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "tide_alliance",
+    "package": "orbit",
+    "category": "factions",
+    "name": "Gezeitenbund",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/factions/tide_alliance",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "commander_default",
+    "package": "orbit",
+    "category": "commander",
+    "name": "Kommandantenporträt",
+    "width": 768,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/commander/commander_default",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "commander_economy",
+    "package": "orbit",
+    "category": "commander",
+    "name": "Wirtschaft",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/commander/commander_economy",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "commander_military",
+    "package": "orbit",
+    "category": "commander",
+    "name": "Militär",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/commander/commander_military",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "commander_recon",
+    "package": "orbit",
+    "category": "commander",
+    "name": "Aufklärung",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/commander/commander_recon",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "commander_command",
+    "package": "orbit",
+    "category": "commander",
+    "name": "Kommando",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/commander/commander_command",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "frontier_veteran",
+    "package": "orbit",
+    "category": "prestige",
+    "name": "Grenzveteran",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/prestige/frontier_veteran",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "star_guardian",
+    "package": "orbit",
+    "category": "prestige",
+    "name": "Sternenwächter",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/prestige/star_guardian",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "empire_legend",
+    "package": "orbit",
+    "category": "prestige",
+    "name": "Imperiumslegende",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/prestige/empire_legend",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "ashen_watch",
+    "package": "orbit",
+    "category": "skins",
+    "name": "Aschenwacht",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/skins/ashen_watch",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "citadel_watch",
+    "package": "orbit",
+    "category": "skins",
+    "name": "Zitadellenwacht",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/skins/citadel_watch",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "frontier_dawn",
+    "package": "orbit",
+    "category": "banners",
+    "name": "Morgenrot der Grenze",
+    "width": 1920,
+    "height": 640,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/banners/frontier_dawn",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "citadel_banner",
+    "package": "orbit",
+    "category": "banners",
+    "name": "Banner der Zitadelle",
+    "width": 1920,
+    "height": 640,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/banners/citadel_banner",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "alliance_shield",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein shield",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_shield",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_star",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein star",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_star",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_wings",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein wings",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_wings",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_gear",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein gear",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_gear",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_crest",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein crest",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_crest",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_laurel",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein laurel",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_laurel",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "alliance_lightning",
+    "package": "orbit",
+    "category": "alliance_emblems",
+    "name": "Allianz-Baustein lightning",
+    "width": 512,
+    "height": 512,
+    "formats_required": [
+      "svg"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/alliance_emblems/alliance_lightning",
+    "production_mode": "vector"
+  },
+  {
+    "asset_id": "campaign_directive_01",
+    "package": "orbit",
+    "category": "campaign",
+    "name": "Rohstoffgebäude auf Stufe 2",
+    "width": 1200,
+    "height": 675,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/campaign/campaign_directive_01",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "campaign_directive_02",
+    "package": "orbit",
+    "category": "campaign",
+    "name": "Kaserne bauen",
+    "width": 1200,
+    "height": 675,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/campaign/campaign_directive_02",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "campaign_directive_03",
+    "package": "orbit",
+    "category": "campaign",
+    "name": "Erste Technologie erforschen",
+    "width": 1200,
+    "height": 675,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/campaign/campaign_directive_03",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "campaign_directive_04",
+    "package": "orbit",
+    "category": "campaign",
+    "name": "Ersten Außenposten erobern",
+    "width": 1200,
+    "height": 675,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/campaign/campaign_directive_04",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "campaign_directive_05",
+    "package": "orbit",
+    "category": "campaign",
+    "name": "Zitadelle erobern",
+    "width": 1200,
+    "height": 675,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": false,
+    "stem": "02_ORBIT/campaign/campaign_directive_05",
+    "production_mode": "illustration"
+  },
+  {
+    "asset_id": "shield_hit",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Schildtreffer",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/shield_hit",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "shield_hit_static",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Schildtreffer (statisch)",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/shield_hit_static",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "projectile_hit",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Projektiltreffer",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/projectile_hit",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "projectile_hit_static",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Projektiltreffer (statisch)",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/projectile_hit_static",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "explosion",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Explosion",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/explosion",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "explosion_static",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Explosion (statisch)",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/explosion_static",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "repair",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Reparatur",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/repair",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "repair_static",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Reparatur (statisch)",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/repair_static",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "salvage",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Bergung",
+    "width": 1024,
+    "height": 1024,
+    "formats_required": [
+      "png",
+      "webp",
+      "json"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/salvage",
+    "production_mode": "procedural"
+  },
+  {
+    "asset_id": "salvage_static",
+    "package": "orbit",
+    "category": "effects",
+    "name": "Bergung (statisch)",
+    "width": 256,
+    "height": 256,
+    "formats_required": [
+      "png",
+      "webp"
+    ],
+    "transparent": true,
+    "stem": "02_ORBIT/effects/salvage_static",
+    "production_mode": "procedural"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "version": "FUR-3-TERRA-COMBAT-1",
+  "game": "terra",
+  "kind": "deterministic_six_round_combat",
+  "design_source": "agent/FUR_EMPIRE_GESAMTKONZEPT_UND_AGENT_ROADMAP.md §9 FUR-3-Mehr-Runden-Motor",
+  "legacy_fur2_preserved": true,
+  "rounds": {
+    "maximum": 6,
+    "draw_after_maximum": "defender_holds_position",
+    "initiative_order": "descending_initiative_then_unit_id_then_attacker_first",
+    "end_early_when_side_destroyed": true,
+    "shield_recharge_percent_after_round": 25
+  },
+  "formula": {
+    "accuracy_base_percent": 72,
+    "accuracy_per_difference_percent": 2,
+    "accuracy_min_percent": 35,
+    "accuracy_max_percent": 95,
+    "damage_variance_min_percent": 90,
+    "damage_variance_max_percent": 110,
+    "damage_floor": 1,
+    "tactics_damage_percent_per_level": 15,
+    "counter_multiplier_percent": 125,
+    "base_multiplier_percent": 100,
+    "target_policy": "lowest_shield_plus_hull_fraction_then_target_priority_then_unit_id",
+    "round_shield_recharge_percent": 25,
+    "retreat": {
+      "threshold_min_percent": 1,
+      "threshold_max_percent": 100,
+      "check": "attacker_casualties_after_each_complete_round",
+      "default_threshold_percent": 60,
+      "effect": "stop_firing_and_return_survivors"
+    },
+    "wall_armor_bonus_per_level": 2
+  },
+  "limits": {
+    "maximum_army_units_per_side": 2000,
+    "maximum_targets_per_round": 12000
+  },
+  "units": {
+    "ranger": {"attack": 12, "armor": 1, "shield": 0, "hull": 40, "accuracy": 75, "evasion": 15, "initiative": 8, "target_priority": 30, "counters": []},
+    "sentinel": {"attack": 28, "armor": 8, "shield": 20, "hull": 90, "accuracy": 70, "evasion": 3, "initiative": 3, "target_priority": 40, "counters": ["ranger", "terraformer_drone", "covert_courier"]},
+    "mech": {"attack": 70, "armor": 15, "shield": 0, "hull": 160, "accuracy": 65, "evasion": 0, "initiative": 1, "target_priority": 60, "counters": ["sentinel", "bastion_walker"]},
+    "terraformer_drone": {"attack": 38, "armor": 3, "shield": 10, "hull": 75, "accuracy": 70, "evasion": 18, "initiative": 8, "target_priority": 20, "counters": ["mech", "salvage_engineer"]},
+    "frontier_vanguard": {"attack": 76, "armor": 10, "shield": 0, "hull": 150, "accuracy": 70, "evasion": 9, "initiative": 5, "target_priority": 50, "counters": ["sentinel", "mech"]},
+    "bastion_walker": {"attack": 82, "armor": 18, "shield": 25, "hull": 180, "accuracy": 64, "evasion": 0, "initiative": 2, "target_priority": 70, "counters": ["ranger", "terraformer_drone"]},
+    "shield_sentinel": {"attack": 43, "armor": 12, "shield": 40, "hull": 110, "accuracy": 75, "evasion": 8, "initiative": 4, "target_priority": 45, "counters": ["frontier_vanguard", "salvage_engineer"]},
+    "covert_courier": {"attack": 36, "armor": 2, "shield": 5, "hull": 60, "accuracy": 80, "evasion": 28, "initiative": 10, "target_priority": 10, "counters": ["mech", "bastion_walker"]},
+    "salvage_engineer": {"attack": 72, "armor": 12, "shield": 0, "hull": 130, "accuracy": 66, "evasion": 0, "initiative": 3, "target_priority": 55, "counters": ["sentinel", "shield_sentinel"]}
+  }
+}

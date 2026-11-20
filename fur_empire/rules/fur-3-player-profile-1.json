@@ -1,0 +1,26 @@
+{
+  "version": "FUR-3-PLAYER-PROFILE-1",
+  "visibility_default": "private",
+  "cosmetic_only": true,
+  "badges_are_earned_achievements": false,
+  "max_badges": 3,
+  "titles": {
+    "none": "Kein Titel",
+    "pathfinder": "Wegfinder",
+    "settler": "Siedler",
+    "architect": "Architekt",
+    "diplomat": "Diplomat",
+    "quartermaster": "Quartiermeister"
+  },
+  "badges": {
+    "frontier": "Grenzgänger",
+    "builder": "Baumeister",
+    "scholar": "Forscher",
+    "envoy": "Gesandter",
+    "merchant": "Händler",
+    "guardian": "Wächter"
+  },
+  "profile_response_fields": ["display_name", "selected_title", "selected_badges", "world_name", "world_rank", "world_score"],
+  "profile_response_excludes": ["email", "verification", "totp", "sessions", "coordinates", "colony_names", "resources", "units", "alliances", "friends", "messages", "reports", "account_id", "exact_join_time"],
+  "existing_public_ranking_fields": ["display_name", "world_score"]
+}

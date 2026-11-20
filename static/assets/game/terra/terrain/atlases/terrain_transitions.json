@@ -1,0 +1,785 @@
+{
+  "tile_size": [
+    128,
+    128
+  ],
+  "columns": 8,
+  "rows": 6,
+  "projection": "orthogonal_square",
+  "origin": "top_left",
+  "mask_bits": {
+    "N": 1,
+    "E": 2,
+    "S": 4,
+    "W": 8
+  },
+  "rule": "Set a bit when the neighbor is the same terrain family. With a clear bit, the edge blends to plain. Corners use the shared plain signature. Unknown cells do not set a bit.",
+  "tiles": [
+    {
+      "asset_id": "shore_00",
+      "terrain": "water",
+      "mask": 0,
+      "neighbors": [],
+      "path": "01_TERRA/terrain/transitions/shore_00.png",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_01",
+      "terrain": "water",
+      "mask": 1,
+      "neighbors": [
+        "N"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_01.png",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_02",
+      "terrain": "water",
+      "mask": 2,
+      "neighbors": [
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_02.png",
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_03",
+      "terrain": "water",
+      "mask": 3,
+      "neighbors": [
+        "N",
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_03.png",
+      "rect": {
+        "x": 384,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_04",
+      "terrain": "water",
+      "mask": 4,
+      "neighbors": [
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_04.png",
+      "rect": {
+        "x": 512,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_05",
+      "terrain": "water",
+      "mask": 5,
+      "neighbors": [
+        "N",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_05.png",
+      "rect": {
+        "x": 640,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_06",
+      "terrain": "water",
+      "mask": 6,
+      "neighbors": [
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_06.png",
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_07",
+      "terrain": "water",
+      "mask": 7,
+      "neighbors": [
+        "N",
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_07.png",
+      "rect": {
+        "x": 896,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_08",
+      "terrain": "water",
+      "mask": 8,
+      "neighbors": [
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_08.png",
+      "rect": {
+        "x": 0,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_09",
+      "terrain": "water",
+      "mask": 9,
+      "neighbors": [
+        "N",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_09.png",
+      "rect": {
+        "x": 128,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_10",
+      "terrain": "water",
+      "mask": 10,
+      "neighbors": [
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_10.png",
+      "rect": {
+        "x": 256,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_11",
+      "terrain": "water",
+      "mask": 11,
+      "neighbors": [
+        "N",
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_11.png",
+      "rect": {
+        "x": 384,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_12",
+      "terrain": "water",
+      "mask": 12,
+      "neighbors": [
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_12.png",
+      "rect": {
+        "x": 512,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_13",
+      "terrain": "water",
+      "mask": 13,
+      "neighbors": [
+        "N",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_13.png",
+      "rect": {
+        "x": 640,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_14",
+      "terrain": "water",
+      "mask": 14,
+      "neighbors": [
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_14.png",
+      "rect": {
+        "x": 768,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "shore_15",
+      "terrain": "water",
+      "mask": 15,
+      "neighbors": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/shore_15.png",
+      "rect": {
+        "x": 896,
+        "y": 128,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_00",
+      "terrain": "forest",
+      "mask": 0,
+      "neighbors": [],
+      "path": "01_TERRA/terrain/transitions/forest_edge_00.png",
+      "rect": {
+        "x": 0,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_01",
+      "terrain": "forest",
+      "mask": 1,
+      "neighbors": [
+        "N"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_01.png",
+      "rect": {
+        "x": 128,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_02",
+      "terrain": "forest",
+      "mask": 2,
+      "neighbors": [
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_02.png",
+      "rect": {
+        "x": 256,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_03",
+      "terrain": "forest",
+      "mask": 3,
+      "neighbors": [
+        "N",
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_03.png",
+      "rect": {
+        "x": 384,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_04",
+      "terrain": "forest",
+      "mask": 4,
+      "neighbors": [
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_04.png",
+      "rect": {
+        "x": 512,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_05",
+      "terrain": "forest",
+      "mask": 5,
+      "neighbors": [
+        "N",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_05.png",
+      "rect": {
+        "x": 640,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_06",
+      "terrain": "forest",
+      "mask": 6,
+      "neighbors": [
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_06.png",
+      "rect": {
+        "x": 768,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_07",
+      "terrain": "forest",
+      "mask": 7,
+      "neighbors": [
+        "N",
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_07.png",
+      "rect": {
+        "x": 896,
+        "y": 256,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_08",
+      "terrain": "forest",
+      "mask": 8,
+      "neighbors": [
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_08.png",
+      "rect": {
+        "x": 0,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_09",
+      "terrain": "forest",
+      "mask": 9,
+      "neighbors": [
+        "N",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_09.png",
+      "rect": {
+        "x": 128,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_10",
+      "terrain": "forest",
+      "mask": 10,
+      "neighbors": [
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_10.png",
+      "rect": {
+        "x": 256,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_11",
+      "terrain": "forest",
+      "mask": 11,
+      "neighbors": [
+        "N",
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_11.png",
+      "rect": {
+        "x": 384,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_12",
+      "terrain": "forest",
+      "mask": 12,
+      "neighbors": [
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_12.png",
+      "rect": {
+        "x": 512,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_13",
+      "terrain": "forest",
+      "mask": 13,
+      "neighbors": [
+        "N",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_13.png",
+      "rect": {
+        "x": 640,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_14",
+      "terrain": "forest",
+      "mask": 14,
+      "neighbors": [
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_14.png",
+      "rect": {
+        "x": 768,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "forest_edge_15",
+      "terrain": "forest",
+      "mask": 15,
+      "neighbors": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/forest_edge_15.png",
+      "rect": {
+        "x": 896,
+        "y": 384,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_00",
+      "terrain": "mountain",
+      "mask": 0,
+      "neighbors": [],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_00.png",
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_01",
+      "terrain": "mountain",
+      "mask": 1,
+      "neighbors": [
+        "N"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_01.png",
+      "rect": {
+        "x": 128,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_02",
+      "terrain": "mountain",
+      "mask": 2,
+      "neighbors": [
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_02.png",
+      "rect": {
+        "x": 256,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_03",
+      "terrain": "mountain",
+      "mask": 3,
+      "neighbors": [
+        "N",
+        "E"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_03.png",
+      "rect": {
+        "x": 384,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_04",
+      "terrain": "mountain",
+      "mask": 4,
+      "neighbors": [
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_04.png",
+      "rect": {
+        "x": 512,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_05",
+      "terrain": "mountain",
+      "mask": 5,
+      "neighbors": [
+        "N",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_05.png",
+      "rect": {
+        "x": 640,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_06",
+      "terrain": "mountain",
+      "mask": 6,
+      "neighbors": [
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_06.png",
+      "rect": {
+        "x": 768,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_07",
+      "terrain": "mountain",
+      "mask": 7,
+      "neighbors": [
+        "N",
+        "E",
+        "S"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_07.png",
+      "rect": {
+        "x": 896,
+        "y": 512,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_08",
+      "terrain": "mountain",
+      "mask": 8,
+      "neighbors": [
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_08.png",
+      "rect": {
+        "x": 0,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_09",
+      "terrain": "mountain",
+      "mask": 9,
+      "neighbors": [
+        "N",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_09.png",
+      "rect": {
+        "x": 128,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_10",
+      "terrain": "mountain",
+      "mask": 10,
+      "neighbors": [
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_10.png",
+      "rect": {
+        "x": 256,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_11",
+      "terrain": "mountain",
+      "mask": 11,
+      "neighbors": [
+        "N",
+        "E",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_11.png",
+      "rect": {
+        "x": 384,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_12",
+      "terrain": "mountain",
+      "mask": 12,
+      "neighbors": [
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_12.png",
+      "rect": {
+        "x": 512,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_13",
+      "terrain": "mountain",
+      "mask": 13,
+      "neighbors": [
+        "N",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_13.png",
+      "rect": {
+        "x": 640,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_14",
+      "terrain": "mountain",
+      "mask": 14,
+      "neighbors": [
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_14.png",
+      "rect": {
+        "x": 768,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "asset_id": "mountain_edge_15",
+      "terrain": "mountain",
+      "mask": 15,
+      "neighbors": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ],
+      "path": "01_TERRA/terrain/transitions/mountain_edge_15.png",
+      "rect": {
+        "x": 896,
+        "y": 640,
+        "width": 128,
+        "height": 128
+      }
+    }
+  ],
+  "verified_edge_pairs": 1632
+}

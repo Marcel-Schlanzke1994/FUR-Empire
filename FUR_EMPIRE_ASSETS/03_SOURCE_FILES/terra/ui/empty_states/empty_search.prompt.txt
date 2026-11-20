@@ -1,0 +1,4 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID empty_search | PACKAGE terra | CATEGORY empty_states
+A white-furred rabbit technician beside a small transparent blue scanner, inspecting its empty circular search field with a tilted head. No question mark and no lettering.
+Single wide 16:9 scene, reduced, softly vignetted navy backdrop, crop-safe composition, no readable UI or text.

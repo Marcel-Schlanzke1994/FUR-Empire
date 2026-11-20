@@ -1,0 +1,11 @@
+{
+  "version": "FUR-3-HERO-2",
+  "enabled_key": "hero_doctrine_ruleset",
+  "maximum_stat_level": 10,
+  "effects": {
+    "economy": {"production_percent_per_point": 2, "production_percent_cap": 20},
+    "military": {"combat_damage_percent_per_point": 2, "combat_damage_percent_cap": 20},
+    "recon": {"intel_lifetime_percent_per_point": 10, "intel_lifetime_percent_cap": 100},
+    "command": {"mission_slots_per_point": 1, "mission_slots_cap": 5}
+  }
+}

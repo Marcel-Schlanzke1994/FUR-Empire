@@ -1,0 +1,106 @@
+services:
+  backup:
+    environment:
+      PGDATABASE: fur_staging
+
+  backup-scheduler:
+    environment:
+      PGDATABASE: fur_staging
+
+  db:
+    environment:
+      POSTGRES_DB: fur_staging
+    volumes:
+      - postgres_data:/var/lib/postgresql
+      - ./deploy/init-db.sh:/docker-entrypoint-initdb.d/10-fur.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U fur -d fur_staging"]
+
+  app:
+    environment:
+      FUR_ENV: staging
+      PUBLIC_ORIGIN: https://localhost:8443
+      DB_NAME: fur_staging
+      SMTP_HOST: mailpit
+      SMTP_PORT: "1025"
+      SMTP_TLS: "false"
+      SMTP_FROM: FUR Empire <noreply@localhost>
+      OPERATOR_NAME: Local Staging
+      OPERATOR_CONTACT: stage@localhost
+      WEBPUSH_PUBLIC_KEY: ""
+      WEBPUSH_SUBJECT: ""
+      FUR_STAGING_CONFIRM_SEED: "YES"
+    ports: !reset []
+    command:
+      - python
+      - -m
+      - uvicorn
+      - fur_empire.api:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --proxy-headers
+      - --forwarded-allow-ips
+      - "${STAGING_PROXY_IP:-172.30.12.2}"
+      - --no-server-header
+    networks:
+      edge: {ipv4_address: "${STAGING_APP_IP:-172.30.12.3}"}
+
+  worker:
+    environment:
+      FUR_ENV: staging
+      PUBLIC_ORIGIN: https://localhost:8443
+      DB_NAME: fur_staging
+      SMTP_HOST: mailpit
+      SMTP_PORT: "1025"
+      SMTP_TLS: "false"
+      SMTP_FROM: FUR Empire <noreply@localhost>
+      OPERATOR_NAME: Local Staging
+      OPERATOR_CONTACT: stage@localhost
+      WEBPUSH_PUBLIC_KEY: ""
+      WEBPUSH_SUBJECT: ""
+
+  mailpit:
+    image: axllent/mailpit:v1.32.0
+    profiles: [staging]
+    restart: unless-stopped
+    networks: [backend]
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+
+  staging-proxy:
+    image: caddy:2-alpine
+    profiles: [staging]
+    restart: unless-stopped
+    ports: ["127.0.0.1:8443:443", "127.0.0.1:8025:8025"]
+    volumes:
+      - ./deploy/Caddyfile.staging:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      edge: {ipv4_address: "${STAGING_PROXY_IP:-172.30.12.2}"}
+      backend: {}
+      staging-published: {}
+    depends_on:
+      app: {condition: service_healthy}
+      mailpit: {condition: service_healthy}
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+
+secrets:
+  db_password: {file: ./.secrets/staging_db_password}
+  db_admin_password: {file: ./.secrets/staging_db_admin_password}
+  smtp_password: {file: ./.secrets/staging_smtp_password}
+  webpush_private_key: {file: ./.secrets/staging_webpush_private_key}
+
+networks:
+  edge:
+    internal: true
+    ipam:
+      config: [{subnet: "${STAGING_EDGE_SUBNET:-172.30.12.0/24}"}]
+  backend:
+    internal: true
+  staging-published: {}

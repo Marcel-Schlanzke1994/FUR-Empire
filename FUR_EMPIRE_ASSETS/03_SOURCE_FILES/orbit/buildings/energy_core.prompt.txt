@@ -1,0 +1,5 @@
+Original FUR EMPIRE premium cinematic strategy game asset, use the supplied FUR EMPIRE graphics only as art-direction references. Strict dark navy #0B111A and anthracite #252D36 armored metal, restrained Cyber Cyan #5ED3DF illumination, fine Imperial Gold #D4AD66 bevels, realistic finish, top-left cinematic key light, crisp materials. Render one original subject independently. No text, labels, watermark, board, collage, frame, or UI.
+ASSET_ID energy_core | PACKAGE orbit | CATEGORY buildings
+Tall triangular prismatic cyan containment core in a faceted dark cradle, freestanding wide heat fins and an exposed upper lattice.
+Raised orthographic front-right three-quarter camera (~35 degrees elevation), comparable scale and world orientation; no modeled landscape, use a small engineered foundation only.
+Single complete subject centered, target 10% transparent border on each side; actual alpha transparency, no opaque background, no drop shadow beyond silhouette; no clipping.
