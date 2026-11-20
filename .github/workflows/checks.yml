@@ -64,6 +64,7 @@ jobs:
           openssl rand -hex 32 > .secrets/db_password
           openssl rand -hex 32 > .secrets/db_admin_password
           touch .secrets/smtp_password
+          touch .secrets/webpush_private_key
           cp .env.example .env
           printf '\nOPERATOR_NAME=CI\nOPERATOR_CONTACT=ci@example.org\n' >> .env
       - run: docker compose config --quiet
@@ -86,6 +87,7 @@ jobs:
           openssl rand -hex 32 > .secrets/staging_db_password
           openssl rand -hex 32 > .secrets/staging_db_admin_password
           openssl rand -hex 32 > .secrets/staging_smtp_password
+          touch .secrets/staging_webpush_private_key
       - name: Validate private staging configuration
         run: docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging config --quiet
       - name: Launch and seed isolated staging
