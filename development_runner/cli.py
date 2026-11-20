@@ -20,6 +20,13 @@ def parser() -> argparse.ArgumentParser:
     add.add_argument("--max-attempts", type=int, default=2)
     add.add_argument("--timeout", type=int, default=3600)
     add.add_argument("--approval-required", action="store_true")
+    dependency = sub.add_parser("add-dependency")
+    dependency.add_argument("--task-id", type=int, required=True)
+    dependency.add_argument("--depends-on", type=int, required=True)
+    approve = sub.add_parser("approve")
+    approve.add_argument("--task-id", type=int, required=True)
+    approve.add_argument("--actor", required=True)
+    approve.add_argument("--note", default="")
     sub.add_parser("list")
     run = sub.add_parser("run")
     run.add_argument("--once", action="store_true")
@@ -49,6 +56,12 @@ def main() -> int:
     elif args.action == "list":
         db.initialize()
         print(json.dumps(db.list_tasks(), indent=2, ensure_ascii=False))
+    elif args.action == "add-dependency":
+        db.initialize()
+        db.add_dependency(args.task_id, args.depends_on)
+    elif args.action == "approve":
+        db.initialize()
+        db.approve(args.task_id, args.actor, args.note)
     elif args.action == "run":
         return Worker(config).run(args.once)
     elif args.action == "stop":

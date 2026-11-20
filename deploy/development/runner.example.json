@@ -7,6 +7,14 @@
   "max_calls_per_day": 8,
   "max_runtime_seconds_per_day": 21600,
   "max_estimated_cost_usd_per_day": 20,
+  "validation_timeout_seconds": 3600,
+  "validation_commands": [
+    ["/opt/fur-empire-development/venv/bin/python", "-m", "ruff", "check", "fur_empire", "tests", "scripts", "development_runner"],
+    ["/opt/fur-empire-development/venv/bin/python", "-m", "black", "--check", "fur_empire", "tests", "scripts", "development_runner"],
+    ["/opt/fur-empire-development/venv/bin/python", "-m", "mypy", "fur_empire", "development_runner"],
+    ["/opt/fur-empire-development/venv/bin/python", "scripts/check_traceability.py"],
+    ["npm", "test"]
+  ],
   "command": [
     "/usr/local/bin/codex",
     "exec",

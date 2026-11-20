@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from development_runner.database import RunnerDatabase
+from development_runner.runner import parse_usage
 
 
 def test_claim_respects_dependencies_and_retries(tmp_path: Path) -> None:
@@ -50,3 +51,87 @@ def test_usage_is_persisted_for_budget_checks(tmp_path: Path) -> None:
             (task_id, "worker"),
         )
     assert db.usage_since(99) == {"calls": 1.0, "duration": 10.0, "cost": 1.25}
+
+
+def test_database_helpers_persist_dependencies_and_approvals(tmp_path: Path) -> None:
+    db = RunnerDatabase(tmp_path / "runner.sqlite3")
+    db.initialize()
+    parent = db.add_task("parent", "first")
+    child = db.add_task("child", "second", risk="approval_required")
+    db.add_dependency(child, parent)
+    db.approve(child, "owner", "reviewed")
+    with db.connect() as connection:
+        dependency = connection.execute(
+            "SELECT depends_on_id FROM task_dependencies WHERE task_id=?", (child,)
+        ).fetchone()
+        approval = connection.execute(
+            "SELECT actor,note FROM approvals WHERE task_id=?", (child,)
+        ).fetchone()
+    assert dependency is not None and dependency["depends_on_id"] == parent
+    assert approval is not None and tuple(approval) == ("owner", "reviewed")
+
+
+def test_parse_usage_reads_latest_codex_json_event(tmp_path: Path) -> None:
+    log = tmp_path / "agent.jsonl"
+    log.write_text(
+        '{"type":"turn.completed","usage":{"input_tokens":100,"output_tokens":20}}\n'
+        "not-json\n"
+        '{"event":{"usage":{"input_tokens":125,"output_tokens":25}}}\n',
+        encoding="utf-8",
+    )
+    assert parse_usage(log) == (150, 125, 25)
+
+
+def test_startup_recovery_requeues_only_tasks_owned_by_worker(tmp_path: Path) -> None:
+    db = RunnerDatabase(tmp_path / "runner.sqlite3")
+    db.initialize()
+    retryable = db.add_task("retryable", "resume", max_attempts=2)
+    exhausted = db.add_task("exhausted", "stop", max_attempts=1)
+    other = db.add_task("other", "leave alone")
+    assert db.claim("worker", 15_000)["id"] == retryable
+    with db.connect() as connection:
+        connection.execute("UPDATE tasks SET priority=1 WHERE id=?", (exhausted,))
+        connection.execute("UPDATE tasks SET status='queued' WHERE id=?", (retryable,))
+    assert db.claim("worker", 15_000)["id"] == exhausted
+    with db.connect() as connection:
+        connection.execute(
+            "UPDATE tasks SET status='running', attempts=1, lease_owner='other-worker' "
+            "WHERE id=?",
+            (other,),
+        )
+        connection.execute(
+            "UPDATE tasks SET status='running', attempts=1, lease_owner='worker' " "WHERE id=?",
+            (retryable,),
+        )
+    retryable_session, retryable_attempt = db.start_attempt(
+        retryable, "worker", 1, tmp_path / "retryable.log"
+    )
+    exhausted_session, exhausted_attempt = db.start_attempt(
+        exhausted, "worker", 1, tmp_path / "exhausted.log"
+    )
+
+    assert db.recover_worker_tasks("worker") == 2
+    tasks = {task["id"]: task for task in db.list_tasks()}
+    assert tasks[retryable]["status"] == "queued"
+    assert tasks[exhausted]["status"] == "failed"
+    assert tasks[other]["status"] == "running"
+    with db.connect() as connection:
+        event = connection.execute(
+            "SELECT event,details FROM runner_events ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        recovered_sessions = connection.execute(
+            "SELECT id,outcome,exit_code FROM agent_sessions ORDER BY id"
+        ).fetchall()
+        recovered_attempts = connection.execute(
+            "SELECT id,exit_code,error FROM execution_attempts ORDER BY id"
+        ).fetchall()
+    assert event is not None
+    assert tuple(event) == ("startup_recovery", "worker=worker tasks=2")
+    assert [tuple(row) for row in recovered_sessions] == [
+        (retryable_session, "interrupted", -1),
+        (exhausted_session, "interrupted", -1),
+    ]
+    assert [tuple(row) for row in recovered_attempts] == [
+        (retryable_attempt, -1, "worker restarted during execution"),
+        (exhausted_attempt, -1, "worker restarted during execution"),
+    ]

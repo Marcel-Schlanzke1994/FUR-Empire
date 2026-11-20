@@ -22,3 +22,19 @@ FUR Empire is the main application in this workspace. The reference repositories
 ## Current scope
 
 Genesis currently includes neutral-outpost progression, player combat and transport, alliances and diplomacy, messages, player market, seasonal events, moderation, account security, operations tooling, and local/production database support. Before describing a feature as missing or completed, confirm it in the current application and tests.
+
+## Persistent development runner
+
+- Automated work runs as the unprivileged `furdev` account in an isolated worktree. It must never
+  write `/opt/fur-empire`, production databases, secrets, backups or player data.
+- One worker is the default. Do not add parallel workers until measured queue latency and host
+  capacity justify them and conflicting write protection is proven.
+- The Development Director role selects dependency-ready backlog work and records assumptions.
+  Coding and Game Systems roles implement only the selected task. QA & Security validates the
+  resulting branch. DevOps prepares staging evidence; it does not release to production.
+- Every automated code change uses an `agent/task-*` branch, passes configured local validation,
+  and becomes a pull request. Required CI and human review remain mandatory.
+- Destructive migrations, authentication/authorization changes, secrets, production access,
+  financial behavior, data deletion and incompatible releases require an explicit approval record.
+- Repository state and tests outrank runner memory. On restart, recover the queue and verify the
+  checkout rather than assuming a previous session completed.
