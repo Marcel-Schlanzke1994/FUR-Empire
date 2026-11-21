@@ -17,7 +17,7 @@ test('production graph shows exact server components, capacity forecast and paus
     {per_second_ten_thousandths:12000,base_per_second:2,bonus_percent:0,terrain:'Ebene',terrain_percent:100,storage:4000,storage_cap:4000,seconds_to_cap:null,paused:false},
     {per_second_ten_thousandths:0,base_per_second:2,bonus_percent:0,terrain:'<Erz>',terrain_percent:100,storage:0,storage_cap:4000,seconds_to_cap:null,paused:true}
   ]);
-  assert.match(markup,/<summary>Produktionsgrafik<\/summary>/);
+  assert.match(markup,/<summary data-i18n="hud.production">Produktionsgrafik<\/summary>/);
   assert.match(markup,/aria-label="Aktuelle Rohstoffproduktion"/);
   assert.match(markup,/Basis 4\/s · Bonus 20% · Wald 115%/);
   assert.match(markup,/Depot voll in ca\. 23551 min/);
@@ -26,6 +26,25 @@ test('production graph shows exact server components, capacity forecast and paus
   assert.match(markup,/&lt;Erz&gt;/);
   assert.match(markup,/aria-label="Erz: 0\.00 pro Sekunde"/);
   assert.equal(box.productionGraphMarkup([]),'');
+});
+
+test('production graph translates dynamic French values and escapes terrain data',()=>{
+  const source=fs.readFileSync(path.join(__dirname,'../static/app.js'),'utf8');
+  const helper=source.match(/function productionGraphMarkup\(details\) \{[\s\S]*?\n\}/)?.[0];
+  const catalog=JSON.parse(fs.readFileSync(path.join(__dirname,'../static/locales/fr.json'),'utf8'));
+  const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const box=vm.createContext({escapeHtml,names:['Bois'],number:String,resourceIcon:()=>'',state:{catalog:{terrain:{forest:{name:'Wald'}}}},FURI18n:{
+    t:(key,values={})=>(catalog[key]||key).replace(/\{(\w+)\}/g,(_,name)=>String(values[name])),
+    number:(value,options)=>new Intl.NumberFormat('fr-FR',options).format(value),
+  }});
+  vm.runInContext(helper,box);
+  const markup=box.productionGraphMarkup([{per_second_ten_thousandths:12500,base_per_second:2,bonus_percent:5,terrain:'Wald',terrain_percent:115,storage:12,storage_cap:100,seconds_to_cap:120,paused:false}]);
+  assert.match(markup,/Forêt 115%/);
+  assert.match(markup,/Stockage plein dans environ 2 min/);
+  assert.match(markup,/aria-label="Bois : 1,25 par seconde"/);
+  const unsafe=box.productionGraphMarkup([{per_second_ten_thousandths:0,base_per_second:1,bonus_percent:0,terrain:'<script>',terrain_percent:100,storage:0,storage_cap:100,seconds_to_cap:null,paused:true}]);
+  assert.ok(unsafe.includes('&lt;script&gt;'));
+  assert.ok(!unsafe.includes('<script>'));
 });
 
 test('neutral goods stay usable without images and escape all catalog labels',()=>{
@@ -172,7 +191,7 @@ test('active world label follows the selected world with a Genesis fallback',()=
   const source=fs.readFileSync(path.join(__dirname,'../static/app.js'),'utf8');
   const helper=source.match(/function activeWorldLabel\(world\) \{[\s\S]*?\n\}/)?.[0];
   assert.ok(helper,'active world label formatter must be available for rendering tests');
-  const box=vm.createContext({});
+  const box=vm.createContext({window:{FURI18n:{t:()=> 'WELT'}}});
   vm.runInContext(helper,box);
   assert.equal(box.activeWorldLabel({id:2,name:'Browser QA World'}),'Browser QA World · WELT 02');
   assert.equal(box.activeWorldLabel(null),'Genesis · WELT 01');
@@ -490,7 +509,7 @@ test('production presets escape labels and are bound to the normal idempotent qu
   const helper=source.match(/function productionTemplateOptions\(templates, kind\) \{[\s\S]*?\n\}/)?.[0];
   assert.ok(helper,'production template option renderer must exist');
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const box=vm.createContext({escapeHtml,number:String});
+  const box=vm.createContext({escapeHtml,number:String,window:{FURI18n:{t:()=> 'Vorlage wählen'}}});
   vm.runInContext(helper,box);
   const markup=box.productionTemplateOptions([
     {id:'id"><img',name:'<Safe & Ready>',kind:'train',key:'ranger',count:4},
@@ -513,6 +532,7 @@ test('production blueprint panel is available for construction, research, and re
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const box=vm.createContext({
     escapeHtml,
+    window:{FURI18n:{t:(key,values)=>key==='template.title'?`${values.kind}vorlagen`:({template_choose:'Vorlage wählen','template.kind_build':'Bau','template.kind_research':'Forschung','template.kind_train':'Rekrutierung'}[key]||key)}},
     state:{catalog:{buildings:{wood:{name:'Wood'}},tech:{tactics:{name:'Tactics'},engineering:{name:'Engineering'}},units:{ranger:{name:'Ranger'},sentinel:{name:'Sentinel'}}}},
     productionTemplates:[
       {id:'build-1',name:'<Base>',kind:'build',key:'wood',count:1},
@@ -2011,4 +2031,17 @@ test('approved Terra and Orbit artwork catalog is complete and every runtime fil
   assert.match(app,/terra\/markers\/colony_own/);
   assert.match(page,/fur_wordmark\.svg/);
   assert.match(page,/fur_favicon\.svg/);
+});
+
+test('permanent live chat uses safe DOM text and accessible channel controls',()=>{
+  const html=fs.readFileSync(path.join(__dirname,'../static/index.html'),'utf8');
+  const source=fs.readFileSync(path.join(__dirname,'../static/live-chat.js'),'utf8');
+  assert.ok(html.includes('id="live-chat"'));
+  assert.ok(html.includes('role="log"'));
+  for(const channel of ['world','alliance','system','private'])assert.ok(html.includes(`data-live-channel="${channel}"`));
+  assert.ok(source.includes('text.textContent = message.body'));
+  assert.ok(source.includes('name.textContent = message.name'));
+  assert.ok(!source.includes('messagesElement.innerHTML'));
+  assert.ok(source.includes("event.key === 'Enter' && !event.shiftKey"));
+  assert.ok(source.includes("new WebSocket(`${protocol}//${location.host}/api/v1/chat/live`)"));
 });

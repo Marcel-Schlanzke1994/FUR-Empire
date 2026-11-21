@@ -108,7 +108,7 @@ def test_world_terrain_seed_is_complete_stable_and_preserves_existing_world(terr
             ).fetchone()[0]
             == "mountain"
         )
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
 
 
 def test_terrain_modifiers_are_loaded_from_validated_fur2_catalog(terrain_universe):
@@ -282,7 +282,7 @@ def test_sector_intel_migration_from_schema_11_preserves_existing_world(terrain_
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM users").fetchone()[0] == 2
         assert db.execute("SELECT count(*) FROM colonies").fetchone()[0] == 2
         assert (

@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "lint": "eslint static/app.js static/community.js static/legal.js static/i18n.js",
-    "check": "node --check static/app.js && node --check static/community.js && node --check static/legal.js && node --check static/i18n.js",
+    "lint": "eslint static/app.js static/community.js static/legal.js static/i18n.js static/live-chat.js",
+    "check": "node --check static/app.js && node --check static/community.js && node --check static/legal.js && node --check static/i18n.js && node --check static/live-chat.js",
     "test": "node --test tests/frontend.test.cjs tests/i18n.test.cjs"
   },
   "devDependencies": {

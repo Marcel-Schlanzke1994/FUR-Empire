@@ -1257,3 +1257,5 @@ def _migrate(db: Connection) -> None:
         db.executescript((root / "migrations" / "122_account_language.sql").read_text())
     if not db.execute("SELECT 1 FROM schema_versions WHERE version=123").fetchone():
         db.executescript((root / "migrations" / "123_registration_acceptance.sql").read_text())
+    if not db.execute("SELECT 1 FROM schema_versions WHERE version=124").fetchone():
+        db.executescript((root / "migrations" / "124_email_verification_policy.sql").read_text())

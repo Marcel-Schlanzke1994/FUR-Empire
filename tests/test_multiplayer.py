@@ -672,7 +672,7 @@ def test_production_template_schema_19_migrates_without_changing_player_data(uni
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM production_templates").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM users").fetchone()[0] == len(users)
         assert db.execute("SELECT count(*) FROM world_outposts").fetchone()[0] == outpost_count
@@ -703,7 +703,7 @@ def test_social_schema_20_migrates_without_changing_existing_accounts_or_colonie
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM friendships").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM player_blocks").fetchone()[0] == 0
         assert [
@@ -736,7 +736,7 @@ def test_player_notes_schema_21_migrates_without_changing_player_data(universe):
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM player_notes").fetchone()[0] == 0
         assert [
             tuple(row[key] for key in ("id", "name", "password"))
@@ -770,7 +770,7 @@ def test_player_profile_schema_89_defaults_existing_accounts_to_private(universe
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM player_profile_settings").fetchone()[0] == len(
             users
         )
@@ -817,7 +817,7 @@ def test_alliance_shared_reports_schema_90_migrates_without_changing_player_data
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM alliance_shared_reports").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM moderation_cases").fetchone()[0] == 0
         assert [
@@ -873,7 +873,7 @@ def test_schema_106_adds_ban_appeals_without_changing_existing_accounts(universe
 
     migrated = Game(game.path)
     with migrated.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert (
             db.execute("SELECT count(*) FROM account_ban_appeals WHERE status='open'").fetchone()[0]
             == 0
@@ -906,7 +906,7 @@ def test_announcements_and_system_mail_schema_92_migrate_additively(universe):
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM system_mail").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM system_announcements").fetchone()[0] == 0
         assert [
@@ -1587,7 +1587,7 @@ def test_npc_attack_v3_does_not_warn_players_in_vacation_mode(universe):
 def test_schema_107_adds_npc_camps_without_changing_player_world_state(universe):
     game, users, _clock = universe
     with game.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         users_before = db.execute("SELECT id,name,password FROM users ORDER BY id").fetchall()
         colonies_before = db.execute(
             "SELECT colony_id,user_id,world_id,state FROM colonies ORDER BY colony_id"
@@ -2115,7 +2115,7 @@ def test_alliance_bulletin_schema_22_migrates_without_changing_player_data(unive
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM alliance_bulletins").fetchone()[0] == 0
         assert [
             tuple(row[key] for key in ("id", "name", "password"))
@@ -2149,7 +2149,7 @@ def test_alliance_forum_schema_23_migrates_without_changing_player_data(universe
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM alliance_forum_threads").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM alliance_forum_posts").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM alliance_forum_reports").fetchone()[0] == 0
@@ -2183,7 +2183,7 @@ def test_diplomacy_chronicle_schema_24_migrates_without_changing_player_data(uni
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM alliance_diplomacy_events").fetchone()[0] == 0
         assert [
             tuple(row[key] for key in ("id", "name", "password"))
@@ -3593,7 +3593,7 @@ def test_schema_29_to_31_is_additive_and_preserves_colony_json(universe):
             for row in db.execute("SELECT colony_id,state FROM colonies ORDER BY colony_id")
         ]
         assert before == after
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM colony_home_changes").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM users").fetchone()[0] == len(users)
 
@@ -5773,7 +5773,7 @@ def test_session_management_schema16_backfills_existing_sessions_on_each_adapter
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         session = db.execute(
             "SELECT token,user_id,csrf,expires,session_id,created,user_agent FROM sessions "
             "WHERE token=?",
@@ -7338,7 +7338,7 @@ def test_incoming_attack_index_schema_25_backfills_existing_player_attacks(unive
             "SELECT job_id,target_user,source_colony_id,due FROM incoming_attack_index"
         ).fetchone()
         assert dict(restored) == dict(expected)
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
 
 
 def test_colony_name_index_schema_28_backfills_names_without_rewriting_player_state(universe):
@@ -7360,7 +7360,7 @@ def test_colony_name_index_schema_28_backfills_names_without_rewriting_player_st
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         rows_after = [
             (str(row["colony_id"]), str(row["state"]))
             for row in db.execute(
@@ -7406,7 +7406,7 @@ def test_ranking_score_schema_29_backfills_and_tracks_colony_changes(universe):
 
     upgraded = Game(game.path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         row = db.execute(
             "SELECT state,ranking_score FROM colonies WHERE colony_id=?", (state["colony_id"],)
         ).fetchone()
@@ -9861,7 +9861,7 @@ def test_recovery_code_schema_17_migrates_on_each_adapter(universe):
         db.execute("DELETE FROM schema_versions WHERE version=17")
     migrated = Game(game.path)
     with migrated.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM mfa_recovery_codes").fetchone()[0] == 0
         assert db.execute("SELECT 1 FROM users WHERE id=?", (users[0],)).fetchone()
     assert state((migrated, users, [int(time.time())]), 0)["id"] == before["id"]
@@ -11835,7 +11835,7 @@ def test_terra_allied_garrison_schema_74_migration_preserves_player_state(univer
 
         migrate(db)
         assert db.execute("SELECT 1 FROM schema_versions WHERE version=74").fetchone()
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT count(*) FROM terra_allied_garrisons").fetchone()[0] == 0
         assert db.execute("SELECT count(*) FROM terra_allied_garrison_policies").fetchone()[0] == 0
         assert [
@@ -11864,7 +11864,7 @@ def test_terra_combat_schema_75_migration_preserves_world_and_player_state(unive
 
         migrate(db)
         assert db.execute("SELECT 1 FROM schema_versions WHERE version=75").fetchone()
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert (
             db.execute(
                 "SELECT terra_combat_ruleset FROM world_settings WHERE world_id=1"
@@ -11903,7 +11903,7 @@ def test_terra_retreat_threshold_schema_76_migration_preserves_world_and_player_
 
         migrate(db)
         assert db.execute("SELECT 1 FROM schema_versions WHERE version=76").fetchone()
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert (
             db.execute(
                 "SELECT DISTINCT terra_retreat_threshold_percent FROM world_settings"

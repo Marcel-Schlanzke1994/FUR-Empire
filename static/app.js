@@ -35,17 +35,23 @@ const number = n => window.FURI18n ? window.FURI18n.number(n) : new Intl.NumberF
 const MAP_SIZE = 64, MAP_VIEW_SIZE = 20, MAP_MAX_START = MAP_SIZE - MAP_VIEW_SIZE;
 function productionGraphMarkup(details) {
   if (!Array.isArray(details) || details.length !== names.length) return '';
+  const tr = (key, values, fallback) => globalThis.FURI18n?.t(key, values) || fallback;
+  const formatRate = rate => globalThis.FURI18n?.number(rate, {minimumFractionDigits:2, maximumFractionDigits:2}) || rate.toFixed(2);
   const rates = details.map(detail => Math.max(0, Number(detail.per_second_ten_thousandths || 0) / 10000));
   const maximum = Math.max(...rates, 0.01);
   const rows = details.map((detail, index) => {
     const rate = rates[index];
     const width = Math.max(0, Math.min(100, rate / maximum * 100));
-    const forecast = detail.paused ? 'Produktion pausiert' : detail.seconds_to_cap === null
-      ? 'Depot voll' : `Depot voll in ca. ${number(Math.ceil(detail.seconds_to_cap / 60))} min`;
-    const label = `${names[index]}: ${rate.toFixed(2)} pro Sekunde`;
-    return `<li><div class="production-graph-row"><strong>${resourceIcon(index)} ${names[index]}</strong><progress max="${maximum}" value="${rate}" aria-label="${escapeHtml(label)}">${width}%</progress><b>${rate.toFixed(2)}/s</b></div><small>Basis ${number(detail.base_per_second)}/s · Bonus ${number(detail.bonus_percent)}% · ${escapeHtml(detail.terrain)} ${number(detail.terrain_percent)}% · ${number(detail.storage)} / ${number(detail.storage_cap)} · ${forecast}</small></li>`;
+    const minutes = detail.seconds_to_cap === null ? 0 : number(Math.ceil(detail.seconds_to_cap / 60));
+    const forecast = detail.paused ? tr('production.paused', {}, 'Produktion pausiert') : detail.seconds_to_cap === null
+      ? tr('production.full', {}, 'Depot voll') : tr('production.full_in', {minutes}, `Depot voll in ca. ${minutes} min`);
+    const label = tr('production.rate_label', {resource:names[index], rate:formatRate(rate)}, `${names[index]}: ${formatRate(rate)} pro Sekunde`);
+    const terrainKey = typeof state === 'undefined' ? '' : Object.entries(state?.catalog?.terrain || {}).find(([,rule]) => rule.name === detail.terrain)?.[0];
+    const terrain = terrainKey && globalThis.FURI18n ? globalThis.FURI18n.t('terrain.' + terrainKey) : detail.terrain || '';
+    const detailText = tr('production.detail', {base:number(detail.base_per_second),bonus:number(detail.bonus_percent),terrain,terrain_bonus:number(detail.terrain_percent),stored:number(detail.storage),capacity:number(detail.storage_cap),forecast}, `Basis ${number(detail.base_per_second)}/s · Bonus ${number(detail.bonus_percent)}% · ${terrain} ${number(detail.terrain_percent)}% · ${number(detail.storage)} / ${number(detail.storage_cap)} · ${forecast}`);
+    return `<li><div class="production-graph-row"><strong>${resourceIcon(index)} ${escapeHtml(names[index])}</strong><progress max="${maximum}" value="${rate}" aria-label="${escapeHtml(label)}">${width}%</progress><b>${formatRate(rate)}/s</b></div><small>${escapeHtml(detailText)}</small></li>`;
   }).join('');
-  return `<details class="production-graph"><summary>Produktionsgrafik</summary><section class="production-graph-panel" aria-label="Aktuelle Rohstoffproduktion"><p>Aktuelle Serverrate einschließlich Boni und Gelände. Zukünftige Regel- oder Ereignisänderungen sind nicht prognostiziert.</p><ul>${rows}</ul></section></details>`;
+  return `<details class="production-graph"><summary data-i18n="hud.production">Produktionsgrafik</summary><section class="production-graph-panel" data-i18n-aria-label="production.aria_label" aria-label="Aktuelle Rohstoffproduktion"><p data-i18n="production.explanation">Aktuelle Serverrate einschließlich Boni und Gelände. Zukünftige Regel- oder Ereignisänderungen sind nicht prognostiziert.</p><ul>${rows}</ul></section></details>`;
 }
 function genericItemInventoryMarkup(inventory) {
   if (!inventory?.items?.length) return '';
@@ -231,7 +237,7 @@ function isMapBookmarked(bookmarks, targetId) {
 }
 function activeWorldLabel(world) {
   const id = Number.isInteger(world?.id) ? world.id : 1;
-  return `${world?.name || 'Genesis'} · WELT ${String(id).padStart(2, '0')}`;
+  return `${world?.name || 'Genesis'} · ${window.FURI18n.t('hud.world')} ${String(id).padStart(2, '0')}`;
 }
 function outpostStockSummary(outpost) {
   if (outpost.owner || !Array.isArray(outpost.stock) || outpost.stock.length !== 3) return '';
@@ -766,13 +772,14 @@ async function loadProductionTemplates(userId) {
   productionTemplateOwner=userId;
 }
 function productionTemplateOptions(templates, kind) {
-  return '<option value="">Vorlage wählen</option>'+templates.filter(item=>item.kind===kind).map(item=>`<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)} · ${escapeHtml(item.key)}${kind==='train'?` × ${item.count}`:''}</option>`).join('');
+  return `<option value="">${escapeHtml(window.FURI18n.t('template.choose'))}</option>`+templates.filter(item=>item.kind===kind).map(item=>`<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)} · ${escapeHtml(item.key)}${kind==='train'?` × ${item.count}`:''}</option>`).join('');
 }
 function productionTemplatePanel(kind) {
   const catalog=kind==='build'?state.catalog.buildings:kind==='research'?state.catalog.tech:Object.fromEntries(Object.entries(state.catalog.units).filter(([key])=>canTrainUnit(key)&&key!=='outpost_fortification'));
-  const label=kind==='build'?'Bau':kind==='research'?'Forschung':'Rekrutierung';
+  const label=window.FURI18n.t('template.kind_'+kind);
   const selected=productionTemplates.filter(item=>item.kind===kind);
-  return `<section class="production-templates" aria-label="${label}vorlagen"><h2>${label}vorlagen</h2><p>Vorlagen speichern nur den Auftrag. Beim Einreihen gelten Ressourcen, Voraussetzungen und Queue-Limits der aktiven Kolonie.</p><label for="production-template-select">Gespeicherte Vorlage</label><select id="production-template-select">${productionTemplateOptions(productionTemplates,kind)}</select><div><button type="button" class="secondary" id="queue-production-template" ${selected.length?'':'disabled'}>Einreihen</button> <button type="button" class="secondary" id="delete-production-template" ${selected.length?'':'disabled'}>Vorlage löschen</button></div><form id="production-template-form" data-production-kind="${kind}"><label for="production-template-name">Name</label><input id="production-template-name" name="name" minlength="2" maxlength="32" required autocomplete="off"><label for="production-template-key">${label}</label><select id="production-template-key" name="key">${Object.entries(catalog).map(([key,item])=>`<option value="${escapeHtml(key)}">${escapeHtml(item.name)}</option>`).join('')}</select>${kind==='train'?'<label for="production-template-count">Anzahl</label><input id="production-template-count" name="count" type="number" min="1" max="100" value="5" required>':''}<button class="secondary">Vorlage speichern</button></form><p id="production-template-status" role="status" aria-live="polite"></p></section>`;
+  const title=escapeHtml(window.FURI18n.t('template.title',{kind:label}));
+  return `<section class="production-templates" aria-label="${title}"><h2>${title}</h2><p data-i18n="template.description">Vorlagen speichern nur den Auftrag. Beim Einreihen gelten Ressourcen, Voraussetzungen und Queue-Limits der aktiven Kolonie.</p><label for="production-template-select" data-i18n="template.saved">Gespeicherte Vorlage</label><select id="production-template-select">${productionTemplateOptions(productionTemplates,kind)}</select><div><button type="button" class="secondary" id="queue-production-template" ${selected.length?'':'disabled'} data-i18n="template.queue">Einreihen</button> <button type="button" class="secondary" id="delete-production-template" ${selected.length?'':'disabled'} data-i18n="template.delete">Vorlage löschen</button></div><form id="production-template-form" data-production-kind="${kind}"><label for="production-template-name" data-i18n="template.name">Name</label><input id="production-template-name" name="name" minlength="2" maxlength="32" required autocomplete="off"><label for="production-template-key">${escapeHtml(label)}</label><select id="production-template-key" name="key">${Object.entries(catalog).map(([key,item])=>`<option value="${escapeHtml(key)}">${escapeHtml(item.name)}</option>`).join('')}</select>${kind==='train'?'<label for="production-template-count" data-i18n="template.count">Anzahl</label><input id="production-template-count" name="count" type="number" min="1" max="100" value="5" required>':''}<button class="secondary" data-i18n="template.save">Vorlage speichern</button></form><p id="production-template-status" role="status" aria-live="polite"></p></section>`;
 }
 function notify(message) { $('notice').textContent = message; $('notice').classList.add('visible'); setTimeout(() => $('notice').classList.remove('visible'), 5000); }
 function commandOrigin() {
@@ -816,13 +823,14 @@ window.addEventListener('fur:language-changed', () => {
   names.splice(0, names.length, ...['wood', 'stone', 'ore'].map(key => window.FURI18n.t('resource.' + key)));
   if (state) {
     render();
+    $('page-title').textContent = document.querySelector(`[data-tab="${tab}"] span`)?.textContent.trim() || $('page-title').textContent;
     const language = window.FURI18n.language;
     languageSave = languageSave.then(() => api('account/language', {language})).catch(() => notify(window.FURI18n.t('language.save_failed')));
   }
 });
 
 if(typeof window!=='undefined')window.addEventListener('fur:account-banned',()=>{const appeal=$('ban-appeal');if(appeal)appeal.hidden=false;});
-$('auth-form').onsubmit = async event => { event.preventDefault(); $('auth-submit').disabled = true; $('auth-error').textContent = ''; try { if(register && $('password').value !== $('password-confirmation').value) throw new Error(window.FURI18n.t('error.password_confirmation')); const recovery=$('auth-recovery-label')&&!$('auth-recovery-label').hidden; const result = await api('auth/' + (register ? 'register' : 'login'), {...(register?{password_confirmation:$('password-confirmation').value,terms_accepted:$('terms-accepted').checked,privacy_acknowledged:$('privacy-acknowledged').checked,registration_version:'2026-11-20',language:window.FURI18n.language}:{}),name:$('name').value,password:$('password').value,email:register?$('auth-email').value:'',code:recovery?'':$('auth-code').value,recovery_code:recovery?$('auth-recovery-code').value:''}); csrf = result.csrf; state = await api('state'); window.dispatchEvent(new Event('fur:session-started')); await loadMissionTemplates(state.id); await loadProductionTemplates(state.id); $('password').value = ''; if($('auth-recovery-code'))$('auth-recovery-code').value=''; await showGame(); } catch (error) { $('auth-error').textContent = error.message; if(!register&&error.message==='Dieses Konto ist gesperrt.')window.dispatchEvent(new Event('fur:account-banned')); } finally { $('auth-submit').disabled = false; } };
+$('auth-form').onsubmit = async event => { event.preventDefault(); $('auth-submit').disabled = true; $('auth-error').textContent = ''; try { if(register && $('password').value !== $('password-confirmation').value) throw new Error(window.FURI18n.t('error.password_confirmation')); const recovery=$('auth-recovery-label')&&!$('auth-recovery-label').hidden; const result = await api('auth/' + (register ? 'register' : 'login'), {...(register?{password_confirmation:$('password-confirmation').value,terms_accepted:$('terms-accepted').checked,privacy_acknowledged:$('privacy-acknowledged').checked,registration_version:'2026-11-20',language:window.FURI18n.language}:{}),name:$('name').value,password:$('password').value,email:register?$('auth-email').value:'',code:recovery?'':$('auth-code').value,recovery_code:recovery?$('auth-recovery-code').value:''}); if(result.requires_email_verification){register=false;$('beta-registration-fields').hidden=true;$('beta-registration-fields').disabled=true;updateAuthLanguage();$('auth-error').textContent=result.message;return;} csrf = result.csrf; state = await api('state'); window.dispatchEvent(new Event('fur:session-started')); await loadMissionTemplates(state.id); await loadProductionTemplates(state.id); $('password').value = ''; if($('auth-recovery-code'))$('auth-recovery-code').value=''; await showGame(); } catch (error) { $('auth-error').textContent = error.message; if(!register&&error.message==='Dieses Konto ist gesperrt.')window.dispatchEvent(new Event('fur:account-banned')); } finally { $('auth-submit').disabled = false; } };
 $('logout').onclick = async () => { try { await api('logout', {}); state = undefined; missionTemplates=[]; missionTemplateOwner=''; productionTemplates=[]; productionTemplateOwner=''; window.dispatchEvent(new Event('fur:session-ended')); $('game').hidden = true; $('auth').hidden = false; } catch (error) { notify(error.message); } };
 if(typeof window!=='undefined')window.addEventListener('fur:logout-everywhere',()=>{state=undefined;missionTemplates=[];missionTemplateOwner='';productionTemplates=[];productionTemplateOwner='';$('game').hidden=true;$('auth').hidden=false;});
 document.querySelectorAll('nav button').forEach(button => button.onclick = () => { tab = button.dataset.tab; document.querySelectorAll('nav button').forEach(b => b.classList.toggle('active', b === button)); $('page-title').textContent = button.querySelector('span')?.textContent.trim() || button.textContent.trim(); render(); window.scrollTo(0, 0); });
@@ -1094,10 +1102,13 @@ function render() {
   globalThis.FURI18n?.localizeCatalog(state.catalog);
   const cap = 2000 + state.buildings.storage * 2000;
   $('active-world-label').textContent = activeWorldLabel(state.active_world);
-  $('active-world-footer').textContent = `${state.active_world?.name || 'Genesis'} · STRATEGIESPIEL`;
+  document.querySelector('aside nav').setAttribute('aria-label', window.FURI18n.t('aria.game_areas'));
+  $('active-world-footer').textContent = `${state.active_world?.name || 'Genesis'} · ${window.FURI18n.t('hud.strategy')}`;
+  document.querySelector('.commander small').textContent = window.FURI18n.t('hud.commander');
+  document.querySelector('main > header .eyebrow').textContent = window.FURI18n.t('hud.network');
   document.querySelector('[data-tab=admin]').hidden = !state.administration;
-  $('resources').innerHTML = state.resources.map((r,i) => { const detail=state.production_details?.[i], rate=detail?.per_second_hundredths ?? state.production[i], fill=detail?.seconds_to_cap; return `<div><span>${resourceIcon(i)} ${names[i]}</span><b>${number(r)}</b><small title="${detail ? `Basis ${detail.base_per_second}/s, Bonus ${detail.bonus_percent}%, Gelände ${detail.terrain} ${detail.terrain_percent}%` : ''}">+${((detail?.per_second_ten_thousandths ?? rate*100)/10000).toFixed(1)}/s · ${detail?.terrain || 'Gelände'}${detail?.paused ? (state.terra_dormant ? ' · Ruhemodus' : ' · Urlaubspause') : fill === null ? '' : typeof fill === 'number' ? ` · voll in ${number(Math.ceil(fill/60))} min` : ''} · ${number(detail?.storage_cap ?? cap)} max.</small></div>`; }).join('') + productionGraphMarkup(state.production_details);
-  $('sync').textContent = state.incoming_count ? '⚑ '+state.incoming_count+' feindliche Anmärsche' : '● Synchronisiert';
+  $('resources').innerHTML = state.resources.map((r,i) => { const detail=state.production_details?.[i], rate=detail?.per_second_hundredths ?? state.production[i], fill=detail?.seconds_to_cap; const terrain=Object.entries(state.catalog?.terrain||{}).find(([,rule])=>rule.name===detail?.terrain)?.[0]; const terrainName=terrain?window.FURI18n.t('terrain.'+terrain):detail?.terrain||window.FURI18n.t('hud.terrain'); return `<div><span>${resourceIcon(i)} ${names[i]}</span><b>${number(r)}</b><small title="${detail ? `Basis ${detail.base_per_second}/s, Bonus ${detail.bonus_percent}%, Gelände ${detail.terrain} ${detail.terrain_percent}%` : ''}">+${((detail?.per_second_ten_thousandths ?? rate*100)/10000).toFixed(1)}/s · ${terrainName}${detail?.paused ? (state.terra_dormant ? ' · Ruhemodus' : ' · Urlaubspause') : fill === null ? '' : typeof fill === 'number' ? ` · ${window.FURI18n.t('hud.full_in')} ${number(Math.ceil(fill/60))} min` : ''} · ${number(detail?.storage_cap ?? cap)} max.</small></div>`; }).join('') + productionGraphMarkup(state.production_details);
+  $('sync').textContent = state.incoming_count ? '⚑ '+state.incoming_count+' feindliche Anmärsche' : window.FURI18n.t('hud.synced');
   let html = '';
   if (systemTabs.includes(tab)) { html = systemsView(); } else if (tab === 'overview') {
       html = `<div class="hero"><div><p class="eyebrow">SEKTOR ${state.x} : ${state.y} / FUR-KOLONIE</p><h1 data-i18n="overview.heading">Die Grenze gehört dir.</h1><p data-i18n="overview.welcome" data-i18n-values="${escapeHtml(JSON.stringify({name:state.name}))}">Willkommen zurück, ${escapeHtml(state.name)}.<br>Dein nächster Zug verändert diese Welt.</p><button data-goto="map" data-i18n="overview.map">Weltkarte öffnen ↗</button></div><div class="city-art" aria-hidden="true"><div class="orbit"></div><div class="tower t1"></div><div class="tower t2"></div><div class="tower t3"></div><div class="tower t4"></div><div class="ground"></div><span>FUR // OUTPOST 01</span></div></div><div class="stats"><article><small data-i18n="overview.power">IMPERIUMSMACHT</small><strong>${number(state.ranking_score||0)}</strong><span data-i18n="overview.power_detail">Ausbau · Wissen · Eroberungen</span></article><article><small data-i18n="overview.garrison">GARNISON</small><strong>${number(Object.values(state.units).reduce((a,b)=>a+b,0))}</strong><span data-i18n="overview.units_ready">Einheiten einsatzbereit</span></article><article><small data-i18n="overview.outposts">AUSSENPOSTEN</small><strong>${state.captures} <em>/ ${state.world.length}</em></strong><span data-i18n="overview.control">Unter deiner Kontrolle</span></article></div><div class="columns"><article class="panel"><div class="panel-title"><h3 data-i18n="overview.operations">Operationszentrale</h3><span>LIVE</span></div>${queue()}</article><article class="panel"><div class="panel-title"><h3 data-i18n="overview.directives">Deine Direktiven</h3><span data-i18n="overview.campaign_order">KAMPAGNE · IN REIHENFOLGE</span></div>${directivesMarkup()}</article></div>${state.citadel ? '<div class="victory"><h2 data-i18n="overview.victory">Der Kern gehört FUR.</h2><p>Kampagne gewonnen! Du kannst dein Imperium weiter ausbauen.</p></div>' : ''}`;
@@ -1179,33 +1190,33 @@ function render() {
   }
   if (tab === 'buildings' && state.terra_energy_catalog) {
     const energy = state.terra_energy;
-    const labels = {energy_core:'Energiekern',fusion_plant:'Fusionsanlage',scanner_tower:'Scannerturm',command_uplink:'Kommando-Uplink'};
+    const labels = {energy_core:'terra.energy_core',fusion_plant:'terra.fusion_plant',scanner_tower:'terra.scanner_tower',command_uplink:'terra.command_uplink'};
     html += `<section class="panel queue-panel"><h3 data-i18n="section.terra_buildings">Terra-Spezialgebäude</h3>
-      <p>Versorgung ${number(energy.supply)} · Bedarf ${number(energy.demand)} · gedeckt ${number(energy.served)} · Erzbonus ${number(energy.ore_bonus)} Prozentpunkte.</p>
-      <p>Bei Unterdeckung sinkt der Bonus der Fusionsanlage. Die Grundproduktion bleibt verfügbar.</p>
-      <p>Der Scannerturm erweitert die Kartensicht um bis zu vier Sektoren. Der Kommando-Uplink erhöht das Auftragslimit auf bis zu 40. Aktuelles Limit: ${number(state.terra_mission_limit)}.</p>
+      <p>${escapeHtml(window.FURI18n.t('terra.energy_status',{supply:number(energy.supply),demand:number(energy.demand),served:number(energy.served),bonus:number(energy.ore_bonus)}))}</p>
+      <p data-i18n="terra.energy_deficit">Bei Unterdeckung sinkt der Bonus der Fusionsanlage. Die Grundproduktion bleibt verfügbar.</p>
+      <p>${escapeHtml(window.FURI18n.t('terra.scanner_info',{limit:number(state.terra_mission_limit)}))}</p>
       ${state.fusion_supply_cost ? `<p>${state.fusion_supplied_until > state.server_time
-        ? `Fusionsbrennstoff reicht bis ${new Date(state.fusion_supplied_until*1000).toLocaleString(globalThis.FURI18n?.locale || 'de-DE')}.`
-        : 'Fusionsbrennstoff ist aufgebraucht.'}
-        <button type="button" data-action="terra_fusion_supply" ${state.resources[2] < state.fusion_supply_cost || state.fusion_supplied_until >= state.server_time + 86400 ? 'disabled' : ''}>24 Stunden nachversorgen · ${number(state.fusion_supply_cost)} Erz</button></p>` : ''}
+        ? escapeHtml(window.FURI18n.t('terra.fuel_until',{date:new Date(state.fusion_supplied_until*1000).toLocaleString(globalThis.FURI18n?.locale || 'de-DE')}))
+        : escapeHtml(window.FURI18n.t('terra.fuel_empty'))}
+        <button type="button" data-action="terra_fusion_supply" ${state.resources[2] < state.fusion_supply_cost || state.fusion_supplied_until >= state.server_time + 86400 ? 'disabled' : ''}>${escapeHtml(window.FURI18n.t('terra.refuel',{cost:number(state.fusion_supply_cost)}))}</button></p>` : ''}
       ${Object.entries(state.terra_energy_catalog).map(([key,rule]) => {
         const level = state.terra_energy_levels?.[key] || 0;
         const disabled = state.buildings.hq < rule.hq || level >= rule.max_level
           || state.jobs.some(job => job.kind === 'terra_energy_build')
           || rule.cost.some((value,index) => value*(level+1) > state.resources[index]);
-        return `<article><h4>${labels[key]} · Stufe ${number(level)}</h4><p>HQ ${number(rule.hq)} · ${cost(rule,level)} · ${number(rule.seconds*(level+1))} Sekunden</p>
-          <button type="button" data-action="terra_energy_build" data-key="${key}" ${disabled?'disabled':''}>Ausbauen</button></article>`;
+        return `<article><h4>${escapeHtml(window.FURI18n.t(labels[key]))} · ${escapeHtml(window.FURI18n.t('terra.level',{level:number(level)}))}</h4><p>HQ ${number(rule.hq)} · ${cost(rule,level)} · ${escapeHtml(window.FURI18n.t('terra.seconds',{seconds:number(rule.seconds*(level+1))}))}</p>
+          <button type="button" data-action="terra_energy_build" data-key="${key}" ${disabled?'disabled':''} data-i18n="terra.upgrade">Ausbauen</button></article>`;
       }).join('')}
     </section>`;
   }
   if (tab === 'buildings' && state.terra_prestige) {
     const prestige = state.terra_prestige;
-    html += `<section class="panel queue-panel"><h3>Terra-Prestige · Stufe ${number(prestige.level)}</h3>
-      <p>Regelstand ${escapeHtml(prestige.version)}. Je fünf Stufen erhöhen die Obergrenze des Kommando-Uplinks um zwei Plätze.</p>
-      ${prestige.enabled ? `<p>HQ ${number(prestige.hq)} · ${cost(prestige)} · ${number(prestige.seconds)} Sekunden</p>
-        <button type="button" data-action="terra_prestige" ${state.buildings.hq < prestige.hq || prestige.level >= prestige.max_level || state.jobs.some(job => job.kind === 'terra_prestige') || prestige.cost.some((price,i) => price > state.resources[i]) ? 'disabled' : ''}>Prestigeausbau starten</button>`
-        : state.profile.role === 'admin' ? `<button type="button" data-action="admin_enable_terra_prestige" data-world-id="${state.active_world.id}">Prestige-Regelstand für diese Welt freigeben</button>`
-        : '<p>Prestige ist in dieser Welt noch nicht freigegeben.</p>'}
+    html += `<section class="panel queue-panel"><h3>Terra-Prestige · ${escapeHtml(window.FURI18n.t('terra.level',{level:number(prestige.level)}))}</h3>
+      <p>${escapeHtml(window.FURI18n.t('terra.prestige_rules',{version:prestige.version}))}</p>
+      ${prestige.enabled ? `<p>HQ ${number(prestige.hq)} · ${cost(prestige)} · ${escapeHtml(window.FURI18n.t('terra.seconds',{seconds:number(prestige.seconds)}))}</p>
+        <button type="button" data-action="terra_prestige" ${state.buildings.hq < prestige.hq || prestige.level >= prestige.max_level || state.jobs.some(job => job.kind === 'terra_prestige') || prestige.cost.some((price,i) => price > state.resources[i]) ? 'disabled' : ''} data-i18n="terra.prestige_start">Prestigeausbau starten</button>`
+        : state.profile.role === 'admin' ? `<button type="button" data-action="admin_enable_terra_prestige" data-world-id="${state.active_world.id}" data-i18n="terra.prestige_enable">Prestige-Regelstand für diese Welt freigeben</button>`
+        : '<p data-i18n="terra.prestige_locked">Prestige ist in dieser Welt noch nicht freigegeben.</p>'}
     </section>`;
   }
   if (tab === 'colonies') html += worldEventFeedMarkup();
@@ -1244,6 +1255,7 @@ function render() {
   const focusId = focused?.id;
   if (focused && $('content').contains(focused) && ['INPUT','SELECT'].includes(focused.tagName)) return;
   $('content').innerHTML = html;
+  if (tab === 'overview') $('content').querySelector('.hero .eyebrow').textContent = window.FURI18n.t('hud.sector_colony',{x:state.x,y:state.y});
   if (tab === 'map') $('content').insertAdjacentHTML('beforeend', ruinExplorationMarkup(state)+npcInvasionMarkup(state));
   if (tab === 'army') $('content').insertAdjacentHTML('beforeend', terraBossMarkup(state)+npcConvoyMarkup(state));
   if (tab === 'overview') $('content').insertAdjacentHTML('beforeend', commanderMarkup(state.commander,state.commander_doctrines,state.commander_respec,state.resources,state.server_time) + recurringQuestMarkup(state.recurring_quests, state.profile?.role === 'admin'));

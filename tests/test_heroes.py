@@ -406,7 +406,7 @@ def test_commander_respec_schema_migrates_existing_hero_without_data_loss(hero_w
         assert row["experience"] == 300
         assert row["economy"] == 2
         assert row["last_respec_at"] is None
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
 
 
 def test_commander_allocation_is_rejected_without_opt_in(hero_world):

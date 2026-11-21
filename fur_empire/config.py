@@ -13,6 +13,15 @@ def secret(name: str) -> str:
     return Path(path).read_text().rstrip("\r\n") if path else os.getenv(name, "")
 
 
+def boolean_setting(name: str, default: bool) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    if value not in ("true", "false"):
+        raise RuntimeError(f"{name} muss true oder false sein.")
+    return value == "true"
+
+
 @dataclass(frozen=True)
 class Settings:
     production: bool
@@ -28,6 +37,8 @@ class Settings:
     operator_name: str
     operator_contact: str
     admin_mfa: bool
+    beta_mode: bool
+    email_verification_required: bool
     webpush_public_key: str
     webpush_private_key_file: str
     webpush_subject: str
@@ -39,6 +50,15 @@ class Settings:
             raise RuntimeError("FUR_ENV muss local, test, staging oder production sein.")
         staging = mode == "staging"
         production = mode in ("staging", "production")
+        beta_mode = boolean_setting("BETA_MODE", True)
+        email_verification_required = boolean_setting(
+            "ACCOUNT_EMAIL_VERIFICATION_REQUIRED", not beta_mode
+        )
+        if beta_mode and email_verification_required:
+            raise RuntimeError(
+                "BETA_MODE=true kann nicht mit ACCOUNT_EMAIL_VERIFICATION_REQUIRED=true "
+                "kombiniert werden."
+            )
         database = os.getenv("DATABASE_URL", os.getenv("FUR_DB", default_database))
         if os.getenv("DB_HOST") and not os.getenv("DATABASE_URL"):
             password = secret("DB_PASSWORD")
@@ -123,6 +143,8 @@ class Settings:
             operator_name,
             operator_contact,
             production,
+            beta_mode,
+            email_verification_required,
             os.getenv("WEBPUSH_PUBLIC_KEY", ""),
             webpush_private_key_file,
             os.getenv("WEBPUSH_SUBJECT", ""),

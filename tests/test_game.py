@@ -59,7 +59,7 @@ def test_existing_npc_movement_snapshot_reopens_and_keeps_its_original_digest(tm
 def test_season_goal_schema_defaults_legacy_seasons_and_checks_new_targets(tmp_path):
     game = Game(tmp_path / "season-goal.sqlite3")
     with game.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         user = identity()
         db.execute("INSERT INTO users VALUES (?,?,?)", (user, "SeasonAward", "unused"))
         db.execute(
@@ -700,7 +700,7 @@ def test_world_outpost_normalization_backfills_without_changing_legacy_data(tmp_
 
     migrated = Game(path)
     with migrated.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert (
             db.execute("SELECT count(*) FROM world_outposts WHERE world_id=1").fetchone()[0] == 104
         )
@@ -739,7 +739,7 @@ def test_world_context_migration_removes_single_world_limit_without_data_loss(tm
 
     upgraded = Game(path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert db.execute("SELECT state FROM world WHERE id=1").fetchone()[0] == legacy_world
         assert (
             db.execute("SELECT active_world_id FROM profiles WHERE user_id=?", (user,)).fetchone()[
@@ -783,7 +783,7 @@ def test_schema_16_session_upgrade_preserves_sessions_and_backfills_opaque_ids(t
 
     upgraded = Game(path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         session = db.execute(
             "SELECT token,user_id,csrf,expires,session_id,created,user_agent FROM sessions"
         ).fetchone()
@@ -1329,7 +1329,7 @@ def test_schema_81_wreck_migration_preserves_existing_player_state(tmp_path):
 
     upgraded = Game(path)
     with upgraded.transaction() as db:
-        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 123
+        assert db.execute("SELECT max(version) FROM schema_versions").fetchone()[0] == 124
         assert (
             db.execute("SELECT state FROM colonies WHERE colony_id=?", (user,)).fetchone()[0]
             == original
