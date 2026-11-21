@@ -61,6 +61,7 @@ jobs:
           openssl rand -hex 32 > .secrets/db_password
           openssl rand -hex 32 > .secrets/db_admin_password
           touch .secrets/smtp_password
+          touch .secrets/webpush_private_key
           cp .env.example .env
           printf '\nOPERATOR_NAME=CI\nOPERATOR_CONTACT=ci@example.org\n' >> .env
       - run: docker compose config --quiet
@@ -83,14 +84,17 @@ jobs:
           openssl rand -hex 32 > .secrets/staging_db_password
           openssl rand -hex 32 > .secrets/staging_db_admin_password
           openssl rand -hex 32 > .secrets/staging_smtp_password
+          touch .secrets/staging_webpush_private_key
       - name: Validate private staging configuration
         run: docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging config --quiet
       - name: Launch and seed isolated staging
         run: |
           docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging up -d --build --wait db app worker mailpit staging-proxy
           credentials="$(docker compose --project-name fur-staging --env-file .env.staging --file compose.yaml --file compose.staging.yaml --profile staging exec -T app python -m fur_empire.manage seed-staging-demo --accounts 2)"
-          demo_name="${credentials%%:*}"
-          demo_password="$(printf '%s\n' "$credentials" | sed -n '1s/^[^:]*: //p')"
+          first_account="$(printf '%s\n' "$credentials" | awk -F': ' '/^Demo[A-Za-z0-9]+: / {print; exit}')"
+          demo_name="${first_account%%:*}"
+          demo_password="${first_account#*: }"
+          test -n "$demo_name" && test -n "$demo_password" && test "$demo_name" != "$demo_password"
           FUR_STAGING_DEMO_NAME="$demo_name" FUR_STAGING_DEMO_PASSWORD="$demo_password" python scripts/staging_smoke.py
       - if: always()
         run: |
