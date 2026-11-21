@@ -42,7 +42,7 @@ def test_parallel_postgres_bootstrap_and_failed_migration_release_lock(monkeypat
                     db.execute("SELECT COUNT(*) FROM world_terrain WHERE world_id=1").fetchone()[0]
                     == 4096
                 )
-                assert db.execute("SELECT MAX(version) FROM schema_versions").fetchone()[0] == 123
+                assert db.execute("SELECT MAX(version) FROM schema_versions").fetchone()[0] == 124
 
             # Exercise the failure path without relying on closing the connection
             # to release the session lock. PostgreSQL is left in an aborted SQL

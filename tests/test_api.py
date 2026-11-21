@@ -6,6 +6,7 @@ from uuid import uuid4
 
 import pytest
 from fastapi.testclient import TestClient
+from starlette.websockets import WebSocketDisconnect
 
 from fur_empire.contracts import Command
 
@@ -3683,6 +3684,68 @@ def test_language_preference_persists_and_is_account_scoped(client):
     assert client.get("/api/v1/state").json()["language"] == "fr"
 
 
+def test_authenticated_live_chat_streams_persistent_messages(client):
+    auth = client.post(
+        "/api/v1/auth/register",
+        json={"name": "LiveChatOne", "password": "live-chat-password"},
+    ).json()
+    with client.websocket_connect("/api/v1/chat/live") as socket:
+        initial = socket.receive_json()
+        assert initial["type"] == "snapshot"
+        assert initial["messages"]["world"] == []
+        response = client.post(
+            "/api/v1/command",
+            headers={"X-CSRF-Token": auth["csrf"]},
+            json={
+                "action": "message",
+                "payload": {"channel": "world", "body": "Realtime hello"},
+                "token": str(uuid4()),
+            },
+        )
+        assert response.status_code == 200
+        update = socket.receive_json()
+        assert update["messages"]["world"][0]["body"] == "Realtime hello"
+
+
+def test_live_chat_delivers_between_two_real_accounts_without_reload(client):
+    first = client.post(
+        "/api/v1/auth/register",
+        json={"name": "RealtimeAlpha", "password": "realtime-alpha-pass"},
+    ).json()
+    import fur_empire.api as module
+
+    with TestClient(module.app) as second:
+        second.post(
+            "/api/v1/auth/register",
+            json={"name": "RealtimeBravo", "password": "realtime-bravo-pass"},
+        )
+        with second.websocket_connect("/api/v1/chat/live") as socket:
+            assert socket.receive_json()["messages"]["world"] == []
+            sent = client.post(
+                "/api/v1/command",
+                headers={"X-CSRF-Token": first["csrf"]},
+                json={
+                    "action": "message",
+                    "payload": {"channel": "world", "body": "Visible to Bravo"},
+                    "token": str(uuid4()),
+                },
+            )
+            assert sent.status_code == 200
+            delivered = socket.receive_json()["messages"]["world"][0]
+            assert delivered["name"] == "RealtimeAlpha"
+            assert delivered["body"] == "Visible to Bravo"
+
+
+def test_live_chat_rejects_anonymous_connections(client):
+    client.cookies.clear()
+    with (
+        pytest.raises(WebSocketDisconnect) as closed,
+        client.websocket_connect("/api/v1/chat/live"),
+    ):
+        pass
+    assert closed.value.code == 4401
+
+
 def test_beta_registration_records_version_and_rejects_missing_acceptance(client):
     body = {
         "name": "BetaCommander",
@@ -3697,7 +3760,18 @@ def test_beta_registration_records_version_and_rejects_missing_acceptance(client
     assert client.post("/api/v1/auth/register", json=body).status_code == 400
     body.update(terms_accepted=True, privacy_acknowledged=True)
     assert client.post("/api/v1/auth/register", json=body).status_code == 200
-    assert client.get("/api/v1/state").json()["language"] == "es"
+    beta_state = client.get("/api/v1/state").json()
+    assert beta_state["language"] == "es"
+    command_response = client.post(
+        "/api/v1/command",
+        headers={"X-CSRF-Token": beta_state["csrf"]},
+        json={
+            "action": "message",
+            "payload": {"channel": "world", "body": "Beta access works"},
+            "token": str(uuid4()),
+        },
+    )
+    assert command_response.status_code == 200
     import fur_empire.api as module
 
     with module.game.transaction() as db:
@@ -3706,3 +3780,55 @@ def test_beta_registration_records_version_and_rejects_missing_acceptance(client
         ).fetchone()
         assert tuple(row) == ("2026-11-20", "2026-11-20", "es")
         assert db.execute("SELECT count(*) FROM users").fetchone()[0] == 1
+        assert db.execute("SELECT count(*) FROM auth_tokens").fetchone()[0] == 0
+        assert db.execute("SELECT count(*) FROM email_verification_pending").fetchone()[0] == 0
+
+
+def test_post_beta_registration_requires_only_new_accounts_to_verify(tmp_path, monkeypatch):
+    monkeypatch.setenv("FUR_DB", str(tmp_path / "regular-registration.sqlite3"))
+    monkeypatch.setenv("FUR_ENV", "test")
+    monkeypatch.setenv("FUR_EMBEDDED_WORKER", "false")
+    monkeypatch.setenv("BETA_MODE", "false")
+    monkeypatch.setenv("ACCOUNT_EMAIL_VERIFICATION_REQUIRED", "true")
+    import fur_empire.api as module
+
+    importlib.reload(module)
+    with TestClient(module.app) as regular:
+        payload = {
+            "name": "RegularCommander",
+            "password": "regular-password-123",
+            "password_confirmation": "regular-password-123",
+            "email": "regular@example.test",
+            "registration_version": "2026-11-20",
+            "language": "fr",
+            "terms_accepted": True,
+            "privacy_acknowledged": True,
+        }
+        created = regular.post("/api/v1/auth/register", json=payload)
+        assert created.status_code == 202
+        assert created.json()["requires_email_verification"] is True
+        denied = regular.post(
+            "/api/v1/auth/login",
+            json={"name": payload["name"], "password": payload["password"]},
+        )
+        assert denied.status_code == 400
+        with module.game.transaction() as db:
+            mail = db.execute(
+                "SELECT body FROM outbox WHERE recipient=? ORDER BY created DESC LIMIT 1",
+                (payload["email"],),
+            ).fetchone()
+        token = str(mail["body"]).split("\n\n")[1]
+        confirmed = regular.post(
+            "/api/v1/account/public", json={"action": "verify", "token": token}
+        )
+        assert confirmed.status_code == 200
+        logged_in = regular.post(
+            "/api/v1/auth/login",
+            json={"name": payload["name"], "password": payload["password"]},
+        )
+        assert logged_in.status_code == 200
+    # This test reloads the process-global API module; restore the normal beta policy for
+    # subsequent tests that intentionally import the same module without their own fixture.
+    monkeypatch.setenv("BETA_MODE", "true")
+    monkeypatch.setenv("ACCOUNT_EMAIL_VERIFICATION_REQUIRED", "false")
+    importlib.reload(module)

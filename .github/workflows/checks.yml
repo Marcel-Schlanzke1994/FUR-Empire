@@ -42,7 +42,7 @@ jobs:
       - run: python -m mypy fur_empire
       - run: python scripts/check_traceability.py
       - run: python -m pytest -q
-      - run: node --check static/app.js && node --check static/community.js
+      - run: node --check static/app.js && node --check static/community.js && node --check static/live-chat.js
       - run: python -m pip_audit -r requirements.lock --no-deps --disable-pip
       - name: Generate dependency SBOMs
         run: |
