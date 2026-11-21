@@ -8,7 +8,7 @@ $furOptions = @('-i', $furIdentity, '-o', "UserKnownHostsFile=$furKnown", '-o', 
 Push-Location $PSScriptRoot
 try {
     New-Item -ItemType Directory -Force build-artifacts | Out-Null
-    & tar -czf $furArchive --exclude=__pycache__ --exclude=*.pyc Dockerfile requirements.lock fur_empire static deploy compose.yaml .dockerignore
+    & git archive --format=tar.gz "--output=$furArchive" HEAD Dockerfile requirements.lock fur_empire static deploy compose.yaml .dockerignore
     if ($LASTEXITCODE -ne 0) { throw 'Source packaging failed.' }
     & scp @furOptions $furArchive 'furdeploy@62.83.116.160:/home/furdeploy/fur-production-source.tar.gz'
     if ($LASTEXITCODE -ne 0) { throw 'Source transfer failed.' }
