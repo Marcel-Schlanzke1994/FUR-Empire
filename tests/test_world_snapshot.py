@@ -192,11 +192,11 @@ def test_sqlite_migration_rehearsal_upgrades_only_the_new_copy(tmp_path):
         db.execute("DROP TABLE recurring_quest_progress")
         db.execute("DROP TABLE recurring_quest_windows")
         db.execute(
-            "DELETE FROM schema_versions WHERE version IN (114,115,116,117,118,119,120,121,122,123)"
+            "DELETE FROM schema_versions WHERE version IN (114,115,116,117,118,119,120,121,122,123,124)"
         )
         db.execute("DROP TABLE npc_attack_plans")
         db.execute("DELETE FROM schema_versions WHERE version IN (107,108,109,110,111,112,113)")
-    assert rehearse_sqlite_migration(source, target) == {"schema_before": 71, "schema_after": 123}
+    assert rehearse_sqlite_migration(source, target) == {"schema_before": 71, "schema_after": 124}
     with closing(sqlite3.connect(source)) as original:
         assert original.execute("SELECT MAX(version) FROM schema_versions").fetchone()[0] == 71
     with closing(sqlite3.connect(target)) as copy:

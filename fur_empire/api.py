@@ -1,5 +1,6 @@
 """HTTP interface. Local binding only; game rules live in Game."""
 
+import asyncio
 import hashlib
 import json
 import logging
@@ -15,7 +16,7 @@ from typing import Any, Literal
 
 from argon2 import PasswordHasher
 from argon2.exceptions import VerificationError
-from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi import FastAPI, HTTPException, Query, Request, WebSocket, WebSocketDisconnect
 from fastapi.exception_handlers import http_exception_handler
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, JSONResponse
@@ -295,6 +296,80 @@ def session(request: Request, db: Connection, mutate: bool = False) -> str:
     return str(row["user_id"])
 
 
+def chat_snapshot(raw_token: str) -> dict[str, Any]:
+    """Read the current authorized chat windows from shared persistent storage."""
+    token = hashlib.sha256(raw_token.encode()).hexdigest()
+    with game.transaction() as db:
+        row = db.execute(
+            "SELECT user_id FROM sessions WHERE token=? AND expires>?",
+            (token, int(time.time())),
+        ).fetchone()
+        if not row:
+            raise AuthenticationError("Bitte melde dich an.")
+        user = str(row["user_id"])
+        profile = game.systems.profile(db, user)
+        if profile["banned"]:
+            raise AuthenticationError("Dieses Konto ist gesperrt.")
+        colony = game.read(db, user)
+        world_id = int(colony["world_id"])
+        member = game.systems.member(db, user)
+        alliance_id = str(member["alliance_id"]) if member else ""
+        messages: dict[str, list[dict[str, Any]]] = {}
+        for channel in ("world", "alliance", "private"):
+            page, _ = game.systems.message_page(db, user, world_id, alliance_id, channel)
+            messages[channel] = page
+        announcements, _ = game.systems.system_announcement_page(db, world_id)
+        messages["system"] = [
+            {
+                "id": str(item["id"]),
+                "sender": str(item["author_id"]),
+                "name": "FUR SYSTEM",
+                "channel": "system",
+                "recipient": None,
+                "body": f"{item['title']}\n{item['body']}",
+                "created": int(item["publish_at"]),
+            }
+            for item in announcements
+        ]
+        return {
+            "type": "snapshot",
+            "world_id": world_id,
+            "alliance_id": alliance_id or None,
+            "messages": messages,
+        }
+
+
+@app.websocket("/api/v1/chat/live")
+async def live_chat(websocket: WebSocket) -> None:
+    """Stream bounded chat snapshots; database polling also works across app replicas."""
+    origin = websocket.headers.get("origin")
+    if settings.production and origin != settings.origin:
+        await websocket.close(code=4403)
+        return
+    raw_token = websocket.cookies.get("fur_session", "")
+    try:
+        initial = await asyncio.to_thread(chat_snapshot, raw_token)
+    except AuthenticationError:
+        await websocket.close(code=4401)
+        return
+    await websocket.accept()
+    previous = ""
+    try:
+        while True:
+            snapshot = (
+                initial if not previous else await asyncio.to_thread(chat_snapshot, raw_token)
+            )
+            encoded = json.dumps(snapshot, ensure_ascii=False, separators=(",", ":"))
+            if encoded != previous:
+                await websocket.send_text(encoded)
+                previous = encoded
+            initial = snapshot
+            await asyncio.sleep(1)
+    except (AuthenticationError, WebSocketDisconnect):
+        if websocket.client_state.name != "DISCONNECTED":
+            await websocket.close(code=4401)
+
+
 def limit(request: Request, bucket: str, maximum: int) -> None:
     address = request.client.host if request.client else "local"
     # Proxy trust is configured at Uvicorn; never read arbitrary forwarded headers here.
@@ -451,7 +526,12 @@ def auth(mode: str, credentials: Credentials, request: Request) -> JSONResponse:
                 ):
                     raise RuleError("E-Mail ungültig oder bereits vergeben.")
                 db.execute("UPDATE profiles SET email=? WHERE user_id=?", (email, user))
-                accounts.send_token(db, user, "verify", email)
+                if settings.email_verification_required:
+                    db.execute(
+                        "INSERT INTO email_verification_pending(user_id,created) VALUES (?,?)",
+                        (user, int(now)),
+                    )
+                    accounts.send_token(db, user, "verify", email)
         else:
             valid: bool
             try:
@@ -464,6 +544,14 @@ def auth(mode: str, credentials: Credentials, request: Request) -> JSONResponse:
             profile = game.systems.profile(db, user)
             if profile["banned"]:
                 raise RuleError("Dieses Konto ist gesperrt.")
+            if (
+                settings.email_verification_required
+                and not profile["verified"]
+                and db.execute(
+                    "SELECT 1 FROM email_verification_pending WHERE user_id=?", (user,)
+                ).fetchone()
+            ):
+                raise RuleError("Bestätige zuerst deine E-Mail-Adresse.")
             if profile["totp"]:
                 if credentials.code and credentials.recovery_code:
                     raise RuleError("Verwende entweder Authenticator- oder Recovery-Code.")
@@ -478,6 +566,15 @@ def auth(mode: str, credentials: Credentials, request: Request) -> JSONResponse:
                     db.execute("UPDATE profiles SET totp_last=? WHERE user_id=?", (step, user))
             elif credentials.recovery_code:
                 raise RuleError("Für dieses Konto ist kein Recovery-Code verfügbar.")
+        if mode == "register" and settings.email_verification_required:
+            return JSONResponse(
+                {
+                    "ok": True,
+                    "requires_email_verification": True,
+                    "message": "Konto erstellt. Bestätige deine E-Mail-Adresse vor der Anmeldung.",
+                },
+                status_code=202,
+            )
         raw, csrf = secrets.token_urlsafe(32), secrets.token_urlsafe(24)
         session_id = secrets.token_urlsafe(18)
         user_agent = "".join(
@@ -1186,7 +1283,13 @@ def command(body: Command, request: Request) -> dict[str, Any]:
     with game.transaction() as db:
         user = session(request, db, True)
         profile = game.systems.profile(db, user)
-        if settings.production and not profile["verified"]:
+        if (
+            settings.email_verification_required
+            and not profile["verified"]
+            and db.execute(
+                "SELECT 1 FROM email_verification_pending WHERE user_id=?", (user,)
+            ).fetchone()
+        ):
             raise RuleError("Bestätige zuerst deine E-Mail-Adresse unter Kontosicherheit.")
         if settings.admin_mfa and body.action.startswith("admin_") and not profile["totp"]:
             raise RuleError("Vor Administrationsaktionen muss der Authenticator eingerichtet sein.")
@@ -1738,9 +1841,10 @@ def local_mail(request: Request) -> list[dict[str, Any]]:
     with game.transaction() as db:
         user = session(request, db)
         return [
-            dict(r)
-            for r in db.execute(
-                "SELECT subject,body,created FROM outbox WHERE user_id=? ORDER BY created DESC LIMIT 5",
+            dict(row)
+            for row in db.execute(
+                "SELECT subject,body,created FROM outbox WHERE user_id=? "
+                "ORDER BY created DESC LIMIT 5",
                 (user,),
             )
         ]
@@ -1750,6 +1854,8 @@ def local_mail(request: Request) -> list[dict[str, Any]]:
 def public_config() -> dict[str, Any]:
     return {
         "production": settings.production,
+        "beta_mode": settings.beta_mode,
+        "email_verification_required": settings.email_verification_required,
         "operator_name": settings.operator_name,
         "operator_contact": settings.operator_contact,
         "version": "0.2.0",

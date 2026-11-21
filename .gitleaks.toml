@@ -1,0 +1,14 @@
+title = "FUR Empire secret scanning"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+  [[rules.allowlists]]
+  description = "Asset catalog keys are internal Terra and Orbit paths"
+  condition = "AND"
+  paths = ['''^docs/asset-inventory\.json$''']
+  regexTarget = "line"
+  regexes = ['''^\s*"catalog_key": "(?:terra|orbit)/[a-z0-9_/-]+",$''']

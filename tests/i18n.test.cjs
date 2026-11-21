@@ -33,10 +33,12 @@ for (const language of ['de', 'en', 'es', 'fr']) {
     const {i18n, storage, document, label} = await setup(language + '-XX');
     assert.equal(i18n.language, language);
     assert.equal(document.documentElement.lang, language);
+    assert.equal(document.title, `${i18n.t('app.title')} · FUR EMPIRE`);
     assert.equal(label.textContent, i18n.t('auth.login'));
     assert.equal(i18n.number(12345.6), new Intl.NumberFormat(i18n.locale).format(12345.6));
     i18n.setLanguage('fr');
     assert.equal(storage.get('fur.language'), 'fr');
+    assert.equal(document.title, 'Frontières · FUR EMPIRE');
   });
 }
 test('saved language overrides browser and missing catalog falls back to German', async () => {
@@ -109,4 +111,21 @@ test('all supported catalogs preserve translation keys and interpolation paramet
       assert.deepEqual(parameters(catalog[key]), parameters(value), code + ':' + key);
     }
   }
+});
+
+test('legacy UI catalog covers the same source fragments in all four languages', async () => {
+  const legacy = JSON.parse(fs.readFileSync(path.join(__dirname, '../static/locales/legacy-ui.json'), 'utf8'));
+  const source = Object.keys(legacy.de).sort();
+  assert.ok(source.length >= 800);
+  for (const code of ['en', 'es', 'fr']) {
+    assert.deepEqual(Object.keys(legacy[code]).sort(), source, code);
+    assert.equal(Object.values(legacy[code]).every(value => typeof value === 'string' && value.length > 0), true, code);
+  }
+  const {i18n} = await setup('en-GB');
+  assert.equal(i18n.legacyText('Gemeinsame Terra-Angriffe'), 'Joint Terra Attacks');
+  assert.equal(i18n.legacyText('Spieler Gemeinsame Terra-Angriffe'), 'Spieler Gemeinsame Terra-Angriffe');
+  i18n.setLanguage('fr');
+  assert.equal(i18n.legacyText('Gemeinsame Terra-Angriffe'), legacy.fr['Gemeinsame Terra-Angriffe']);
+  i18n.setLanguage('de');
+  assert.equal(i18n.legacyText('Gemeinsame Terra-Angriffe'), 'Gemeinsame Terra-Angriffe');
 });

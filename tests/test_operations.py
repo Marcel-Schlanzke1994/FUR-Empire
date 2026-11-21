@@ -73,6 +73,21 @@ def test_staging_uses_secure_sessions_and_local_mailpit(monkeypatch):
         Settings.load("unused.sqlite3")
 
 
+def test_beta_account_policy_is_explicit_and_consistent(monkeypatch):
+    monkeypatch.setenv("FUR_ENV", "test")
+    monkeypatch.setenv("BETA_MODE", "true")
+    monkeypatch.setenv("ACCOUNT_EMAIL_VERIFICATION_REQUIRED", "false")
+    settings = Settings.load("unused.sqlite3")
+    assert settings.beta_mode is True
+    assert settings.email_verification_required is False
+    monkeypatch.setenv("ACCOUNT_EMAIL_VERIFICATION_REQUIRED", "true")
+    with pytest.raises(RuntimeError, match="kann nicht"):
+        Settings.load("unused.sqlite3")
+    monkeypatch.setenv("BETA_MODE", "invalid")
+    with pytest.raises(RuntimeError, match="true oder false"):
+        Settings.load("unused.sqlite3")
+
+
 def test_webpush_key_generation_is_one_time_and_config_checks_public_private_match(
     tmp_path, monkeypatch
 ):
@@ -225,9 +240,22 @@ def test_production_disables_local_mail_and_requires_verification(api, monkeypat
     monkeypatch.setattr(
         module,
         "settings",
-        replace(module.settings, production=True, origin="https://fur.example.org", admin_mfa=True),
+        replace(
+            module.settings,
+            production=True,
+            origin="https://fur.example.org",
+            admin_mfa=True,
+            beta_mode=False,
+            email_verification_required=True,
+        ),
     )
     assert client.get("/api/v1/account/local-mail").status_code == 400
+    with module.game.transaction() as db:
+        user_id = db.execute("SELECT id FROM users WHERE name='Operator'").fetchone()[0]
+        db.execute(
+            "INSERT INTO email_verification_pending(user_id,created) VALUES (?,?)",
+            (user_id, 0),
+        )
     body = {"action": "build", "payload": {"key": "wood"}, "token": identity()}
     assert client.post("/api/v1/command", json=body, headers=headers).status_code == 403
     h = {**headers, "Origin": "https://fur.example.org"}
