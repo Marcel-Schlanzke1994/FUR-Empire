@@ -18,5 +18,6 @@ The local overlay was examined in `agent/task-terra-audit`; the reviewable chang
 | `pip-audit -r requirements.lock --no-deps --disable-pip` | No known vulnerabilities reported; no hash verification |
 | Full `pytest -q` | Started in isolated environment; stopped before completion after the targeted Terra/restore suite and static gates passed. Full-suite gate remains open. |
 | `python -m pip check` in isolated environment | No broken requirements found |
+| Disposable browser smoke | A fresh local SQLite world on `127.0.0.1:8095` was created, a disposable test account logged in, and the Terra map rendered the minimap with observed sectors and a 20×20 viewport. Clicking the minimap changed the displayed window from `0:0` to `20:17`; the viewport rectangle moved correspondingly. The local server was then stopped. This is one desktop browser smoke, not mobile or screen-reader acceptance. |
 
 The copied uncommitted local source overlay also passed 119 frontend tests after the same minimap edit. Initial use of the global Python install failed during collection because Starlette 1.10 requires `httpx2` for `TestClient`. The isolated environment installed it. `requirements-dev.txt` now declares this test dependency; no production lockfile was changed.
