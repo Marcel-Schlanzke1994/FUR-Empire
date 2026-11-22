@@ -1431,6 +1431,47 @@ test('world map always renders a bounded 20-by-20 window within all 4096 sectors
   assert.equal(all.size,4096);
 });
 
+test('Terra minimap includes only observed sectors and visible targets',()=>{
+  const source=fs.readFileSync(path.join(__dirname,'../static/app.js'),'utf8');
+  const helper=source.match(/function terraMinimapMarkup\(snapshot, startX, startY\) \{[\s\S]*?\n\}/)?.[0];
+  assert.ok(helper,'minimap renderer must be available');
+  const box=vm.createContext({
+    MAP_SIZE:64,MAP_VIEW_SIZE:20,
+    escapeHtml:value=>String(value).replaceAll('<','&lt;').replaceAll('>','&gt;'),
+    window:{FURI18n:{t:key=>key==='map.minimap'?'Mini <map>':'Known only'}},
+  });
+  vm.runInContext(helper,box);
+  const markup=box.terraMinimapMarkup({
+    id:'self',terrain_map:{'1:1':'forest','2:2':'water','63:63':'plain','64:4':'forest'},
+    world:[{x:1,y:1},{x:50,y:50}],
+    players:[{id:'self',x:1,y:1},{id:'other',x:2,y:2},{id:'hidden',x:50,y:50}],
+    colonies:[{x:1,y:1}],
+  },0,0);
+  assert.match(markup,/id="terra-minimap"/);
+  assert.match(markup,/Mini &lt;map&gt;/);
+  assert.match(markup,/M1 1h1v1h-1z/);
+  assert.match(markup,/M2 2h1v1h-1z/);
+  assert.match(markup,/x="0" y="0" width="20" height="20"/);
+  assert.ok(!markup.includes('M64 4'));
+  assert.ok(!markup.includes('50.5'));
+  assert.equal((markup.match(/<circle /g)||[]).length,3);
+});
+
+test('Terra minimap pointer maps the full square without wrapping',()=>{
+  const source=fs.readFileSync(path.join(__dirname,'../static/app.js'),'utf8');
+  const helper=source.match(/function minimapPointerSector\(clientX, clientY, box\) \{[\s\S]*?\n\}/)?.[0];
+  assert.ok(helper,'minimap pointer conversion must be available');
+  const box=vm.createContext({MAP_SIZE:64});
+  vm.runInContext(helper,box);
+  const bounds={left:100,top:200,width:256,height:256};
+  const sector=(x,y,rect=bounds)=>JSON.parse(JSON.stringify(box.minimapPointerSector(x,y,rect)));
+  assert.deepEqual(sector(100,200),[0,0]);
+  assert.deepEqual(sector(355,455),[63,63]);
+  assert.deepEqual(sector(228,328),[32,32]);
+  assert.equal(sector(356,455),null);
+  assert.equal(sector(100,200,{...bounds,width:0}),null);
+});
+
 test('map coordinate search accepts valid sectors and rejects malformed or out-of-world values',()=>{
   const source=fs.readFileSync(path.join(__dirname,'../static/app.js'),'utf8');
   const constants=source.match(/const MAP_SIZE = 64, MAP_VIEW_SIZE = 20, MAP_MAX_START = MAP_SIZE - MAP_VIEW_SIZE;/)?.[0];

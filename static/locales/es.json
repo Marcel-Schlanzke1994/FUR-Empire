@@ -1,5 +1,7 @@
 {
   "language": "Idioma",
+  "map.minimap": "Minimapa de Terra",
+  "map.minimap_help": "Haz clic para centrar el mapa. Usa las flechas para moverte paso a paso. Solo se muestran sectores explorados.",
   "beta.title": "FUR EMPIRE — OPEN BETA",
   "auth.login": "Iniciar sesión →",
   "auth.register": "¿Nuevo aquí? Funda tu imperio",

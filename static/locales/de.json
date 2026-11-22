@@ -1,5 +1,7 @@
 {
   "language": "Sprache",
+  "map.minimap": "Terra-Minikarte",
+  "map.minimap_help": "Klicken, um die Karte zu verschieben. Mit den Pfeiltasten schrittweise navigieren. Nur erkundete Sektoren werden angezeigt.",
   "beta.title": "FUR EMPIRE — OPEN BETA",
   "auth.login": "Einloggen →",
   "auth.register": "Neu hier? Imperium gründen",
