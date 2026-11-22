@@ -1,5 +1,7 @@
 {
   "language": "Langue",
+  "map.minimap": "Mini-carte de Terra",
+  "map.minimap_help": "Cliquez pour centrer la carte. Utilisez les flèches pour avancer pas à pas. Seuls les secteurs explorés sont affichés.",
   "beta.title": "FUR EMPIRE — OPEN BETA",
   "auth.login": "Se connecter →",
   "auth.register": "Nouveau ? Fondez votre empire",
